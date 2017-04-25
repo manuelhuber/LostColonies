@@ -25,6 +25,7 @@ export class AccordionComponent implements AfterContentInit {
 
   /**
    * Hide all entries except the selected one
+   * If the selected entry is already visible hide it
    */
   private toggle(selected: AccordionEntryComponent): void {
     if (selected.visible) {

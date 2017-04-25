@@ -26,20 +26,27 @@ export class AccordionEntryComponent {
   private _visible: boolean;
 
   /**
-   * Height in pixel
+   * The value for the CSS height attribute
    */
-  private _height: number = 0;
+  private height: string = '0';
 
   /**
-   * Returns the height in pixel as formatted string for use in CSS
+   * Makes the content of the entry (in)visible with a nice animation
    */
-  get height(): string {
-    return this._height + 'px';
-  }
-
   set visible(a: boolean) {
     this._visible = a;
-    this._height = a ? this.content.height : 0;
+    if (a) {
+      // Increase to the size of the content
+      this.height = this.content.height + 'px';
+      // Set auto to react to size changes of the content
+      // MAGIC NUMBER WARNING: the delay must correspond with the animation duration!
+      setTimeout(() => this.height = 'auto', 600);
+    } else {
+      // Set the height from auto to the actual size (needed for animation)
+      this.height = this.content.height + 'px';
+      // Animate to size 0
+      setTimeout(() => this.height = '0', 5);
+    }
   }
 
   get visible(): boolean {
