@@ -30,22 +30,25 @@ export class AccordionEntryComponent {
    */
   private height: string = '0';
 
+  private timeout: any;
+
   /**
    * Makes the content of the entry (in)visible with a nice animation
    */
   set visible(a: boolean) {
+    clearTimeout(this.timeout);
     this._visible = a;
     if (a) {
       // Increase to the size of the content
       this.height = this.content.height + 'px';
       // Set auto to react to size changes of the content
       // MAGIC NUMBER WARNING: the delay must correspond with the animation duration!
-      setTimeout(() => this.height = 'auto', 600);
+      this.timeout = setTimeout(() => this.height = 'auto', 600);
     } else {
       // Set the height from auto to the actual size (needed for animation)
       this.height = this.content.height + 'px';
       // Animate to size 0
-      setTimeout(() => this.height = '0', 5);
+      this.timeout = setTimeout(() => this.height = '0', 5);
     }
   }
 
