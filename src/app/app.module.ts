@@ -18,6 +18,8 @@ import { AccordionComponent } from './common/accordion/accordion.component';
 import { AccordionHeaderComponent } from './common/accordion/entry/header/accordion-header.component';
 import { AccordionEntryComponent } from './common/accordion/entry/accordion-entry.component';
 import { AccordionContentComponent } from './common/accordion/entry/content/accordion-content.component';
+import { FactionsPage } from './pages/factions/factions.page';
+import { HeaderComponent } from './header/header.component';
 
 // Application wide providers
 const APP_PROVIDERS = [];
@@ -33,7 +35,9 @@ type StoreType = {
 @NgModule({
   bootstrap: [ AppComponent ],
   declarations: [
+    FactionsPage,
     AppComponent,
+    HeaderComponent,
     AccordionComponent,
     AccordionEntryComponent,
     AccordionHeaderComponent,

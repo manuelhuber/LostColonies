@@ -23,14 +23,14 @@ export class AccordionEntryComponent {
    * Subscribable for click events of the entry header
    */
   public headerClicked: EventEmitter<AccordionEntryComponent> = new EventEmitter();
-  private _visible: boolean;
 
   /**
    * The value for the CSS height attribute
    */
-  private height: string = '0';
+  public height: string = '0';
 
   private timeout: any;
+  private _visible: boolean;
 
   /**
    * Makes the content of the entry (in)visible with a nice animation
