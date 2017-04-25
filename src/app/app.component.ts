@@ -8,7 +8,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'app',
   encapsulation: ViewEncapsulation.Native,
   styleUrls: [
-    './app.component.css'
+    './app.component.scss'
   ],
   templateUrl: './app.component.html'
 })

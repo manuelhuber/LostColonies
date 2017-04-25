@@ -1,0 +1,29 @@
+.faction-header {
+  padding: 0.5em;
+  color: white;
+  background: #3f3d3e;
+  text-transform: uppercase;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.accordion-entry-hidden {
+  & .faction-header {
+    color: grey;
+  }
+}
+
+.faction-content {
+  background: #dbdbdb;
+  border-left: 2px solid #3b3b3b;
+  border-right: 2px solid #3b3b3b;
+  border-bottom: 2px solid #3b3b3b;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+}
+
+.faction-content-wrapper {
+  padding: 0 0.5em 0.5em 0.5em;
+}
