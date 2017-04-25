@@ -2,7 +2,7 @@ import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'accordion-content',
-  templateUrl: './accordion-content.component.html'
+  templateUrl: 'accordion-content.component.html'
 })
 /**
  * The content for the accordion entries. Will be collapsed when the accordion entry is closed

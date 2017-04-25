@@ -3,8 +3,8 @@ import { AccordionContentComponent } from './content/accordion-content.component
 
 @Component({
   selector: 'accordion-entry',
-  templateUrl: './accordion-entry.component.html',
-  styleUrls: [ './accordion-entry.component.scss' ]
+  templateUrl: 'accordion-entry.component.html',
+  styleUrls: [ 'accordion-entry.component.scss' ]
 })
 /**
  * The accordion entry. Needs exactly 1 header and 1 content component.

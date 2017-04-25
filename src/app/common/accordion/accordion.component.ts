@@ -3,7 +3,7 @@ import { AccordionEntryComponent } from './entry/accordion-entry.component';
 
 @Component({
   selector: 'accordion',
-  templateUrl: './accordion.component.html'
+  templateUrl: 'accordion.component.html'
 })
 /**
  * The component handling multiple accordion entries. Only 1 entry can be open at once.
