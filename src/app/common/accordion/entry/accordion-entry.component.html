@@ -3,7 +3,7 @@
     <ng-content select="accordion-header"></ng-content>
   </div>
   <div [ngStyle]="{'height': height}"
-       [ngClass]="{'hidden': hidden}"
+       [ngClass]="{'hidden': !visible}"
        class="content-wrapper">
     <ng-content select="accordion-content"></ng-content>
   </div>

@@ -14,10 +14,10 @@ import { AppComponent } from './app.component';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
-import { AccordionComponent } from './common/accordion.component';
-import { AccordionHeaderComponent } from './common/entry/header/accordion-header.component';
-import { AccordionEntryComponent } from './common/entry/accordion-entry.component';
-import { AccordionContentComponent } from './common/entry/content/accordion-content.component';
+import { AccordionComponent } from './common/accordion/accordion.component';
+import { AccordionHeaderComponent } from './common/accordion/entry/header/accordion-header.component';
+import { AccordionEntryComponent } from './common/accordion/entry/accordion-entry.component';
+import { AccordionContentComponent } from './common/accordion/entry/content/accordion-content.component';
 
 // Application wide providers
 const APP_PROVIDERS = [];

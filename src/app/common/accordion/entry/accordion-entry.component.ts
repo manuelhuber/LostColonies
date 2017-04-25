@@ -8,17 +8,30 @@ import { AccordionContentComponent } from './content/accordion-content.component
     './accordion-entry.component.css'
   ]
 })
+/**
+ * The accordion entry. Needs exactly 1 header and 1 content component.
+ */
 export class AccordionEntryComponent {
 
+  /**
+   * The content of the entry
+   */
   @ContentChild(AccordionContentComponent) public content: AccordionContentComponent;
+
+  /**
+   * Subscribable for click events of the entry header
+   */
   public headerClicked: EventEmitter<AccordionEntryComponent> = new EventEmitter();
   private _visible: boolean;
+
+  /**
+   * Height in pixel
+   */
   private _height: number = 0;
 
-  get hidden(): boolean {
-    return this.height === '0px';
-  }
-
+  /**
+   * Returns the height in pixel as formatted string for use in CSS
+   */
   get height(): string {
     return this._height + 'px';
   }
@@ -32,7 +45,10 @@ export class AccordionEntryComponent {
     return this._visible;
   }
 
-  private clickHeader(): void {
+  /**
+   * Emit new click event
+   */
+  public clickHeader(): void {
     this.headerClicked.next(this);
   }
 
