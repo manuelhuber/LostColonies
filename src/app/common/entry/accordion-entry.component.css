@@ -1,5 +1,5 @@
 .content-wrapper {
-  transition: height 500ms ease, opacity 250ms ease 500ms;
+  transition: height 500ms ease, opacity 250ms ease 250ms;
   overflow: hidden;
   opacity: 1;
 }

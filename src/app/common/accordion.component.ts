@@ -24,6 +24,10 @@ export class AccordionComponent implements AfterContentInit {
    * Hide all entries except the selected one
    */
   private toggle(selected: AccordionEntryComponent): void {
-    this.entries.toArray().forEach((entry) => entry.visible = entry === selected);
+    if (selected.visible) {
+      selected.visible = false;
+    } else {
+      this.entries.toArray().forEach((entry) => entry.visible = entry === selected);
+    }
   }
 }
