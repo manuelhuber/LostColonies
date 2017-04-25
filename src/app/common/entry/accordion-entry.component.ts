@@ -1,4 +1,4 @@
-import { AfterContentInit, Component, ContentChild, ElementRef, Input } from '@angular/core';
+import { Component, ContentChild, EventEmitter } from '@angular/core';
 import { AccordionContentComponent } from './content/accordion-content.component';
 
 @Component({
@@ -8,20 +8,12 @@ import { AccordionContentComponent } from './content/accordion-content.component
     './accordion-entry.component.css'
   ]
 })
-export class AccordionEntryComponent implements AfterContentInit {
+export class AccordionEntryComponent {
 
-  @ContentChild(AccordionContentComponent) content: AccordionContentComponent;
+  @ContentChild(AccordionContentComponent) public content: AccordionContentComponent;
+  public headerClicked: EventEmitter<AccordionEntryComponent> = new EventEmitter();
   private _visible: boolean;
   private _height: number = 0;
-
-  constructor(private element: ElementRef) {
-    // console.log(this.element.nativeElement);
-    // console.log(this.content);
-    // console.log(this.element.nativeElement.select('#content-wrapper'));
-  }
-
-  public ngAfterContentInit(): void {
-  }
 
   get hidden(): boolean {
     return this.height === '0px';
@@ -31,13 +23,17 @@ export class AccordionEntryComponent implements AfterContentInit {
     return this._height + 'px';
   }
 
-  @Input() set visible(a: boolean) {
+  set visible(a: boolean) {
     this._visible = a;
     this._height = a ? this.content.height : 0;
   }
 
   get visible(): boolean {
     return this._visible;
+  }
+
+  private clickHeader(): void {
+    this.headerClicked.next(this);
   }
 
 }
