@@ -1,4 +1,4 @@
-<div [ngClass]="{'hidden': !visible}">
+<div [ngClass]="{'accordion-entry-hidden': !visible}">
   <div (click)="clickHeader()">
     <ng-content select="accordion-header"></ng-content>
   </div>

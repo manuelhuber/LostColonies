@@ -13,6 +13,6 @@ a.active {
   color: blue;
 }
 
-.hidden .header1 {
+.accordion-entry-hidden .header1 {
   color: green;
 }

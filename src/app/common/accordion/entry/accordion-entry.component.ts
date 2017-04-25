@@ -10,6 +10,7 @@ import { AccordionContentComponent } from './content/accordion-content.component
 })
 /**
  * The accordion entry. Needs exactly 1 header and 1 content component.
+ * Can be styled depending on visible state. Parent div of the whole entry will have the css class "accordion-entry-hidden"
  */
 export class AccordionEntryComponent {
 
