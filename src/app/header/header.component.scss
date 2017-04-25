@@ -1,0 +1,69 @@
+$menu-line-width: 6px;
+$menu-line-radius: 3px;
+$menu-icon-size: 26px;
+
+.header {
+  font-size: 2em;
+}
+
+.menu-icon {
+  width: $menu-icon-size;
+  height: $menu-icon-size;
+  float: right;
+  position: relative;
+
+  &:after, &:before {
+    content: '';
+    width: 100%;
+    height: $menu-line-width;
+    background: black;
+    border-radius: $menu-line-radius;
+    position: absolute;
+    left: 0;
+    transition: all 250ms ease;
+  }
+
+  &:after {
+    top: 0;
+  }
+
+  &:before {
+    bottom: 0;
+  }
+
+}
+
+.middle-row {
+  &:after {
+    content: '';
+    width: 100%;
+    height: $menu-line-width;
+    background: black;
+    border-radius: $menu-line-radius;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 250ms ease;
+  }
+}
+
+.menu-open {
+  .menu-icon {
+    &:after {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &:before {
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%) rotate(-45deg);
+    }
+  }
+  .middle-row {
+    &:after {
+      opacity: 0;
+    }
+  }
+}
