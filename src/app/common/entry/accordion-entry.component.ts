@@ -23,6 +23,10 @@ export class AccordionEntryComponent implements AfterContentInit {
   public ngAfterContentInit(): void {
   }
 
+  get hidden(): boolean {
+    return this.height === '0px';
+  }
+
   get height(): string {
     return this._height + 'px';
   }

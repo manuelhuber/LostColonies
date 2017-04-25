@@ -2,7 +2,9 @@
   <div>
     <ng-content select="accordion-header"></ng-content>
   </div>
-  <div #contentwrapper [ngStyle]="{'height': height}" class="content-wrapper">
+  <div [ngStyle]="{'height': height}"
+       [ngClass]="{'hidden': hidden}"
+       class="content-wrapper">
     <ng-content select="accordion-content"></ng-content>
   </div>
 </div>
