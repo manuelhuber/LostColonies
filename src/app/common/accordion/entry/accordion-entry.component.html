@@ -1,9 +1,8 @@
-<div>
+<div [ngClass]="{'hidden': !visible}">
   <div (click)="clickHeader()">
     <ng-content select="accordion-header"></ng-content>
   </div>
   <div [ngStyle]="{'height': height}"
-       [ngClass]="{'hidden': !visible}"
        class="content-wrapper">
     <ng-content select="accordion-content"></ng-content>
   </div>
