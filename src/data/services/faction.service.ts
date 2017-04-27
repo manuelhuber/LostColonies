@@ -14,7 +14,7 @@ export class FactionService {
 
   public getFactions(): Observable<Faction[]> {
     if (this.factions === undefined) {
-      this.factions = this.http.get('/assets/data/factions.json').map(res => res.json());
+      this.factions = this.http.get('/assets/data/factions.json').map((res) => res.json());
     }
     return this.factions;
   }
