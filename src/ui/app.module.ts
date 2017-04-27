@@ -20,9 +20,12 @@ import { AccordionEntryComponent } from './common/accordion/entry/accordion-entr
 import { AccordionContentComponent } from './common/accordion/entry/content/accordion-content.component';
 import { FactionsPage } from './pages/factions/factions.page';
 import { HeaderComponent } from './header/header.component';
+import { FactionService } from '../data/services/faction.service';
 
 // Application wide providers
-const APP_PROVIDERS = [];
+const APP_PROVIDERS = [
+  FactionService
+];
 
 type StoreType = {
   restoreInputValues: () => void,

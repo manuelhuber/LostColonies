@@ -1,102 +1,23 @@
 <div>
-  <accordion>
-    <accordion-entry>
+  <accordion *ngIf="factions">
+    <accordion-entry *ngFor="let faction of factions">
       <accordion-header>
-        <div class="faction-header">Speer und Hammer</div>
+        <div class="faction-header">{{faction.name}}</div>
       </accordion-header>
       <accordion-content>
         <div class="faction-content-wrapper">
           <div class="faction-content">
-            <div><b>Beschreibung:</b> (Ex-)Militär Gang, die mit ausgewöhnlicher Disziplin & Skrupellosigkeit operiert.
-            </div>
-            <div><b>Gebiete:</b></div>
-            <div><b>NPCs:</b></div>
-            <div><b>Nennenswerter Besitz:</b> Militärarsenal,</div>
-            <div><b>Eigenheiten:</b> Extrem diszipliniert & hierachisch.</div>
-            <div><b>Verbündete:</b></div>
-            <div><b>Feinde:</b> Nachtwächter</div>
-            <div><b>Situation:</b> Versuchen Nachtwächter zu schaden indem ihre Rivalen finanzieren</div>
+            <div><b>Beschreibung:</b> {{faction.description}}</div>
+            <div><b>Gebiete:</b>{{faction.turf}}</div>
+            <div><b>NPCs:</b>{{faction.npcs}}</div>
+            <div><b>Nennenswerter Besitz:</b>{{faction.assets}}</div>
+            <div><b>Eigenheiten:</b>{{faction.quirks}}</div>
+            <div><b>Verbündete:</b>{{faction.allies}}</div>
+            <div><b>Feinde:</b>{{faction.enemies}}</div>
+            <div><b>Situation:</b>{{faction.situation}}</div>
           </div>
         </div>
       </accordion-content>
-    </accordion-entry>
-    <accordion-entry>
-      <accordion-header>
-        <div class="faction-header">Nachtwächter</div>
-      </accordion-header>
-      <accordion-content>
-        <div class="faction-content-wrapper">
-          <div class="faction-content">
-            <div><b>Beschreibung:</b>
-              Großenteils aus Hafenarbeiter bestehende Gang, die mit Gewalt ihre illegalen Glücksspiele verteidigen und
-              das
-              Hafengebiet kontrollieren.
-            </div>
-            <div><b>Gebiete:</b>
-              Nördlich des Hafens
-            </div>
-            <div><b>NPCs:</b>
-              Don Volker Jr (Chef, unerfahren, emotional), Eisenfresser (Skrupellos, resolut), Halger (Geduldig, Ruhig,
-              diplomatisch)
-            </div>
-            <div><b>Nennenswerter Besitz:</b>
-              Das einzig legale Kasino,
-            </div>
-            <div><b>Eigenheiten:</b>
-              Eisenfresser und Halger sind wie das Engelchen und Teufelchen im Ohr des Anführers und haben einen enormen
-              Einfluß über die Gang.
-            </div>
-            <div><b>Verbündete:</b>
-              Hafer, Blaumäntel
-            </div>
-            <div><b>Feinde:</b>
-              Speer & Hammer
-            </div>
-            <div><b>Situation:</b>
-              Nach der Ermordung ihres starken Anführers kämpft sein unerfahrener Sohn ihr Territorium
-              auf allen Seiten zu verteidigen während er Rache für seinen Vater sucht.
-            </div>
-          </div>
-        </div>
-      </accordion-content>
-    </accordion-entry>
-    <accordion-entry>
-      <accordion-header>
-        <div class="faction-header"> Geering Gesellschaft</div>
-      </accordion-header>
-      <accordion-content>
-        <div class="faction-content-wrapper">
-          <div class="faction-content">
-            <div><b>Beschreibung:</b> Eine Geheimgesellschafft bestehend aus Beamten der Regierung und v.a. Blaumänteln.
-            </div>
-            <div><b>Gebiete:</b></div>
-            <div><b>NPCs:</b></div>
-            <div><b>Nennenswerter Besitz:</b> Mächtige Positionen in fast allen Teilen der Regierung</div>
-            <div><b>Eigenheiten:</b> Die Mitglieder kennen nur ihren direkten Vorgesetzen und identifizieren sich durch
-              eine
-              Geheimphrase.
-            </div>
-            <div><b>Verbündete:</b> Diebesschöpfer</div>
-            <div><b>Feinde:</b> Inquisition, Komissare,</div>
-            <div><b>Situation:</b> Die Führungsebene versucht ein Regierungsumfassendes Netzwerk an Inside-Männern
-              aufzubauen. Die Gesellschaft wird aus Gier und dem Bedürfnis nach einer schützenden Organisation
-              zusammengehalten. Deals mit der Unterwelt gehören zum Tagesgeschäft.
-            </div>
-          </div>
-        </div>
-      </accordion-content>
-    </accordion-entry>
-    <accordion-entry>
-      <accordion-header></accordion-header>
-      <accordion-content></accordion-content>
-    </accordion-entry>
-    <accordion-entry>
-      <accordion-header></accordion-header>
-      <accordion-content></accordion-content>
-    </accordion-entry>
-    <accordion-entry>
-      <accordion-header></accordion-header>
-      <accordion-content></accordion-content>
     </accordion-entry>
   </accordion>
 </div>
