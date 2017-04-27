@@ -52,7 +52,7 @@ This seed repo serves as an Angular starter for anyone looking to get up and run
 
 ### Quick start
 **Make sure you have Node version >= 6.0 and NPM >= 3**
-> Clone/Download the repo then edit `app.component.ts` inside [`/src/app/app.component.ts`](/src/app/app.component.ts)
+> Clone/Download the repo then edit `app.component.ts` inside [`/src/app/app.component.ts`](/src/ui/app.component.ts)
 
 ```bash
 # clone our repo
@@ -326,7 +326,7 @@ import * as _ from 'lodash';
 * Why is my service, aka provider, is not injecting parameter correctly?
   * Please use `@Injectable()` for your service for typescript to correctly attach the metadata (this is a TypeScript problem)
 * Where do I write my tests?
-  * You can write your tests next to your component files. See [`/src/app/home/home.component.spec.ts`](/src/app/home/home.component.spec.ts)
+  * You can write your tests next to your component files. See [`/src/app/home/home.component.spec.ts`](/src/ui/home/home.component.spec.ts)
 * How do I start the app when I get `EACCES` and `EADDRINUSE` errors?
   * The `EADDRINUSE` error means the port `3000` is currently being used and `EACCES` is lack of permission for webpack to build files to `./dist/`
 * How to use `sass` for css?
