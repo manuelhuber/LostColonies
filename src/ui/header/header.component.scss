@@ -19,16 +19,17 @@ $menu-icon-size: 26px;
     background: black;
     border-radius: $menu-line-radius;
     position: absolute;
-    left: 0;
+    left: 50%;
     transition: all 250ms ease;
   }
 
   &:after {
-    top: 0;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
   }
-
   &:before {
-    bottom: 0;
+    bottom: 50%;
+    transform: translate(-50%, 50%) rotate(-45deg);
   }
 
 }
@@ -45,25 +46,24 @@ $menu-icon-size: 26px;
     top: 50%;
     transform: translateY(-50%);
     transition: all 250ms ease;
+    opacity: 0;
+
   }
 }
 
-.menu-open {
-  .menu-icon {
-    &:after {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotate(45deg);
-    }
-    &:before {
-      bottom: 50%;
-      left: 50%;
-      transform: translate(-50%, 50%) rotate(-45deg);
-    }
+.accordion-entry-hidden {
+  & .menu-icon:after {
+    transform: none;
+    left: 0;
+    top: 0;
   }
-  .middle-row {
-    &:after {
-      opacity: 0;
-    }
+
+  & .menu-icon:before {
+    transform: none;
+    left: 0;
+    bottom: 0;
+  }
+  & .middle-row:after {
+    opacity: 1;
   }
 }

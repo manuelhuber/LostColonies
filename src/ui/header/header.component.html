@@ -1,6 +1,23 @@
-<div class="header" [ngClass]="{'menu-open': menuOpen}">
-  <div class="menu-icon" (click)="menuOpen = !menuOpen">
-    <div class="middle-row"></div>
-  </div>
-  <div>Lost Colonies</div>
-</div>
+<accordion>
+  <accordion-entry>
+    <accordion-header>
+      <div class="header">
+        <div class="menu-icon" (click)="menuOpen = !menuOpen">
+          <div class="middle-row"></div>
+        </div>
+        <div>Lost Colonies</div>
+      </div>
+    </accordion-header>
+    <accordion-content>
+      <accordion>
+        <accordion-entry>
+          <accordion-header>foo</accordion-header>
+        </accordion-entry>
+        <accordion-entry>
+          <accordion-header>foo</accordion-header>
+          <accordion-content>afasdfasdfa</accordion-content>
+        </accordion-entry>
+      </accordion>
+    </accordion-content>
+  </accordion-entry>
+</accordion>
