@@ -35,6 +35,9 @@ export class AccordionEntryComponent {
    */
   set visible(a: boolean) {
     clearTimeout(this.timeout);
+    if (!this.content) {
+      return;
+    }
     this._visible = a;
     if (a) {
       // Increase to the size of the content
