@@ -12,7 +12,7 @@ import { AppModuleNgFactory } from '../compiled/src/app/app.module.ngfactory';
 /*
  * Bootstrap our Angular app with a top level NgModule
  */
-export function main(): Promise<any> {
+export function main() : Promise<any> {
   return platformBrowser()
     .bootstrapModuleFactory(AppModuleNgFactory)
     .then(decorateModuleRef)

@@ -24,7 +24,7 @@
         "subEntries": [
           {
             "title": "Adeptus Arbites",
-            "description": "Polizei einheiten"
+            "description": "Polizei"
           },
           {
             "title": "Kommissare",
@@ -35,8 +35,8 @@
             "description": "Militär"
           },
           {
-            "title": "Astra Telephatica",
-            "description": "Kommunikation durch den Warp"
+            "title": "Adeptus Astra Telephatica",
+            "description": "Rekrutierung und Training von Psykern und Kommunikation durch"
           }
         ]
       },

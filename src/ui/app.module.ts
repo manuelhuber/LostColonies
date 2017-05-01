@@ -31,8 +31,8 @@ const APP_PROVIDERS = [
 ];
 
 type StoreType = {
-  restoreInputValues: () => void,
-  disposeOldHosts: () => void
+  restoreInputValues : () => void,
+  disposeOldHosts : () => void
 };
 
 /**
@@ -63,10 +63,10 @@ type StoreType = {
 })
 export class AppModule {
 
-  constructor(public appRef: ApplicationRef) {
+  constructor(public appRef : ApplicationRef) {
   }
 
-  public hmrOnInit(store: StoreType) {
+  public hmrOnInit(store : StoreType) {
     if (!store) {
       return;
     }
@@ -82,7 +82,7 @@ export class AppModule {
     delete store.restoreInputValues;
   }
 
-  public hmrOnDestroy(store: StoreType) {
+  public hmrOnDestroy(store : StoreType) {
     const cmpLocation = this.appRef.components.map((cmp) => cmp.location.nativeElement);
     // recreate root elements
     store.disposeOldHosts = createNewHosts(cmpLocation);
@@ -92,7 +92,7 @@ export class AppModule {
     removeNgStyles();
   }
 
-  public hmrAfterDestroy(store: StoreType) {
+  public hmrAfterDestroy(store : StoreType) {
     // display new elements
     store.disposeOldHosts();
     delete store.disposeOldHosts;

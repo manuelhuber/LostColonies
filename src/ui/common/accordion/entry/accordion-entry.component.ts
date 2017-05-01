@@ -15,25 +15,25 @@ export class AccordionEntryComponent {
   /**
    * The content of the entry
    */
-  @ContentChild(AccordionContentComponent) public content: AccordionContentComponent;
+  @ContentChild(AccordionContentComponent) public content : AccordionContentComponent;
 
   /**
    * Subscribable for click events of the entry header
    */
-  public headerClicked: EventEmitter<AccordionEntryComponent> = new EventEmitter();
+  public headerClicked : EventEmitter<AccordionEntryComponent> = new EventEmitter();
 
   /**
    * The value for the CSS height attribute
    */
-  public height: string = '0';
+  public height : string = '0';
 
-  private timeout: any;
-  private _visible: boolean;
+  private timeout : any;
+  private _visible : boolean;
 
   /**
    * Makes the content of the entry (in)visible with a nice animation
    */
-  set visible(a: boolean) {
+  set visible(a : boolean) {
     clearTimeout(this.timeout);
     if (!this.content) {
       return;
@@ -53,14 +53,14 @@ export class AccordionEntryComponent {
     }
   }
 
-  get visible(): boolean {
+  get visible() : boolean {
     return this._visible;
   }
 
   /**
    * Emit new click event
    */
-  public clickHeader(): void {
+  public clickHeader() : void {
     this.headerClicked.next(this);
   }
 

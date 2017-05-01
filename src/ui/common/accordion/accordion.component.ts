@@ -10,12 +10,12 @@ import { AccordionEntryComponent } from './entry/accordion-entry.component';
  */
 export class AccordionComponent implements AfterContentInit {
 
-  @ContentChildren(AccordionEntryComponent) private entries: QueryList<AccordionEntryComponent>;
+  @ContentChildren(AccordionEntryComponent) private entries : QueryList<AccordionEntryComponent>;
 
   /**
    * Add a click handler to each entry
    */
-  public ngAfterContentInit(): void {
+  public ngAfterContentInit() : void {
     this.entries.toArray().forEach((entry) => {
       entry.headerClicked.subscribe((clickedEntry) => {
         this.toggle(clickedEntry);
@@ -27,7 +27,7 @@ export class AccordionComponent implements AfterContentInit {
    * Hide all entries except the selected one
    * If the selected entry is already visible hide it
    */
-  private toggle(selected: AccordionEntryComponent): void {
+  private toggle(selected : AccordionEntryComponent) : void {
     if (selected.visible) {
       selected.visible = false;
     } else {

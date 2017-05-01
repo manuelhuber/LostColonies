@@ -7,12 +7,12 @@ import { WorldEntry } from '../models/world';
 @Injectable()
 export class WorldService {
 
-  private world: Observable<WorldEntry[]>;
+  private world : Observable<WorldEntry[]>;
 
-  constructor(private http: Http) {
+  constructor(private http : Http) {
   }
 
-  public getWorld(): Observable<WorldEntry[]> {
+  public getWorld() : Observable<WorldEntry[]> {
     if (this.world === undefined) {
       this.world = this.http.get('/assets/data/world.json').map((res) => res.json());
     }

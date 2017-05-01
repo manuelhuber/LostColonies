@@ -13,7 +13,7 @@ import { AppModule } from './ui/app.module';
 /*
  * Bootstrap our Angular app with a top level NgModule
  */
-export function main(): Promise<any> {
+export function main() : Promise<any> {
   return platformBrowserDynamic()
     .bootstrapModule(AppModule)
     .then(decorateModuleRef)

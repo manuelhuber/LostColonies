@@ -8,10 +8,10 @@ import { WorldEntry } from '../../../data/models/world';
   templateUrl: 'world.page.html'
 })
 export class WorldPage {
-  entries: Data[];
+  entries : Data[];
 
-  constructor(private worldService: WorldService) {
-    worldService.getWorld().subscribe((data: WorldEntry[]) => this.entries = data);
+  constructor(private worldService : WorldService) {
+    worldService.getWorld().subscribe((data : WorldEntry[]) => this.entries = data);
   }
 
 }

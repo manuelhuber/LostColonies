@@ -4,8 +4,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'header',
   templateUrl: 'header.component.html',
   encapsulation: ViewEncapsulation.Native,
-  styleUrls: [ 'header.component.scss']
+  styleUrls: [ 'header.component.scss' ]
 })
 export class HeaderComponent {
-  public menuOpen: boolean;
+  public menuOpen : boolean;
 }

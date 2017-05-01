@@ -15,12 +15,12 @@ import 'rxjs/add/operator/mergeMap';
   templateUrl: 'app.component.html'
 })
 export class AppComponent implements OnInit {
-  constructor(private router: Router,
-              private activatedRoute: ActivatedRoute,
-              private titleService: Title) {
+  constructor(private router : Router,
+              private activatedRoute : ActivatedRoute,
+              private titleService : Title) {
   }
 
-  public ngOnInit(): void {
+  public ngOnInit() : void {
     this.router.events
       .filter((event) => event instanceof NavigationEnd)
       .map(() => this.activatedRoute)

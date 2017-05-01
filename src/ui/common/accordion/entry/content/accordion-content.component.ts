@@ -11,13 +11,13 @@ import { Component, ElementRef } from '@angular/core';
  */
 export class AccordionContentComponent {
 
-  constructor(private elem: ElementRef) {
+  constructor(private elem : ElementRef) {
   }
 
   /**
    * Returns the height of the content
    */
-  get height(): number {
+  get height() : number {
     return this.elem.nativeElement.firstChild.clientHeight;
   }
 }
