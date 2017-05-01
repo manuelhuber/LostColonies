@@ -10,8 +10,8 @@ import 'rxjs/add/operator/mergeMap';
  */
 @Component({
   selector: 'app',
-  encapsulation: ViewEncapsulation.Native,
-  styleUrls: [ 'app.component.scss' ],
+  encapsulation: ViewEncapsulation.None,
+  styleUrls: [ 'app.component.scss', '/pages/pages.scss' ],
   templateUrl: 'app.component.html'
 })
 export class AppComponent implements OnInit {

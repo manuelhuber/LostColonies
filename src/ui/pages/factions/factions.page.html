@@ -2,11 +2,11 @@
   <accordion *ngIf="factions">
     <accordion-entry *ngFor="let faction of factions">
       <accordion-header>
-        <div class="faction-header">{{faction.name}}</div>
+        <div class="page-accordion-header">{{faction.name}}</div>
       </accordion-header>
       <accordion-content>
-        <div class="faction-content-wrapper">
-          <div class="faction-content">
+        <div class="page-accordion-content-wrapper">
+          <div class="page-accordion-content">
             <div *ngIf="faction.description"><b>Beschreibung:</b> {{faction.description}}</div>
             <div *ngIf="faction.turf"><b>Gebiete:</b>{{faction.turf}}</div>
             <div *ngIf="faction.npcs"><b>NPCs:</b>{{faction.npcs}}</div>

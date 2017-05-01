@@ -1,4 +1,4 @@
-.faction-header {
+.page-accordion-header {
   padding: 0.5em;
   color: white;
   background: #3f3d3e;
@@ -9,12 +9,12 @@
 }
 
 .accordion-entry-hidden {
-  & .faction-header {
+  & .page-accordion-header {
     color: grey;
   }
 }
 
-.faction-content {
+.page-accordion-content {
   background: #dbdbdb;
   border-left: 2px solid #3b3b3b;
   border-right: 2px solid #3b3b3b;
@@ -25,6 +25,6 @@
   padding: 0.25em;
 }
 
-.faction-content-wrapper {
+.page-accordion-content-wrapper {
   padding: 0 0.5em 0.5em 0.5em;
 }
