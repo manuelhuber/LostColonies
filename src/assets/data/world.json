@@ -1,0 +1,183 @@
+[
+  {
+    "title": "Regierung",
+    "subEntries": [
+      {
+        "title": "Machtverhältnisse",
+        "description": "Inquisition, Freihändler, Adeptus Administratum, Machnicus und Ministorum unterliegen niemandem. Zusammenarbeit zwischen diesen Instituationen meistens gut."
+      },
+      {
+        "title": "Adeptus Mechnicus",
+        "description": "verwaltet alle Aspekte bezüglich Technolgie. Eher unkooperativ und sehr bedacht ihre Geheimnisse und Aufgaben zu wahren."
+      },
+      {
+        "title": "Inquisition",
+        "description": "beschützt die Menschheit vor existenziellen Bedrohungen. Kann Unterstüzung verlangen und absolute Urteile sprechen. Zusammenarbeit mit Ministorum sehr gut, mit Administratum gut und mit Mechanicus gemischt."
+      },
+      {
+        "title": "Adeptus Ministorum",
+        "description": "ist für die Aufrecherhaltung des Imperialen Credos und Bestatung zuständig."
+      },
+      {
+        "title": "Adeptus Administratum",
+        "description": "ist die Verwaltungseinheit des Imperiums. Zu ihren Aufgaben gehört u.a. die Rechtssprechung und Steuereintreibung. Ihr unterliegen:",
+        "subEntries": [
+          {
+            "title": "Adeptus Arbites",
+            "description": "Polizei einheiten"
+          },
+          {
+            "title": "Kommissare",
+            "description": "Gesetzeshüter aus anderen Städten / Ländern. Gehen gegen Beamte & Kriminelle vor. Gefürchtet und unkorrumpierbar"
+          },
+          {
+            "title": "Astra Militarum",
+            "description": "Militär"
+          },
+          {
+            "title": "Astra Telephatica",
+            "description": "Kommunikation durch den Warp"
+          }
+        ]
+      },
+      {
+        "title": "Freihändler",
+        "description": "sind Kapitäne die warpresistente Flotten besitzen. Handeln zwischen Städten und jagen Leviathane. Meistens alte Adelshäuser. Müssen Gebühren etc. zahlen um mit Städten zu handeln."
+      }
+    ]
+  },
+  {
+    "title": "Technologie",
+    "subEntries": [
+      {
+        "title": "Maschinengeister",
+        "description": "leben in technologischen Gegenständen und halten diese in Stand"
+      },
+      {
+        "title": "Adeptus Mechanicus",
+        "description": "ist eine Staatseinheit und kontrolliert/überwacht alle Aspekte der Technologie."
+      },
+      {
+        "title": "Maschinenpriester",
+        "description": "können die Maschinengeister verstehen und besänftigen und hüten die Geheimnisse des Kultes"
+      },
+      {
+        "title": "Fabriken",
+        "description": "zahlen Lizenzgebühren um produzieren zu dürfen. Unterliegen strengen Auflagen & Untersuchungen."
+      },
+      {
+        "title": "Produktion",
+        "description": "ist nur mithilfe von Blaupausen möglich, welche streng vom Adeptus Mechanicus kontrolliert werden."
+      },
+      {
+        "title": "Defekte",
+        "description": "sind meistens auf verägerte Maschinengeister zurückzuführen."
+      },
+      {
+        "title": "Reperatur",
+        "description": "ist durch Gebete, Salben und Rituale die den Maschinengeist beschlichtigen möglich. Ritual kann z.b. das zerlegen, reinigen und zusammenbauen des Gegenstandes sein."
+      }
+    ]
+  },
+  {
+    "title": "Religion",
+    "subEntries": [
+      {
+        "title": "Imperiales Credo",
+        "description": "ist die offizielle Staatsreligion. Dort wird der Gott-Imperator verehrt, der in seinem Goldenen Thron (Sonne) lebt und über die Menschen wacht."
+      },
+      {
+        "title": "Maschinenkult ",
+        "description": "betet den Maschinengott Omnissiah an. Religion \"Maschinenkult\" und staatliche Einrichtung \"Adeptus Mechanicus\" oft als synonym verwendet."
+      },
+      {
+        "title": "Religionsfreiheit ",
+        "description": "Ist vorhanden. Die verehrung von Chaosgöttern ist nicht verfolgt, lediglich die Beschwörung (u.ä.)"
+      },
+      {
+        "title": "Kulte ",
+        "description": "sind teilweise mit dem Imperialen Credo vereinbar und viele gehören mehreren Glaubensrichtungen an."
+      }
+    ]
+  },
+  {
+    "title": "Supernatural",
+    "subEntries": [
+      {
+        "title": "Echtzeitraum",
+        "description": "ist die normale Welt"
+      },
+      {
+        "title": "Warp",
+        "description": "/ Immaterium / Jenseits ist eine parallele Welt in der andere Gesetze für Zeit und Raum herrschen. Sie ist Heimat von Dämonen und für Menschen lebensfeindlich."
+      },
+      {
+        "title": "Risse",
+        "description": "sind eine temporäre Verbindung zw. Warp und Echtzeitraum"
+      },
+      {
+        "title": "Warpeinflüße",
+        "description": "/ Warppräsenz im Echtzeitraum können sich äußern durch z. B.:",
+        "subEntries": [
+          {
+            "title": "",
+            "description": "Extreme Temperaturverändungen"
+          },
+          {
+            "title": "",
+            "description": "Elektrostatische Ladung"
+          },
+          {
+            "title": "",
+            "description": "Mutation"
+          },
+          {
+            "title": "",
+            "description": "Wahnsinn"
+          }
+        ]
+      },
+      {
+        "title": "Whisperer",
+        "description": "haben eine erhöhte Affiitiät zum Warp, können z.T. mit Warpwesen kommunizieren / Warpeinflüße warnehmen. Diese Fähigkeiten sind angeboren oder trainiert."
+      },
+      {
+        "title": "Psyker",
+        "description": "können Warp (geringfügig) Kontrollieren. Extrem selten. Sehr gefährlich."
+      },
+      {
+        "title": "Tote",
+        "description": "verursachen nach wenigen Tagen Risse im Echtzeitraum da ihre Seele / Essenz verschluckt wird. Adeptus Ministorum sammelt Leichen um sie einzuäschern."
+      },
+      {
+        "title": "Todessucher",
+        "description": "sind Whisperer, die trainiert wurden Leichen zu finden. Seh- & Hörsinn wurde ihnen genommen."
+      },
+      {
+        "title": "Inquisition",
+        "description": "schützt Menschheit vor den Gefahren des Warps. Viel Autorität, Respekt & Furcht."
+      },
+      {
+        "title": "Dämonen",
+        "description": "sind mächtige Wesen, nur Inquisition wagt es sie zu bekämpfen"
+      },
+      {
+        "title": "Öffentliche Meinung",
+        "description": "ist negativ gegenüber den Extremen des Warps (v.a. Beschwörungen), aber milde oder positive Aspekte des Warps (z.B. Whisperer oder Maschinengeister) sind normaler Teil des Lebens"
+      }
+    ]
+  },
+  {
+    "title": "Leben",
+    "subEntries": [
+      {
+        "title": "Lebenserwartung",
+        "description": "Ca 40 für die Unterschicht - bis zu 250 für Reiche & Einflußreiche mit Zugriff zu höherer medizinischer Versorgung und Cybernetiks"
+      },
+      {
+        "title": "Wetter",
+        "description": "ist durch konstante Warpstürme geprägt. Selbst zur Mittagszeit ist die Sonne kaum sichtbar"
+      }
+    ]
+  }
+]

@@ -21,10 +21,13 @@ import { AccordionContentComponent } from './common/accordion/entry/content/acco
 import { FactionsPage } from './pages/factions/factions.page';
 import { HeaderComponent } from './header/header.component';
 import { FactionService } from '../data/services/faction.service';
+import { WorldPage } from './pages/world/world.page';
+import { WorldService } from '../data/services/world.service';
 
 // Application wide providers
 const APP_PROVIDERS = [
-  FactionService
+  FactionService,
+  WorldService
 ];
 
 type StoreType = {
@@ -39,6 +42,7 @@ type StoreType = {
   bootstrap: [ AppComponent ],
   declarations: [
     FactionsPage,
+    WorldPage,
     AppComponent,
     HeaderComponent,
     AccordionComponent,

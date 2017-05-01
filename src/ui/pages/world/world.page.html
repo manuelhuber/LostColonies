@@ -1,0 +1,25 @@
+<div>
+  <accordion *ngIf="entries">
+    <accordion-entry *ngFor="let entry of entries">
+      <accordion-header>
+        <div class="page-accordion-header">{{entry.title}}</div>
+      </accordion-header>
+      <accordion-content>
+        <div class="page-accordion-content-wrapper">
+          <div class="page-accordion-content">
+            <div *ngIf="entry.subEntries">
+              <div class="world-paragraph" *ngFor="let subEntry of entry.subEntries">
+                <b>{{subEntry.title}}</b> {{subEntry.description}}
+                <div *ngIf="subEntry.subEntries">
+                  <div class="world-sub-list" *ngFor="let subsubentry of subEntry.subEntries">
+                    <b>{{subsubentry.title}}</b> {{subsubentry.description}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </accordion-content>
+    </accordion-entry>
+  </accordion>
+</div>
