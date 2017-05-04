@@ -4,7 +4,8 @@ import { Faction } from '../../../data/models/factions';
 
 @Component({
   selector: 'factions',
-  templateUrl: 'factions.page.html'
+  templateUrl: 'factions.page.html',
+  styleUrls: ['factions.page.scss']
 })
 export class FactionsPage {
   public factions : Faction[];

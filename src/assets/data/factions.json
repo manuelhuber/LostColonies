@@ -1,6 +1,7 @@
 [
   {
     "name": "Speer und Hammer",
+    "imageUrl": "http://i.imgur.com/1refLVX.png",
     "description": "(Ex-)Militär Gang, die mit ausgewöhnlicher Disziplin & Skrupellosigkeit operiert.",
     "turf": "",
     "npcs": "",
@@ -12,6 +13,7 @@
   },
   {
     "name": "Nachtwächter",
+    "imageUrl": "http://i.imgur.com/O6b2QkB.jpg",
     "description": "Großenteils aus Hafenarbeiter bestehende Gang, die ihre illegalen Glücksspiele verteidigen und das Hafengebiet kontrollieren.",
     "turf": "Nördlich des Hafens",
     "npcs": "Don Volker Jr (Chef, unerfahren, emotional), Eisenfresser (skrupellos, resolut), Halger (geduldig, ruhig, diplomatisch)",
@@ -23,6 +25,7 @@
   },
   {
     "name": "Geering Gesellschaft",
+    "imageUrl": "",
     "description": "Eine Geheimgesellschafft bestehend aus Beamten der Regierung und v.a. Blaumänteln.",
     "turf": "",
     "npcs": "",
@@ -34,6 +37,7 @@
   },
   {
     "name": "Brennende Dämmerung",
+    "imageUrl": "http://i.imgur.com/yCvtH3k.png",
     "description": "Eine Gang von Nationalisten & Puristen, stellen Drogen aus Pilzen etc. her",
     "turf": "",
     "npcs": "Schleifer (Anführer, brutal), Baini (Zweiter, intelligent, gelassen), Teufel (Up'n'Commer, idealist)",
@@ -45,6 +49,7 @@
   },
   {
     "name": "Kinder des Nebels",
+    "imageUrl": "",
     "description": "Diebesbande bestehend aus Waisenkinder, die von einem alten Boss geführt werden",
     "turf": "Trauerhügel",
     "npcs": "Diebesschöpfer (Anführer, vorsichtig, verstohlen, connected)",
