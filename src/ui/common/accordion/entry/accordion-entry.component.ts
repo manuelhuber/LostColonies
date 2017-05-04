@@ -28,12 +28,17 @@ export class AccordionEntryComponent {
   public height : string = '0';
 
   private timeout : any;
-  private _visible : boolean;
+  private _visible : boolean = false;
 
   /**
    * Makes the content of the entry (in)visible with a nice animation
    */
   set visible(a : boolean) {
+    if (this._visible === a) {
+      // No change => do nothing
+      return;
+    }
+
     clearTimeout(this.timeout);
     if (!this.content) {
       return;
