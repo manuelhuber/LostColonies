@@ -1,5 +1,14 @@
+$color-grey-0: #BBB;
+$color-grey-1: #7c7c7c;
+$color-grey-2: #515151;
+$color-grey-3: #474747;
+$color-grey-4: #202020;
+$color-grey-5: #101010;
+
 html, body {
   height: 100%;
+  background: $color-grey-4 url("/assets/images/main-background.png") repeat fixed;
+
 }
 
 a.active {

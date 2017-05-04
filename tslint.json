@@ -70,11 +70,11 @@
     "typedef-whitespace": [
       true,
       {
-        "call-signature": "nospace",
+        "call-signature": "onespace,",
         "index-signature": "nospace",
         "parameter": "onespace",
-        "property-declaration": "nospace",
-        "variable-declaration": "nospace"
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
       },
       {
         "call-signature": "onespace",

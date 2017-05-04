@@ -49,7 +49,7 @@ export class AccordionEntryComponent {
       // Set the height from auto to the actual size (needed for animation)
       this.height = this.content.height + 'px';
       // Animate to size 0
-      this.timeout = setTimeout(() => this.height = '0', 5);
+      this.timeout = setTimeout(() => this.height = '0', 20);
     }
   }
 
