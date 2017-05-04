@@ -8,14 +8,12 @@
         <div class="page-accordion-content-wrapper">
           <div class="page-accordion-content">
             <img *ngIf="faction.imageUrl" [src]="faction.imageUrl" alt="" class="faction-image">
-            <div *ngIf="faction.description"><b>Beschreibung:</b> {{faction.description}}</div>
-            <div *ngIf="faction.turf"><b>Gebiete:</b>{{faction.turf}}</div>
-            <div *ngIf="faction.npcs"><b>NPCs:</b>{{faction.npcs}}</div>
-            <div *ngIf="faction.assets"><b>Nennenswerter Besitz:</b>{{faction.assets}}</div>
-            <div *ngIf="faction.quirks"><b>Eigenheiten:</b>{{faction.quirks}}</div>
-            <div *ngIf="faction.allies"><b>Verbündete:</b>{{faction.allies}}</div>
-            <div *ngIf="faction.enemies"><b>Feinde:</b>{{faction.enemies}}</div>
-            <div *ngIf="faction.situation"><b>Situation:</b>{{faction.situation}}</div>
+            <div *ngIf="faction.description">
+              <div *ngFor="let desc of getDescriptions(faction)">
+                <div class="description-key">{{desc}}:</div>
+                <div>{{faction.description[desc]}}</div>
+              </div>
+            </div>
           </div>
         </div>
       </accordion-content>

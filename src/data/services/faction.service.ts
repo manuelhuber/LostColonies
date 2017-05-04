@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Faction } from '../models/factions';
+import { Faction } from '../models/faction';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 

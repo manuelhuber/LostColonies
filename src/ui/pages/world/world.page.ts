@@ -9,7 +9,7 @@ import { Data } from '@angular/router';
   templateUrl: 'world.page.html'
 })
 export class WorldPage {
-  entries : Data[];
+  public entries : Data[];
 
   constructor(private worldService : WorldService) {
     worldService.getWorld().subscribe((data : WorldEntry[]) => this.entries = data);
