@@ -1,0 +1,16 @@
+<div>
+  <accordion *ngIf="players">
+    <accordion-entry *ngFor="let player of players">
+      <accordion-header>
+        <div class="page-accordion-header">{{player.name}}</div>
+      </accordion-header>
+      <accordion-content>
+        <div class="page-accordion-content-wrapper">
+          <div class="page-accordion-content">
+            <achievements [achievements]="player.achievements"></achievements>
+          </div>
+        </div>
+      </accordion-content>
+    </accordion-entry>
+  </accordion>
+</div>

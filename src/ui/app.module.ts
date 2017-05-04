@@ -21,11 +21,16 @@ import { HeaderComponent } from './header/header.component';
 import { FactionService } from '../data/services/faction.service';
 import { WorldPage } from './pages/world/world.page';
 import { WorldService } from '../data/services/world.service';
+import { PlayerService } from '../data/services/player.service';
+import { PlayersPage } from './pages/players/players.page';
+import { AchievementComponent } from './common/achievements/entry/achievement.component';
+import { AchievementsComponent } from './common/achievements/achievements.component';
 
 // Application wide providers
 const APP_PROVIDERS = [
   FactionService,
-  WorldService
+  WorldService,
+  PlayerService
 ];
 
 type StoreType = {
@@ -41,12 +46,15 @@ type StoreType = {
   declarations: [
     FactionsPage,
     WorldPage,
+    PlayersPage,
     AppComponent,
     HeaderComponent,
     AccordionComponent,
     AccordionEntryComponent,
     AccordionHeaderComponent,
-    AccordionContentComponent
+    AccordionContentComponent,
+    AchievementComponent,
+    AchievementsComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

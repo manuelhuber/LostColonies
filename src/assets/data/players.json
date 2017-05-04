@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Moritz",
+    "achievements": [
+      {
+        "name": "Geschichtsmacher",
+        "description": "Verändere die Welt als NPC",
+        "imageUrl": "http://whytoread.com/wp-content/uploads/2014/09/history-books.jpg"
+      }, {
+        "name": "Goldsternchen",
+        "description": "Spiel bei jeder Runde mit",
+        "imageUrl": "http://whytoread.com/wp-content/uploads/2014/09/history-books.jpg"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Yuri",
+        "imageUrl": "http://i.imgur.com/RVHR1It.jpg",
+        "achievements": [
+          {
+            "image": "Definitiv nicht schuld",
+            "description": "Flieg aus dem Militär ohne dass du was falsch gemacht hast.",
+            "imageUrl": "http://loans.org/sites/default/files/styles/thumbnail_articles/public/depressed-veteran.jpg?itok=vdtpcPpY"
+          }
+        ]
+      }
+    ]
+  }
+]
+
