@@ -1,9 +1,9 @@
 @import "../app.component";
 
 $menu-line-width: 6px;
-$menu-line-radius: 3px;
+$menu-line-radius: 0;
 $menu-icon-size: 30px;
-$menu-icon-color: $color-grey-0;
+$menu-icon-color: $color-white-1;
 
 .header-wrapper {
   margin: -8px -8px 0 -8px;
@@ -11,12 +11,12 @@ $menu-icon-color: $color-grey-0;
 
 .header {
   font-size: 2em;
-  background: url('/assets/images/main-background.png'), linear-gradient(to bottom, $color-grey-3 0, opacify(black, 0.8) 100%) no-repeat, $color-grey-3;
+  background: url('/assets/images/header.png'), linear-gradient(to bottom, $color-grey-3 0, opacify(black, 0.8) 100%) no-repeat, $color-grey-3;
   padding: 8px 8px 4px 8px;
 }
 
 .header-title {
-  color: $color-grey-0;
+  color: $color-white-1;
   font-family: Kirsty;
   font-weight: bold;
 }
@@ -86,5 +86,5 @@ $menu-icon-color: $color-grey-0;
 .menu {
   padding: 8px;
   background: $color-grey-5;
-  color: $color-grey-0;
+  color: $color-white-1;
 }

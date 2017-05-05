@@ -2,8 +2,8 @@
 
 .page-accordion-header {
   padding: 0.5em;
-  color: $color-grey-0;
-  background: $color-grey-4;
+  color: $color-white-1;
+  background: $color-grey-4 url("/assets/images/blood-splatter-small-bottom-right.png") no-repeat bottom right;
   border: 1px solid $color-grey-2;
   margin-top: 0.5em;
   text-transform: uppercase;
@@ -13,7 +13,7 @@
 
 .accordion-entry-hidden {
   & .page-accordion-header {
-    //color: $color-grey-1;
+    background: $color-grey-4;
   }
 }
 
