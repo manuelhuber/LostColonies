@@ -1,4 +1,4 @@
-import { Component, ContentChild, EventEmitter } from '@angular/core';
+import { Component, ContentChild, EventEmitter, Input } from '@angular/core';
 import { AccordionContentComponent } from './content/accordion-content.component';
 
 @Component({
@@ -11,6 +11,8 @@ import { AccordionContentComponent } from './content/accordion-content.component
  * Can be styled depending on visible state. Parent div of the whole entry will have the css class "accordion-entry-hidden"
  */
 export class AccordionEntryComponent {
+
+  @Input() expandOnClick : boolean;
 
   /**
    * The content of the entry
@@ -66,6 +68,9 @@ export class AccordionEntryComponent {
    * Emit new click event
    */
   public clickHeader() : void {
+    if (this.expandOnClick) {
+      this.visible = !this.visible;
+    }
     this.headerClicked.next(this);
   }
 
