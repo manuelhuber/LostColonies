@@ -8,4 +8,5 @@ import { Achievement } from '../../../../data/models/achievement';
 })
 export class AchievementComponent {
   @Input() public achievement : Achievement;
+  public expanded : boolean;
 }

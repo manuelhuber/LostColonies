@@ -1,6 +1,8 @@
-<div *ngIf="!showMore" (click)="showMore = !showMore">
+<div *ngIf="!showMore">
   <achievement [achievement]="achievements[0]"></achievement>
+  <div (click)="showMore = !showMore">Mehr anzeigen</div>
 </div>
-<div *ngIf="showMore" (click)="showMore = !showMore">
+<div *ngIf="showMore">
   <achievement *ngFor="let achievement of achievements" [achievement]="achievement"></achievement>
+  <div (click)="showMore = !showMore">Weniger anzeigen</div>
 </div>

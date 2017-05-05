@@ -1,7 +1,72 @@
-$achievement-icon-size: 32px;
+@import "../../../app.component";
 
-.image{
-  float: left;
+$achievement-icon-size: 45px;
+$sidebar-margin: 33px;
+$padding: 5px;
+
+.achievement-entry {
+  background: $color-grey-2;
+  position: relative;
+  overflow: hidden;
+  min-height: $achievement-icon-size + 2*$padding;
+}
+
+.image-wrapper {
+  position: absolute;
+  box-sizing: border-box;
+  width: $achievement-icon-size+2*$padding;
+  height: 100%;
+  margin-right: $sidebar-margin;
+  padding: $padding $padding $padding $padding;
+  background: $color-grey-4;
+  left: 0;
+  transition: all 500ms;
+}
+
+.expanded {
+  width: 100%;
+  & .achievement-description {
+    opacity: 1;
+    transition: opacity 200ms 500ms;
+  }
+}
+
+.skewed-border {
+  content: "";
+  background: $color-grey-4;
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  top: 0;
+  right: -30px;
+  transform: translateX(-50%) skew(-25deg);
+}
+
+.image {
+  position: absolute;
+  right: $padding;
   height: $achievement-icon-size;
   width: $achievement-icon-size;
+
+}
+
+.text-wrapper {
+  padding: $padding $padding $padding 0;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-align: center;
+  background: $color-grey-2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.achievement-name {
+  font-size: 1.25em;
+}
+
+.achievement-description {
+  color: $color-grey-1;
+  opacity: 0;
+  transition: none;
 }
