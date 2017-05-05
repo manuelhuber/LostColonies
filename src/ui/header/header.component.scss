@@ -4,6 +4,7 @@ $menu-line-width: 6px;
 $menu-line-radius: 0;
 $menu-icon-size: 30px;
 $menu-icon-color: $color-white-1;
+$menu-icon-transition: all 250ms ease;
 
 .header-wrapper {
   margin: -8px -8px 0 -8px;
@@ -13,6 +14,7 @@ $menu-icon-color: $color-white-1;
   font-size: 2em;
   background: url('/assets/images/header.png'), linear-gradient(to bottom, $color-grey-3 0, opacify(black, 0.8) 100%) no-repeat, $color-grey-3;
   padding: 8px 8px 4px 8px;
+  position: relative;
 }
 
 .header-title {
@@ -24,8 +26,10 @@ $menu-icon-color: $color-white-1;
 .menu-icon {
   width: $menu-icon-size;
   height: $menu-icon-size;
-  float: right;
-  position: relative;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
 
   &:after, &:before {
     content: '';
@@ -35,7 +39,7 @@ $menu-icon-color: $color-white-1;
     border-radius: $menu-line-radius;
     position: absolute;
     left: 50%;
-    transition: all 250ms ease;
+    transition: $menu-icon-transition;
   }
 
   &:after {
@@ -60,7 +64,7 @@ $menu-icon-color: $color-white-1;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    transition: all 250ms ease;
+    transition: $menu-icon-transition;
     opacity: 0;
 
   }
