@@ -13,9 +13,9 @@ import { ROUTES } from './app.routes';
 import { AppComponent } from './app.component';
 
 import { AccordionComponent } from './common/accordion/accordion.component';
-import { AccordionHeaderComponent } from './common/accordion/entry/header/accordion-header.component';
-import { AccordionEntryComponent } from './common/accordion/entry/accordion-entry.component';
-import { AccordionContentComponent } from './common/accordion/entry/content/accordion-content.component';
+import { ExpandableHeaderComponent } from './common/expandables/header/expandable-header.component';
+import { ExpandableComponent } from './common/expandables/expandable.component';
+import { ExpandableContentComponent } from './common/expandables/content/expandable-content.component';
 import { FactionsPage } from './pages/factions/factions.page';
 import { HeaderComponent } from './header/header.component';
 import { FactionService } from '../data/services/faction.service';
@@ -50,9 +50,9 @@ type StoreType = {
     AppComponent,
     HeaderComponent,
     AccordionComponent,
-    AccordionEntryComponent,
-    AccordionHeaderComponent,
-    AccordionContentComponent,
+    ExpandableComponent,
+    ExpandableHeaderComponent,
+    ExpandableContentComponent,
     AchievementComponent,
     AchievementsComponent
   ],

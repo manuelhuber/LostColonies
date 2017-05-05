@@ -1,9 +1,9 @@
 <div [ngClass]="{'accordion-entry-hidden': !visible}">
   <div (click)="clickHeader()">
-    <ng-content select="accordion-header"></ng-content>
+    <ng-content select="expandable-header"></ng-content>
   </div>
   <div [ngStyle]="{'height': height}"
        class="content-wrapper">
-    <ng-content select="accordion-content"></ng-content>
+    <ng-content select="expandable-content"></ng-content>
   </div>
 </div>

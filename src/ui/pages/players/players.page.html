@@ -1,16 +1,16 @@
 <div>
   <accordion *ngIf="players">
-    <accordion-entry *ngFor="let player of players">
-      <accordion-header>
+    <expandable *ngFor="let player of players">
+      <expandable-header>
         <div class="page-accordion-header">{{player.name}}</div>
-      </accordion-header>
-      <accordion-content>
+      </expandable-header>
+      <expandable-content>
         <div class="page-accordion-content-wrapper">
           <div class="page-accordion-content">
             <achievements [achievements]="player.achievements"></achievements>
           </div>
         </div>
-      </accordion-content>
-    </accordion-entry>
+      </expandable-content>
+    </expandable>
   </accordion>
 </div>

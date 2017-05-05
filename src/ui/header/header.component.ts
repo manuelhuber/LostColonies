@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
-import { AccordionEntryComponent } from '../common/accordion/entry/accordion-entry.component';
+import { ExpandableComponent } from '../common/expandables/expandable.component';
 
 @Component({
   selector: 'header',
@@ -11,7 +11,7 @@ import { AccordionEntryComponent } from '../common/accordion/entry/accordion-ent
 export class HeaderComponent implements OnInit {
 
   public menuOpen : boolean;
-  @ViewChild(AccordionEntryComponent) public menu;
+  @ViewChild(ExpandableComponent) public menu;
 
   constructor(private route : Router) {
   }

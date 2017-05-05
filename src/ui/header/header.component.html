@@ -1,27 +1,27 @@
 <div class="header-wrapper">
-  <accordion-entry [expandOnClick]="true">
-    <accordion-header>
+  <expandable [expandOnClick]="true">
+    <expandable-header>
       <div class="header">
         <div class="menu-icon" (click)="menuOpen = !menuOpen">
           <div class="middle-row"></div>
         </div>
         <div class="header-title">Lost Colonies</div>
       </div>
-    </accordion-header>
-    <accordion-content>
+    </expandable-header>
+    <expandable-content>
       <div class="menu">
         <accordion>
-          <accordion-entry>
-            <accordion-header routerLink="/world">Welt</accordion-header>
-          </accordion-entry>
-          <accordion-entry>
-            <accordion-header routerLink="/factions">Fraktionen</accordion-header>
-          </accordion-entry>
-          <accordion-entry>
-            <accordion-header routerLink="/players">Spieler</accordion-header>
-          </accordion-entry>
+          <expandable>
+            <expandable-header routerLink="/world">Welt</expandable-header>
+          </expandable>
+          <expandable>
+            <expandable-header routerLink="/factions">Fraktionen</expandable-header>
+          </expandable>
+          <expandable>
+            <expandable-header routerLink="/players">Spieler</expandable-header>
+          </expandable>
         </accordion>
       </div>
-    </accordion-content>
-  </accordion-entry>
+    </expandable-content>
+  </expandable>
 </div>

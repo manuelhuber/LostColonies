@@ -1,28 +1,28 @@
 import { Component, ContentChild, EventEmitter, Input } from '@angular/core';
-import { AccordionContentComponent } from './content/accordion-content.component';
+import { ExpandableContentComponent } from './content/expandable-content.component';
 
 @Component({
-  selector: 'accordion-entry',
-  templateUrl: 'accordion-entry.component.html',
-  styleUrls: [ 'accordion-entry.component.scss' ]
+  selector: 'expandable',
+  templateUrl: 'expandable.component.html',
+  styleUrls: [ 'expandable.component.scss' ]
 })
 /**
  * The accordion entry. Needs exactly 1 header and 1 content component.
  * Can be styled depending on visible state. Parent div of the whole entry will have the css class "accordion-entry-hidden"
  */
-export class AccordionEntryComponent {
+export class ExpandableComponent {
 
-  @Input() expandOnClick : boolean;
+  @Input() public expandOnClick : boolean;
 
   /**
    * The content of the entry
    */
-  @ContentChild(AccordionContentComponent) public content : AccordionContentComponent;
+  @ContentChild(ExpandableContentComponent) public content : ExpandableContentComponent;
 
   /**
    * Subscribable for click events of the entry header
    */
-  public headerClicked : EventEmitter<AccordionEntryComponent> = new EventEmitter();
+  public headerClicked : EventEmitter<ExpandableComponent> = new EventEmitter();
 
   /**
    * The value for the CSS height attribute

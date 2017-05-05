@@ -1,5 +1,5 @@
 import { AfterContentInit, Component, ContentChildren, QueryList } from '@angular/core';
-import { AccordionEntryComponent } from './entry/accordion-entry.component';
+import { ExpandableComponent } from '../expandables/expandable.component';
 
 @Component({
   selector: 'accordion',
@@ -10,7 +10,7 @@ import { AccordionEntryComponent } from './entry/accordion-entry.component';
  */
 export class AccordionComponent implements AfterContentInit {
 
-  @ContentChildren(AccordionEntryComponent) private entries : QueryList<AccordionEntryComponent>;
+  @ContentChildren(ExpandableComponent) private entries : QueryList<ExpandableComponent>;
 
   /**
    * Add a click handler to each entry
@@ -27,7 +27,7 @@ export class AccordionComponent implements AfterContentInit {
    * Hide all entries except the selected one
    * If the selected entry is already visible hide it
    */
-  private toggle(selected : AccordionEntryComponent) : void {
+  private toggle(selected : ExpandableComponent) : void {
     if (selected.visible) {
       selected.visible = false;
     } else {

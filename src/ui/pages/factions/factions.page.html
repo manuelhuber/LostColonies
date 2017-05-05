@@ -1,10 +1,10 @@
 <div>
   <accordion *ngIf="factions">
-    <accordion-entry *ngFor="let faction of factions">
-      <accordion-header>
+    <expandable *ngFor="let faction of factions">
+      <expandable-header>
         <div class="page-accordion-header">{{faction.name}}</div>
-      </accordion-header>
-      <accordion-content>
+      </expandable-header>
+      <expandable-content>
         <div class="page-accordion-content-wrapper">
           <div class="page-accordion-content">
             <img *ngIf="faction.imageUrl" [src]="faction.imageUrl" alt="" class="faction-image">
@@ -16,7 +16,7 @@
             </div>
           </div>
         </div>
-      </accordion-content>
-    </accordion-entry>
+      </expandable-content>
+    </expandable>
   </accordion>
 </div>
