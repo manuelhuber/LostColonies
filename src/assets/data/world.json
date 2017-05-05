@@ -3,20 +3,8 @@
     "title": "Regierung",
     "subEntries": [
       {
-        "title": "Machtverhältnisse",
-        "description": "Inquisition, Freihändler, Adeptus Administratum, Machnicus und Ministorum unterliegen niemandem. Zusammenarbeit zwischen diesen Instituationen meistens gut."
-      },
-      {
-        "title": "Adeptus Mechnicus",
-        "description": "verwaltet alle Aspekte bezüglich Technolgie. Eher unkooperativ und sehr bedacht ihre Geheimnisse und Aufgaben zu wahren."
-      },
-      {
-        "title": "Inquisition",
-        "description": "beschützt die Menschheit vor existenziellen Bedrohungen. Kann Unterstüzung verlangen und absolute Urteile sprechen. Zusammenarbeit mit Ministorum sehr gut, mit Administratum gut und mit Mechanicus gemischt."
-      },
-      {
-        "title": "Adeptus Ministorum",
-        "description": "ist für die Aufrecherhaltung des Imperialen Credos und Bestatung zuständig."
+        "title": "Machtverhältnisse:",
+        "description": "Adeptus Administratum, Adeptus Machnicus, Adeptus Ministorum, die Inquisition und Freihändler unterliegen niemandem und kooperieren freiwillig miteinander."
       },
       {
         "title": "Adeptus Administratum",
@@ -36,9 +24,21 @@
           },
           {
             "title": "Adeptus Astra Telephatica",
-            "description": "Rekrutierung und Training von Psykern und Kommunikation durch"
+            "description": "ist zuständig für Rekrutierung und Training von Psykern und Kommunikation durch den Warp"
           }
         ]
+      },
+      {
+        "title": "Adeptus Mechnicus",
+        "description": "verwaltet alle Aspekte bezüglich Technolgie. Eher unkooperativ und sehr bedacht ihre Geheimnisse und Aufgaben zu wahren."
+      },
+      {
+        "title": "Adeptus Ministorum",
+        "description": "ist für die Aufrecherhaltung des Imperialen Credos und Bestatung zuständig."
+      },
+      {
+        "title": "Inquisition",
+        "description": "beschützt die Menschheit vor existenziellen Bedrohungen. Kann Unterstüzung verlangen und absolute Urteile sprechen. Zusammenarbeit mit Ministorum sehr gut, mit Administratum gut und mit Mechanicus gemischt."
       },
       {
         "title": "Freihändler",
@@ -51,15 +51,15 @@
     "subEntries": [
       {
         "title": "Maschinengeister",
-        "description": "leben in technologischen Gegenständen und halten diese in Stand"
+        "description": "leben in technologischen Gegenständen und halten diese in Stand."
       },
       {
         "title": "Adeptus Mechanicus",
-        "description": "ist eine Staatseinheit und kontrolliert/überwacht alle Aspekte der Technologie."
+        "description": "ist eine Staatseinheit die Produktiuon und Entwicklung jeglicher technologischen Gegenstände kontrolliert oder überwacht."
       },
       {
         "title": "Maschinenpriester",
-        "description": "können die Maschinengeister verstehen und besänftigen und hüten die Geheimnisse des Kultes"
+        "description": "können die Maschinengeister verstehen und besänftigen und hüten die Geheimnisse des Kultes."
       },
       {
         "title": "Fabriken",
@@ -67,7 +67,7 @@
       },
       {
         "title": "Produktion",
-        "description": "ist nur mithilfe von Blaupausen möglich, welche streng vom Adeptus Mechanicus kontrolliert werden."
+        "description": "von hochtechnologischen Gegenständen ist nur mithilfe von Blaupausen möglich, welche streng vom Adeptus Mechanicus kontrolliert werden."
       },
       {
         "title": "Defekte",
@@ -75,7 +75,7 @@
       },
       {
         "title": "Reperatur",
-        "description": "ist durch Gebete, Salben und Rituale die den Maschinengeist beschlichtigen möglich. Ritual kann z.b. das zerlegen, reinigen und zusammenbauen des Gegenstandes sein."
+        "description": "ist durch Gebete, Salben und Rituale die den Maschinengeist beschlichtigen möglich. Ritual kann z.B. das zerlegen, reinigen und zusammenbauen des Gegenstandes sein."
       }
     ]
   },
@@ -88,11 +88,11 @@
       },
       {
         "title": "Maschinenkult ",
-        "description": "betet den Maschinengott Omnissiah an. Religion \"Maschinenkult\" und staatliche Einrichtung \"Adeptus Mechanicus\" oft als synonym verwendet."
+        "description": "betet den Maschinengott Omnissiah an. Religion \"Maschinenkult\" und staatliche Einrichtung \"Adeptus Mechanicus\" oft als Synonym verwendet."
       },
       {
         "title": "Religionsfreiheit ",
-        "description": "Ist vorhanden. Die verehrung von Chaosgöttern ist nicht verfolgt, lediglich die Beschwörung (u.ä.)"
+        "description": "ist gegeben. Die verehrung von Chaosgöttern ist nicht verfolgt, sehr wohl aber die Beschwörung (u.ä.) von Chaoswesen."
       },
       {
         "title": "Kulte ",
@@ -101,7 +101,7 @@
     ]
   },
   {
-    "title": "Supernatural",
+    "title": "Warp",
     "subEntries": [
       {
         "title": "Echtzeitraum",
@@ -143,11 +143,11 @@
       },
       {
         "title": "Psyker",
-        "description": "können Warp (geringfügig) Kontrollieren. Extrem selten. Sehr gefährlich."
+        "description": "können Warp (geringfügig) Kontrollieren. Extrem selten, sehr gefährlich und meistens Teil des Adpetus Astra Telephatica."
       },
       {
         "title": "Tote",
-        "description": "verursachen nach wenigen Tagen Risse im Echtzeitraum da ihre Seele / Essenz verschluckt wird. Adeptus Ministorum sammelt Leichen um sie einzuäschern."
+        "description": "verursachen nach wenigen Tagen Risse im Echtzeitraum da ihre Seele / Essenz verschluckt wird - außer dies wird durch die korrekten Rituale verhindert."
       },
       {
         "title": "Todessucher",
@@ -155,7 +155,7 @@
       },
       {
         "title": "Inquisition",
-        "description": "schützt Menschheit vor den Gefahren des Warps. Viel Autorität, Respekt & Furcht."
+        "description": "schützt Menschheit vor den existenziellen Gefahren, vor allem des Warps. Viel Autorität, Respekt & Furcht."
       },
       {
         "title": "Dämonen",
@@ -171,7 +171,7 @@
     "title": "Leben",
     "subEntries": [
       {
-        "title": "Lebenserwartung",
+        "title": "Lebenserwartung:",
         "description": "Ca 40 für die Unterschicht - bis zu 250 für Reiche & Einflußreiche mit Zugriff zu höherer medizinischer Versorgung und Cybernetiks"
       },
       {
