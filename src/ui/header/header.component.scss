@@ -5,11 +5,14 @@ $menu-line-radius: 3px;
 $menu-icon-size: 30px;
 $menu-icon-color: $color-grey-0;
 
+.header-wrapper {
+  margin: -8px -8px 0 -8px;
+}
+
 .header {
   font-size: 2em;
   background: url('/assets/images/main-background.png'), linear-gradient(to bottom, $color-grey-3 0, opacify(black, 0.8) 100%) no-repeat, $color-grey-3;
-  margin: -8px -8px 0 -8px;
-  padding: 8px;
+  padding: 8px 8px 4px 8px;
 }
 
 .header-title {
@@ -77,4 +80,10 @@ $menu-icon-color: $color-grey-0;
   & .middle-row:after {
     opacity: 1;
   }
+}
+
+.menu {
+  padding: 8px;
+  background: $color-grey-5;
+  color: $color-grey-0;
 }

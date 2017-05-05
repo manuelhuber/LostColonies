@@ -1,25 +1,29 @@
-<accordion>
-  <accordion-entry>
-    <accordion-header>
-      <div class="header">
-        <div class="menu-icon" (click)="menuOpen = !menuOpen">
-          <div class="middle-row"></div>
+<div class="header-wrapper">
+  <accordion>
+    <accordion-entry>
+      <accordion-header>
+        <div class="header">
+          <div class="menu-icon" (click)="menuOpen = !menuOpen">
+            <div class="middle-row"></div>
+          </div>
+          <div class="header-title">Lost Colonies</div>
         </div>
-        <div class="header-title">Lost Colonies</div>
-      </div>
-    </accordion-header>
-    <accordion-content>
-      <accordion>
-        <accordion-entry>
-          <accordion-header routerLink="/world">Welt</accordion-header>
-        </accordion-entry>
-        <accordion-entry>
-          <accordion-header routerLink="/factions">Fraktionen</accordion-header>
-        </accordion-entry>
-        <accordion-entry>
-          <accordion-header routerLink="/players">Spieler</accordion-header>
-        </accordion-entry>
-      </accordion>
-    </accordion-content>
-  </accordion-entry>
-</accordion>
+      </accordion-header>
+      <accordion-content>
+        <div class="menu">
+          <accordion>
+            <accordion-entry>
+              <accordion-header routerLink="/world">Welt</accordion-header>
+            </accordion-entry>
+            <accordion-entry>
+              <accordion-header routerLink="/factions">Fraktionen</accordion-header>
+            </accordion-entry>
+            <accordion-entry>
+              <accordion-header routerLink="/players">Spieler</accordion-header>
+            </accordion-entry>
+          </accordion>
+        </div>
+      </accordion-content>
+    </accordion-entry>
+  </accordion>
+</div>
