@@ -48,7 +48,7 @@ export class AccordionEntryComponent {
       // Increase to the size of the content
       this.height = this.content.height + 'px';
       // Set auto to react to size changes of the content
-      // MAGIC NUMBER WARNING: the delay must correspond with the animation duration!
+      // MAGIC NUMBER WARNING: the delay should be a bit longer than the animation duration!
       this.timeout = setTimeout(() => this.height = 'auto', 600);
     } else {
       // Set the height from auto to the actual size (needed for animation)
