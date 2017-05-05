@@ -5,10 +5,15 @@ $color-grey-3: #474747;
 $color-grey-4: #202020;
 $color-grey-5: #101010;
 
+@font-face {
+  font-family: 'Kirsty';
+  src: url('/assets/fonts/kirsty bd.ttf');
+}
+
 html, body {
   height: 100%;
   background: $color-grey-1 url("/assets/images/main-background.png") repeat fixed;
-
+  font-size: 18px;
 }
 
 a.active {
