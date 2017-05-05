@@ -1,17 +1,32 @@
 import { Component, ContentChild, EventEmitter } from '@angular/core';
 import { AccordionContentComponent } from './content/accordion-content.component';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'accordion-entry',
   templateUrl: 'accordion-entry.component.html',
-  styleUrls: [ 'accordion-entry.component.scss' ]
+  styleUrls: [ 'accordion-entry.component.scss' ],
+  animations: [
+    trigger('accordionContent', [
+      state('open', style({
+        height: '*',
+        opacity: '1'
+      })),
+      state('closed', style({
+        height: '0',
+        opacity: '0'
+      })),
+      transition('open <=> closed', animate('500ms ease'))
+    ])
+
+  ]
 })
 /**
  * The accordion entry. Needs exactly 1 header and 1 content component.
  * Can be styled depending on visible state. Parent div of the whole entry will have the css class "accordion-entry-hidden"
  */
 export class AccordionEntryComponent {
-
+  state : string = 'closed';
   /**
    * The content of the entry
    */
@@ -22,40 +37,14 @@ export class AccordionEntryComponent {
    */
   public headerClicked : EventEmitter<AccordionEntryComponent> = new EventEmitter();
 
-  /**
-   * The value for the CSS height attribute
-   */
-  public height : string = '0';
-
-  private timeout : any;
   private _visible : boolean = false;
 
   /**
    * Makes the content of the entry (in)visible with a nice animation
    */
   set visible(a : boolean) {
-    if (this._visible === a) {
-      // No change => do nothing
-      return;
-    }
-
-    clearTimeout(this.timeout);
-    if (!this.content) {
-      return;
-    }
     this._visible = a;
-    if (a) {
-      // Increase to the size of the content
-      this.height = this.content.height + 'px';
-      // Set auto to react to size changes of the content
-      // MAGIC NUMBER WARNING: the delay must correspond with the animation duration!
-      this.timeout = setTimeout(() => this.height = 'auto', 600);
-    } else {
-      // Set the height from auto to the actual size (needed for animation)
-      this.height = this.content.height + 'px';
-      // Animate to size 0
-      this.timeout = setTimeout(() => this.height = '0', 20);
-    }
+    this.state = a ? 'open' : 'closed';
   }
 
   get visible() : boolean {

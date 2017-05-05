@@ -25,6 +25,7 @@ import { PlayerService } from '../data/services/player.service';
 import { PlayersPage } from './pages/players/players.page';
 import { AchievementComponent } from './common/achievements/entry/achievement.component';
 import { AchievementsComponent } from './common/achievements/achievements.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -60,6 +61,7 @@ type StoreType = {
     BrowserModule,
     FormsModule,
     HttpModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(ROUTES, {useHash: true, preloadingStrategy: PreloadAllModules})
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection

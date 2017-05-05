@@ -2,12 +2,12 @@ $height-animation-duration: 500ms;
 $animation-function: ease-out;
 
 .content-wrapper {
-  transition: height $height-animation-duration $animation-function, opacity 250ms $animation-function 250ms;
+  //transition: height $height-animation-duration $animation-function, opacity 250ms $animation-function 250ms;
   overflow: hidden;
   opacity: 1;
 }
 
 .accordion-entry-hidden .content-wrapper {
-  transition: height $height-animation-duration $animation-function, opacity 250ms $animation-function;
+  //transition: height $height-animation-duration $animation-function, opacity 250ms $animation-function;
   opacity: 0;
 }

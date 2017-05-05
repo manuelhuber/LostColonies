@@ -2,8 +2,7 @@
   <div (click)="clickHeader()">
     <ng-content select="accordion-header"></ng-content>
   </div>
-  <div [ngStyle]="{'height': height}"
-       class="content-wrapper">
+  <div [@accordionContent]="state" class="content-wrapper">
     <ng-content select="accordion-content"></ng-content>
   </div>
 </div>
