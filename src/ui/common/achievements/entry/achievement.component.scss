@@ -1,26 +1,33 @@
 @import "../../../app.component";
 
 $achievement-icon-size: 45px;
-$sidebar-margin: 33px;
 $padding: 5px;
+$achievement-icon-size-with-margin: $achievement-icon-size+2*$padding;
+$sidebar-margin: 33px;
 
 .achievement-entry {
   background: $color-grey-2;
   position: relative;
   overflow: hidden;
-  min-height: $achievement-icon-size + 2*$padding;
+  min-height: $achievement-icon-size-with-margin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .image-wrapper {
   position: absolute;
   box-sizing: border-box;
-  width: $achievement-icon-size+2*$padding;
+  width: $achievement-icon-size-with-margin;
   height: 100%;
   margin-right: $sidebar-margin;
   padding: $padding $padding $padding $padding;
   background: $color-grey-4;
   left: 0;
   transition: all 500ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .expanded {
@@ -51,7 +58,7 @@ $padding: 5px;
 }
 
 .text-wrapper {
-  padding: $padding $padding $padding 0;
+  padding: $padding $padding $padding $achievement-icon-size+$sidebar-margin;
   word-wrap: break-word;
   overflow: hidden;
   text-align: center;
@@ -66,6 +73,8 @@ $padding: 5px;
 }
 
 .achievement-description {
+  text-align: center;
+  padding-right: $achievement-icon-size;
   color: $color-grey-1;
   opacity: 0;
   transition: none;
