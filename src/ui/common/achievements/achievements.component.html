@@ -1,8 +1,16 @@
-<div *ngIf="!showMore">
-  <achievement [achievement]="achievements[0]"></achievement>
-  <div (click)="showMore = !showMore">Mehr anzeigen</div>
-</div>
-<div *ngIf="showMore">
-  <achievement *ngFor="let achievement of achievements" [achievement]="achievement"></achievement>
-  <div (click)="showMore = !showMore">Weniger anzeigen</div>
+<div class="achievements">
+  <div class="achievement-wrapper">
+    <achievement [achievement]="achievements[0]"></achievement>
+  </div>
+  <expandable>
+    <expandable-content>
+      <div class="achievement-wrapper" *ngFor="let achievement of achievements.slice(1)">
+        <achievement [achievement]="achievement"></achievement>
+      </div>
+    </expandable-content>
+  </expandable>
+
+  <!--<div class="left-arrow" *ngIf="showLeft" (click)="swipeLeft()">left</div>-->
+  <!--<div class="right-arrow" *ngIf="showRight" (click)="swipeRight()">right</div>-->
+  <div class="toggle" (click)="toggle()">Toggle</div>
 </div>
