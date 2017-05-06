@@ -5,10 +5,10 @@
         <div class="page-accordion-header">{{player.name}}</div>
       </expandable-header>
       <expandable-content>
-        <div class="page-accordion-content-wrapper">
-          <div class="page-accordion-content">
-            <achievements [achievements]="player.achievements" [maxAmount]="3"></achievements>
-          </div>
+        <div class="page-accordion-content">
+          <achievements *ngIf="player.achievements" [achievements]="player.achievements"
+                        [maxAmount]="3"></achievements>
+          <characters [characters]="player.characters"></characters>
         </div>
       </expandable-content>
     </expandable>

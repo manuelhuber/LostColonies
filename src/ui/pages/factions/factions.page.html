@@ -5,14 +5,12 @@
         <div class="page-accordion-header">{{faction.name}}</div>
       </expandable-header>
       <expandable-content>
-        <div class="page-accordion-content-wrapper">
-          <div class="page-accordion-content">
-            <img *ngIf="faction.imageUrl" [src]="faction.imageUrl" alt="" class="faction-image">
-            <div *ngIf="faction.description">
-              <div *ngFor="let desc of getDescriptions(faction)">
-                <div class="description-key">{{desc}}:</div>
-                <div>{{faction.description[desc]}}</div>
-              </div>
+        <div class="page-accordion-content">
+          <img *ngIf="faction.imageUrl" [src]="faction.imageUrl" alt="" class="faction-image">
+          <div *ngIf="faction.description">
+            <div *ngFor="let desc of getDescriptions(faction)">
+              <div class="description-key">{{desc}}:</div>
+              <div>{{faction.description[desc]}}</div>
             </div>
           </div>
         </div>

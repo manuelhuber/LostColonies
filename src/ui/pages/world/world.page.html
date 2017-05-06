@@ -5,15 +5,13 @@
         <div class="page-accordion-header">{{entry.title}}</div>
       </expandable-header>
       <expandable-content>
-        <div class="page-accordion-content-wrapper">
-          <div class="page-accordion-content">
-            <div *ngIf="entry.subEntries">
-              <div class="world-paragraph" *ngFor="let subEntry of entry.subEntries">
-                <b>{{subEntry.title}}</b> {{subEntry.description}}
-                <div *ngIf="subEntry.subEntries">
-                  <div class="world-sub-list" *ngFor="let subsubentry of subEntry.subEntries">
-                    <b>{{subsubentry.title}}</b> {{subsubentry.description}}
-                  </div>
+        <div class="page-accordion-content">
+          <div *ngIf="entry.subEntries">
+            <div class="world-paragraph" *ngFor="let subEntry of entry.subEntries">
+              <b>{{subEntry.title}}</b> {{subEntry.description}}
+              <div *ngIf="subEntry.subEntries">
+                <div class="world-sub-list" *ngFor="let subsubentry of subEntry.subEntries">
+                  <b>{{subsubentry.title}}</b> {{subsubentry.description}}
                 </div>
               </div>
             </div>
