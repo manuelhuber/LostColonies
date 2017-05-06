@@ -8,17 +8,24 @@ import { ExpandableComponent } from '../expandables/expandable.component';
   styleUrls: [ 'achievements.component.scss' ]
 })
 export class AchievementsComponent {
-  @Input()
-  public set achievements(a : Achievement[]) {
-    this.achievementsToDisplay =
-      a.reduce((rows, key, index) =>
-      (index % this.maxAmount === 0 ? rows.push([ key ]) : rows[ rows.length - 1 ].push(key)) && rows, []);
-  };
 
-  @Input() public maxAmount : number = 5;
   public achievementsToDisplay : Achievement[][];
   @ViewChild(ExpandableComponent) private expandable : ExpandableComponent;
+  // The number for the CSS transformation of the slider
   private translate : number = 0;
+  private _allAchievements : Achievement[];
+  private _maxAmount : number = 5;
+
+  @Input()
+  public set achievements(a : Achievement[]) {
+    this._allAchievements = a;
+    this.updateAchievementsToDisplay();
+  };
+
+  @Input() set maxAmount(a : number) {
+    this._maxAmount = a;
+    this.updateAchievementsToDisplay();
+  }
 
   get translateValue() : string {
     return 'translateX(' + this.translate + '%)';
@@ -36,6 +43,10 @@ export class AchievementsComponent {
     return this.expandable.visible && this.translate > -100 + this.translateStep;
   }
 
+  get isVisible() {
+    return this.expandable.visible;
+  }
+
   public swipeLeft() : void {
     this.translate += this.translateStep;
 
@@ -48,5 +59,11 @@ export class AchievementsComponent {
 
   public toggle() : void {
     this.expandable.visible = !this.expandable.visible;
+  }
+
+  private updateAchievementsToDisplay() : void {
+    this.achievementsToDisplay =
+      this._allAchievements.reduce((rows, key, index) =>
+      (index % this._maxAmount === 0 ? rows.push([ key ]) : rows[ rows.length - 1 ].push(key)) && rows, []);
   }
 }
