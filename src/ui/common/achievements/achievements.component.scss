@@ -7,12 +7,16 @@
   transition: all 300ms;
 }
 
-.achievements-flex {
+.achievements-flex-parent {
   display: flex;
 }
 
-.achievement-wrapper {
+.achievement-flex-children {
   flex: 1;
+}
+
+.achievement-wrapper {
+  padding: 2px;
 }
 
 .left-arrow {

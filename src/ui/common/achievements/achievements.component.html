@@ -1,23 +1,24 @@
 <div class="achievements">
-  <div class="achievements-slider" [ngStyle]="{'transform' : translateValue}">
-    <div>
-      <div class="achievements-flex">
-        <div class="achievement-wrapper" *ngFor="let subArray of achievementsToDisplay">
+  <div class="achievements-slider"
+       [ngStyle]="{'transform' : translateValue, 'width': (achievementsToDisplay.length*100 +'%')}">
+    <div class="achievements-flex-parent">
+      <div class="achievement-flex-children" *ngFor="let subArray of achievementsToDisplay">
+        <div class="achievement-wrapper">
           <achievement [achievement]="subArray[0]"></achievement>
         </div>
       </div>
     </div>
-    <div>
-      <expandable>
-        <expandable-content>
-          <div class="achievements-flex">
-            <div class="achievement-wrapper" *ngFor="let subArray of achievementsToDisplay">
-              <achievement *ngFor="let achievement of subArray.slice(1)" [achievement]="achievement"></achievement>
+    <expandable>
+      <expandable-content>
+        <div class="achievements-flex-parent">
+          <div class="achievement-flex-children" *ngFor="let subArray of achievementsToDisplay">
+            <div class="achievement-wrapper" *ngFor="let achievement of subArray.slice(1)">
+              <achievement [achievement]="achievement"></achievement>
             </div>
           </div>
-        </expandable-content>
-      </expandable>
-    </div>
+        </div>
+      </expandable-content>
+    </expandable>
   </div>
 
   <div class="left-arrow" *ngIf="showLeft" (click)="swipeLeft()">left</div>

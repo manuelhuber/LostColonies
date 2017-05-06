@@ -1,4 +1,4 @@
-import { Component, Input, QueryList, ViewChildren } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
 import { Achievement } from '../../../data/models/achievement';
 import { ExpandableComponent } from '../expandables/expandable.component';
 
@@ -8,16 +8,17 @@ import { ExpandableComponent } from '../expandables/expandable.component';
   styleUrls: [ 'achievements.component.scss' ]
 })
 export class AchievementsComponent {
-  @Input() public achievements : Achievement[];
-  @ViewChildren(ExpandableComponent) private expandables : QueryList<ExpandableComponent>;
-  @Input() public maxAmount : number = 3;
-  private translate : number = 0;
-
-  get achievementsToDisplay() : Achievement[][] {
-    return this.achievements
-      .reduce((rows, key, index) =>
+  @Input()
+  public set achievements(a : Achievement[]) {
+    this.achievementsToDisplay =
+      a.reduce((rows, key, index) =>
       (index % this.maxAmount === 0 ? rows.push([ key ]) : rows[ rows.length - 1 ].push(key)) && rows, []);
-  }
+  };
+
+  @Input() public maxAmount : number = 5;
+  public achievementsToDisplay : Achievement[][];
+  @ViewChild(ExpandableComponent) private expandable : ExpandableComponent;
+  private translate : number = 0;
 
   get translateValue() : string {
     return 'translateX(' + this.translate + '%)';
@@ -46,7 +47,6 @@ export class AchievementsComponent {
   }
 
   public toggle() : void {
-    console.log(this.expandables);
-    this.expandables.toArray().forEach((value) => value.visible = !value.visible);
+    this.expandable.visible = !this.expandable.visible;
   }
 }
