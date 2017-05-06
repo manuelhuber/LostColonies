@@ -20,10 +20,27 @@ $color-grey-5: #101010;
   font-weight: bold;
 }
 
+@font-face {
+  font-family: 'Libertine';
+  src: url('/assets/fonts/libertine/LinLibertine_R.ttf')
+}
+
+@font-face {
+  font-family: 'Libertine';
+  src: url('/assets/fonts/libertine/LinLibertine_RB.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'UglyQua';
+  src: url('/assets/fonts/UglaQua/UglyQua.ttf');
+}
+
 html, body {
   height: 100%;
   background: $color-grey-1 url("/assets/images/main-background.png") repeat fixed;
   font-size: 17px;
+  font-family: Libertine;
 }
 
 a.active {

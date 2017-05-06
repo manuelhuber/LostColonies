@@ -70,13 +70,13 @@ $sidebar-margin: 33px;
 }
 
 .achievement-name {
-  font-size: 1.25em;
+  font-family: UglyQua;
 }
 
 .achievement-description {
   text-align: center;
   padding-right: $achievement-icon-size-with-margin;
-  color: $color-grey-1;
+  color: $color-grey-0;
   opacity: 0;
   transition: none;
 }
