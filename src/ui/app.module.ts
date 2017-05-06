@@ -25,6 +25,7 @@ import { PlayerService } from '../data/services/player.service';
 import { PlayersPage } from './pages/players/players.page';
 import { AchievementComponent } from './common/achievements/entry/achievement.component';
 import { AchievementsComponent } from './common/achievements/achievements.component';
+import { CharactersComponent } from './common/characters/characters.component';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -54,7 +55,8 @@ type StoreType = {
     ExpandableHeaderComponent,
     ExpandableContentComponent,
     AchievementComponent,
-    AchievementsComponent
+    AchievementsComponent,
+    CharactersComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

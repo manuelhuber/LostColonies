@@ -3,42 +3,55 @@
     "name": "Moritz",
     "achievements": [
       {
-        "name": "Lorem  ipsoum Gesc hichts macherGes",
-        "description": "Verändere die Welt als NPCVerändere die Welt als NPCVerändere die Welt als NPC",
+        "name": "Geschichtsschreiber",
+        "description": "Spiele einen NPC und verändere die Welt für immer",
         "imageUrl": "http://whytoread.com/wp-content/uploads/2014/09/history-books.jpg"
-      }, {
-        "name": "Lorem  ipsoum Gesc hichts macherGes",
-        "description": "Spiel bei jeder Runde mit",
-        "imageUrl": "http://www.smashthehsc.com/uploads/3/0/8/2/30822773/2407724_orig.png"
-      }, {
-        "name": "3",
-        "description": "Spiel bei jeder Runde mit",
-        "imageUrl": "http://www.smashthehsc.com/uploads/3/0/8/2/30822773/2407724_orig.png"
-      }, {
-        "name": "4",
-        "description": "Spiel bei jeder Runde mit",
-        "imageUrl": "http://www.smashthehsc.com/uploads/3/0/8/2/30822773/2407724_orig.png"
-      }, {
-        "name": "5",
-        "description": "Spiel bei jeder Runde mit",
-        "imageUrl": "http://www.smashthehsc.com/uploads/3/0/8/2/30822773/2407724_orig.png"
-      }, {
-        "name": "6",
-        "description": "Spiel bei jeder Runde mit",
-        "imageUrl": "http://www.smashthehsc.com/uploads/3/0/8/2/30822773/2407724_orig.png"
-      }, {
-        "name": "7",
-        "description": "Spiel bei jeder Runde mit",
-        "imageUrl": "http://www.smashthehsc.com/uploads/3/0/8/2/30822773/2407724_orig.png"
       }
     ],
     "characters": [
       {
         "name": "Yuri",
+        "description": {
+          "": "Ex Astra Militarum Scharfschütze - unehrenhaft entlassen.",
+          "Verbündeter:": "Melvir - ein Ex-Militärdoktor.",
+          "Feind:": "Celene - verantwortlich für Yuris Entlassung."
+        },
         "imageUrl": "http://i.imgur.com/RVHR1It.jpg",
         "achievements": [
           {
-            "image": "Definitiv nicht schuld",
+            "name": "Unehrenhafte Entlassung",
+            "description": "Ohne Brüder ",
+            "imageUrl": "http://loans.org/sites/default/files/styles/thumbnail_articles/public/depressed-veteran.jpg?itok=vdtpcPpY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Andi",
+    "characters": [
+      {
+        "name": "Erik",
+        "imageUrl": "http://i.imgur.com/Netfk3I.png",
+        "achievements": [
+          {
+            "name": "Definitiv nicht schuld",
+            "description": "Flieg aus dem Militär ohne dass du was falsch gemacht hast.",
+            "imageUrl": "http://loans.org/sites/default/files/styles/thumbnail_articles/public/depressed-veteran.jpg?itok=vdtpcPpY"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Franny",
+    "characters": [
+      {
+        "name": "Aurora",
+        "imageUrl": "http://i.imgur.com/mPQYPeq.jpg",
+        "achievements": [
+          {
+            "name": "Definitiv nicht schuld",
             "description": "Flieg aus dem Militär ohne dass du was falsch gemacht hast.",
             "imageUrl": "http://loans.org/sites/default/files/styles/thumbnail_articles/public/depressed-veteran.jpg?itok=vdtpcPpY"
           }

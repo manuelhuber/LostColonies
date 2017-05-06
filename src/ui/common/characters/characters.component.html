@@ -1,0 +1,14 @@
+<div>
+  <div class="character-name">{{character.name}}</div>
+  <div class="image-wrapper">
+    <img [src]="character.imageUrl" class="character-image">
+  </div>
+  <div>
+    <div *ngIf="character.description">
+      <div *ngFor="let desc of getDescriptions(character)">
+        <b>{{desc}}</b> {{character.description[desc]}}
+      </div>
+    </div>
+  </div>
+  <achievements *ngIf="character.achievements" [achievements]="character.achievements"></achievements>
+</div>
