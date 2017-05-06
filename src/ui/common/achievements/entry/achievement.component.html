@@ -1,7 +1,7 @@
 <div class="achievement-entry" (click)="expanded = !expanded">
   <div class="image-wrapper" [ngClass]="{'expanded': expanded}">
     <div class="skewed-border"></div>
-    <img [src]="achievement.imageUrl" alt="" class="image">
+    <div class="image" [ngStyle]="{'background-image': 'url('+achievement.imageUrl+')'}"></div>
     <div class="achievement-description">{{achievement.description}}</div>
   </div>
   <div class="text-wrapper">
