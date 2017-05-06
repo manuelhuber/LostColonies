@@ -2,6 +2,19 @@
   overflow: hidden;
 }
 
+.achievements-slider {
+  width: 300%;
+  transition: all 300ms;
+}
+
+.achievements-flex {
+  display: flex;
+}
+
+.achievement-wrapper {
+  flex: 1;
+}
+
 .left-arrow {
   float: left
 }
