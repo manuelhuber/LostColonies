@@ -22,7 +22,7 @@
   </div>
 
 
-  <div class="bottom-row">
+  <div class="bottom-row" *ngIf="achievementsToDisplay[0].length>1">
     <div class="left-arrow" *ngIf="showLeft" (click)="swipeLeft()">
       <div class="arrow"></div>
     </div>
