@@ -21,7 +21,15 @@
     </expandable>
   </div>
 
-  <div class="left-arrow" *ngIf="showLeft" (click)="swipeLeft()">left</div>
-  <div class="right-arrow" *ngIf="showRight" (click)="swipeRight()">right</div>
-  <div class="toggle" (click)="toggle()">Toggle</div>
+  <div class="bottom-row">
+    <div class="left-arrow" *ngIf="showLeft" (click)="swipeLeft()">
+      <div class="arrow"></div>
+    </div>
+    <div class="right-arrow" *ngIf="showRight" (click)="swipeRight()">
+      <div class="arrow"></div>
+    </div>
+    <div class="toggle" (click)="toggle()">
+      <div class="arrow"></div>
+    </div>
+  </div>
 </div>

@@ -29,11 +29,11 @@ export class AchievementsComponent {
   }
 
   get showLeft() : boolean {
-    return this.translate < 0;
+    return this.expandable.visible && this.translate < 0;
   }
 
   get showRight() : boolean {
-    return this.translate > -100 + this.translateStep;
+    return this.expandable.visible && this.translate > -100 + this.translateStep;
   }
 
   public swipeLeft() : void {
