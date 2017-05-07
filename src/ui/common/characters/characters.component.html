@@ -4,7 +4,7 @@
     <img [src]="character.imageUrl" class="character-image">
   </div>
   <div>
-    <div *ngIf="character.description">
+    <div class="character-description" *ngIf="character.description">
       <div *ngFor="let desc of getDescriptions(character)">
         <b>{{desc}}</b> {{character.description[desc]}}
       </div>

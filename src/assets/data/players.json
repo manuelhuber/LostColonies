@@ -1,27 +1,20 @@
 [
   {
     "name": "Moritz",
-    "achievements": [
-      {
-        "name": "Geschichtsschreiber",
-        "description": "Spiele einen NPC und verändere die Welt für immer",
-        "imageUrl": "http://whytoread.com/wp-content/uploads/2014/09/history-books.jpg"
-      }
-    ],
     "characters": [
       {
         "name": "Yuri",
         "description": {
-          "": "Ex Astra Militarum Scharfschütze - unehrenhaft entlassen.",
-          "Verbündeter:": "Melvir - ein Ex-Militärdoktor.",
+          "": "Eine misslungene Mission brachte seine unehrenhafte Entlassung aus dem Astra Militarum herbei. Nun bleibt ihm nichts anderes übrig als seine Fähigkeiten zu verkaufen.",
+          "Verbündeter:": "Melvir - Ex-Militärdoktor.",
           "Feind:": "Celene - verantwortlich für Yuris Entlassung."
         },
         "imageUrl": "http://i.imgur.com/RVHR1It.jpg",
         "achievements": [
           {
             "name": "Unehrenhafte Entlassung",
-            "description": "Ohne Brüder ",
-            "imageUrl": "http://loans.org/sites/default/files/styles/thumbnail_articles/public/depressed-veteran.jpg?itok=vdtpcPpY"
+            "description": "Keine Kameraden, keine Mission, keine Ehre. Was bleibt dir noch?",
+            "imageUrl": "https://miepvonsydow.files.wordpress.com/2013/12/8182904290_1fb23938fc_z.jpg"
           }
         ]
       }
@@ -33,11 +26,14 @@
       {
         "name": "Erik",
         "imageUrl": "http://i.imgur.com/Netfk3I.png",
+        "description": {
+          "": "Ein tragischer Schicksalsschlag zwingte ihn sein ehrliches Leben für Kriminalität zu tauschen. Als Hirn der Operation versucht er genug Geld zu besorgen um für seine kranke Schwester sorgen zu können."
+        },
         "achievements": [
           {
-            "name": "Definitiv nicht schuld",
-            "description": "Flieg aus dem Militär ohne dass du was falsch gemacht hast.",
-            "imageUrl": "http://loans.org/sites/default/files/styles/thumbnail_articles/public/depressed-veteran.jpg?itok=vdtpcPpY"
+            "name": "Vom Akademiker zum Auftragsmörder",
+            "description": "Wann wirst du realisieren, dass es für dich keinen Weg mehr zurück gibt?",
+            "imageUrl": "https://www.samaa.tv/wp-content/uploads/print_news/2015-06-22/guns-should-nt-replace-books-1434962891-3036.jpg"
           }
         ]
       }
@@ -49,11 +45,14 @@
       {
         "name": "Aurora",
         "imageUrl": "http://i.imgur.com/mPQYPeq.jpg",
+        "description": {
+          "": "Als eines der vielen Trauerhügel-Waisenkinder wurde sie wegen ihrer Diebesfähigkeiten an Erik & Yuri verkauft. Der Überlebenskampf in der Gosse hat sie hart gemacht, doch nun muss sie sich in den Straßen der Gangs zurecht finden."
+        },
         "achievements": [
           {
-            "name": "Definitiv nicht schuld",
-            "description": "Flieg aus dem Militär ohne dass du was falsch gemacht hast.",
-            "imageUrl": "http://loans.org/sites/default/files/styles/thumbnail_articles/public/depressed-veteran.jpg?itok=vdtpcPpY"
+            "name": "Zwei Silbermünzen",
+            "description": "Die Freiheit riecht süß, doch was wenn deine Seele verkauft wurde?",
+            "imageUrl": "http://media.salemwebnetwork.com/cms/RT/38212-coins-facebook.800w.tn.jpg"
           }
         ]
       }

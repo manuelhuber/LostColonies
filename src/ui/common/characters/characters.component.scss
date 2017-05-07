@@ -1,6 +1,7 @@
 .character-name {
   font-family: Kirsty;
   font-size: 1.25em;
+  margin: 0.5em 0;
 }
 
 .image-wrapper {
@@ -10,4 +11,8 @@
 .character-image {
   max-height: 50vw;
   max-width: 100%;
+}
+
+.character-description {
+  margin: 0.75em 0;
 }
