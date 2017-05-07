@@ -34,15 +34,15 @@
       },
       {
         "title": "Adeptus Ministorum",
-        "description": "ist für die Aufrecherhaltung des Imperialen Credos und Bestatung zuständig."
+        "description": "ist für die Aufrecherhaltung des Imperialen Credos und Bestattungen zuständig."
       },
       {
         "title": "Inquisition",
-        "description": "beschützt die Menschheit vor existenziellen Bedrohungen. Kann Unterstüzung verlangen und absolute Urteile sprechen. Zusammenarbeit mit Ministorum sehr gut, mit Administratum gut und mit Mechanicus gemischt."
+        "description": "beschützt die Menschheit vor existenziellen Bedrohungen. Erhält Unterstützung von allen anderne Institutionen."
       },
       {
         "title": "Freihändler",
-        "description": "sind Kapitäne die warpresistente Flotten besitzen. Handeln zwischen Städten und jagen Leviathane. Meistens alte Adelshäuser. Müssen Gebühren etc. zahlen um mit Städten zu handeln."
+        "description": "sind meist adelige Kapitäne die warpresistente Vehikel besitzen. Handeln Waren zwischen Städten und jagen Leviathane für ihr Blut."
       }
     ]
   },
@@ -76,6 +76,10 @@
       {
         "title": "Reperatur",
         "description": "ist durch Gebete, Salben und Rituale die den Maschinengeist beschlichtigen möglich. Ritual kann z.B. das zerlegen, reinigen und zusammenbauen des Gegenstandes sein."
+      },
+      {
+        "title": "Leviathanblut",
+        "description": "ist das Blut von gewaltigen dämonischen Wesen, die außerhalb der Städte wohnen. Es wird als Treibstoff, für Drogen und vieles weitere benutzt."
       }
     ]
   },
@@ -84,7 +88,7 @@
     "subEntries": [
       {
         "title": "Imperiales Credo",
-        "description": "ist die offizielle Staatsreligion. Dort wird der Gott-Imperator verehrt, der in seinem Goldenen Thron (Sonne) lebt und über die Menschen wacht."
+        "description": "ist die offizielle Staatsreligion. Dort wird der Gott-Imperator verehrt, der in der Sonne (Goldener Thron) lebt und über die Menschen wacht."
       },
       {
         "title": "Maschinenkult ",

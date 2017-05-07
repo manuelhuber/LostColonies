@@ -40,14 +40,7 @@
     "name": "Brennende Dämmerung",
     "imageUrl": "http://i.imgur.com/yCvtH3k.png",
     "description": {
-      "description": "Eine Gang von Nationalisten & Puristen, stellen Drogen aus Pilzen etc. her",
-      "turf": "",
-      "npcs": "Schleifer (Anführer, brutal), Baini (Zweiter, intelligent, gelassen), Teufel (Up'n'Commer, idealist)",
-      "assets": "Guter Schlägertrupp",
-      "quirks": "Hass gegen alles Warp",
-      "allies": "Agragilde",
-      "enemies": "",
-      "situation": "Werden von einer BD Initiative aus einer anderen Stadt finanziert"
+      "": "Eine Gang von Nationalisten & Puristen, stellen Drogen aus Pilzen etc. her"
     }
   },
   {

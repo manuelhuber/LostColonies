@@ -4,7 +4,7 @@ import { WorldPage } from './pages/world/world.page';
 import { PlayersPage } from './pages/players/players.page';
 
 export const ROUTES : Routes = [
-  {path: '', component: FactionsPage, data: {title: 'Lost Colonies'}},
+  {path: '', component: PlayersPage, data: {title: 'Lost Colonies'}},
   {path: 'factions', component: FactionsPage, data: {title: 'Factions'}},
   {path: 'world', component: WorldPage, data: {title: 'World'}},
   {path: 'players', component: PlayersPage, data: {title: 'Players'}}
