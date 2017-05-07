@@ -4,15 +4,15 @@ $dark-border: 2px solid $color-grey-2;
 $light-border: 2px solid $color-white-2;
 
 .page-accordion-header {
-  padding: 0.5em;
+  font-family: Kirsty;
   color: $color-white-1;
+  word-wrap: break-word;
+  padding: 0.5em;
+  margin-top: 0.5em;
   background: $color-grey-4 url("/assets/images/blood-splatter-small-bottom-right.png") no-repeat bottom right;
   border-top: $light-border;
   border-right: $light-border;
   border-left: $dark-border;
-  margin-top: 0.5em;
-  font-family: Kirsty;
-  word-wrap: break-word;
   border-bottom: none;
 }
 
@@ -20,18 +20,15 @@ $light-border: 2px solid $color-white-2;
   & .page-accordion-header {
     background: $color-grey-4;
     border-bottom: $dark-border;
-    border-left: $dark-border;
   }
 }
 
 .page-accordion-content {
   background: $color-grey-0;
   color: $color-grey-5;
+  padding: 0.25em;
+  box-sizing: border-box;
   border-left: $dark-border;
   border-right: $light-border;
   border-bottom: $dark-border;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  box-sizing: border-box;
-  padding: 0.25em;
 }
