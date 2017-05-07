@@ -3,6 +3,11 @@
 $dark-border: 2px solid $color-grey-2;
 $light-border: 2px solid $color-white-2;
 
+.page {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .page-accordion-header {
   font-family: Kirsty;
   color: $color-white-1;
@@ -14,6 +19,7 @@ $light-border: 2px solid $color-white-2;
   border-right: $light-border;
   border-left: $dark-border;
   border-bottom: none;
+  cursor: pointer;
 }
 
 .accordion-entry-hidden {
