@@ -5,11 +5,9 @@
       {
         "name": "Yuri",
         "description": {
-          "": "Eine misslungene Mission brachte seine unehrenhafte Entlassung aus dem Astra Militarum herbei. Nun bleibt ihm nichts anderes übrig als seine Fähigkeiten zu verkaufen.",
-          "Verbündeter:": "Melvir - Ex-Militärdoktor.",
-          "Feind:": "Celene - verantwortlich für Yuris Entlassung."
+          "": "Ex-Militär, ausgebildeter Scharfschütze. Nach einem misslungenen Einsatz, bei dem alle Soldatten außer ihm ums Leben gekommen sind und er nicht glaubhaft abstreiten konnte, die Mission sabotiert zu haben, wurde er unerehrenhaft aus dem Militär entlassen. Ohne ein gesichertes Einkommen und die Aussicht, dass seine Fähigkeiten in der legalen Welt von Nutzen sind, ist Yuri gezwungen, im Untergrund seine Fähigkeiten einzusetzen, um sein Überleben zu sichern."
         },
-        "imageUrl": "http://i.imgur.com/RVHR1It.jpg",
+        "imageUrl": "https://s-media-cache-ak0.pinimg.com/originals/8f/a3/ee/8fa3eef837da75a270537031abc794a6.jpg",
         "achievements": [
           {
             "name": "Unehrenhafte Entlassung",
@@ -44,7 +42,7 @@
     "characters": [
       {
         "name": "Aurora",
-        "imageUrl": "http://i.imgur.com/mPQYPeq.jpg",
+        "imageUrl": "https://s-media-cache-ak0.pinimg.com/736x/76/f0/14/76f014d71724125b04d5488ca64037a3.jpg",
         "description": {
           "": "Als eines der vielen Trauerhügel-Waisenkinder wurde sie wegen ihrer Diebesfähigkeiten an Erik & Yuri verkauft. Der Überlebenskampf in der Gosse hat sie hart gemacht, doch nun muss sie sich in den Straßen der Gangs zurecht finden."
         },

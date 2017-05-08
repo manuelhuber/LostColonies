@@ -11,20 +11,20 @@
         "description": "ist die Verwaltungseinheit des Imperiums. Zu ihren Aufgaben gehört u.a. die Rechtssprechung und Steuereintreibung. Ihr unterliegen:",
         "subEntries": [
           {
-            "title": "Adeptus Arbites",
+            "title": "Adeptus Arbites:",
             "description": "Polizei"
           },
           {
-            "title": "Kommissare",
+            "title": "Kommissare:",
             "description": "Gesetzeshüter aus anderen Städten / Ländern. Gehen gegen Beamte & Kriminelle vor. Gefürchtet und unkorrumpierbar"
           },
           {
-            "title": "Astra Militarum",
+            "title": "Astra Militarum:",
             "description": "Militär"
           },
           {
-            "title": "Adeptus Astra Telephatica",
-            "description": "ist zuständig für Rekrutierung und Training von Psykern und Kommunikation durch den Warp"
+            "title": "Adeptus Astra Telephatica:",
+            "description": "Rekrutierung und Training von Psioniker und Warp-Kommunikation"
           }
         ]
       },
@@ -146,7 +146,7 @@
         "description": "haben eine erhöhte Affiitiät zum Warp, können z.T. mit Warpwesen kommunizieren / Warpeinflüße warnehmen. Diese Fähigkeiten sind angeboren oder trainiert."
       },
       {
-        "title": "Psyker",
+        "title": "Psioniker",
         "description": "können Warp (geringfügig) Kontrollieren. Extrem selten, sehr gefährlich und meistens Teil des Adpetus Astra Telephatica."
       },
       {

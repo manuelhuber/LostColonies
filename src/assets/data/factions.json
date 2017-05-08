@@ -3,58 +3,28 @@
     "name": "Speer und Hammer",
     "imageUrl": "http://i.imgur.com/1refLVX.png",
     "description": {
-      "beschreibung": "(Ex-)Militär Gang, die mit ausgewöhnlicher Disziplin & Skrupellosigkeit operiert.",
-      "assets": "Militärarsenal,",
-      "quirks": "Extrem diszipliniert & hierachisch."
+      "": "Bestehend zu einem Großteil aus Ex-Militär operiert diese Gang mit ausergewöhnlicher Disziplin während ihre guten Kontakte im Adeptus Militarum sie zu einer der Hauptquellen für illegale Schußwaffen machen. Durch ihre strenge Hierachie und harschen Trainingsregimente schaffen sie es ihr sehr verteiltes Territorium entlang der Kanäle zu halten. "
     }
   },
   {
     "name": "Nachtwächter",
     "imageUrl": "http://i.imgur.com/O6b2QkB.jpg",
     "description": {
-      "description": "Großenteils aus Hafenarbeiter bestehende Gang, die ihre illegalen Glücksspiele verteidigen und das Hafengebiet kontrollieren.",
-      "turf": "Nördlich des Hafens",
-      "npcs": "Don Volker Jr (Chef, unerfahren, emotional), Eisenfresser (skrupellos, resolut), Halger (geduldig, ruhig, diplomatisch)",
-      "assets": "Das einzige legale Kasino in der Stadt",
-      "quirks": "Eisenfresser und Halger sind wie das Engelchen und Teufelchen im Ohr des Anführers und haben großen Einfluß",
-      "allies": "Hafer, Blaumäntel",
-      "enemies": "Speer & Hammer",
-      "situation": "Nach der Ermordung ihres starken Anführers kämpft sein unerfahrener Sohn ihr Territorium auf allen Seiten zu verteidigen während er Rache für seinen Vater sucht."
-    }
-  },
-  {
-    "name": "Geering Gesellschaft",
-    "imageUrl": "",
-    "description": {
-      "description": "Eine Geheimgesellschafft bestehend aus Beamten der Regierung und v.a. Blaumänteln.",
-      "turf": "",
-      "npcs": "",
-      "assets": "Mächtige Positionen in fast allen Teilen der Regierung",
-      "quirks": "Die Mitglieder kennen nur ihren direkten Vorgesetzen und identifizieren sich durch eine Geheimphrase.",
-      "allies": "Diebesschöpfer",
-      "enemies": "Inquisition, Komissare,",
-      "situation": "Die Führungsebene versucht ein Regierungsumfassendes Netzwerk an Inside-Männern aufzubauen. Die Gesellschaft wird aus Gier und dem Bedürfnis nach einer schützenden Organisation zusammengehalten. Deals mit der Unterwelt gehören zum Tagesgeschäft."
+      "": "Die größte Gang im Stadtteil Hasard, bestehend vorwiegend aus Hafenarbeitern. Sie kontrollieren nicht nur den größten Teil der Glücksspiele und das einzige legale Kasino, sondern sie haben auch einen der wichtigsten Handels- & Schmuggelrouten in ihrem Besitz. "
     }
   },
   {
     "name": "Brennende Dämmerung",
     "imageUrl": "http://i.imgur.com/yCvtH3k.png",
     "description": {
-      "": "Eine Gang von Nationalisten & Puristen, stellen Drogen aus Pilzen etc. her"
+      "": "Eine Gang von Nationalisten & Puristen, die ihr Geld mit der Herstellung von pilzbasierenden Rauschgiften verdienen. Obwohl die Anti-Warp Bewegung weit verbreitet ist, zählt die Ebrichsburger Initiative der Brennenden Dämmerung noch zu den kleineren Fischen. Unterstützung aus anderen Städten und die besondere Brutalität lassen die Gang jedoch schnell aufsteigen."
     }
   },
   {
     "name": "Kinder des Nebels",
     "imageUrl": "",
     "description": {
-      "description": "Diebesbande bestehend aus Waisenkinder, die von einem alten Boss geführt werden",
-      "turf": "Trauerhügel",
-      "npcs": "Diebesschöpfer (Anführer, vorsichtig, verstohlen, connected)",
-      "assets": "Sehr komplexes Versteck auf einem alten Friedhof, Informanten auf den Straßen",
-      "quirks": "Gehen konfrontation aus dem Weg (Kinder), Diebesschöpfer wird kaum gesehen aber seine Verbindungen schützen ihn",
-      "allies": "Geering Gesellschaft, Blaumäntel",
-      "enemies": "",
-      "situation": "Der Diebesschöpfer tauscht Geld und Information gegen Schutz - er versucht zum Großteil den Bandenkonflikten aus dem Weg zu gehen"
+      "": "Das Sammelbecken für alle Waisenkinder, die keinen einzigen ehrlichen Knochen im Leib haben. Im Herzen des alten Friedhofes am Trauerhügel bildet der alte 'Diebesschöpfer' die nächste Generation von Taschendieben und Superspionen aus. Auch wenn von dem Greis und seinen Kindern scheinbar keine Gefahr ausgeht, so weiß der Vater aller Diebe sehr wohl, welche Taschen man leeren und welche man füllen muss um in Ebrichsberg zu überleben."
     }
   }
 ]
