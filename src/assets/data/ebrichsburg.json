@@ -16,6 +16,12 @@
           "left": 45,
           "name": "Wachturm Cadia",
           "description": "Ein stählerner Wachturm aus dem Goldenen Zeitalter"
+        },
+        {
+          "top": 84,
+          "left": 40,
+          "name": "Docks",
+          "description": "Einer der größeren Handelshafen in Ebrichsburg"
         }
       ]
     }

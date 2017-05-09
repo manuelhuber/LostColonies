@@ -15,7 +15,7 @@
       <div class="highlight-description-wrapper" *ngIf="activeDescription === i"
            [ngStyle]="{top: highlight.top+'%'}" (click)="toggle(i)">
         <div class="highlight-description">
-          <div>{{highlight.name}}</div>
+          <div class="highlight-description-title">{{highlight.name}}</div>
           <div>{{highlight.description}}</div>
         </div>
       </div>

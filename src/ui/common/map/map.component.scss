@@ -53,13 +53,18 @@ $highlight-description-nose-size: $highlight-description-margin*2;
 
 .highlight-description-wrapper {
   position: absolute;
-  padding: $highlight-description-margin 3px;
+  padding: $highlight-description-margin 1em;
   box-sizing: border-box;
 }
 
 .highlight-description {
+  padding: 0.5em;
   background: $highlight-description-background;
   box-shadow: $highlight-description-box-shadow;
+}
+
+.highlight-description-title {
+  font-weight: bold;
 }
 
 .highlight-description-nose {
@@ -87,7 +92,11 @@ $highlight-description-nose-size: $highlight-description-margin*2;
     transform: translateY(-100%);
   }
 
+  & .highlight-description-nose {
+    transform: translate(-50%, -100%);
+  }
+
   & .highlight-description-nose:before {
-    transform: translate(-50%, -125%) rotate(45deg);
+    transform: translate(-50%, -100%) rotate(45deg);
   }
 }
