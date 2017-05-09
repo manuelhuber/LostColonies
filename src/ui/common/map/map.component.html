@@ -8,8 +8,11 @@
       <!-- Highlight dot -->
       <div class="highlight clickable"
            [ngStyle]="{top: highlight.top+'%', left: highlight.left+'%'}"
-           [ngClass]="{active: activeDescription === i}"
-           (click)="toggle(i)"></div>
+           (click)="toggle(i)">
+        <div class="overlay"
+             [ngClass]="{active: activeDescription === i}"
+        ></div>
+      </div>
 
       <!-- Highlight description -->
       <div class="highlight-description-wrapper clickable"

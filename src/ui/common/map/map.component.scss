@@ -27,9 +27,23 @@ $highlight-description-nose-size: $highlight-description-margin*2;
   // Increase size for easier clicking
   height: $highlight-marker-circle-size*3;
   width: $highlight-marker-circle-size*3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+// This needs to be a separate div since the border animation causes jittering on the highlight dot (because of constant size change and position recalculation)
+.overlay {
+  position: absolute;
+  height: $highlight-marker-circle-size*3;
+  width: $highlight-marker-circle-size*3;
+  border: 0 solid rgba(0, 0, 0, 0.75);
+  border-radius: 100%;
+  transition: all 300ms ease-out;
   &.active {
-    border: 1000px solid rgba(0, 0, 0, 0.75);
-    border-radius: 100%;
+    transition: all 300ms ease-in;
+    border: 150vw solid rgba(0, 0, 0, 0.75);
   }
 }
 
