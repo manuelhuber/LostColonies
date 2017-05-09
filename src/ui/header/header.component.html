@@ -12,9 +12,15 @@
       <div class="menu">
         <accordion>
           <expandable>
-            <expandable-header routerLink="/world">
+            <expandable-header>
               <div class="menu-entry">Welt</div>
             </expandable-header>
+            <expandable-content>
+              <div class="submenu">
+                <div class="menu-entry" [routerLink]="['/world']">Allgemein</div>
+                <div class="menu-entry" [routerLink]="['/ebrichsburg']">Ebrichsburg</div>
+              </div>
+            </expandable-content>
           </expandable>
           <expandable>
             <expandable-header>
