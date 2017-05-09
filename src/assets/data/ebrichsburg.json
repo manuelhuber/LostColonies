@@ -1,0 +1,23 @@
+{
+  "maps": [
+    {
+      "name": "Hasard",
+      "description": "Dieser Stadtteil ist von Glückspiel und Handel geprägt. Während die Hauptstraßen mit vollen Taschen und dicken Bäuchen gefüllt sind, findet man in den Hintergassen hauptsächlich Hafenarbeiter und zwielichte Gestalten. Durch seinen Hafen und der zentralen Lage in Ebrichsburg ist Hasard nicht nur einer der größten Umschlagsplätze für legale und illegale Ware sondern auch Teil vieler Schmuggelrouten.",
+      "imageUrl": "http://imgur.com/2nkv7Zi.png",
+      "highlights": [
+        {
+          "top": 63.5,
+          "left": 41,
+          "name": "Volker Kasino",
+          "description": "Das einzig legale Kasino der Stadt lockt auch reichere Gäste an und hebt den Status des Viertels. Es wurde zu Ehren des ermordeten Erbauer des Kasinos "
+        },
+        {
+          "top": 6,
+          "left": 45,
+          "name": "Wachturm Cadia",
+          "description": "Ein stählerner Wachturm aus dem Goldenen Zeitalter"
+        }
+      ]
+    }
+  ]
+}

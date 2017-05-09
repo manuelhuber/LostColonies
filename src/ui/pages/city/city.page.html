@@ -1,0 +1,14 @@
+<div class="page">
+  <accordion *ngIf="maps">
+    <expandable *ngFor="let map of maps">
+      <expandable-header>
+        <div class="page-accordion-header">{{map.name}}</div>
+      </expandable-header>
+      <expandable-content>
+        <div class="page-accordion-content">
+          <map [map]="map"></map>
+        </div>
+      </expandable-content>
+    </expandable>
+  </accordion>
+</div>

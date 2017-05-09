@@ -1,0 +1,28 @@
+<div>
+  <div>{{map.name}}</div>
+  <div>{{map.description}}</div>
+  <div class="map">
+    <img [src]="map.imageUrl" class="map-image">
+    <div *ngFor="let highlight of map.highlights;let i = index;" [ngClass]="{top: highlight.top > 50}">
+
+      <!-- Highlight dot -->
+      <div class="highlight"
+           [ngStyle]="{top: highlight.top+'%', left: highlight.left+'%'}"
+           [ngClass]="{active: activeDescription === i}"
+           (click)="toggle(i)"></div>
+
+      <!-- Highlight description -->
+      <div class="highlight-description-wrapper" *ngIf="activeDescription === i"
+           [ngStyle]="{top: highlight.top+'%'}" (click)="toggle(i)">
+        <div class="highlight-description">
+          <div>{{highlight.name}}</div>
+          <div>{{highlight.description}}</div>
+        </div>
+      </div>
+
+      <!-- Nose of description box -->
+      <div class="highlight-description-nose" *ngIf="activeDescription === i"
+           [ngStyle]="{top: highlight.top+'%', left: highlight.left+'%'}"></div>
+    </div>
+  </div>
+</div>

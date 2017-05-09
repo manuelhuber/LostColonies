@@ -26,6 +26,8 @@ import { PlayersPage } from './pages/players/players.page';
 import { AchievementComponent } from './common/achievements/entry/achievement.component';
 import { AchievementsComponent } from './common/achievements/achievements.component';
 import { CharactersComponent } from './common/characters/characters.component';
+import { CityPage } from './pages/city/city.page';
+import { MapComponent } from './common/map/map.component';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -48,6 +50,7 @@ type StoreType = {
     FactionsPage,
     WorldPage,
     PlayersPage,
+    CityPage,
     AppComponent,
     HeaderComponent,
     AccordionComponent,
@@ -56,7 +59,8 @@ type StoreType = {
     ExpandableContentComponent,
     AchievementComponent,
     AchievementsComponent,
-    CharactersComponent
+    CharactersComponent,
+    MapComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

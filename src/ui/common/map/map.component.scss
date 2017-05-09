@@ -1,0 +1,93 @@
+@import "../../app.component";
+
+$highlight-marker-color: black;
+$highlight-marker-dot-size: 8px;
+$highlight-marker-circle-size: $highlight-marker-dot-size+5px;
+$highlight-description-margin: 10px;
+$highlight-description-background: $color-grey-0;
+$highlight-description-box-shadow: 0 0 6px black;
+$highlight-description-nose-size: $highlight-description-margin*2;
+
+.map {
+  position: relative;
+  overflow: hidden;
+}
+
+.map-image {
+  width: 100%;
+}
+
+.highlight {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  // Increase size for easier clicking
+  height: $highlight-marker-circle-size*3;
+  width: $highlight-marker-circle-size*3;
+  &.active {
+    border: 1000px solid rgba(0, 0, 0, 0.75);
+    border-radius: 100%;
+  }
+}
+
+.highlight:before, .highlight:after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  border-color: $highlight-marker-color;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.highlight:before {
+  width: $highlight-marker-circle-size;
+  height: $highlight-marker-circle-size;
+  border: 2px solid;
+}
+
+.highlight:after {
+  width: $highlight-marker-dot-size;
+  height: $highlight-marker-dot-size;
+  background: $highlight-marker-color;
+}
+
+.highlight-description-wrapper {
+  position: absolute;
+  padding: $highlight-description-margin 3px;
+  box-sizing: border-box;
+}
+
+.highlight-description {
+  background: $highlight-description-background;
+  box-shadow: $highlight-description-box-shadow;
+}
+
+.highlight-description-nose {
+  position: absolute;
+  width: $highlight-description-margin*4;
+  height: $highlight-description-margin;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.highlight-description-nose:before {
+  content: "";
+  width: $highlight-description-nose-size;
+  height: $highlight-description-nose-size;
+  position: absolute;
+  background: $highlight-description-background;
+  top: $highlight-description-nose-size * 0.2;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: $highlight-description-box-shadow;
+}
+
+.top {
+  & .highlight-description-wrapper {
+    transform: translateY(-100%);
+  }
+
+  & .highlight-description-nose:before {
+    transform: translate(-50%, -125%) rotate(45deg);
+  }
+}
