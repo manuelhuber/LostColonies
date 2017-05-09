@@ -12,7 +12,7 @@ export class FactionService {
   constructor(private http : Http) {
   }
 
-  public getFactions() : Observable<Faction[]> {
+  public getFactions() : Observable<any> {
     if (this.factions === undefined) {
       this.factions = this.http.get('/assets/data/factions.json').map((res) => res.json());
     }

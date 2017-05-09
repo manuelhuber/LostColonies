@@ -93,6 +93,10 @@ $menu-icon-transition: all 250ms ease;
   color: $color-white-1;
 }
 
+.submenu {
+  margin: -0.25em 0 0 1em;
+}
+
 .menu-entry {
   font-size: 1.25em;
   margin: 0.25em 0;

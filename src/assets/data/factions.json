@@ -1,30 +1,41 @@
-[
-  {
-    "name": "Speer und Hammer",
-    "imageUrl": "http://i.imgur.com/1refLVX.png",
-    "description": {
-      "": "Bestehend zu einem Großteil aus Ex-Militär operiert diese Gang mit ausergewöhnlicher Disziplin während ihre guten Kontakte im Adeptus Militarum sie zu einer der Hauptquellen für illegale Schußwaffen machen. Durch ihre strenge Hierachie und harschen Trainingsregimente schaffen sie es ihr sehr verteiltes Territorium entlang der Kanäle zu halten. "
+{
+  "Unterwelt": [
+    {
+      "name": "Speer und Hammer",
+      "imageUrl": "http://i.imgur.com/1refLVX.png",
+      "description": {
+        "": "Bestehend zu einem Großteil aus Ex-Militär operiert diese Gang mit ausergewöhnlicher Disziplin während ihre guten Kontakte im Adeptus Militarum sie zu einer der Hauptquellen für illegale Schußwaffen machen. Durch ihre strenge Hierachie und harschen Trainingsregimente schaffen sie es ihr sehr verteiltes Territorium entlang der Kanäle zu halten. "
+      }
+    },
+    {
+      "name": "Nachtwächter",
+      "imageUrl": "http://i.imgur.com/O6b2QkB.jpg",
+      "description": {
+        "": "Die größte Gang im Stadtteil Hasard, bestehend vorwiegend aus Hafenarbeitern. Sie kontrollieren nicht nur den größten Teil der Glücksspiele und das einzige legale Kasino, sondern sie haben auch einen der wichtigsten Handels- & Schmuggelrouten in ihrem Besitz. "
+      }
+    },
+    {
+      "name": "Brennende Dämmerung",
+      "imageUrl": "http://i.imgur.com/yCvtH3k.png",
+      "description": {
+        "": "Eine Gang von Nationalisten & Puristen, die ihr Geld mit der Herstellung von pilzbasierenden Rauschgiften verdienen. Obwohl die Anti-Warp Bewegung weit verbreitet ist, zählt die Ebrichsburger Initiative der Brennenden Dämmerung noch zu den kleineren Fischen. Unterstützung aus anderen Städten und die besondere Brutalität lassen die Gang jedoch schnell aufsteigen."
+      }
+    },
+    {
+      "name": "Kinder des Nebels",
+      "imageUrl": "",
+      "description": {
+        "": "Das Sammelbecken für alle Waisenkinder, die keinen einzigen ehrlichen Knochen im Leib haben. Im Herzen des alten Friedhofes am Trauerhügel bildet der alte 'Diebesschöpfer' die nächste Generation von Taschendieben und Superspionen aus. Auch wenn von dem Greis und seinen Kindern scheinbar keine Gefahr ausgeht, so weiß der Vater aller Diebe sehr wohl, welche Taschen man leeren und welche man füllen muss um in Ebrichsberg zu überleben."
+      }
     }
-  },
-  {
-    "name": "Nachtwächter",
-    "imageUrl": "http://i.imgur.com/O6b2QkB.jpg",
-    "description": {
-      "": "Die größte Gang im Stadtteil Hasard, bestehend vorwiegend aus Hafenarbeitern. Sie kontrollieren nicht nur den größten Teil der Glücksspiele und das einzige legale Kasino, sondern sie haben auch einen der wichtigsten Handels- & Schmuggelrouten in ihrem Besitz. "
+  ],
+  "Religion": [
+    {
+      "name": "Seuchenhunde",
+      "imageUrl": "http://i.imgur.com/1refLVX.png",
+      "description": {
+        "": "Bestehend zu einem Großteil aus Ex-Militär operiert diese Gang mit ausergewöhnlicher Disziplin während ihre guten Kontakte im Adeptus Militarum sie zu einer der Hauptquellen für illegale Schußwaffen machen. Durch ihre strenge Hierachie und harschen Trainingsregimente schaffen sie es ihr sehr verteiltes Territorium entlang der Kanäle zu halten. "
+      }
     }
-  },
-  {
-    "name": "Brennende Dämmerung",
-    "imageUrl": "http://i.imgur.com/yCvtH3k.png",
-    "description": {
-      "": "Eine Gang von Nationalisten & Puristen, die ihr Geld mit der Herstellung von pilzbasierenden Rauschgiften verdienen. Obwohl die Anti-Warp Bewegung weit verbreitet ist, zählt die Ebrichsburger Initiative der Brennenden Dämmerung noch zu den kleineren Fischen. Unterstützung aus anderen Städten und die besondere Brutalität lassen die Gang jedoch schnell aufsteigen."
-    }
-  },
-  {
-    "name": "Kinder des Nebels",
-    "imageUrl": "",
-    "description": {
-      "": "Das Sammelbecken für alle Waisenkinder, die keinen einzigen ehrlichen Knochen im Leib haben. Im Herzen des alten Friedhofes am Trauerhügel bildet der alte 'Diebesschöpfer' die nächste Generation von Taschendieben und Superspionen aus. Auch wenn von dem Greis und seinen Kindern scheinbar keine Gefahr ausgeht, so weiß der Vater aller Diebe sehr wohl, welche Taschen man leeren und welche man füllen muss um in Ebrichsberg zu überleben."
-    }
-  }
-]
+  ]
+}

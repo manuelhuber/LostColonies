@@ -17,9 +17,15 @@
             </expandable-header>
           </expandable>
           <expandable>
-            <expandable-header routerLink="/factions">
+            <expandable-header>
               <div class="menu-entry">Fraktionen</div>
             </expandable-header>
+            <expandable-content>
+              <div class="submenu">
+                <div class="menu-entry" [routerLink]="['/factions']" [queryParams]="{group:'Unterwelt'}">Unterwelt</div>
+                <div class="menu-entry" [routerLink]="['/factions']" [queryParams]="{group:'Religion'}">Religion</div>
+              </div>
+            </expandable-content>
           </expandable>
           <expandable>
             <expandable-header routerLink="/players">
