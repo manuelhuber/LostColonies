@@ -3,21 +3,25 @@
   <div class="map">
     <img [src]="map.imageUrl" class="map-image">
     <div *ngFor="let highlight of map.highlights;let i = index;"
-         [ngClass]="{top: highlight.top > 50}">
+         [ngClass]="{top: highlight.location.top > 50}">
 
       <!-- Highlight dot -->
       <div class="highlight clickable"
-           [ngStyle]="{top: highlight.top+'%', left: highlight.left+'%'}"
+           [ngStyle]="{
+           top: highlight.location.top+'%',
+           left: highlight.location.left+'%',
+           width: highlight.size.x+'%',
+           height: highlight.size.y+'%'}"
            (click)="toggle(i)">
         <div class="overlay"
              [ngClass]="{active: activeDescription === i}"
-        ></div>
+             [ngStyle]="{ transform: 'rotate('+highlight.size.rotation+'deg)'}"></div>
       </div>
 
       <!-- Highlight description -->
       <div class="highlight-description-wrapper clickable"
            *ngIf="activeDescription === i"
-           [ngStyle]="{top: highlight.top+'%'}"
+           [ngStyle]="{top: descriptionTopValue(highlight)}"
            (click)="toggle(i)">
         <div class="highlight-description">
           <div class="highlight-description-title">{{highlight.name}}</div>
@@ -28,7 +32,7 @@
       <!-- Nose of description box -->
       <div class="highlight-description-nose clickable"
            *ngIf="activeDescription === i"
-           [ngStyle]="{top: highlight.top+'%', left: highlight.left+'%'}"
+           [ngStyle]="{top: descriptionTopValue(highlight), left: highlight.location.left+'%'}"
            (click)="toggle(i)"></div>
     </div>
   </div>

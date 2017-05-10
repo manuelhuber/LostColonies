@@ -6,22 +6,42 @@
       "imageUrl": "http://imgur.com/2nkv7Zi.png",
       "highlights": [
         {
-          "top": 63.5,
-          "left": 41,
           "name": "Volker Kasino",
-          "description": "Das einzig legale Kasino der Stadt lockt auch reichere Gäste an und hebt den Status des Viertels. Es wurde zu Ehren des ermordeten Erbauer des Kasinos Don Volker umbenannt."
+          "description": "Das einzig legale Kasino der Stadt lockt auch reichere Gäste an und hebt den Status des Viertels. Es wurde zu Ehren des ermordeten Erbauer des Kasinos Don Volker umbenannt.",
+          "location": {
+            "top": 64,
+            "left": 41
+          },
+          "size": {
+            "x": 25,
+            "y": 15,
+            "rotation": 10
+          }
         },
         {
-          "top": 6,
-          "left": 45,
           "name": "Wachturm Cadia",
-          "description": "Ein stählerner Wachturm aus dem Goldenen Zeitalter. Dieses unzerstörbare Gebäude ist der Standfuß von Speer und Hammer in Hasard."
+          "description": "Ein stählerner Wachturm aus dem Goldenen Zeitalter. Dieses unzerstörbare Gebäude ist der Standfuß von Speer und Hammer in Hasard.",
+          "location": {
+            "top": 6,
+            "left": 45
+          },
+          "size": {
+            "x": 15,
+            "y": 8
+          }
         },
         {
-          "top": 84,
-          "left": 40,
           "name": "Docks",
-          "description": "Einer der größeren Handelshafen in Ebrichsburg"
+          "description": "Einer der größeren Handelshafen in Ebrichsburg",
+          "location": {
+            "top": 86,
+            "left": 39
+          },
+          "size": {
+            "x": 75,
+            "y": 25,
+            "rotation": 12
+          }
         }
       ]
     }
