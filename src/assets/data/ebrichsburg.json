@@ -1,13 +1,17 @@
 {
   "maps": [
     {
+      "name": "Ebrichsburg",
+      "description": "Die alte imperiale Stadt erstreckt sich über mehrere kleine Inseln. Während der Adel im Norden in höher gelegenen Stadtteilen lebt, kämpfen Gangs um die Gossen. Abgesehen von den wenigen alten Militärgebäuden und Kathedralen besteht die Stadt aus dunklen Steingebäuden. Die Heiligen Mauern umgeben die komplette Stadt und schützen sie vor den konstanten Warpstürmen. Die Pilz- & Aal-Farmen versorgen die Bevölkerung mit Nahrung und die Freihändler versorgen die Zivilisation mit dem Treibstoff Leviathanblut."
+    },
+    {
       "name": "Hasard",
-      "description": "Dieser Stadtteil ist von Glückspiel und Handel geprägt. Während die Hauptstraßen mit vollen Taschen und dicken Bäuchen gefüllt sind, findet man in den Hintergassen hauptsächlich Hafenarbeiter und zwielichte Gestalten. Durch seinen Hafen und der zentralen Lage in Ebrichsburg ist Hasard nicht nur einer der größten Umschlagsplätze für legale und illegale Ware sondern auch Teil vieler Schmuggelrouten.",
+      "description": "Dieser Stadtteil ist von Glückspiel und Handel geprägt. Während die Hauptstraßen mit vollen Taschen und dicken Bäuchen gefüllt sind, findet man in den Hintergassen hauptsächlich Hafenarbeiter und zwielichtige Gestalten. Durch seinen Hafen und der zentralen Lage in Ebrichsburg ist Hasard nicht nur einer der größten Umschlagsplätze für legale und illegale Ware sondern auch Teil vieler Schmuggelrouten.",
       "imageUrl": "http://imgur.com/2nkv7Zi.png",
       "highlights": [
         {
           "name": "Volker Kasino",
-          "description": "Das einzig legale Kasino der Stadt lockt auch reichere Gäste an und hebt den Status des Viertels. Es wurde zu Ehren des ermordeten Erbauer des Kasinos Don Volker umbenannt.",
+          "description": "Das einzig legale Kasino der Stadt lockt auch reichere Gäste an und hebt den Status des Viertels. Es wurde zu Ehren des ermordeten Don Volker benannt.",
           "location": {
             "top": 64,
             "left": 41

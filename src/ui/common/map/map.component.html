@@ -1,6 +1,6 @@
 <div>
   <div class="map-description">{{map.description}}</div>
-  <div class="map">
+  <div class="map" *ngIf="map.imageUrl">
     <img [src]="map.imageUrl" class="map-image">
     <div *ngFor="let highlight of map.highlights;let i = index;"
          [ngClass]="{top: highlight.location.top > 50}">
