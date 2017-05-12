@@ -5,17 +5,26 @@
     <div *ngFor="let highlight of map.highlights;let i = index;"
          [ngClass]="{top: highlight.location.top > 50}">
 
+      <!-- Clickable div with z-index to always be on top -->
+      <div class="click-helper clickable"
+           [ngStyle]="{
+           top: highlight.location.top+'%',
+           left: highlight.location.left+'%',
+           width: highlight.size.x+'%',
+           height: highlight.size.y+'%'}"
+           (click)="toggle(i)"></div>
+
       <!-- Highlight dot -->
       <div class="highlight clickable"
            [ngStyle]="{
            top: highlight.location.top+'%',
            left: highlight.location.left+'%',
            width: highlight.size.x+'%',
-           height: highlight.size.y+'%'}"
-           (click)="toggle(i)">
+           height: highlight.size.y+'%'}">
         <div class="overlay"
              [ngClass]="{active: activeDescription === i}"
-             [ngStyle]="{ transform: 'rotate('+highlight.size.rotation+'deg)'}"></div>
+             [ngStyle]="{ transform: 'rotate('+highlight.size.rotation+'deg)'}"
+             (click)="toggle(i)"></div>
       </div>
 
       <!-- Highlight description -->

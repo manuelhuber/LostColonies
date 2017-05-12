@@ -47,6 +47,12 @@ $highlight-description-nose-size: $highlight-description-margin*2;
   }
 }
 
+.click-helper {
+  z-index: 5;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
 .highlight:before, .highlight:after {
   content: "";
   position: absolute;
