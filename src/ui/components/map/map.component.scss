@@ -48,7 +48,7 @@ $highlight-description-nose-size: $highlight-description-margin*2;
 }
 
 .click-helper {
-  z-index: 5;
+  z-index: 2;
   position: absolute;
   transform: translate(-50%, -50%);
 }
@@ -79,6 +79,7 @@ $highlight-description-nose-size: $highlight-description-margin*2;
   position: absolute;
   padding: $highlight-description-margin 1em;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .highlight-description {
@@ -97,6 +98,7 @@ $highlight-description-nose-size: $highlight-description-margin*2;
   height: $highlight-description-margin;
   transform: translateX(-50%);
   overflow: hidden;
+  z-index: 1;
 }
 
 .highlight-description-nose:before {
