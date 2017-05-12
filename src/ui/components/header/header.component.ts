@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
-import { ExpandableComponent } from '../common/expandables/expandable.component';
+import { ExpandableComponent } from '../expandables/expandable.component';
 
 @Component({
   selector: 'header',

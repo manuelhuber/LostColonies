@@ -12,22 +12,22 @@ import { ROUTES } from './app.routes';
 // App is our top level component
 import { AppComponent } from './app.component';
 
-import { AccordionComponent } from './common/accordion/accordion.component';
-import { ExpandableHeaderComponent } from './common/expandables/header/expandable-header.component';
-import { ExpandableComponent } from './common/expandables/expandable.component';
-import { ExpandableContentComponent } from './common/expandables/content/expandable-content.component';
+import { AccordionComponent } from './components/accordion/accordion.component';
+import { ExpandableHeaderComponent } from './components/expandables/header/expandable-header.component';
+import { ExpandableComponent } from './components/expandables/expandable.component';
+import { ExpandableContentComponent } from './components/expandables/content/expandable-content.component';
 import { FactionsPage } from './pages/factions/factions.page';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './components/header/header.component';
 import { FactionService } from '../data/services/faction.service';
 import { WorldPage } from './pages/world/world.page';
 import { WorldService } from '../data/services/world.service';
 import { PlayerService } from '../data/services/player.service';
 import { PlayersPage } from './pages/players/players.page';
-import { AchievementComponent } from './common/achievements/entry/achievement.component';
-import { AchievementsComponent } from './common/achievements/achievements.component';
-import { CharactersComponent } from './common/characters/characters.component';
+import { AchievementComponent } from './components/achievements/entry/achievement.component';
+import { AchievementsComponent } from './components/achievements/achievements.component';
+import { CharactersComponent } from './components/characters/characters.component';
 import { CityPage } from './pages/city/city.page';
-import { MapComponent } from './common/map/map.component';
+import { MapComponent } from './components/map/map.component';
 
 // Application wide providers
 const APP_PROVIDERS = [
