@@ -3,13 +3,7 @@
   <div class="image-wrapper">
     <img [src]="character.imageUrl" class="character-image">
   </div>
-  <div>
-    <div class="character-description" *ngIf="character.description">
-      <div *ngFor="let desc of getDescriptions(character)">
-        <b>{{desc}}</b> {{character.description[desc]}}
-      </div>
-    </div>
-  </div>
+  <div class="character-description" *ngIf="character.description" [innerHtml]="character.description"></div>
   <div class="character-achievements">Erfolge</div>
   <achievements *ngIf="character.achievements" [achievements]="character.achievements"></achievements>
 </div>
