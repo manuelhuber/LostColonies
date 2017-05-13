@@ -2,7 +2,7 @@
   "gangs": [
     {
       "name": "Assassinen",
-      "description": "Aus Not zusammengebracht, operiert diese Gruppe von Killern aus einem verstecken Lagerhaus im Süden Hasards, ein Stadtteil in dem die Bandenkämpfe nach einer längeren Friedenszeit gerade wieder ausgebrochen sind. ",
+      "description": "Aus Not zusammengebracht, operiert diese Gruppe von Killern aus einem verstecken Lagerhaus im Süden Hasards - ein Stadtteil in dem die Bandenkämpfe nach einer längeren Friedenszeit gerade wieder ausgebrochen sind.",
       "imageUrl": "",
       "sessions": [
         {
@@ -42,37 +42,7 @@
         },
         {
           "name": "Auf Nummer sicher",
-          "description": "Schlagt euch auf die Seite von Goliath. Vorerst zumindestens...",
-          "imageUrl": "http://imgur.com/HxFYe2g.jpg"
-        },
-        {
-          "name": "Auf Nummer sicher",
-          "description": "Schlagt euch auf die Seite von Goliath. Vorerst zumindestens...",
-          "imageUrl": "http://imgur.com/HxFYe2g.jpg"
-        },
-        {
-          "name": "Auf Nummer sicher",
-          "description": "Schlagt euch auf die Seite von Goliath. Vorerst zumindestens...",
-          "imageUrl": "http://imgur.com/HxFYe2g.jpg"
-        },
-        {
-          "name": "Auf Nummer sicher",
-          "description": "Schlagt euch auf die Seite von Goliath. Vorerst zumindestens...",
-          "imageUrl": "http://imgur.com/HxFYe2g.jpg"
-        },
-        {
-          "name": "Auf Nummer sicher",
-          "description": "Schlagt euch auf die Seite von Goliath. Vorerst zumindestens...",
-          "imageUrl": "http://imgur.com/HxFYe2g.jpg"
-        },
-        {
-          "name": "Auf Nummer sicher",
-          "description": "Schlagt euch auf die Seite von Goliath. Vorerst zumindestens...",
-          "imageUrl": "http://imgur.com/HxFYe2g.jpg"
-        },
-        {
-          "name": "Auf Nummer sicher",
-          "description": "Schlagt euch auf die Seite von Goliath. Vorerst zumindestens...",
+          "description": "Schlagt euch auf die Seite des Favoriten. Vorerst zumindestens...",
           "imageUrl": "http://imgur.com/HxFYe2g.jpg"
         }
       ]
@@ -89,7 +59,7 @@
           "achievements": [
             {
               "name": "Versiegelte Lippen",
-              "description": "Sag kein Wort, egal was sie tun.",
+              "description": "Sag kein Wort, egal was sie dir antun.",
               "imageUrl": "http://pre04.deviantart.net/dcc9/th/pre/i/2013/189/4/1/_the_interrogation____agent_concept_art_by_punktx30-d6cm30c.jpg"
             },
             {
@@ -118,6 +88,23 @@
               "name": "Vom Akademiker zum Auftragsmörder",
               "description": "Wann wirst du realisieren, dass es für dich keinen Weg mehr zurück gibt?",
               "imageUrl": "https://www.samaa.tv/wp-content/uploads/print_news/2015-06-22/guns-should-nt-replace-books-1434962891-3036.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flo",
+      "characters": [
+        {
+          "name": "Dietrich",
+          "imageUrl": "https://s-media-cache-ak0.pinimg.com/originals/63/b7/c6/63b7c6098e869f1f062733c43345dc51.jpg",
+          "description": "Frank Völker, gemeinhin nur als \"Dietrich\" bekannt, hat einen 25-jährigen Lebensweg hinter sich, der die meisten Männer auf halber Strecke gebrochen hätte: Geboren als namenloses Kind einer 12-jährigen Prostituierten, verbrachte er das erste halbe Jahr seines Lebens größtenteils unbeachtet mit den anderen Hurenkindern im Hinterhaus des Bordells, bis seine Mutter eines Tages aufbrach und ihn seinem Schicksal überließ. Da niemand mehr für ihn sorgte, warf man das Kleinkind kurzerhand vor die Tür. <br><br> Im Sommer lebte er Teils unter Brücken, im Winter in verlassenen Häusern, Lagerhallen oder unbeachteten Kellern. Doch die Zeit auf der Straße lehrte ihn vor allem eines: Es gab kaum ein Problem, was sich für ihn nicht mit Gewalt lösen ließ. Trotz seiner jungen Jahre war er bereits sehr groß gewachsen und kräftiger als die meisten Erwachsenen. Ein einziger Schlag seiner Faust reichte oft um die Lichter eines stattlichen Mannes ausgehen zu lassen und ein kräftiger Tritt hebelte jede noch so dicke Tür aus den Angeln, was ihm den Spitznamen \"Dietrich\" verlieh. <br><br> Franks massive Masse machte ihn zwar zu einer Naturgewalt, ist aber auch der wichtigste Grund dafür, warum er immer wieder im Gefängnis landete: Seine imposante Gestalt macht ihn einerseits mehr als auffällig, andererseits langsam. Wenn alle Mitglieder seiner Crew schon lang in den Seitengassen von Steinfeld verschwunden waren, blieb Frank meist allein in den Fängen der Blaumäntel. <br><br> Frank ist 1.93m groß, wiegt 160kg und stemmt das doppelte. Sein beeindruckender Bart sucht seinesgleichen, sein Kopf ist dafür seit Jahren kahl. Er handelt selten bis nicht aus moralischen Motiven sondern hat durch seinen jahrelangen Überlebenskampf eine mehr als egoistische, sozialdarwinistische Lebenseinstellung entwickelt. Er ist misanthrop und gewalttätig, sowie einfach und stumpfsinnig. Trotzdem erkennt er die Vorteile von Verbündeten und seiner Zugehörigkeit zu einer starken Gemeinschaft, die ihn im Austausch für seine uneingeschränkte Loyalität belohnt.",
+          "achievements": [
+            {
+              "name": "Diese Hände können nur zerstören!",
+              "description": "Töte jemanden ohne Absicht.",
+              "imageUrl": "http://imgur.com/M2XjYgL.png"
             }
           ]
         }
