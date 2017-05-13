@@ -3,7 +3,7 @@
   <div class="image-wrapper">
     <img [src]="character.imageUrl" class="character-image">
   </div>
-  <div class="character-description" *ngIf="character.description" [innerHtml]="character.description"></div>
-  <div class="character-achievements">Erfolge</div>
+  <div class="character-achievements">Erfolge:</div>
   <achievements *ngIf="character.achievements" [achievements]="character.achievements"></achievements>
+  <div class="character-description" *ngIf="character.description" [innerHtml]="character.description"></div>
 </div>
