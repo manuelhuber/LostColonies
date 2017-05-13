@@ -5,9 +5,9 @@
        [ngClass]="{active: activeSession === i}"
        (swipeLeft)="next()"
        (swipeRight)="previous()">
-    <expandable [visible]="sessionExpanded">
+    <expandable [(visible)]="sessionExpanded">
       <expandable-header>
-        <div class="session-headline clickable" (click)="toggleSession()">
+        <div class="session-headline clickable">
           <div class="session-name">
             <span>{{session.name}}</span>
             <div class="previous-session"

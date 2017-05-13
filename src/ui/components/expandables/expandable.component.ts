@@ -1,4 +1,4 @@
-import { Component, ContentChild, EventEmitter, Input } from '@angular/core';
+import { Component, ContentChild, EventEmitter, Input, Output } from '@angular/core';
 import { ExpandableContentComponent } from './content/expandable-content.component';
 
 @Component({
@@ -19,6 +19,10 @@ export class ExpandableComponent {
    */
   @ContentChild(ExpandableContentComponent) public content : ExpandableContentComponent;
 
+  @Output()
+  public visibleChange : EventEmitter<boolean> = new EventEmitter();
+
+  // For easier use with the accordion
   public isVisible : EventEmitter<{ visible : boolean, self : ExpandableComponent }> = new EventEmitter();
 
   /**
@@ -38,7 +42,7 @@ export class ExpandableComponent {
       // No change => do nothing
       return;
     }
-
+    this.visibleChange.next(a);
     clearTimeout(this.timeout);
     if (!this.content) {
       return;
