@@ -30,6 +30,9 @@ import { CityPage } from './pages/city/city.page';
 import { MapComponent } from './components/map/map.component';
 import { GangComponent } from './components/gang/gang.component';
 
+import 'hammerjs';
+import 'hammer-timejs';
+
 // Application wide providers
 const APP_PROVIDERS = [
   FactionService,

@@ -3,30 +3,34 @@
 
   <div>
     <div class="achievements">Erfolge:</div>
-    <achievements [achievements]="gang.achievements"></achievements>
+    <achievements [achievements]="gang.achievements" [maxAmount]="1"></achievements>
   </div>
 
   <div>
     <div class="sessions">Episoden:</div>
     <div *ngFor="let session of gang.sessions; let i = index"
          class="session-entry"
-         [ngClass]="{active: activeSession === i}">
+         [ngClass]="{active: activeSession === i}"
+         (swipeLeft)="next()"
+         (swipeRight)="previous()">
       <expandable [visible]="sessionExpanded">
         <expandable-header>
           <div class="session-headline">
             <div class="previous-session"
-                 *ngIf="activeSession > 0"
-                 (click)="activeSession = activeSession - 1">
+                 *ngIf="previousAvailable"
+                 (click)="previous()">
               <div class="arrow left clickable"></div>
             </div>
             <div class="next-session"
-                 *ngIf="activeSession < gang.sessions.length-1"
-                 (click)="activeSession = activeSession + 1">
+                 *ngIf="nextAvailable"
+                 (click)="next()">
               <div class="arrow right clickable"></div>
             </div>
             <div class="session-name clickable" (click)="toggleSession()">{{session.name}}</div>
           </div>
         </expandable-header>
+
+
         <expandable-content>
           <div>
             <div class="session-date">{{session.date | date}}</div>

@@ -35,11 +35,11 @@ export class AchievementsComponent {
     return 100 / this.achievementsToDisplay.length;
   }
 
-  get showLeft() : boolean {
+  get previousAvailable() : boolean {
     return this.expandable.visible && this.translate < 0;
   }
 
-  get showRight() : boolean {
+  get nextAvailable() : boolean {
     return this.expandable.visible && this.translate > -100 + this.translateStep;
   }
 
@@ -47,14 +47,16 @@ export class AchievementsComponent {
     return this.expandable.visible;
   }
 
-  public swipeLeft() : void {
-    this.translate += this.translateStep;
-
+  public next() : void {
+    if (this.nextAvailable) {
+      this.translate -= this.translateStep;
+    }
   }
 
-  public swipeRight() : void {
-    this.translate -= this.translateStep;
-
+  public previous() : void {
+    if (this.previousAvailable) {
+      this.translate += this.translateStep;
+    }
   }
 
   public toggle() : void {

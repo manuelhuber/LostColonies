@@ -1,4 +1,6 @@
-<div class="achievements">
+<div class="achievements"
+     (swipeLeft)="next()"
+     (swipeRight)="previous()">
   <div class="achievements-slider"
        [ngStyle]="{'transform' : translateValue, 'width': (achievementsToDisplay.length*100 +'%')}">
     <div class="achievements-flex-parent">
@@ -23,10 +25,10 @@
 
 
   <div class="bottom-row" *ngIf="achievementsToDisplay[0].length>1">
-    <div class="left-arrow clickable" *ngIf="showLeft" (click)="swipeLeft()">
+    <div class="left-arrow clickable" *ngIf="previousAvailable" (click)="next()">
       <div class="arrow"></div>
     </div>
-    <div class="right-arrow clickable" *ngIf="showRight" (click)="swipeRight()">
+    <div class="right-arrow clickable" *ngIf="nextAvailable" (click)="previous()">
       <div class="arrow"></div>
     </div>
     <div class="toggle clickable" (click)="toggle()" [ngClass]="{up: this.isVisible}">

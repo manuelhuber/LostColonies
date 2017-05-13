@@ -20,4 +20,25 @@ export class GangComponent implements OnInit {
     this.activeSession = this.gang && this.gang.sessions.length - 1;
   }
 
+  get nextAvailable() : boolean {
+    return this.activeSession < this.gang.sessions.length - 1;
+  }
+
+  get previousAvailable() : boolean {
+    return this.activeSession > 0;
+  }
+
+  public next() : void {
+    if (this.nextAvailable) {
+      this.activeSession++;
+    }
+  }
+
+  public previous() : void {
+    if (this.previousAvailable) {
+      this.activeSession--;
+    }
+  }
+
+
 }
