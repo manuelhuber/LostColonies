@@ -31,7 +31,7 @@ export class PlayerService {
         .map((res : GangsAndPlayers) => {
           res.gangs = res.gangs.map((gang : Gang) => {
             gang.sessions = gang.sessions.map((session : Session) => {
-              session.date = Date.parse(session.date);
+              session.date = Date.parse(<any> session.date);
               return session;
             });
             return gang;
