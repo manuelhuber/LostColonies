@@ -1,7 +1,7 @@
 import { BrowserModule, HAMMER_GESTURE_CONFIG, HammerGestureConfig } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { ApplicationRef, NgModule } from '@angular/core';
+import { ApplicationRef, LOCALE_ID, NgModule } from '@angular/core';
 import { createInputTransfer, createNewHosts, removeNgStyles } from '@angularclass/hmr';
 import { PreloadAllModules, RouterModule } from '@angular/router';
 /*
@@ -81,9 +81,14 @@ type StoreType = {
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
-    APP_PROVIDERS, {
+    APP_PROVIDERS,
+    {
       provide: HAMMER_GESTURE_CONFIG,
       useClass: MyHammerConfig
+    },
+    {
+      provide: LOCALE_ID,
+      useValue: 'de-DE'
     }
 
   ]
