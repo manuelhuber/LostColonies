@@ -63,6 +63,11 @@
           "imageUrl": "https://s-media-cache-ak0.pinimg.com/originals/8f/a3/ee/8fa3eef837da75a270537031abc794a6.jpg",
           "achievements": [
             {
+              "name": "Versiegelte Lippen",
+              "description": "Sag kein Wort, egal was sie tun.",
+              "imageUrl": "http://pre04.deviantart.net/dcc9/th/pre/i/2013/189/4/1/_the_interrogation____agent_concept_art_by_punktx30-d6cm30c.jpg"
+            },
+            {
               "name": "Unehrenhafte Entlassung",
               "description": "Keine Kameraden, keine Mission, keine Ehre. Was bleibt dir noch?",
               "imageUrl": "https://miepvonsydow.files.wordpress.com/2013/12/8182904290_1fb23938fc_z.jpg"
@@ -79,6 +84,11 @@
           "imageUrl": "http://i.imgur.com/Netfk3I.png",
           "description": "Von seiner Geburt an war klar das Erik (wie sein Vater) ein großer Chemiker werden würde. Die Familie gehörte zwar nie zur High Society der Stadt, durch die großen Erfolge des Vaters war sie dennoch vor allem in Akademikerkreisen hoch angesehen.<br><br> Der Vater versuchte von Kindesbeinen an dem jungen Erik die Wissenschaft näher zu bringen. Doch der interessierte sich bald mehr für Frauen und die Vorzüge des Einkommens seines Vaters als für Studien.<br><br> Mit nunmehr 14 Jahren wendete sich Eriks leben zum schlechtesten. Bei einem Unfall kamen seine Eltern tragisch uns Leben. Seine einzige Schwester überlebte mit schweren Verletzungen und ist seither ans Bett gefesselt. Plötzlich aus seinem gemütlichen leben gerissen schwor sich Erik den Traum seines Vaters zu erfüllen, zu studieren und für seine Schwester zu sorgen.<br><br> Leider musste er feststellen dass sich seine Nachlässigkeit rächte. Im Studium sah er kein Land, da ihm viele Grundlagen fehlten. Er konnte sich zwar lange durch Charme und Betrug durchschlagen, doch am Ende sollte es nicht reichen.<br><br> Langsam ging das Familienvermögen zuende. Erik musste sich auf seine Talente besinnen und begann sei  Geld mit Trickbetrügererei zu verdienen. Seiner Schwester konnte er das aus Scham nie erzählen. Sie glaubt bis heute dass er eine Stelle als Chemiker hat.",
           "achievements": [
+            {
+              "name": "Alles für die Liebe",
+              "description": "Verliere dein Ziel aus den Augen, um eine Frau zu beeindrucken.",
+              "imageUrl": "http://xs-collectibles.com/images/large/fanp-04-p.gif"
+            },
             {
               "name": "Vom Akademiker zum Auftragsmörder",
               "description": "Wann wirst du realisieren, dass es für dich keinen Weg mehr zurück gibt?",
