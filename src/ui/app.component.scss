@@ -64,6 +64,12 @@ a.active {
   width: 10px;
   margin: 2px;
   transition: all 250ms;
+  &.mod-big {
+    border-left: 4px solid black;
+    border-top: 4px solid black;
+    height: 15px;
+    width: 15px;
+  }
   &.up {
     transform: rotate(45deg);
   }
