@@ -17,7 +17,7 @@ export class LinkableDirective implements OnInit {
       if (this.el && params[ LINKABLE_PARAM ] && params[ LINKABLE_PARAM ] === this.keyword) {
         // Dirty workaround to access the parent component since there is no official way to do this yet
         // https://github.com/angular/angular/issues/8277
-        let parent = this.vcRef._data.componentView.component;
+        let parent = (<any> this.vcRef)._data.componentView.component;
         if (parent instanceof ExpandableComponent) {
           parent.visible = true;
         }
