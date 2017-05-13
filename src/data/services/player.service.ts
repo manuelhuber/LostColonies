@@ -4,6 +4,7 @@ import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { Player } from '../models/player';
 import { Gang } from '../models/gang';
+import { Session } from '../models/session';
 
 export interface GangsAndPlayers {
   players : Player[];
@@ -25,7 +26,18 @@ export class PlayerService {
 
   private fetchData() {
     if (this.data === undefined) {
-      this.data = this.http.get('/assets/data/players.json').map((res) => res.json());
+      this.data = this.http.get('/assets/data/players.json')
+        .map((res) => res.json())
+        .map((res : GangsAndPlayers) => {
+          res.gangs = res.gangs.map((gang : Gang) => {
+            gang.sessions = gang.sessions.map((session : Session) => {
+              session.date = Date.parse(session.date);
+              return session;
+            });
+            return gang;
+          });
+          return res;
+        });
     }
   }
 }

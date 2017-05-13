@@ -13,19 +13,42 @@
   }
 }
 
+.achievements, .sessions {
+  margin: 1em 0 0.25em;
+  font-weight: bold;
+}
+
 .session-headline {
-  margin-bottom: 0.5em;
+  position: relative;
+}
+
+.previous-session, .next-session {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.previous-session {
+  left: 0;
+}
+
+.next-session {
+  right: 0;
 }
 
 .session-name {
   font-size: 1.5em;
   font-family: UglyQua;
+  text-align: center;
+  padding: 0 20px;
 }
 
 .session-date {
+  text-align: center;
   border-top: 1px solid $color-grey-5;
   font-size: 0.8em;
   font-style: italic;
+  margin-bottom: 1em;
 }
 
 .session-characters {
@@ -45,8 +68,9 @@
 .session-author {
   text-align: right;
   font-style: italic;
+  padding-right: 0.25em;
 }
 
 .session-close-description {
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }

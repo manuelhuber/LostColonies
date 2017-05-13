@@ -1,15 +1,31 @@
 <div>
   <div>{{gang.description}}</div>
 
-  <div (click)="activeSession = 0">++</div>
-  <div (click)="activeSession = 1">--</div>
   <div>
+    <div class="achievements">Erfolge:</div>
+    <achievements [achievements]="gang.achievements"></achievements>
+  </div>
+
+  <div>
+    <div class="sessions">Episoden:</div>
     <div *ngFor="let session of gang.sessions; let i = index"
          class="session-entry"
          [ngClass]="{active: activeSession === i}">
       <expandable [visible]="sessionExpanded">
         <expandable-header>
-          <div class="session-name" (click)="toggleSession()">{{session.name}}</div>
+          <div class="session-headline">
+            <div class="previous-session"
+                 *ngIf="activeSession > 0"
+                 (click)="activeSession = activeSession - 1">
+              <div class="arrow left clickable"></div>
+            </div>
+            <div class="next-session"
+                 *ngIf="activeSession < gang.sessions.length-1"
+                 (click)="activeSession = activeSession + 1">
+              <div class="arrow right clickable"></div>
+            </div>
+            <div class="session-name clickable" (click)="toggleSession()">{{session.name}}</div>
+          </div>
         </expandable-header>
         <expandable-content>
           <div>
@@ -19,11 +35,12 @@
             </div>
             <div class="session-description" [innerHtml]="session.description"></div>
             <div class="session-author">{{session.author}}</div>
-            <div class="session-close-description clickable arrow up"
-                 (click)="toggleSession()"></div>
           </div>
         </expandable-content>
       </expandable>
+      <div class="session-close-description clickable arrow"
+           [ngClass]="{up: sessionExpanded, down: !sessionExpanded}"
+           (click)="toggleSession()"></div>
     </div>
   </div>
 </div>

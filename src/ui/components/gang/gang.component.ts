@@ -16,6 +16,7 @@ export class GangComponent implements OnInit {
   }
 
   public ngOnInit() : void {
+    this.gang.sessions = this.gang.sessions.sort((a, b) => a.date - b.date);
     this.activeSession = this.gang && this.gang.sessions.length - 1;
   }
 
