@@ -1,0 +1,29 @@
+<div>
+  <div>{{gang.description}}</div>
+
+  <div (click)="activeSession = 0">++</div>
+  <div (click)="activeSession = 1">--</div>
+  <div>
+    <div *ngFor="let session of gang.sessions; let i = index"
+         class="session-entry"
+         [ngClass]="{active: activeSession === i}">
+      <expandable [visible]="sessionExpanded">
+        <expandable-header>
+          <div class="session-name" (click)="toggleSession()">{{session.name}}</div>
+        </expandable-header>
+        <expandable-content>
+          <div>
+            <div class="session-date">{{session.date | date}}</div>
+            <div class="session-characters"> Charaktere:
+              <span *ngFor="let character of session.characters">{{character}}</span>
+            </div>
+            <div class="session-description" [innerHtml]="session.description"></div>
+            <div class="session-author">{{session.author}}</div>
+            <div class="session-close-description clickable arrow up"
+                 (click)="toggleSession()"></div>
+          </div>
+        </expandable-content>
+      </expandable>
+    </div>
+  </div>
+</div>

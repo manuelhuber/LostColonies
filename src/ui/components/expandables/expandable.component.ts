@@ -35,6 +35,7 @@ export class ExpandableComponent {
   /**
    * Makes the content of the entry (in)visible with a nice animation
    */
+  @Input()
   set visible(a : boolean) {
     if (this._visible === a) {
       // No change => do nothing

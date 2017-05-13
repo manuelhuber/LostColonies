@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Player } from '../../../data/models/player';
-import { PlayerService } from '../../../data/services/player.service';
+import { GangsAndPlayers, PlayerService } from '../../../data/services/player.service';
+import { Gang } from '../../../data/models/gang';
 
 @Component({
   selector: 'players',
@@ -8,10 +9,19 @@ import { PlayerService } from '../../../data/services/player.service';
   styleUrls: [ 'players.page.scss' ]
 })
 export class PlayersPage {
-  public players : Player[];
+
+  get gang() : Gang {
+    return this.data && this.data.gangs[ 0 ];
+  }
+
+  get players() : Player[] {
+    return this.data && this.data.players;
+  }
+
+  private data : GangsAndPlayers;
 
   constructor(private playerService : PlayerService) {
-    playerService.getPlayers().subscribe((data : Player[]) => this.players = data.sort((a, b) => a.name.localeCompare(b.name)));
+    playerService.getData().subscribe((data) => this.data = data);
   }
 
 }

@@ -1,0 +1,52 @@
+@import "../../app.component";
+
+.session-entry {
+  height: 0;
+  opacity: 0;
+  transition: opacity 250ms;
+  overflow: hidden;
+  &.active {
+    transition: opacity 500ms 250ms;
+    height: auto;
+    opacity: 1;
+
+  }
+}
+
+.session-headline {
+  margin-bottom: 0.5em;
+}
+
+.session-name {
+  font-size: 1.5em;
+  font-family: UglyQua;
+}
+
+.session-date {
+  border-top: 1px solid $color-grey-5;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.session-characters {
+  margin-bottom: 0.5em;
+
+  > span {
+    font-weight: bold;
+  }
+  > span:not(:first-child) {
+    &:before {
+      content: " - ";
+      font-weight: normal;
+    }
+  }
+}
+
+.session-author {
+  text-align: right;
+  font-style: italic;
+}
+
+.session-close-description {
+  margin: 0 auto;
+}

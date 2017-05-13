@@ -28,6 +28,7 @@ import { AchievementsComponent } from './components/achievements/achievements.co
 import { CharactersComponent } from './components/characters/characters.component';
 import { CityPage } from './pages/city/city.page';
 import { MapComponent } from './components/map/map.component';
+import { GangComponent } from './components/gang/gang.component';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -60,7 +61,8 @@ type StoreType = {
     AchievementComponent,
     AchievementsComponent,
     CharactersComponent,
-    MapComponent
+    MapComponent,
+    GangComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

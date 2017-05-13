@@ -1,5 +1,17 @@
 <div class="page">
-  <accordion *ngIf="players">
+  <accordion *ngIf="players && gang">
+
+    <expandable>
+      <expandable-header>
+        <div class="page-accordion-header">{{gang.name}}</div>
+      </expandable-header>
+      <expandable-content>
+        <div class="page-accordion-content">
+          <gang [gang]="gang"></gang>
+        </div>
+      </expandable-content>
+    </expandable>
+
     <expandable *ngFor="let player of players">
       <expandable-header>
         <div class="page-accordion-header">{{player.name}}</div>
