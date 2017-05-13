@@ -33,9 +33,10 @@ import { SessionsComponent } from './components/sessions/sessions.component';
 
 import 'hammerjs';
 import 'hammer-timejs';
+import { LinkableDirective } from './directive/linkable/linkable.directive';
 
 class MyHammerConfig extends HammerGestureConfig {
-  overrides = <any> {
+  public overrides = <any> {
     pinch: {enable: false},
     rotate: {enable: false}
   };
@@ -73,7 +74,8 @@ type StoreType = {
     CharactersComponent,
     MapComponent,
     GangComponent,
-    SessionsComponent
+    SessionsComponent,
+    LinkableDirective
   ],
   imports: [ // import Angular's modules
     BrowserModule,

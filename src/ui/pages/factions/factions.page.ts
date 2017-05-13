@@ -4,7 +4,7 @@ import { Faction } from '../../../data/models/faction';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 
-export const FACTION_PARAM : string = "group";
+export const FACTION_PARAM : string = 'group';
 
 @Component({
   selector: 'factions',
@@ -12,7 +12,6 @@ export const FACTION_PARAM : string = "group";
   styleUrls: [ 'factions.page.scss' ]
 })
 export class FactionsPage implements OnInit {
-
 
   public factions : Faction[];
   private allFactions : Observable<{ [group : string] : Faction[] }>;
@@ -25,9 +24,8 @@ export class FactionsPage implements OnInit {
     return Object.keys(faction.description);
   }
 
-  ngOnInit() : void {
+  public ngOnInit() : void {
     this.activatedRoute.queryParams.subscribe((params) => {
-      console.log(params);
       this.allFactions.subscribe((factions : any) => {
         let group : string = params[ FACTION_PARAM ];
         if (group && factions[ group ]) {

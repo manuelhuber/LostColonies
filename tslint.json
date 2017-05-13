@@ -28,8 +28,8 @@
     "no-access-missing-member": true,
     "no-attribute-parameter-decorator": true,
     "no-forward-ref": true,
-    "no-input-rename": true,
-    "no-output-rename": true,
+    "no-input-rename": false,
+    "no-output-rename": false,
     "pipe-naming": [
       true,
       "camelCase",
@@ -70,8 +70,8 @@
     "typedef-whitespace": [
       true,
       {
-        "call-signature": "onespace,",
-        "index-signature": "nospace",
+        "call-signature": "onespace",
+        "index-signature": "onespace",
         "parameter": "onespace",
         "property-declaration": "onespace",
         "variable-declaration": "onespace"
