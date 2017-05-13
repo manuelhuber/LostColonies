@@ -15,28 +15,31 @@
          (swipeRight)="previous()">
       <expandable [visible]="sessionExpanded">
         <expandable-header>
-          <div class="session-headline">
-            <div class="previous-session"
-                 *ngIf="previousAvailable"
-                 (click)="previous()">
-              <div class="arrow left clickable"></div>
+          <div class="session-headline clickable" (click)="toggleSession()">
+            <div class="session-name">
+              <span>{{session.name}}</span>
+              <div class="previous-session"
+                   *ngIf="previousAvailable"
+                   (click)="previous();$event.stopPropagation()">
+                <div class="arrow left clickable"></div>
+              </div>
+              <div class="next-session"
+                   *ngIf="nextAvailable"
+                   (click)="next();$event.stopPropagation()">
+                <div class="arrow right clickable"></div>
+              </div>
             </div>
-            <div class="next-session"
-                 *ngIf="nextAvailable"
-                 (click)="next()">
-              <div class="arrow right clickable"></div>
+            <div class="session-date">{{session.date | date}}</div>
+            <div class="session-characters">
+              <span *ngFor="let character of session.characters">{{character}}</span>
             </div>
-            <div class="session-name clickable" (click)="toggleSession()">{{session.name}}</div>
           </div>
         </expandable-header>
 
 
         <expandable-content>
           <div>
-            <div class="session-date">{{session.date | date}}</div>
-            <div class="session-characters"> Charaktere:
-              <span *ngFor="let character of session.characters">{{character}}</span>
-            </div>
+
             <div class="session-description" [innerHtml]="session.description"></div>
             <div class="session-author">{{session.author}}</div>
           </div>

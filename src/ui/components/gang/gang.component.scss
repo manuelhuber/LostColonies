@@ -20,27 +20,30 @@
 
 .session-headline {
   position: relative;
+  padding: 0 20px;
 }
 
 .previous-session, .next-session {
   position: absolute;
-  top: 50%;
+  top: 100%;
   transform: translateY(-50%);
+  // padding to easily increase clickable area while still having the arrow centered
+  padding: 1em 0;
 }
 
 .previous-session {
-  left: 0;
+  right: 100%;
 }
 
 .next-session {
-  right: 0;
+  left: 100%;
 }
 
 .session-name {
   font-size: 1.5em;
   font-family: UglyQua;
   text-align: center;
-  padding: 0 20px;
+  position: relative;
 }
 
 .session-date {
@@ -53,7 +56,7 @@
 
 .session-characters {
   margin-bottom: 0.5em;
-
+  text-align: center;
   > span {
     font-weight: bold;
   }
