@@ -6,8 +6,13 @@
         <div class="page-accordion-header">{{gang.name}}</div>
       </expandable-header>
       <expandable-content>
-        <div class="page-accordion-content">
-          <gang [gang]="gang"></gang>
+        <div>
+          <div class="page-accordion-content">
+            <gang [gang]="gang"></gang>
+          </div>
+          <div class="page-accordion-content mod-separate" *ngIf="gang">
+            <sessions [sessions]="gang.sessions"></sessions>
+          </div>
         </div>
       </expandable-content>
     </expandable>

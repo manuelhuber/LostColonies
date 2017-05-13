@@ -29,11 +29,12 @@ import { CharactersComponent } from './components/characters/characters.componen
 import { CityPage } from './pages/city/city.page';
 import { MapComponent } from './components/map/map.component';
 import { GangComponent } from './components/gang/gang.component';
+import { SessionsComponent } from './components/sessions/sessions.component';
 
 import 'hammerjs';
 import 'hammer-timejs';
 
-export class MyHammerConfig extends HammerGestureConfig {
+class MyHammerConfig extends HammerGestureConfig {
   overrides = <any> {
     pinch: {enable: false},
     rotate: {enable: false}
@@ -71,7 +72,8 @@ type StoreType = {
     AchievementsComponent,
     CharactersComponent,
     MapComponent,
-    GangComponent
+    GangComponent,
+    SessionsComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

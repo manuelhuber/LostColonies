@@ -6,48 +6,4 @@
     <achievements [achievements]="gang.achievements"></achievements>
   </div>
 
-  <div>
-    <div class="sessions">Episoden:</div>
-    <div *ngFor="let session of gang.sessions; let i = index"
-         class="session-entry"
-         [ngClass]="{active: activeSession === i}"
-         (swipeLeft)="next()"
-         (swipeRight)="previous()">
-      <expandable [visible]="sessionExpanded">
-        <expandable-header>
-          <div class="session-headline clickable" (click)="toggleSession()">
-            <div class="session-name">
-              <span>{{session.name}}</span>
-              <div class="previous-session"
-                   *ngIf="previousAvailable"
-                   (click)="previous();$event.stopPropagation()">
-                <div class="arrow left clickable"></div>
-              </div>
-              <div class="next-session"
-                   *ngIf="nextAvailable"
-                   (click)="next();$event.stopPropagation()">
-                <div class="arrow right clickable"></div>
-              </div>
-            </div>
-            <div class="session-date">{{session.date | date}}</div>
-            <div class="session-characters">
-              <span *ngFor="let character of session.characters">{{character}}</span>
-            </div>
-          </div>
-        </expandable-header>
-
-
-        <expandable-content>
-          <div>
-
-            <div class="session-description" [innerHtml]="session.description"></div>
-            <div class="session-author">{{session.author}}</div>
-          </div>
-        </expandable-content>
-      </expandable>
-      <div class="session-close-description clickable arrow"
-           [ngClass]="{up: sessionExpanded, down: !sessionExpanded}"
-           (click)="toggleSession()"></div>
-    </div>
-  </div>
 </div>
