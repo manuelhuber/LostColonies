@@ -77,8 +77,10 @@ $highlight-description-nose-size: $highlight-description-margin*2;
 
 .highlight-description-wrapper {
   position: absolute;
-  padding: $highlight-description-margin 1em;
+  padding: $highlight-description-margin 0.5em;
   box-sizing: border-box;
+  left: 0;
+  right: 0;
   z-index: 1;
 }
 

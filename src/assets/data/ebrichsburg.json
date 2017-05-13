@@ -46,6 +46,19 @@
             "y": 25,
             "rotation": 12
           }
+        },
+        {
+          "name": "Verstecktes Quartier",
+          "description": "Ein verlassenes Fischerlagerhause",
+          "location": {
+            "top": 84,
+            "left": 59
+          },
+          "size": {
+            "x": 25,
+            "y": 15,
+            "rotation": 0
+          }
         }
       ]
     }
