@@ -19,10 +19,7 @@ export class ExpandableComponent {
    */
   @ContentChild(ExpandableContentComponent) public content : ExpandableContentComponent;
 
-  /**
-   * Subscribable for click events of the entry header
-   */
-  public headerClicked : EventEmitter<ExpandableComponent> = new EventEmitter();
+  public isVisible : EventEmitter<{ visible : boolean, self : ExpandableComponent }> = new EventEmitter();
 
   /**
    * The value for the CSS height attribute
@@ -69,10 +66,8 @@ export class ExpandableComponent {
    * Emit new click event
    */
   public clickHeader() : void {
-    if (this.expandOnClick) {
-      this.visible = !this.visible;
-    }
-    this.headerClicked.next(this);
+    this.visible = !this.visible;
+    this.isVisible.next({visible: this.visible, self: this});
   }
 
 }

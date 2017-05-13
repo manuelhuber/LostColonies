@@ -17,8 +17,10 @@ export class AccordionComponent implements AfterContentInit {
    */
   public ngAfterContentInit() : void {
     this.entries.toArray().forEach((entry) => {
-      entry.headerClicked.subscribe((clickedEntry) => {
-        this.toggle(clickedEntry);
+      entry.isVisible.subscribe((a) => {
+        if (a.visible) {
+          this.closeOthersThan(a.self);
+        }
       });
     });
   }
@@ -27,11 +29,9 @@ export class AccordionComponent implements AfterContentInit {
    * Hide all entries except the selected one
    * If the selected entry is already visible hide it
    */
-  private toggle(selected : ExpandableComponent) : void {
-    if (selected.visible) {
-      selected.visible = false;
-    } else {
-      this.entries.toArray().forEach((entry) => entry.visible = entry === selected);
-    }
+  private closeOthersThan(that : ExpandableComponent) : void {
+    this.entries.toArray().forEach((entry) => {
+      entry.visible = entry === that;
+    });
   }
 }
