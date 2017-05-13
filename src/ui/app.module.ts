@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HAMMER_GESTURE_CONFIG, HammerGestureConfig } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ApplicationRef, NgModule } from '@angular/core';
@@ -33,6 +33,12 @@ import { GangComponent } from './components/gang/gang.component';
 import 'hammerjs';
 import 'hammer-timejs';
 
+export class MyHammerConfig extends HammerGestureConfig {
+  overrides = <any> {
+    pinch: {enable: false},
+    rotate: {enable: false}
+  };
+}
 // Application wide providers
 const APP_PROVIDERS = [
   FactionService,
@@ -75,7 +81,11 @@ type StoreType = {
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     ENV_PROVIDERS,
-    APP_PROVIDERS
+    APP_PROVIDERS, {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: MyHammerConfig
+    }
+
   ]
 })
 export class AppModule {
