@@ -1,7 +1,21 @@
 import { LinkEntry } from './insertLinks.directive';
-import { FACTION_ROUTE, WORLD_ROUTE } from '../../app.routes';
+import { FACTION_ROUTE, PLAYERS_ROUTE, WORLD_ROUTE } from '../../app.routes';
 
 export const LINKS : LinkEntry[] = [
+  // ----------------------------------------- PLAYERS
+  {
+    phrase: 'Yuri',
+    link: PLAYERS_ROUTE, linkable: 'Moritz'
+  }, {
+    phrase: 'Erik',
+    link: PLAYERS_ROUTE, linkable: 'Andi'
+  }, {
+    phrase: 'Dietrich',
+    link: PLAYERS_ROUTE, linkable: 'Flo'
+  }, {
+    phrase: 'Aurora',
+    link: PLAYERS_ROUTE, linkable: 'Franny'
+  },
   // ----------------------------------------- FACTIONS
   {
     phrase: 'Speer und Hammer',
@@ -83,7 +97,7 @@ export const LINKS : LinkEntry[] = [
     phrase: 'Maschinenkult',
     link: WORLD_ROUTE, linkable: 'religion'
   }, {
-    phrase: 'Kulte',
+    phrase: 'Kult',
     link: WORLD_ROUTE, linkable: 'religion'
   }, {
     phrase: 'Psioniker',

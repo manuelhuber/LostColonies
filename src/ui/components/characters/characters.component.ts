@@ -12,6 +12,8 @@ export class CharactersComponent {
     this.character = chars[ 0 ];
   };
 
+  @Input() playerName : string;
+
   public path : string = PLAYERS_ROUTE;
   public character : Character;
 

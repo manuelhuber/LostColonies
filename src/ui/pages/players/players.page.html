@@ -1,7 +1,7 @@
 <div class="page">
   <accordion *ngIf="players && gang">
 
-    <expandable>
+    <expandable [linkable]="gang.name">
       <expandable-header>
         <div class="page-accordion-header">{{gang.name}}</div>
       </expandable-header>
@@ -17,7 +17,7 @@
       </expandable-content>
     </expandable>
 
-    <expandable *ngFor="let player of players">
+    <expandable *ngFor="let player of players" [linkable]="player.name">
       <expandable-header>
         <div class="page-accordion-header">{{player.name}}</div>
       </expandable-header>
@@ -25,7 +25,7 @@
         <div class="page-accordion-content">
           <achievements *ngIf="player.achievements" [achievements]="player.achievements"
                         [maxAmount]="3"></achievements>
-          <characters [characters]="player.characters"></characters>
+          <characters [characters]="player.characters" [playerName]="player.name"></characters>
         </div>
       </expandable-content>
     </expandable>
