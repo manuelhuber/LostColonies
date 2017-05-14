@@ -1,4 +1,4 @@
-import { BrowserModule, HAMMER_GESTURE_CONFIG, HammerGestureConfig } from '@angular/platform-browser';
+import { BrowserModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ApplicationRef, LOCALE_ID, NgModule } from '@angular/core';
@@ -35,13 +35,8 @@ import 'hammerjs';
 import 'hammer-timejs';
 import { LinkableDirective } from './directive/linkable/linkable.directive';
 import { InsertLinksDirective } from './directive/insertLinks/insertLinks.directive';
+import { MyHammerConfig } from '../../config/hammer.conf';
 
-class MyHammerConfig extends HammerGestureConfig {
-  public overrides = <any> {
-    pinch: {enable: false},
-    rotate: {enable: false}
-  };
-}
 // Application wide providers
 const APP_PROVIDERS = [
   FactionService,

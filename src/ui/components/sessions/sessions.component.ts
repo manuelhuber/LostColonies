@@ -12,7 +12,7 @@ export class SessionsComponent implements OnInit {
   public activeSession : number = -1;
   public sessionExpanded : boolean = false;
 
-  @Input() gangName : string;
+  @Input() public gangName : string;
   public path : string = PLAYERS_ROUTE;
 
   public toggleSession() : void {
