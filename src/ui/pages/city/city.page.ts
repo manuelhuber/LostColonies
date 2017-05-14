@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { WorldService } from '../../../data/services/world.service';
 import { Map } from '../../../data/models/Map';
+import { CITY_1_ROUTE } from '../../app.routes';
 
 @Component({
   selector: 'city',
@@ -9,6 +10,7 @@ import { Map } from '../../../data/models/Map';
 })
 export class CityPage {
   public maps : Map[];
+  public path : string = CITY_1_ROUTE;
 
   constructor(private worldService : WorldService) {
     worldService.getEbrichsburg().subscribe((data : any) => this.maps = data[ 'maps' ]);
