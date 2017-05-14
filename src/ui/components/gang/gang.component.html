@@ -1,5 +1,5 @@
 <div>
-  <div>{{gang.description}}</div>
+  <div insertLinks [exclude]="[{link:path, linkable:gang.name}]">{{gang.description}}</div>
 
   <div>
     <div class="achievements">Erfolge:</div>

@@ -30,7 +30,9 @@
 
       <expandable-content>
         <div>
-          <div class="session-description" [innerHtml]="session.description"></div>
+          <div class="session-description"
+               insertLinks [exclude]="[{link:path, linkable:gangName}]"
+               [innerHtml]="session.description"></div>
           <div class="session-author">{{session.author}}</div>
         </div>
       </expandable-content>

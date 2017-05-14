@@ -17,18 +17,18 @@
             </expandable-header>
             <expandable-content>
               <div class="submenu">
-                <div class="menu-entry" [routerLink]="['/'+worldRoute]">Allgemein</div>
+                <div class="menu-entry" [routerLink]="worldRoute">Allgemein</div>
                 <div class="menu-entry" [routerLink]="['/ebrichsburg']">Ebrichsburg</div>
               </div>
             </expandable-content>
           </expandable>
           <expandable>
             <expandable-header>
-              <div class="menu-entry" [routerLink]="['/'+factionRoute]">Fraktionen</div>
+              <div class="menu-entry" [routerLink]="factionRoute">Fraktionen</div>
             </expandable-header>
           </expandable>
           <expandable>
-            <expandable-header routerLink="/players">
+            <expandable-header [routerLink]="playersRoute">
               <div class="menu-entry">Spieler</div>
             </expandable-header>
           </expandable>

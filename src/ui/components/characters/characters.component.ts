@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Character } from '../../../data/models/character';
+import { PLAYERS_ROUTE } from '../../app.routes';
 
 @Component({
   selector: 'characters',
@@ -11,6 +12,7 @@ export class CharactersComponent {
     this.character = chars[ 0 ];
   };
 
+  public path : string = PLAYERS_ROUTE;
   public character : Character;
 
   public getDescriptions(faction : Character) : string[] {

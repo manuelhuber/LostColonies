@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Gang } from '../../../data/models/gang';
+import { PLAYERS_ROUTE } from '../../app.routes';
 
 @Component({
   selector: 'gang',
@@ -10,6 +11,7 @@ export class GangComponent implements OnInit {
   @Input() public gang : Gang;
   public activeSession : number = -1;
   public sessionExpanded : boolean = false;
+  public path : string = PLAYERS_ROUTE;
 
   public toggleSession() : void {
     this.sessionExpanded = !this.sessionExpanded;

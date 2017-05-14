@@ -11,7 +11,7 @@
             <gang [gang]="gang"></gang>
           </div>
           <div class="page-accordion-content mod-separate" *ngIf="gang">
-            <sessions [sessions]="gang.sessions"></sessions>
+            <sessions [sessions]="gang.sessions" [gangName]="gang.name"></sessions>
           </div>
         </div>
       </expandable-content>

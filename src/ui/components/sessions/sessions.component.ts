@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Session } from '../../../data/models/session';
+import { PLAYERS_ROUTE } from '../../app.routes';
 
 @Component({
   selector: 'sessions',
@@ -10,6 +11,9 @@ export class SessionsComponent implements OnInit {
   @Input() public sessions : Session[];
   public activeSession : number = -1;
   public sessionExpanded : boolean = false;
+
+  @Input() gangName : string;
+  public path : string = PLAYERS_ROUTE;
 
   public toggleSession() : void {
     this.sessionExpanded = !this.sessionExpanded;
