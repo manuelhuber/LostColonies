@@ -20,7 +20,6 @@ export class LinkableDirective implements OnInit {
         // https://github.com/angular/angular/issues/8277
         let parent = (<any> this.vcRef)._data.componentView.component;
         if (parent instanceof ExpandableComponent) {
-          console.log('linkable directive displaying');
           parent.visible = true;
         }
         this.el.nativeElement.scrollIntoView();
