@@ -48,8 +48,8 @@
           }
         },
         {
-          "name": "Verstecktes Quartier",
-          "description": "Ein verlassenes Fischerlagerhause",
+          "name": "Altes Fischlager",
+          "description": "Das geheime Quartier der Assassinen ist in einem verlassenen Lagerhause in der nähe des Hafens",
           "location": {
             "top": 84,
             "left": 59

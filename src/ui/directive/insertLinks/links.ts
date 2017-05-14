@@ -12,6 +12,7 @@ export const LINKS : LinkEntry[] = [
   {phrase: 'Speer und Hammer', link: FACTION_ROUTE, linkable: 'Speer und Hammer'},
   {phrase: 'Nachtwächter', link: FACTION_ROUTE, linkable: 'Nachtwächter'},
   {phrase: 'Brennende Dämmerung', link: FACTION_ROUTE, linkable: 'Brennende Dämmerung'},
+  {phrase: 'Brennenden Dämmerung', link: FACTION_ROUTE, linkable: 'Brennende Dämmerung'},
   {phrase: 'Schädelschänder', link: FACTION_ROUTE, linkable: 'Schädelschänder'},
   {phrase: 'Kinder des Nebels', link: FACTION_ROUTE, linkable: 'Kinder des Nebels'},
   // ------------------------------------------------------------------------------------------------------------- World
@@ -42,12 +43,12 @@ export const LINKS : LinkEntry[] = [
   // ----------------------------------------------------------------------------------------------- Warp
   {phrase: 'Warp', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Echtzeitraum', link: WORLD_ROUTE, linkable: 'warp'},
-  {phrase: 'Warp', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Riss', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Warpeinfluß', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Whisperer', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Psioniker', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Tote', link: WORLD_ROUTE, linkable: 'warp'},
+  {phrase: 'Leiche', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Todessucher', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Dämon', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Leviathan', link: WORLD_ROUTE, linkable: 'warp'},
