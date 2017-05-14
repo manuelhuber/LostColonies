@@ -16,7 +16,7 @@ export class InsertLinksDirective implements AfterViewInit {
 
   @Input() public exclude : LinkLocation[];
 
-  private links : any = LINKS;
+  private links : LinkEntry[] = LINKS;
 
   constructor(private el : ElementRef, private sanitizer : DomSanitizer, private renderer : Renderer2) {
   }
@@ -28,7 +28,7 @@ export class InsertLinksDirective implements AfterViewInit {
   private updateHtml() : void {
     let newHtml = this.el.nativeElement.innerHTML;
     if (newHtml) {
-      this.links.forEach((entry) => {
+      this.links.forEach((entry : LinkEntry) => {
         if (!this.locationExcluded(entry)) {
           newHtml = newHtml.replace(entry.phrase, this.generateLink(entry));
         }
