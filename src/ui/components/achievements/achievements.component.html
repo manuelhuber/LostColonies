@@ -25,10 +25,10 @@
 
 
   <div class="bottom-row" *ngIf="achievementsToDisplay[0].length>1">
-    <div class="left-arrow clickable" *ngIf="previousAvailable" (click)="next()">
+    <div class="left-arrow clickable" *ngIf="previousAvailable" (click)="previous()">
       <div class="arrow left"></div>
     </div>
-    <div class="right-arrow clickable" *ngIf="nextAvailable" (click)="previous()">
+    <div class="right-arrow clickable" *ngIf="nextAvailable" (click)="next()">
       <div class="arrow right"></div>
     </div>
     <div class="toggle clickable middle-arrow" (click)="toggle()" [ngClass]="{up: isVisible}">
