@@ -31,7 +31,13 @@
       "npcs": [
         {
           "name": "Salia",
-          "description": "Informationshändlerin, die nach Verwicklung mit Blaumäntel sich von der Gang distanzieren wollte, doch Erik versicherte ihr, dass er sie beschützen kann. Nun hat sie Blut geleckt und entschied sich fest in die Crew einzusteigen."
+          "description": "Informationshändlerin, die nach Verwicklung mit Blaumäntel sich von der Gang distanzieren wollte, doch Erik versicherte ihr, dass er sie beschützen kann. Nun hat sie Blut geleckt und entschied sich fest in die Crew einzusteigen.",
+          "imageUrl": "http://xs-collectibles.com/images/large/fanp-04-p.gif"
+        },
+        {
+          "name": "Mevlir",
+          "description": "Ein Ex-Militärarzt, der nach dem berüchtigten Masaker am Krämergraben das Astra Militarum verlies. Als enger Freund von Yuri hilft er der Gang, wo er kann. Wird er sich Yuri's neuer Crew anschließen oder führt ihn sein Weg bald woanders hin?",
+          "imageUrl": "http://imgur.com/wTNlU.png"
         }
       ],
       "achievements": [

@@ -1,0 +1,19 @@
+<div>
+  <div>
+    <npc [npc]="npcs[0]"></npc>
+  </div>
+  <expandable [(visible)]="expanded">
+    <expandable-content *ngIf="npcs.length>1">
+      <div class="npc-wrapper" *ngFor="let npc of npcs.slice(1); let i = $index">
+        <npc [npc]="npc" [alignRight]="i % 2 !== 0"></npc>
+      </div>
+    </expandable-content>
+  </expandable>
+
+  <div class="bottom-row" *ngIf="npcs.length>1">
+    <div class="toggle clickable middle-arrow" (click)="expanded = !expanded" [ngClass]="{up: expanded}">
+      <div class="arrow mod-big"
+           [ngClass]="{up: expanded, down: !expanded}"></div>
+    </div>
+  </div>
+</div>

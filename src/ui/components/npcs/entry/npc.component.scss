@@ -1,0 +1,36 @@
+$margin-image-text: 0.5em;
+$margin-image-top: 0.4em;
+$margin-image-border: 0.2em;
+
+.npc {
+}
+
+.npc-image-wrapper {
+  max-width: 20%;
+  max-height: 100%;
+  padding: $margin-image-top $margin-image-text 0 $margin-image-border;
+  float: left;
+  box-sizing: border-box;
+}
+
+.npc-image {
+  max-width: 100%;
+  box-shadow: 0 0 0.2em black;
+}
+
+.npc-name {
+  font-family: UglyQua;
+  font-size: 1.25em;
+}
+
+.npc-description {
+
+}
+
+.right {
+  text-align: right;
+  .npc-image-wrapper {
+    padding: $margin-image-top $margin-image-border 0 $margin-image-text;
+    float: right;
+  }
+}

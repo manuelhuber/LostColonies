@@ -1,0 +1,22 @@
+.bottom-row {
+  position: relative;
+  height: 25px;
+}
+
+.npc-wrapper {
+  margin-top: 1.5em;
+}
+
+.middle-arrow {
+  top: 3px;
+}
+
+.toggle {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -30%);
+
+  &.up {
+    transform: translate(-50%, 20%);
+  }
+}

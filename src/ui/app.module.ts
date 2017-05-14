@@ -36,6 +36,8 @@ import 'hammer-timejs';
 import { LinkableDirective } from './directive/linkable/linkable.directive';
 import { InsertLinksDirective } from './directive/insertLinks/insertLinks.directive';
 import { MyHammerConfig } from '../../config/hammer.conf';
+import { NpcComponent } from './components/npcs/entry/npc.component';
+import { NpcsComponent } from './components/npcs/npcs.component';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -72,7 +74,9 @@ type StoreType = {
     GangComponent,
     SessionsComponent,
     LinkableDirective,
-    InsertLinksDirective
+    InsertLinksDirective,
+    NpcComponent,
+    NpcsComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

@@ -1,5 +1,4 @@
 <div>
-  <div class="sessions">Episoden:</div>
   <div *ngFor="let session of sessions; let i = index"
        class="session-entry"
        [ngClass]="{active: activeSession === i}"
