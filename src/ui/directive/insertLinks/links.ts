@@ -48,10 +48,9 @@ export const LINKS : LinkEntry[] = [
   {phrase: 'Psioniker', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Tote', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Todessucher', link: WORLD_ROUTE, linkable: 'warp'},
-  {phrase: 'Inquisition', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Dämon', link: WORLD_ROUTE, linkable: 'warp'},
+  {phrase: 'Leviathan', link: WORLD_ROUTE, linkable: 'warp'},
   // ------------------------------------------------------------------------------------------------------- Ebrichsburg
-
   {phrase: 'Ebrichsburg', link: CITY_1_ROUTE, linkable: 'ebrichsburg'},
   {phrase: 'Hasard', link: CITY_1_ROUTE, linkable: 'hasard'}
 

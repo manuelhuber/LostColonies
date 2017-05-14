@@ -79,7 +79,7 @@
       },
       {
         "title": "Leviathanblut",
-        "description": "ist das Blut von gewaltigen dämonischen Wesen, die außerhalb der Städte wohnen. Es wird als Treibstoff, für Drogen und vieles weitere benutzt."
+        "description": "ist das Blut von gewaltigen dämonischen Wesen. Es ist der Treibstoff der Industrie, wird aber auch für die Herstellung von Drogen verwendet."
       }
     ]
   },
@@ -154,12 +154,12 @@
         "description": "sind Whisperer, die trainiert wurden Leichen zu finden. Seh- & Hörsinn wurde ihnen genommen."
       },
       {
-        "title": "Inquisition",
-        "description": "schützt Menschheit vor den existenziellen Gefahren, vor allem des Warps. Viel Autorität, Respekt & Furcht."
+        "title": "Dämonen",
+        "description": "sind Wesen die im Warp leben. Neben den animalischen Bestien, gibt es auch Dämonen welche Menschengestalt annehmen und so manchen Menschen Angebote machen..."
       },
       {
-        "title": "Dämonen",
-        "description": "sind mächtige Wesen, nur Inquisition wagt es sie zu bekämpfen"
+        "title": "Leviathan",
+        "description": "ist ein Begriff für die gewaltige Dämonen, die für ihr Leviathanblut gejagt werden. Während die meisten im Wasser Leben, gibt es auch einige bekannte an Land lebende und sogar fliegenden Exemplare. Da die Leviathane die Jagd oft überlegen, geben die Freihändler ihnen oft Namen."
       },
       {
         "title": "Öffentliche Meinung",
