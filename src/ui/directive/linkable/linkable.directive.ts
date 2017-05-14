@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Input, OnInit, Renderer2, ViewContainerRef } from '@angular/core';
+import { Directive, ElementRef, Input, OnInit, ViewContainerRef } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { ExpandableComponent, TIME_WHEN_ANIMATION_IS_OVER } from '../../components/expandables/expandable.component';
 
@@ -9,7 +9,7 @@ export class LinkableDirective implements OnInit {
 
   @Input('linkable') public keyword : string;
 
-  constructor(private el : ElementRef, private route : ActivatedRoute, private vcRef : ViewContainerRef, private renderer : Renderer2) {
+  constructor(private el : ElementRef, private route : ActivatedRoute, private vcRef : ViewContainerRef) {
   }
 
   public ngOnInit() : void {
