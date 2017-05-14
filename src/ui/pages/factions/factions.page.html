@@ -8,7 +8,7 @@
         <div class="page-accordion-content">
           <img *ngIf="faction.imageUrl" [src]="faction.imageUrl" alt="" class="faction-image">
           <div *ngIf="faction.description">
-            <div insertLinks [innerHtml]="faction.description"></div>
+            <div insertLinks [exclude]="[{link: route, linkable: faction.name}]" [innerHtml]="faction.description"></div>
           </div>
         </div>
       </expandable-content>

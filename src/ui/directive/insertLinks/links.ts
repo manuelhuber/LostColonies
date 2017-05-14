@@ -1,46 +1,23 @@
 import { LinkEntry } from './insertLinks.directive';
-
-export function getData() : any {
-  let foo : any = require('../../../assets/data/world');
-  let result = [];
-  foo.forEach((entry) => {
-    entry.subEntries.forEach((subEntrie) => {
-      result.push({
-        phrase: subEntrie.title,
-        link: 'world',
-        linkable: entry.title
-      });
-      // if (subEntrie.subEntries) {
-      //   subEntrie.subEntries.forEach((subSub) => {
-      //     result.push({
-      //       phrase: subSub.title,
-      //       link: 'world',
-      //       linkable: entry.title
-      //     });
-      //   });
-      // }
-    });
-  });
-  return result;
-}
+import { FACTION_ROUTE } from '../../app.routes';
 
 export const LINKS : LinkEntry[] = [
   // ----------------------------------------- FACTIONS
   {
     phrase: 'Speer und Hammer',
-    link: 'factions', linkable: 'Speer und Hammer'
+    link: FACTION_ROUTE, linkable: 'Speer und Hammer'
   }, {
     phrase: 'Nachtwächter',
-    link: 'factions', linkable: 'Nachtwächter'
+    link: FACTION_ROUTE, linkable: 'Nachtwächter'
   }, {
     phrase: 'Brennende Dämmerung',
-    link: 'factions', linkable: 'Brennende Dämmerung'
+    link: FACTION_ROUTE, linkable: 'Brennende Dämmerung'
   }, {
     phrase: 'Schädelschänder',
-    link: 'factions', linkable: 'Schädelschänder'
+    link: FACTION_ROUTE, linkable: 'Schädelschänder'
   }, {
     phrase: 'Kinder des Nebels',
-    link: 'factions', linkable: 'Kinder des Nebels'
+    link: FACTION_ROUTE, linkable: 'Kinder des Nebels'
   },
   // ----------------------------------------- World
   // ---- Regierung
@@ -74,7 +51,7 @@ export const LINKS : LinkEntry[] = [
   },
   // ---- Technologie
   {
-    phrase: 'Maschinengeister',
+    phrase: 'Maschinengeist',
     link: 'world', linkable: 'technologie'
   }, {
     phrase: 'Adeptus Mechanicus',
@@ -83,13 +60,13 @@ export const LINKS : LinkEntry[] = [
     phrase: 'Maschinenpriester',
     link: 'world', linkable: 'technologie'
   }, {
-    phrase: 'Fabriken',
+    phrase: 'Fabrik',
     link: 'world', linkable: 'technologie'
   }, {
     phrase: 'Produktion',
     link: 'world', linkable: 'technologie'
   }, {
-    phrase: 'Defekte',
+    phrase: 'Defekt',
     link: 'world', linkable: 'technologie'
   }, {
     phrase: 'Reperatur',

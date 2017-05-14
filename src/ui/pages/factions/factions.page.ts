@@ -3,6 +3,7 @@ import { FactionService } from '../../../data/services/faction.service';
 import { Faction } from '../../../data/models/faction';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
+import { FACTION_ROUTE } from '../../app.routes';
 
 export const FACTION_PARAM : string = 'group';
 
@@ -13,6 +14,7 @@ export const FACTION_PARAM : string = 'group';
 })
 export class FactionsPage implements OnInit {
 
+  public route : string = FACTION_ROUTE;
   public factions : Faction[];
   private allFactions : Observable<{ [group : string] : Faction[] }>;
 
