@@ -1,5 +1,4 @@
 import { AfterViewInit, Directive, ElementRef, Input, Renderer2 } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
 import { LINKS } from './links';
 
 export interface LinkEntry extends LinkLocation {
@@ -18,7 +17,7 @@ export class InsertLinksDirective implements AfterViewInit {
 
   private links : LinkEntry[] = LINKS;
 
-  constructor(private el : ElementRef, private sanitizer : DomSanitizer, private renderer : Renderer2) {
+  constructor(private el : ElementRef, private renderer : Renderer2) {
   }
 
   public ngAfterViewInit() : void {
