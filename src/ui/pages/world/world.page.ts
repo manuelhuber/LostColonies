@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { WorldService } from '../../../data/services/world.service';
 import { WorldEntry } from '../../../data/models/world';
-import { Data } from '@angular/router';
 
 @Component({
   selector: 'world',
@@ -9,7 +8,7 @@ import { Data } from '@angular/router';
   templateUrl: 'world.page.html'
 })
 export class WorldPage {
-  public entries : Data[];
+  public entries : WorldEntry[];
 
   constructor(private worldService : WorldService) {
     worldService.getWorld().subscribe((data : WorldEntry[]) => this.entries = data);
