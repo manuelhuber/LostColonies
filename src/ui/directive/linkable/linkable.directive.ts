@@ -14,11 +14,13 @@ export class LinkableDirective implements OnInit {
 
   public ngOnInit() : void {
     this.route.queryParams.subscribe((params : Params) => {
-      if (this.el && params[ LINKABLE_PARAM ] && params[ LINKABLE_PARAM ] === this.keyword) {
+      if (this.el && params[ LINKABLE_PARAM ]
+        && params[ LINKABLE_PARAM ].toLowerCase() === this.keyword.toLowerCase()) {
         // Dirty workaround to access the parent component since there is no official way to do this yet
         // https://github.com/angular/angular/issues/8277
         let parent = (<any> this.vcRef)._data.componentView.component;
         if (parent instanceof ExpandableComponent) {
+          console.log('linkable directive displaying');
           parent.visible = true;
         }
         this.el.nativeElement.scrollIntoView();

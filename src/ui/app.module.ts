@@ -34,6 +34,7 @@ import { SessionsComponent } from './components/sessions/sessions.component';
 import 'hammerjs';
 import 'hammer-timejs';
 import { LinkableDirective } from './directive/linkable/linkable.directive';
+import { InsertLinksDirective } from './directive/insertLinks/insertLinks.directive';
 
 class MyHammerConfig extends HammerGestureConfig {
   public overrides = <any> {
@@ -75,7 +76,8 @@ type StoreType = {
     MapComponent,
     GangComponent,
     SessionsComponent,
-    LinkableDirective
+    LinkableDirective,
+    InsertLinksDirective
   ],
   imports: [ // import Angular's modules
     BrowserModule,
