@@ -1,6 +1,6 @@
 import { Directive, ElementRef, Input, OnInit, Renderer2, ViewContainerRef } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { ExpandableComponent } from '../../components/expandables/expandable.component';
+import { ExpandableComponent, TIME_WHEN_ANIMATION_IS_OVER } from '../../components/expandables/expandable.component';
 
 export const LINKABLE_PARAM : string = 'link';
 
@@ -21,8 +21,10 @@ export class LinkableDirective implements OnInit {
         let parent = (<any> this.vcRef)._data.componentView.component;
         if (parent instanceof ExpandableComponent) {
           parent.visible = true;
+          setTimeout(() => this.el.nativeElement.scrollIntoView(), TIME_WHEN_ANIMATION_IS_OVER);
+        } else {
+          this.el.nativeElement.scrollIntoView();
         }
-        this.el.nativeElement.scrollIntoView();
       }
     });
   }

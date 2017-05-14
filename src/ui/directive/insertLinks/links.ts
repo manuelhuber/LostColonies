@@ -5,6 +5,7 @@ export const LINKS : LinkEntry[] = [
   // ----------------------------------------------------------------------------------------------------------- PLAYERS
   {phrase: 'Yuri', link: PLAYERS_ROUTE, linkable: 'Moritz'},
   {phrase: 'Erik', link: PLAYERS_ROUTE, linkable: 'Andi'},
+  {phrase: 'Frank', link: PLAYERS_ROUTE, linkable: 'Flo'},
   {phrase: 'Dietrich', link: PLAYERS_ROUTE, linkable: 'Flo'},
   {phrase: 'Aurora', link: PLAYERS_ROUTE, linkable: 'Franny'},
   // ---------------------------------------------------------------------------------------------------------- FACTIONS

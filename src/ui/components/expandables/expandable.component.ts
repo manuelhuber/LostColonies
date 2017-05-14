@@ -1,6 +1,9 @@
 import { Component, ContentChild, EventEmitter, Input, Output } from '@angular/core';
 import { ExpandableContentComponent } from './content/expandable-content.component';
 
+// MAGIC NUMBER WARNING: the delay should be a bit longer than the animation duration!
+export const TIME_WHEN_ANIMATION_IS_OVER : number = 600;
+
 @Component({
   selector: 'expandable',
   templateUrl: 'expandable.component.html',
@@ -51,8 +54,7 @@ export class ExpandableComponent {
       // Increase to the size of the content
       this.height = this.content.height + 'px';
       // Set auto to react to size changes of the content
-      // MAGIC NUMBER WARNING: the delay should be a bit longer than the animation duration!
-      this.timeout = setTimeout(() => this.height = 'auto', 600);
+      this.timeout = setTimeout(() => this.height = 'auto', TIME_WHEN_ANIMATION_IS_OVER);
     } else {
       // Set the height from auto to the actual size (needed for animation)
       this.height = this.content.height + 'px';
