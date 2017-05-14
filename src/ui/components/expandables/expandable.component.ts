@@ -42,7 +42,6 @@ export class ExpandableComponent {
       // No change => do nothing
       return;
     }
-    this.visibleChange.next(a);
     clearTimeout(this.timeout);
     if (!this.content) {
       return;
@@ -60,6 +59,8 @@ export class ExpandableComponent {
       // Animate to size 0
       this.timeout = setTimeout(() => this.height = '0', 50);
     }
+    this.visibleChange.next(a);
+    this.isVisible.next({visible: a, self: this});
   }
 
   get visible() : boolean {
