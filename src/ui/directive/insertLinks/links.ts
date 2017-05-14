@@ -1,5 +1,5 @@
 import { LinkEntry } from './insertLinks.directive';
-import { FACTION_ROUTE } from '../../app.routes';
+import { FACTION_ROUTE, WORLD_ROUTE } from '../../app.routes';
 
 export const LINKS : LinkEntry[] = [
   // ----------------------------------------- FACTIONS
@@ -23,71 +23,71 @@ export const LINKS : LinkEntry[] = [
   // ---- Regierung
   {
     phrase: 'Adeptus Administratum',
-    link: 'world', linkable: 'regierung'
+    link: WORLD_ROUTE, linkable: 'regierung'
   }, {
     phrase: 'Adeptus Arbites',
-    link: 'world', linkable: 'regierung'
+    link: WORLD_ROUTE, linkable: 'regierung'
   }, {
     phrase: 'Kommissare',
-    link: 'world', linkable: 'regierung'
+    link: WORLD_ROUTE, linkable: 'regierung'
   }, {
     phrase: 'Astra Militarum',
-    link: 'world', linkable: 'regierung'
+    link: WORLD_ROUTE, linkable: 'regierung'
   }, {
     phrase: 'Adeptus Astra Telephatica',
-    link: 'world', linkable: 'regierung'
+    link: WORLD_ROUTE, linkable: 'regierung'
   }, {
     phrase: 'Adeptus Mechnicus',
-    link: 'world', linkable: 'regierung'
+    link: WORLD_ROUTE, linkable: 'regierung'
   }, {
     phrase: 'Adeptus Ministorum',
-    link: 'world', linkable: 'regierung'
+    link: WORLD_ROUTE, linkable: 'regierung'
   }, {
     phrase: 'Inquisition',
-    link: 'world', linkable: 'regierung'
+    link: WORLD_ROUTE, linkable: 'regierung'
   }, {
     phrase: 'Freihändler',
-    link: 'world', linkable: 'regierung'
+    link: WORLD_ROUTE, linkable: 'regierung'
   },
   // ---- Technologie
   {
     phrase: 'Maschinengeist',
-    link: 'world', linkable: 'technologie'
+    link: WORLD_ROUTE, linkable: 'technologie'
   }, {
     phrase: 'Adeptus Mechanicus',
-    link: 'world', linkable: 'technologie'
+    link: WORLD_ROUTE, linkable: 'technologie'
   }, {
     phrase: 'Maschinenpriester',
-    link: 'world', linkable: 'technologie'
+    link: WORLD_ROUTE, linkable: 'technologie'
   }, {
     phrase: 'Fabrik',
-    link: 'world', linkable: 'technologie'
+    link: WORLD_ROUTE, linkable: 'technologie'
   }, {
     phrase: 'Produktion',
-    link: 'world', linkable: 'technologie'
+    link: WORLD_ROUTE, linkable: 'technologie'
   }, {
     phrase: 'Defekt',
-    link: 'world', linkable: 'technologie'
+    link: WORLD_ROUTE, linkable: 'technologie'
   }, {
     phrase: 'Reperatur',
-    link: 'world', linkable: 'technologie'
+    link: WORLD_ROUTE, linkable: 'technologie'
   }, {
     phrase: 'Leviathanblut',
-    link: 'world', linkable: 'technologie'
+    link: WORLD_ROUTE, linkable: 'technologie'
   },
   // ---- Religion
   {
     phrase: 'Imperiales Credo',
-    link: 'world', linkable: 'religion'
+    link: WORLD_ROUTE, linkable: 'religion'
   }, {
     phrase: 'Maschinenkult',
-    link: 'world', linkable: 'religion'
+    link: WORLD_ROUTE, linkable: 'religion'
   }, {
     phrase: 'Kulte',
-    link: 'world', linkable: 'religion'
+    link: WORLD_ROUTE, linkable: 'religion'
   }, {
     phrase: 'Psioniker',
-    link: 'world',
+    link: WORLD_ROUTE,
     linkable: 'warp'
   }
 ];

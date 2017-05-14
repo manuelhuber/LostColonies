@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { ExpandableComponent } from '../expandables/expandable.component';
-import { FACTION_ROUTE } from '../../app.routes';
+import { FACTION_ROUTE, WORLD_ROUTE } from '../../app.routes';
 
 @Component({
   selector: 'header',
@@ -11,7 +11,8 @@ import { FACTION_ROUTE } from '../../app.routes';
 })
 export class HeaderComponent implements OnInit {
 
-  factionRoute : string = FACTION_ROUTE;
+  public factionRoute : string = FACTION_ROUTE;
+  public worldRoute : string = WORLD_ROUTE;
 
   public menuOpen : boolean;
   @ViewChild(ExpandableComponent) public menu;
