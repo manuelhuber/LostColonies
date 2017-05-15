@@ -4,6 +4,7 @@ import { Faction } from '../../../data/models/faction';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 import { FACTION_ROUTE } from '../../app.routes';
+import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 
 export const FACTION_PARAM : string = 'group';
 
@@ -14,16 +15,11 @@ export const FACTION_PARAM : string = 'group';
 })
 export class FactionsPage implements OnInit {
 
-  public route : string = FACTION_ROUTE;
   public factions : Faction[];
   private allFactions : Observable<{ [group : string] : Faction[] }>;
 
   constructor(private factionService : FactionService, private activatedRoute : ActivatedRoute) {
     this.allFactions = factionService.getFactions();
-  }
-
-  public getDescriptions(faction : Faction) : string[] {
-    return Object.keys(faction.description);
   }
 
   public ngOnInit() : void {
@@ -39,6 +35,10 @@ export class FactionsPage implements OnInit {
         }
       });
     });
+  }
+
+  public excludeLinks(faction : Faction) : LinkLocation[] {
+    return [ {link: FACTION_ROUTE, linkable: faction.name} ];
   }
 
 }

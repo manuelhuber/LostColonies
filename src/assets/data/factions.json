@@ -8,7 +8,13 @@
     {
       "name": "Nachtwächter",
       "imageUrl": "http://i.imgur.com/O6b2QkB.jpg",
-      "description": "Die größte Gang im Stadtteil Hasard, bestehend vorwiegend aus Hafenarbeitern. Sie kontrollieren nicht nur den größten Teil der Glücksspiele und das einzige legale Kasino, sondern sie haben auch einen der wichtigsten Handels- & Schmuggelrouten in ihrem Besitz. "
+      "description": "Die größte Gang im Stadtteil Hasard, bestehend vorwiegend aus Hafenarbeitern. Sie kontrollieren nicht nur den größten Teil der Glücksspiele und das einzige legale Kasino, sondern sie haben auch einen der wichtigsten Handels- & Schmuggelrouten in ihrem Besitz. ",
+      "npcs": [
+        {
+          "name": "Don Volker Junior",
+          "description": "Der Sohn des ermordeten Anführer der Nachtwächter, muss nicht nur den Tod seines Vater rächen, sondern auch um die Vorherrschaft in Hasard kämpfen"
+        }
+      ]
     },
     {
       "name": "Brennende Dämmerung",

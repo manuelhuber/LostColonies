@@ -8,8 +8,13 @@
         <div class="page-accordion-content">
           <img *ngIf="faction.imageUrl" [src]="faction.imageUrl" alt="" class="faction-image">
           <div *ngIf="faction.description">
-            <div insertLinks [exclude]="[{link: route, linkable: faction.name}]" [innerHtml]="faction.description"></div>
+            <div insertLinks [exclude]="excludeLinks(faction)"
+                 [innerHtml]="faction.description"></div>
           </div>
+        </div>
+        <div class="page-accordion-content mod-separate" *ngIf="faction.npcs">
+          <div class="headline">NPCs:</div>
+          <npcs [npcs]="faction.npcs" [excludeLinks]="excludeLinks(faction)"></npcs>
         </div>
       </expandable-content>
     </expandable>
