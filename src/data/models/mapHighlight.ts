@@ -4,4 +4,5 @@ export class MapHighlight {
   public size : { x : number, y : number, rotation? : number };
   public name : string;
   public description : string;
+  public displayDot : boolean;
 }

@@ -15,6 +15,7 @@
 
       <!-- Highlight dot -->
       <div class="highlight clickable"
+           [ngClass]="{displayDot: highlight.displayDot}"
            [ngStyle]="{
            top: highlight.location.top+'%',
            left: highlight.location.left+'%',

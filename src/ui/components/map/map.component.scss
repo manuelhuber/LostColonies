@@ -49,7 +49,7 @@ $highlight-description-nose-size: $highlight-description-margin*2;
   transform: translate(-50%, -50%);
 }
 
-.highlight:before, .highlight:after {
+.displayDot:before, .displayDot:after {
   content: "";
   position: absolute;
   border-radius: 100%;
@@ -59,13 +59,13 @@ $highlight-description-nose-size: $highlight-description-margin*2;
   transform: translate(-50%, -50%);
 }
 
-.highlight:before {
+.displayDot:before {
   width: $highlight-marker-circle-size;
   height: $highlight-marker-circle-size;
   border: 2px solid;
 }
 
-.highlight:after {
+.displayDot:after {
   width: $highlight-marker-dot-size;
   height: $highlight-marker-dot-size;
   background: $highlight-marker-color;
