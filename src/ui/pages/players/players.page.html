@@ -12,11 +12,11 @@
           </div>
           <div class="page-accordion-content mod-separate" *ngIf="gang">
             <div class="headline">Episoden:</div>
-            <sessions [sessions]="gang.sessions" [gangName]="gang.name"></sessions>
+            <sessions [sessions]="gang.sessions" [gangName]="gang.name" [excludeLinks]="excludeLinks"></sessions>
           </div>
           <div class="page-accordion-content mod-separate" *ngIf="gang.npcs">
             <div class="headline">NPCs:</div>
-            <npcs [npcs]="gang.npcs"></npcs>
+            <npcs [npcs]="gang.npcs" [excludeLinks]="excludeLinks"></npcs>
           </div>
         </div>
       </expandable-content>

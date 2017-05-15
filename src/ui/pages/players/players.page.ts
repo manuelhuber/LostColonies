@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Player } from '../../../data/models/player';
 import { GangsAndPlayers, PlayerService } from '../../../data/services/player.service';
 import { Gang } from '../../../data/models/gang';
+import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
+import { PLAYERS_ROUTE } from '../../app.routes';
 
 @Component({
   selector: 'players',
@@ -9,6 +11,11 @@ import { Gang } from '../../../data/models/gang';
   styleUrls: [ 'players.page.scss' ]
 })
 export class PlayersPage {
+
+
+  get excludeLinks() : LinkLocation[] {
+    return this.gang && [ {link: PLAYERS_ROUTE, linkable: this.gang.name} ];
+  }
 
   get gang() : Gang {
     return this.data && this.data.gangs[ 0 ];

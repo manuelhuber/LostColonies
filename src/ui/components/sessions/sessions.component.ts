@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Session } from '../../../data/models/session';
 import { PLAYERS_ROUTE } from '../../app.routes';
+import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 
 @Component({
   selector: 'sessions',
@@ -9,6 +10,7 @@ import { PLAYERS_ROUTE } from '../../app.routes';
 })
 export class SessionsComponent implements OnInit {
   @Input() public sessions : Session[];
+  @Input() public excludeLinks : LinkLocation[];
   public activeSession : number = -1;
   public sessionExpanded : boolean = false;
 
