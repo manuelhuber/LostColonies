@@ -83,3 +83,9 @@ a.active {
     transform: rotate(135deg);
   }
 }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
