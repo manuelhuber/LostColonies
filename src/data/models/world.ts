@@ -1,5 +1,7 @@
-export class WorldEntry {
-  public title : string;
-  public description : string;
-  public subEntries : WorldEntry[];
+import { WorldEntry } from './worldEntry';
+import { MyMap } from './map';
+
+export class World {
+  public map : MyMap;
+  public entries : WorldEntry[];
 }

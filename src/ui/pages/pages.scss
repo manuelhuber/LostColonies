@@ -38,6 +38,9 @@ $margin-top: 0.5em;
   border-left: $dark-border;
   border-right: $light-border;
   border-bottom: $dark-border;
+  &.mod-no-padding {
+    padding: 0;
+  }
   &.mod-separate {
     border-top: $light-border;
     margin-top: $margin-top;

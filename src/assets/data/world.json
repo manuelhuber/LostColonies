@@ -1,183 +1,290 @@
-[
-  {
-    "title": "Regierung",
-    "subEntries": [
+{
+  "map": {
+    "name": "Welt",
+    "description": "",
+    "imageUrl": "http://imgur.com/fkxudFS.png",
+    "highlights": [
       {
-        "title": "Machtverhältnisse:",
-        "description": "Adeptus Administratum, Adeptus Mechanicus, Adeptus Ministorum, die Inquisition und Freihändler unterliegen niemandem und kooperieren freiwillig miteinander."
+        "name": "Manojin",
+        "description": "",
+        "location": {
+          "top": 10.5,
+          "left": 53
+        },
+        "size": {
+          "x": 66,
+          "y": 22,
+          "rotation": -10
+        },
+        "displayDot": false
       },
       {
-        "title": "Adeptus Administratum",
-        "description": "ist die Verwaltungseinheit des Imperiums. Zu ihren Aufgaben gehört u.a. die Rechtssprechung und Steuereintreibung. Ihr unterliegen:",
-        "subEntries": [
-          {
-            "title": "Adeptus Arbites:",
-            "description": "Polizei"
-          },
-          {
-            "title": "Kommissare:",
-            "description": "Gesetzeshüter aus anderen Städten / Ländern. Gehen gegen Beamte & Kriminelle vor. Gefürchtet und unkorrumpierbar"
-          },
-          {
-            "title": "Astra Militarum:",
-            "description": "Militär"
-          },
-          {
-            "title": "Adeptus Astra Telephatica:",
-            "description": "Rekrutierung und Training von Psioniker und Warp-Kommunikation"
-          }
-        ]
+        "name": "Ageros",
+        "description": "",
+        "location": {
+          "top": 34.5,
+          "left": 26
+        },
+        "size": {
+          "x": 54,
+          "y": 37,
+          "rotation": -10
+        },
+        "displayDot": false
       },
       {
-        "title": "Adeptus Mechnicus",
-        "description": "verwaltet alle Aspekte bezüglich Technolgie. Eher unkooperativ und sehr bedacht ihre Geheimnisse und Aufgaben zu wahren."
+        "name": "Skovland",
+        "description": "",
+        "location": {
+          "top": 65.5,
+          "left": 68
+        },
+        "size": {
+          "x": 57,
+          "y": 60,
+          "rotation": -14
+        },
+        "displayDot": false
       },
       {
-        "title": "Adeptus Ministorum",
-        "description": "ist für die Aufrecherhaltung des Imperialen Credos und Bestattungen zuständig."
+        "name": "Sizalia",
+        "description": "",
+        "location": {
+          "top": 61.5,
+          "left": 30
+        },
+        "size": {
+          "x": 32,
+          "y": 37,
+          "rotation": -51
+        },
+        "displayDot": false
       },
       {
-        "title": "Inquisition",
-        "description": "beschützt die Menschheit vor existenziellen Bedrohungen. Erhält Unterstützung von allen anderne Institutionen."
+        "name": "Kralleninsel",
+        "description": "",
+        "location": {
+          "top": 85.5,
+          "left": 20
+        },
+        "size": {
+          "x": 27,
+          "y": 22,
+          "rotation": 0
+        },
+        "displayDot": false
       },
       {
-        "title": "Freihändler",
-        "description": "sind meist adelige Kapitäne die warpresistente Vehikel besitzen. Handeln Waren zwischen Städten und jagen Leviathane für ihr Blut."
+        "name": "Ebrichsburg",
+        "description": "",
+        "location": {
+          "top": 48,
+          "left": 29.5
+        },
+        "size": {
+          "x": 16,
+          "y": 4,
+          "rotation": 0
+        },
+        "displayDot": false
+      },
+      {
+        "name": "Steinfeld",
+        "description": "",
+        "location": {
+          "top": 40.5,
+          "left": 16.5
+        },
+        "size": {
+          "x": 16,
+          "y": 4,
+          "rotation": 0
+        },
+        "displayDot": false
       }
     ]
   },
-  {
-    "title": "Technologie",
-    "subEntries": [
-      {
-        "title": "Maschinengeister",
-        "description": "leben in technologischen Gegenständen und halten diese in Stand."
-      },
-      {
-        "title": "Adeptus Mechanicus",
-        "description": "ist eine Staatseinheit die Produktiuon und Entwicklung jeglicher technologischen Gegenstände kontrolliert oder überwacht."
-      },
-      {
-        "title": "Maschinenpriester",
-        "description": "können die Maschinengeister verstehen und besänftigen und hüten die Geheimnisse des Kultes."
-      },
-      {
-        "title": "Fabriken",
-        "description": "zahlen Lizenzgebühren um produzieren zu dürfen. Unterliegen strengen Auflagen & Untersuchungen."
-      },
-      {
-        "title": "Produktion",
-        "description": "von hochtechnologischen Gegenständen ist nur mithilfe von Blaupausen möglich, welche streng vom Adeptus Mechanicus kontrolliert werden."
-      },
-      {
-        "title": "Defekte",
-        "description": "sind meistens auf verägerte Maschinengeister zurückzuführen."
-      },
-      {
-        "title": "Reperatur",
-        "description": "ist durch Gebete, Salben und Rituale die den Maschinengeist beschlichtigen möglich. Ritual kann z.B. das zerlegen, reinigen und zusammenbauen des Gegenstandes sein."
-      },
-      {
-        "title": "Leviathanblut",
-        "description": "ist das Blut von gewaltigen dämonischen Wesen. Es ist der Treibstoff der Industrie, wird aber auch für die Herstellung von Drogen verwendet."
-      }
-    ]
-  },
-  {
-    "title": "Religion",
-    "subEntries": [
-      {
-        "title": "Imperiales Credo",
-        "description": "ist die offizielle Staatsreligion. Dort wird der Gott-Imperator verehrt, der in der Sonne (Goldener Thron) lebt und über die Menschen wacht."
-      },
-      {
-        "title": "Maschinenkult ",
-        "description": "betet den Maschinengott Omnissiah an. Religion \"Maschinenkult\" und staatliche Einrichtung \"Adeptus Mechanicus\" oft als Synonym verwendet."
-      },
-      {
-        "title": "Kulte ",
-        "description": "sind teilweise mit dem Imperialen Credo vereinbar. Die Verehrung von Warpgöttern und Dämonen ist jedoch illegal."
-      }
-    ]
-  },
-  {
-    "title": "Warp",
-    "subEntries": [
-      {
-        "title": "Echtzeitraum",
-        "description": "ist die normale Welt"
-      },
-      {
-        "title": "Warp",
-        "description": "/ Immaterium / Jenseits ist eine parallele Welt in der andere Gesetze für Zeit und Raum herrschen. Sie ist Heimat von Dämonen und für Menschen lebensfeindlich."
-      },
-      {
-        "title": "Risse",
-        "description": "sind eine temporäre Verbindung zw. Warp und Echtzeitraum"
-      },
-      {
-        "title": "Warpeinflüße",
-        "description": "/ Warppräsenz im Echtzeitraum können sich äußern durch z. B.:",
-        "subEntries": [
-          {
-            "title": "",
-            "description": "Extreme Temperaturverändungen"
-          },
-          {
-            "title": "",
-            "description": "Elektrostatische Ladung"
-          },
-          {
-            "title": "",
-            "description": "Mutation"
-          },
-          {
-            "title": "",
-            "description": "Wahnsinn"
-          }
-        ]
-      },
-      {
-        "title": "Whisperer",
-        "description": "haben eine erhöhte Affiitiät zum Warp, können z.T. mit Warpwesen kommunizieren / Warpeinflüße warnehmen. Diese Fähigkeiten sind angeboren oder trainiert."
-      },
-      {
-        "title": "Psioniker",
-        "description": "können Warp (geringfügig) Kontrollieren. Extrem selten, sehr gefährlich und meistens Teil des Adpetus Astra Telephatica."
-      },
-      {
-        "title": "Tote",
-        "description": "verursachen nach wenigen Tagen Risse im Echtzeitraum da ihre Seele / Essenz verschluckt wird - außer dies wird durch die korrekten Rituale verhindert."
-      },
-      {
-        "title": "Todessucher",
-        "description": "sind Whisperer, die trainiert wurden Leichen zu finden. Seh- & Hörsinn wurde ihnen genommen."
-      },
-      {
-        "title": "Dämonen",
-        "description": "sind Wesen die im Warp leben. Neben den animalischen Bestien, gibt es auch Dämonen welche Menschengestalt annehmen und so manchen Menschen Angebote machen..."
-      },
-      {
-        "title": "Leviathan",
-        "description": "ist ein Begriff für die gewaltige Dämonen, die für ihr Leviathanblut gejagt werden. Während die meisten im Wasser Leben, gibt es auch einige bekannte an Land lebende und sogar fliegenden Exemplare. Da die Leviathane die Jagd oft überlegen, geben die Freihändler ihnen oft Namen."
-      },
-      {
-        "title": "Öffentliche Meinung",
-        "description": "ist negativ gegenüber den Extremen des Warps (v.a. Beschwörungen), aber milde oder positive Aspekte des Warps (z.B. Whisperer oder Maschinengeister) sind normaler Teil des Lebens"
-      }
-    ]
-  },
-  {
-    "title": "Leben",
-    "subEntries": [
-      {
-        "title": "Lebenserwartung:",
-        "description": "Ca 40 für die Unterschicht - bis zu 250 für Reiche & Einflußreiche mit Zugriff zu höherer medizinischer Versorgung und Cybernetiks"
-      },
-      {
-        "title": "Wetter",
-        "description": "ist durch konstante Warpstürme geprägt. Selbst zur Mittagszeit ist die Sonne kaum sichtbar"
-      }
-    ]
-  }
-]
+  "entries": [
+    {
+      "title": "Regierung",
+      "subEntries": [
+        {
+          "title": "Machtverhältnisse:",
+          "description": "Adeptus Administratum, Adeptus Mechanicus, Adeptus Ministorum, die Inquisition und Freihändler unterliegen niemandem und kooperieren freiwillig miteinander."
+        },
+        {
+          "title": "Adeptus Administratum",
+          "description": "ist die Verwaltungseinheit des Imperiums. Zu ihren Aufgaben gehört u.a. die Rechtssprechung und Steuereintreibung. Ihr unterliegen:",
+          "subEntries": [
+            {
+              "title": "Adeptus Arbites:",
+              "description": "Polizei"
+            },
+            {
+              "title": "Kommissare:",
+              "description": "Gesetzeshüter aus anderen Städten / Ländern. Gehen gegen Beamte & Kriminelle vor. Gefürchtet und unkorrumpierbar"
+            },
+            {
+              "title": "Astra Militarum:",
+              "description": "Militär"
+            },
+            {
+              "title": "Adeptus Astra Telephatica:",
+              "description": "Rekrutierung und Training von Psioniker und Warp-Kommunikation"
+            }
+          ]
+        },
+        {
+          "title": "Adeptus Mechnicus",
+          "description": "verwaltet alle Aspekte bezüglich Technolgie. Eher unkooperativ und sehr bedacht ihre Geheimnisse und Aufgaben zu wahren."
+        },
+        {
+          "title": "Adeptus Ministorum",
+          "description": "ist für die Aufrecherhaltung des Imperialen Credos und Bestattungen zuständig."
+        },
+        {
+          "title": "Inquisition",
+          "description": "beschützt die Menschheit vor existenziellen Bedrohungen. Erhält Unterstützung von allen anderne Institutionen."
+        },
+        {
+          "title": "Freihändler",
+          "description": "sind meist adelige Kapitäne die warpresistente Vehikel besitzen. Handeln Waren zwischen Städten und jagen Leviathane für ihr Blut."
+        }
+      ]
+    },
+    {
+      "title": "Technologie",
+      "subEntries": [
+        {
+          "title": "Maschinengeister",
+          "description": "leben in technologischen Gegenständen und halten diese in Stand."
+        },
+        {
+          "title": "Adeptus Mechanicus",
+          "description": "ist eine Staatseinheit die Produktiuon und Entwicklung jeglicher technologischen Gegenstände kontrolliert oder überwacht."
+        },
+        {
+          "title": "Maschinenpriester",
+          "description": "können die Maschinengeister verstehen und besänftigen und hüten die Geheimnisse des Kultes."
+        },
+        {
+          "title": "Fabriken",
+          "description": "zahlen Lizenzgebühren um produzieren zu dürfen. Unterliegen strengen Auflagen & Untersuchungen."
+        },
+        {
+          "title": "Produktion",
+          "description": "von hochtechnologischen Gegenständen ist nur mithilfe von Blaupausen möglich, welche streng vom Adeptus Mechanicus kontrolliert werden."
+        },
+        {
+          "title": "Defekte",
+          "description": "sind meistens auf verägerte Maschinengeister zurückzuführen."
+        },
+        {
+          "title": "Reperatur",
+          "description": "ist durch Gebete, Salben und Rituale die den Maschinengeist beschlichtigen möglich. Ritual kann z.B. das zerlegen, reinigen und zusammenbauen des Gegenstandes sein."
+        },
+        {
+          "title": "Leviathanblut",
+          "description": "ist das Blut von gewaltigen dämonischen Wesen. Es ist der Treibstoff der Industrie, wird aber auch für die Herstellung von Drogen verwendet."
+        }
+      ]
+    },
+    {
+      "title": "Religion",
+      "subEntries": [
+        {
+          "title": "Imperiales Credo",
+          "description": "ist die offizielle Staatsreligion. Dort wird der Gott-Imperator verehrt, der in der Sonne (Goldener Thron) lebt und über die Menschen wacht."
+        },
+        {
+          "title": "Maschinenkult ",
+          "description": "betet den Maschinengott Omnissiah an. Religion \"Maschinenkult\" und staatliche Einrichtung \"Adeptus Mechanicus\" oft als Synonym verwendet."
+        },
+        {
+          "title": "Kulte ",
+          "description": "sind teilweise mit dem Imperialen Credo vereinbar. Die Verehrung von Warpgöttern und Dämonen ist jedoch illegal."
+        }
+      ]
+    },
+    {
+      "title": "Warp",
+      "subEntries": [
+        {
+          "title": "Echtzeitraum",
+          "description": "ist die normale Welt"
+        },
+        {
+          "title": "Warp",
+          "description": "/ Immaterium / Jenseits ist eine parallele Welt in der andere Gesetze für Zeit und Raum herrschen. Sie ist Heimat von Dämonen und für Menschen lebensfeindlich."
+        },
+        {
+          "title": "Risse",
+          "description": "sind eine temporäre Verbindung zw. Warp und Echtzeitraum"
+        },
+        {
+          "title": "Warpeinflüße",
+          "description": "/ Warppräsenz im Echtzeitraum können sich äußern durch z. B.:",
+          "subEntries": [
+            {
+              "title": "",
+              "description": "Extreme Temperaturverändungen"
+            },
+            {
+              "title": "",
+              "description": "Elektrostatische Ladung"
+            },
+            {
+              "title": "",
+              "description": "Mutation"
+            },
+            {
+              "title": "",
+              "description": "Wahnsinn"
+            }
+          ]
+        },
+        {
+          "title": "Whisperer",
+          "description": "haben eine erhöhte Affiitiät zum Warp, können z.T. mit Warpwesen kommunizieren / Warpeinflüße warnehmen. Diese Fähigkeiten sind angeboren oder trainiert."
+        },
+        {
+          "title": "Psioniker",
+          "description": "können Warp (geringfügig) Kontrollieren. Extrem selten, sehr gefährlich und meistens Teil des Adpetus Astra Telephatica."
+        },
+        {
+          "title": "Tote",
+          "description": "verursachen nach wenigen Tagen Risse im Echtzeitraum da ihre Seele / Essenz verschluckt wird - außer dies wird durch die korrekten Rituale verhindert."
+        },
+        {
+          "title": "Todessucher",
+          "description": "sind Whisperer, die trainiert wurden Leichen zu finden. Seh- & Hörsinn wurde ihnen genommen."
+        },
+        {
+          "title": "Dämonen",
+          "description": "sind Wesen die im Warp leben. Neben den animalischen Bestien, gibt es auch Dämonen welche Menschengestalt annehmen und so manchen Menschen Angebote machen..."
+        },
+        {
+          "title": "Leviathan",
+          "description": "ist ein Begriff für die gewaltige Dämonen, die für ihr Leviathanblut gejagt werden. Während die meisten im Wasser Leben, gibt es auch einige bekannte an Land lebende und sogar fliegenden Exemplare. Da die Leviathane die Jagd oft überlegen, geben die Freihändler ihnen oft Namen."
+        },
+        {
+          "title": "Öffentliche Meinung",
+          "description": "ist negativ gegenüber den Extremen des Warps (v.a. Beschwörungen), aber milde oder positive Aspekte des Warps (z.B. Whisperer oder Maschinengeister) sind normaler Teil des Lebens"
+        }
+      ]
+    },
+    {
+      "title": "Leben",
+      "subEntries": [
+        {
+          "title": "Lebenserwartung:",
+          "description": "Ca 40 für die Unterschicht - bis zu 250 für Reiche & Einflußreiche mit Zugriff zu höherer medizinischer Versorgung und Cybernetiks"
+        },
+        {
+          "title": "Wetter",
+          "description": "ist durch konstante Warpstürme geprägt. Selbst zur Mittagszeit ist die Sonne kaum sichtbar"
+        }
+      ]
+    }
+  ]
+}

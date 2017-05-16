@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Map } from '../../../data/models/Map';
+import { MyMap } from '../../../data/models/Map';
 import { MapHighlight } from '../../../data/models/MapHighlight';
 
 @Component({
@@ -9,7 +9,7 @@ import { MapHighlight } from '../../../data/models/MapHighlight';
 })
 export class MapComponent {
   public activeDescription : number;
-  @Input() public map : Map;
+  @Input() public map : MyMap;
 
   public toggle(i : number) : void {
     this.activeDescription = this.activeDescription === i ? -1 : i;
