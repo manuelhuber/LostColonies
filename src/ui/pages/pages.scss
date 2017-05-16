@@ -1,11 +1,13 @@
 @import "../app.component";
+@import "../components/expandables/expandable.component";
 
 $dark-border: 2px solid $color-grey-2;
 $light-border: 2px solid $color-white-2;
 $margin-top: 0.5em;
 
 .page {
-  max-width: 500px;
+  //max-width: 600px;
+  max-width: 40rem;
   margin: 0 auto;
 }
 
@@ -21,6 +23,7 @@ $margin-top: 0.5em;
   border-left: $dark-border;
   border-bottom: none;
   cursor: pointer;
+  transition: border-bottom 0ms $height-animation-duration;
 }
 
 .accordion-entry-hidden {

@@ -1,8 +1,8 @@
 import { Component, ContentChild, EventEmitter, Input, Output } from '@angular/core';
 import { ExpandableContentComponent } from './content/expandable-content.component';
 
-// MAGIC NUMBER WARNING: the delay should be a bit longer than the animation duration!
-export const TIME_WHEN_ANIMATION_IS_OVER : number = 600;
+// MAGIC NUMBER WARNING: the delay should be as long or a bit longer than the animation duration!
+export const TIME_WHEN_ANIMATION_IS_OVER : number = 500;
 
 @Component({
   selector: 'expandable',
