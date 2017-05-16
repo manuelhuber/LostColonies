@@ -6,9 +6,9 @@
       </expandable-header>
       <expandable-content>
         <div class="page-accordion-content">
-          <div class="map-description" insertLinks [exclude]="[{link:path, linkable:map.name}]">{{map.description}}
+          <div class="map-description" insertLinks [exclude]="getExcludeLinks(map)">{{map.description}}
           </div>
-          <map [map]="map"></map>
+          <map [map]="map" [excludeLinks]="getExcludeLinks(map)"></map>
         </div>
       </expandable-content>
     </expandable>

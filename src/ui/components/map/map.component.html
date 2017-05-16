@@ -34,7 +34,7 @@
            (click)="toggle(i)">
         <div class="highlight-description">
           <div class="highlight-description-title">{{highlight.name}}</div>
-          <div insertLinks>{{highlight.description}}</div>
+          <div insertLinks [exclude]="excludeLinks">{{highlight.description}}</div>
         </div>
       </div>
 

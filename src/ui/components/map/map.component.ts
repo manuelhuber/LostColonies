@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { MyMap } from '../../../data/models/Map';
 import { MapHighlight } from '../../../data/models/MapHighlight';
+import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 
 @Component({
   selector: 'map',
@@ -10,6 +11,7 @@ import { MapHighlight } from '../../../data/models/MapHighlight';
 export class MapComponent {
   public activeDescription : number;
   @Input() public map : MyMap;
+  @Input() public excludeLinks : LinkLocation[];
 
   public toggle(i : number) : void {
     this.activeDescription = this.activeDescription === i ? -1 : i;

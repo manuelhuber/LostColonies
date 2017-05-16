@@ -7,6 +7,7 @@ $highlight-description-margin: 10px;
 $highlight-description-background: $color-grey-0;
 $highlight-description-box-shadow: 0 0 6px black;
 $highlight-description-nose-size: $highlight-description-margin*2;
+$highlight-description-z-index: 2;
 
 .map {
   position: relative;
@@ -45,7 +46,7 @@ $highlight-description-nose-size: $highlight-description-margin*2;
 }
 
 .click-helper {
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   transform: translate(-50%, -50%);
 }
@@ -78,7 +79,7 @@ $highlight-description-nose-size: $highlight-description-margin*2;
   box-sizing: border-box;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: $highlight-description-z-index;
 }
 
 .highlight-description {
@@ -97,7 +98,7 @@ $highlight-description-nose-size: $highlight-description-margin*2;
   height: $highlight-description-margin;
   transform: translateX(-50%);
   overflow: hidden;
-  z-index: 1;
+  z-index: $highlight-description-z-index;
 }
 
 .highlight-description-nose:before {
