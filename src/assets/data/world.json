@@ -2,7 +2,7 @@
   "map": {
     "name": "Welt",
     "description": "",
-    "imageUrl": "http://imgur.com/fkxudFS.png",
+    "imageUrl": "http://imgur.com/ipnAEuA.png",
     "highlights": [
       {
         "name": "Manojin",
@@ -47,8 +47,8 @@
         "displayDot": false
       },
       {
-        "name": "Sizalia",
-        "description": "",
+        "name": "Zalia",
+        "description": "Die zalianischen Gangs legen großen Wert auf Loyalität und die Einhaltung gewisser Regeln im Bandenkrieg. Dazu gehören ",
         "location": {
           "top": 61.5,
           "left": 30
@@ -78,8 +78,8 @@
         "name": "Ebrichsburg",
         "description": "",
         "location": {
-          "top": 48,
-          "left": 29.5
+          "top": 48.5,
+          "left": 29
         },
         "size": {
           "x": 16,

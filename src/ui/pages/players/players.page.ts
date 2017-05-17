@@ -12,7 +12,6 @@ import { PLAYERS_ROUTE } from '../../app.routes';
 })
 export class PlayersPage {
 
-
   get excludeLinks() : LinkLocation[] {
     return this.gang && [ {link: PLAYERS_ROUTE, linkable: this.gang.name} ];
   }

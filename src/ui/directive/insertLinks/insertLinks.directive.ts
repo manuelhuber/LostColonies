@@ -25,8 +25,8 @@ export class InsertLinksDirective implements AfterViewInit {
   }
 
   private updateHtml() : void {
-    let newHtml = this.el.nativeElement.innerHTML;
-    if (newHtml) {
+    let newHtml : string = this.el.nativeElement.innerHTML;
+    if (newHtml && newHtml.length) {
       this.links.forEach((entry : LinkEntry) => {
         if (!this.locationExcluded(entry)) {
           newHtml = newHtml.replace(entry.phrase, this.generateLink(entry));
