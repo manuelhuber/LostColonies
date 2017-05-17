@@ -74,8 +74,9 @@ $highlight-description-z-index: 2;
 }
 
 .highlight-description-wrapper {
+  overflow: auto;
   position: absolute;
-  padding: $highlight-description-margin 0.5em;
+  margin: $highlight-description-margin 0.5em;
   box-sizing: border-box;
   left: 0;
   right: 0;
@@ -115,11 +116,11 @@ $highlight-description-z-index: 2;
 
 .top {
   & .highlight-description-wrapper {
-    transform: translateY(-100%);
+    //transform: translateY(-100%);
   }
 
   & .highlight-description-nose {
-    transform: translate(-50%, -100%);
+    //transform: translate(-50%, -100%);
   }
 
   & .highlight-description-nose:before {

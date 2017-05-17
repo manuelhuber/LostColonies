@@ -5,8 +5,8 @@
     "imageUrl": "http://imgur.com/ipnAEuA.png",
     "highlights": [
       {
-        "name": "Manojin",
-        "description": "",
+        "name": "Manoin",
+        "description": "Die nördlichste Insel besteht zur Hälfte aus Steppenland und zur Hälfte aus hohen Gebiergen. Manoanische Kartelle verlangen ein sehr hohes Maß an Hingabe und Gehorsam. Die Opferbereitschaft selbst niedrigster Mitglieder grenzt oft an Fanatismus. In den brutalen Kämpfen dieser Insel ist eine Kultur von schnell wechselnden Allianzen entstanden - private Zwiespalte werden oft für das wohl des Kartells begraben. Zumindestens zeitweise.",
         "location": {
           "top": 10.5,
           "left": 53
@@ -34,21 +34,21 @@
       },
       {
         "name": "Skovland",
-        "description": "",
+        "description": "Die größte und kälteste Insel ist Heimat für viele der gefährlichsten Gangs. Der Kampf zwischen Staatsgewalt und der Unterwelt zwingt mittlerweile beide Seiten zu extremen Maßnahmen. Unter der Brutalität und Rücksichtslosigkeit leiden jedoch vor allem die Bürger. Viele Städte stehen am Rande einer Revolution. Es gibt sogar Gerüchte, dass im Süden Dämonen offen politische Ämter innehalten...",
         "location": {
           "top": 65.5,
           "left": 68
         },
         "size": {
           "x": 57,
-          "y": 60,
+          "y": 49,
           "rotation": -14
         },
         "displayDot": false
       },
       {
         "name": "Zalia",
-        "description": "Die zalianischen Gangs legen großen Wert auf Loyalität und die Einhaltung gewisser Regeln im Bandenkrieg. Dazu gehören ",
+        "description": "Eine Insel, die durch wärmeres Klima geprägt ist. Korruption gehört zum guten Ton der Beamten und die größten Banden genießen oft sogar Respekt in der Gesellschaft. Die zalianischen Mafias legen großen Wert Loyalität und die Einhaltung gewisser Regeln im Bandenkrieg. Sie eskalieren Konflikte meistens langsam und vergeben nur schwer.",
         "location": {
           "top": 61.5,
           "left": 30
