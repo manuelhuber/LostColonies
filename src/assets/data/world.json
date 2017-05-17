@@ -20,7 +20,7 @@
       },
       {
         "name": "Ageros",
-        "description": "",
+        "description": "Die von dichten, dunklen Nadelwäldern gezeichnete Insel war einst der Sitz der Imperialen Regierung für alle umliegenden Inseln. Doch mittlerweile sind auch hier die Städte nur noch traurige Abbilder ihres ehemaligen Glanzes. Während man sich in den Palästen die Messer nur methaphorisch in den Rücken rammt, blitzen in der Dunkelheit der Gossen wahre Klingen auf... und das tiefrote Blut der ergeizigen Ganoven ergiest sich zwischen den Pflastersteinen.",
         "location": {
           "top": 34.5,
           "left": 26
@@ -34,7 +34,7 @@
       },
       {
         "name": "Skovland",
-        "description": "Die größte und kälteste Insel ist Heimat für viele der gefährlichsten Gangs. Der Kampf zwischen Staatsgewalt und der Unterwelt zwingt mittlerweile beide Seiten zu extremen Maßnahmen. Unter der Brutalität und Rücksichtslosigkeit leiden jedoch vor allem die Bürger. Viele Städte stehen am Rande einer Revolution. Es gibt sogar Gerüchte, dass im Süden Dämonen offen politische Ämter innehalten...",
+        "description": "Die größte und kälteste Insel ist Heimat für viele der gefährlichsten Gangs. Der Kampf zwischen Staatsgewalt und der Unterwelt zwingt mittlerweile beide Seiten zu extremen Maßnahmen. Unter der Brutalität und Rücksichtslosigkeit leiden jedoch vor allem die Bürger, weshalb viele Städte am Rande einer Revolution stehen. Es gibt sogar Gerüchte, dass im Süden Dämonen offen politische Ämter innehalten...",
         "location": {
           "top": 65.5,
           "left": 68
@@ -48,7 +48,7 @@
       },
       {
         "name": "Zalia",
-        "description": "Eine Insel, die durch wärmeres Klima geprägt ist. Korruption gehört zum guten Ton der Beamten und die größten Banden genießen oft sogar Respekt in der Gesellschaft. Die zalianischen Mafias legen großen Wert Loyalität und die Einhaltung gewisser Regeln im Bandenkrieg. Sie eskalieren Konflikte meistens langsam und vergeben nur schwer.",
+        "description": "Auf dieser durch wärmeres Klima geprägten Insel gehört Korruption zum guten Ton der Beamten, während die größten Banden oft Respekt in der Gesellschaft genießen. Die zalianischen Mafias legen großen Wert Loyalität und die Einhaltung gewisser Regeln im Bandenkrieg. Sie eskalieren Konflikte meistens langsam, aber vergeben nur schwer.",
         "location": {
           "top": 61.5,
           "left": 30
@@ -76,7 +76,7 @@
       },
       {
         "name": "Ebrichsburg",
-        "description": "",
+        "description": "Als Hafenstadt im Süden Ageros ist Ebrichsburg auch heute noch vom Handel geprägt. Die dunklen Steine der Stadt glänzen im fahlen Lilastich der Straßenlaternen. Auf dem harten Pflaster dieser Stadt, wird Tag für Tag um jeden Häuserblock gekämpft. Viertel für Viertel.",
         "location": {
           "top": 48.5,
           "left": 29
@@ -90,7 +90,7 @@
       },
       {
         "name": "Steinfeld",
-        "description": "",
+        "description": "Bis zum heutigen Tage werden die Minen von Steinfeld noch zu einem Großteil von Häftlingen und Zwangsarbeitern bearbeitet. Und dies schlägt sich auch in der Stadt nieder. Mit einer überdurchschnittlichen Kriminalitätsrate und unterdurchschnittlichen Bildung gehört diese Stadt wahrlich zu den schlimmsten Orten Ageros.",
         "location": {
           "top": 40.5,
           "left": 16.5
