@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MyMap } from '../../../data/models/Map';
+import { MyMap } from '../../../data/models/map';
 import { MapHighlight } from '../../../data/models/MapHighlight';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 
