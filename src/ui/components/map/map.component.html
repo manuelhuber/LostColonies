@@ -23,7 +23,7 @@
            height: highlight.size.y+'%'}">
         <div class="overlay"
              [ngClass]="{active: activeDescription === i}"
-             [ngStyle]="{ transform: 'rotate('+highlight.size.rotation+'deg)'}"
+             [ngStyle]="{ transform: 'rotate('+highlight.size.rotation+'deg)', transition: highlightOverlayAnimation}"
              (click)="toggle(i)"></div>
       </div>
 

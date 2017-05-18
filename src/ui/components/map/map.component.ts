@@ -5,6 +5,9 @@ import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive'
 
 // MAGIC NUMBER WARNING: This value is dependent on the margin in the map.component.scss
 const DOUBLE_MARGIN : string = '20px';
+const BORDER_APPEAR_ANIMATION : string = 'all 150ms ease-in';
+const BORDER_DISAPPEAR_ANIMATION : string = 'all 150ms ease-out';
+const BORDER_NO_ANIMATION : string = 'none';
 
 @Component({
   selector: 'map',
@@ -12,11 +15,19 @@ const DOUBLE_MARGIN : string = '20px';
   styleUrls: [ 'map.component.scss' ]
 })
 export class MapComponent {
-  public activeDescription : number;
+  public activeDescription : number = -1;
+  public highlightOverlayAnimation : string;
   @Input() public map : MyMap;
   @Input() public excludeLinks : LinkLocation[];
 
   public toggle(i : number) : void {
+    if (this.activeDescription === i) {
+      this.highlightOverlayAnimation = BORDER_DISAPPEAR_ANIMATION;
+    } else if (this.activeDescription === -1) {
+      this.highlightOverlayAnimation = BORDER_APPEAR_ANIMATION;
+    } else {
+      this.highlightOverlayAnimation = BORDER_NO_ANIMATION;
+    }
     this.activeDescription = this.activeDescription === i ? -1 : i;
   }
 
