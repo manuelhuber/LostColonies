@@ -1,9 +1,9 @@
 <div class="page">
   <accordion *ngIf="entries || map">
 
-    <expandable *ngIf="map">
+    <expandable *ngIf="map" [linkable]="map.name">
       <expandable-header>
-        <div class="page-accordion-header">Weltkarte</div>
+        <div class="page-accordion-header">{{map.name}}</div>
       </expandable-header>
       <expandable-content>
         <div class="page-accordion-content mod-no-padding">
