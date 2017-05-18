@@ -6,7 +6,7 @@
     "highlights": [
       {
         "name": "Manoin",
-        "description": "Die nördlichste Insel besteht zur Hälfte aus Steppenland und zur Hälfte aus hohen Gebiergen. Manoanische Kartelle verlangen ein sehr hohes Maß an Hingabe und Gehorsam. Die Opferbereitschaft selbst niedrigster Mitglieder grenzt oft an Fanatismus. In den brutalen Kämpfen dieser Insel ist eine Kultur von schnell wechselnden Allianzen entstanden - private Zwiespalte werden oft für das wohl des Kartells begraben. Zumindestens zeitweise.",
+        "description": "Die nördlichste Insel besteht zur Hälfte aus Steppenland und zur Hälfte aus hohen Gebirgen. Manoanische Kartelle verlangen ein sehr hohes Maß an Hingabe und Gehorsam. Die Opferbereitschaft selbst niedrigster Mitglieder grenzt oft an Fanatismus. In den brutalen Kämpfen dieser Insel ist eine Kultur von schnell wechselnden Allianzen entstanden - private Zwiespalte werden oft für das wohl des Kartells begraben. Zumindestens zeitweise.",
         "location": {
           "top": 10.5,
           "left": 53
@@ -20,7 +20,7 @@
       },
       {
         "name": "Ageros",
-        "description": "Die von dichten, dunklen Nadelwäldern gezeichnete Insel war einst der Sitz der Imperialen Regierung für alle umliegenden Inseln. Doch mittlerweile sind auch hier die Städte nur noch traurige Abbilder ihres ehemaligen Glanzes. Während man sich in den Palästen die Messer nur methaphorisch in den Rücken rammt, blitzen in der Dunkelheit der Gossen wahre Klingen auf... und das tiefrote Blut der ergeizigen Ganoven ergiest sich zwischen den Pflastersteinen.",
+        "description": "Die von dichten, dunklen Nadelwäldern gezeichnete Insel war einst der Sitz der Imperialen Regierung für alle umliegenden Inseln. Doch mittlerweile sind auch hier die Städte nur noch traurige Abbilder ihres ehemaligen Glanzes. Während man sich in den Palästen die Messer nur metaphorisch in den Rücken rammt, blitzen in der Dunkelheit der Gossen wahre Klingen auf und das tiefrote Blut der ehrgeizigen Ganoven ergießt sich zwischen den Pflastersteinen.",
         "location": {
           "top": 34.5,
           "left": 26
@@ -114,7 +114,7 @@
         },
         {
           "title": "Adeptus Administratum",
-          "description": "ist die Verwaltungseinheit des Imperiums. Zu ihren Aufgaben gehört u.a. die Rechtssprechung und Steuereintreibung. Ihr unterliegen:",
+          "description": "ist die Verwaltungseinheit des Imperiums. Zu ihren Aufgaben gehört u.a. die Rechtsprechung und Steuereintreibung. Ihr unterliegen:",
           "subEntries": [
             {
               "title": "Adeptus Arbites:",
@@ -136,11 +136,11 @@
         },
         {
           "title": "Adeptus Mechnicus",
-          "description": "verwaltet alle Aspekte bezüglich Technolgie. Eher unkooperativ und sehr bedacht ihre Geheimnisse und Aufgaben zu wahren."
+          "description": "verwaltet alle Aspekte bezüglich Technologie. Eher unkooperativ und sehr bedacht ihre Geheimnisse und Aufgaben zu wahren."
         },
         {
           "title": "Adeptus Ministorum",
-          "description": "ist für die Aufrecherhaltung des Imperialen Credos und Bestattungen zuständig."
+          "description": "ist für die Aufrechterhaltung des Imperialen Credos und Bestattungen zuständig."
         },
         {
           "title": "Inquisition",
@@ -161,7 +161,7 @@
         },
         {
           "title": "Adeptus Mechanicus",
-          "description": "ist eine Staatseinheit die Produktiuon und Entwicklung jeglicher technologischen Gegenstände kontrolliert oder überwacht."
+          "description": "ist eine Staatseinheit die Produktion und Entwicklung jeglicher technologischen Gegenstände kontrolliert oder überwacht."
         },
         {
           "title": "Maschinenpriester",
@@ -177,11 +177,11 @@
         },
         {
           "title": "Defekte",
-          "description": "sind meistens auf verägerte Maschinengeister zurückzuführen."
+          "description": "sind meistens auf verärgerte Maschinengeister zurückzuführen."
         },
         {
           "title": "Reperatur",
-          "description": "ist durch Gebete, Salben und Rituale die den Maschinengeist beschlichtigen möglich. Ritual kann z.B. das zerlegen, reinigen und zusammenbauen des Gegenstandes sein."
+          "description": "ist durch Gebete, Salben und Rituale die den Maschinengeist beschwichtigen möglich. Ritual kann z.B. das zerlegen, reinigen und zusammenbauen des Gegenstandes sein."
         },
         {
           "title": "Leviathanblut",
@@ -227,7 +227,7 @@
           "subEntries": [
             {
               "title": "",
-              "description": "Extreme Temperaturverändungen"
+              "description": "Extreme Temperaturveränderungen"
             },
             {
               "title": "",
@@ -245,7 +245,7 @@
         },
         {
           "title": "Whisperer",
-          "description": "haben eine erhöhte Affiitiät zum Warp, können z.T. mit Warpwesen kommunizieren / Warpeinflüße warnehmen. Diese Fähigkeiten sind angeboren oder trainiert."
+          "description": "haben eine erhöhte Affiitiät zum Warp, können z.T. mit Warpwesen kommunizieren / Warpeinflüße wahrnehmen. Diese Fähigkeiten sind angeboren oder trainiert."
         },
         {
           "title": "Psioniker",
@@ -278,7 +278,7 @@
       "subEntries": [
         {
           "title": "Lebenserwartung:",
-          "description": "Ca 40 für die Unterschicht - bis zu 250 für Reiche & Einflußreiche mit Zugriff zu höherer medizinischer Versorgung und Cybernetiks"
+          "description": "Ca 40 für die Unterschicht - bis zu 250 für Reiche & Einflussreiche mit Zugriff zu höherer medizinischer Versorgung und Cybernetiks"
         },
         {
           "title": "Wetter",
