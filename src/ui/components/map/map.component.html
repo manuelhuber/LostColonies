@@ -14,15 +14,11 @@
     <div *ngFor="let highlight of map.highlights;let i = index;"
          [ngClass]="{top: highlight.location.top > 50}">
 
-      <!-- Clickable div with z-index to always be on top -->
-      <div class="click-helper clickable"
-           [ngStyle]="getLocationAndSize(highlight)"
-           (click)="toggle(i)"></div>
-
       <!-- Highlight dot -->
       <div class="highlight clickable"
            [ngClass]="{displayDot: highlight.displayDot}"
-           [ngStyle]="getLocationAndSize(highlight)">
+           [ngStyle]="getLocationAndSize(highlight)"
+           (click)="toggle(i)">
       </div>
 
       <!-- Highlight description -->
