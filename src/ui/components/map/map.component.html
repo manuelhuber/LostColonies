@@ -1,30 +1,28 @@
 <div>
   <div class="map" *ngIf="map.imageUrl">
+
+    <!-- highlight spot overlay -->
+    <div class="spot-wrapper clickable"
+         [ngStyle]="overlayWrapperStyle">
+      <div class="spot"
+           [ngClass]="{active: activeDescription !== -1}"
+           [ngStyle]="overlayStyle"
+           (click)="toggle(-1)"></div>
+    </div>
+
     <img [src]="map.imageUrl" class="map-image">
     <div *ngFor="let highlight of map.highlights;let i = index;"
          [ngClass]="{top: highlight.location.top > 50}">
 
       <!-- Clickable div with z-index to always be on top -->
       <div class="click-helper clickable"
-           [ngStyle]="{
-           top: highlight.location.top+'%',
-           left: highlight.location.left+'%',
-           width: highlight.size.x+'%',
-           height: highlight.size.y+'%'}"
+           [ngStyle]="getLocationAndSize(highlight)"
            (click)="toggle(i)"></div>
 
       <!-- Highlight dot -->
       <div class="highlight clickable"
            [ngClass]="{displayDot: highlight.displayDot}"
-           [ngStyle]="{
-           top: highlight.location.top+'%',
-           left: highlight.location.left+'%',
-           width: highlight.size.x+'%',
-           height: highlight.size.y+'%'}">
-        <div class="overlay"
-             [ngClass]="{active: activeDescription === i}"
-             [ngStyle]="{ transform: 'rotate('+highlight.size.rotation+'deg)', transition: highlightOverlayAnimation}"
-             (click)="toggle(i)"></div>
+           [ngStyle]="getLocationAndSize(highlight)">
       </div>
 
       <!-- Highlight description -->

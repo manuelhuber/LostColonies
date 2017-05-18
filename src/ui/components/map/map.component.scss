@@ -21,20 +21,23 @@ $highlight-description-z-index: 2;
   width: 100%;
 }
 
-.highlight {
+.spot-wrapper {
   position: absolute;
   transform: translate(-50%, -50%);
-  // Increase size for easier clicking
-  //height: $highlight-marker-circle-size*3;
-  //width: $highlight-marker-circle-size*3;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 500ms;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
+.highlight {
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 // This needs to be a separate div since the border animation causes jittering on the highlight dot (because of constant size change and position recalculation)
-.overlay {
+.spot {
   position: absolute;
   width: 150vw;
   height: 150vw;
