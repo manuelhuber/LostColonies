@@ -12,6 +12,16 @@
       <div class="menu">
         <accordion>
           <expandable>
+            <expandable-header [routerLink]="playersRoute">
+              <div class="menu-entry">Spieler</div>
+            </expandable-header>
+          </expandable>
+          <expandable>
+            <expandable-header>
+              <div class="menu-entry" [routerLink]="factionRoute">Fraktionen</div>
+            </expandable-header>
+          </expandable>
+          <expandable>
             <expandable-header>
               <div class="menu-entry">Welt</div>
             </expandable-header>
@@ -24,14 +34,10 @@
           </expandable>
           <expandable>
             <expandable-header>
-              <div class="menu-entry" [routerLink]="factionRoute">Fraktionen</div>
+              <div class="menu-entry" [routerLink]="metaRoute">Meta</div>
             </expandable-header>
           </expandable>
-          <expandable>
-            <expandable-header [routerLink]="playersRoute">
-              <div class="menu-entry">Spieler</div>
-            </expandable-header>
-          </expandable>
+
         </accordion>
       </div>
     </expandable-content>

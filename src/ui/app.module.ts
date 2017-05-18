@@ -38,12 +38,15 @@ import { InsertLinksDirective } from './directive/insertLinks/insertLinks.direct
 import { MyHammerConfig } from '../../config/hammer.conf';
 import { NpcComponent } from './components/npcs/entry/npc.component';
 import { NpcsComponent } from './components/npcs/npcs.component';
+import { MetaPage } from './pages/meta/meta.page';
+import { MetaService } from '../data/services/meta.service';
 
 // Application wide providers
 const APP_PROVIDERS = [
   FactionService,
   WorldService,
-  PlayerService
+  PlayerService,
+  MetaService
 ];
 
 type StoreType = {
@@ -61,6 +64,7 @@ type StoreType = {
     WorldPage,
     PlayersPage,
     CityPage,
+    MetaPage,
     AppComponent,
     HeaderComponent,
     AccordionComponent,
