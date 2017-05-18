@@ -5,8 +5,8 @@ import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive'
 
 // MAGIC NUMBER WARNING: This value is dependent on the margin in the map.component.scss
 const DOUBLE_MARGIN : string = '20px';
-const BORDER_APPEAR_ANIMATION : string = 'all 150ms ease-in';
-const BORDER_DISAPPEAR_ANIMATION : string = 'all 150ms ease-out';
+const BORDER_APPEAR_ANIMATION : string = 'border 500ms ease-out';
+const BORDER_DISAPPEAR_ANIMATION : string = 'border 500ms ease-in, height 0ms 500ms, width 0ms 500ms';
 const BORDER_NO_ANIMATION : string = 'none';
 
 @Component({
