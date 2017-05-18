@@ -1,9 +1,11 @@
 @import "../../app.component";
 
+// WARNING: This value is also used in the map.component.ts
+$highlight-description-margin: 10px;
+
 $highlight-marker-color: black;
 $highlight-marker-dot-size: 8px;
 $highlight-marker-circle-size: $highlight-marker-dot-size+5px;
-$highlight-description-margin: 10px;
 $highlight-description-background: $color-grey-0;
 $highlight-description-box-shadow: 0 0 6px black;
 $highlight-description-nose-size: $highlight-description-margin*2;

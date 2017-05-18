@@ -3,6 +3,9 @@ import { MyMap } from '../../../data/models/map';
 import { MapHighlight } from '../../../data/models/MapHighlight';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 
+// MAGIC NUMBER WARNING: This value is dependent on the margin in the map.component.scss
+const DOUBLE_MARGIN : string = '20px';
+
 @Component({
   selector: 'map',
   templateUrl: 'map.component.html',
@@ -18,9 +21,10 @@ export class MapComponent {
   }
 
   public descriptionMaxHeightValue(highlight : MapHighlight) : string {
-    return this.isUpwards(highlight)
-      ? this.descriptionTopNumber(highlight) + '%'
-      : (100 - this.descriptionTopNumber(highlight)) + '%';
+    let num : number = this.isUpwards(highlight)
+      ? this.descriptionTopNumber(highlight)
+      : (100 - this.descriptionTopNumber(highlight));
+    return 'calc(' + num + '% - ' + DOUBLE_MARGIN + ')';
 
   }
 
@@ -38,6 +42,9 @@ export class MapComponent {
     return (top + (this.isUpwards(highlight) ? -heightOffset : heightOffset));
   }
 
+  /**
+   * True if the description box of the highlight should be in the upper half of the map (with the nose pointing down)
+   */
   private isUpwards(highlight : MapHighlight) {
     return highlight.location.top > 50;
   }
