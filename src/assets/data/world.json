@@ -2,7 +2,7 @@
   "map": {
     "name": "Welt",
     "description": "",
-    "imageUrl": "http://imgur.com/ipnAEuA.png",
+    "imageUrl": "http://imgur.com/upPROJp.png",
     "highlights": [
       {
         "name": "Manoin",
@@ -245,19 +245,19 @@
         },
         {
           "title": "Whisperer",
-          "description": "haben eine erhöhte Affiitiät zum Warp, können z.T. mit Warpwesen kommunizieren / Warpeinflüße wahrnehmen. Diese Fähigkeiten sind angeboren oder trainiert."
+          "description": "haben eine erhöhte Affinität zum Warp, können z.T. mit Warpwesen kommunizieren / Warpeinflüße wahrnehmen. Diese Fähigkeiten sind angeboren oder trainiert."
         },
         {
           "title": "Psioniker",
-          "description": "können Warp (geringfügig) Kontrollieren. Extrem selten, sehr gefährlich und meistens Teil des Adpetus Astra Telephatica."
+          "description": "können Warp (geringfügig) kontrollieren. Extrem selten, sehr gefährlich und meistens Teil des Adpetus Astra Telephatica."
         },
         {
           "title": "Tote",
-          "description": "verursachen nach wenigen Tagen Risse im Echtzeitraum da ihre Seele / Essenz verschluckt wird - außer dies wird durch die korrekten Rituale verhindert."
+          "description": "verursachen nach wenigen Tagen Risse im Echtzeitraum da ihre Seele / Essenz verschluckt wird, außer dies wird durch die korrekten Rituale verhindert."
         },
         {
           "title": "Todessucher",
-          "description": "sind Whisperer, die trainiert wurden Leichen zu finden. Seh- & Hörsinn wurde ihnen genommen."
+          "description": "sind Whisperer, die trainiert wurden Leichen zu finden. Ihnen wurde der Seh- & Hörsinn genommen um ihre Warpsinne zu stärken."
         },
         {
           "title": "Dämonen",

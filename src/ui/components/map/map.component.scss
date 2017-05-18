@@ -54,6 +54,7 @@ $highlight-description-z-index: 2;
   z-index: 1;
   position: absolute;
   transform: translate(-50%, -50%);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .displayDot:before, .displayDot:after {
