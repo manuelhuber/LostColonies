@@ -7,7 +7,7 @@
       <div class="spot"
            [ngClass]="{active: activeDescription !== -1}"
            [ngStyle]="overlayStyle"
-           (click)="toggle(-1)"></div>
+           (click)="toggle(activeDescription)"></div>
     </div>
 
     <img [src]="map.imageUrl" class="map-image">
