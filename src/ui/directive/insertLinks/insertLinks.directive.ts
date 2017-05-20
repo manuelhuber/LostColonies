@@ -2,7 +2,7 @@ import { AfterViewInit, Directive, ElementRef, Input, Renderer2 } from '@angular
 import { LINKS } from './links';
 
 export interface LinkEntry extends LinkLocation {
-  phrase : string;
+  phrase : string | RegExp;
 }
 
 export interface LinkLocation {
@@ -29,7 +29,7 @@ export class InsertLinksDirective implements AfterViewInit {
     if (newHtml && newHtml.length) {
       this.links.forEach((entry : LinkEntry) => {
         if (!this.locationExcluded(entry)) {
-          newHtml = newHtml.replace(entry.phrase, this.generateLink(entry));
+          newHtml = newHtml.replace(<any> entry.phrase, (matched) => this.generateLink(entry, matched));
         }
       });
       this.renderer.setProperty(this.el.nativeElement, 'innerHTML', newHtml);
@@ -42,9 +42,15 @@ export class InsertLinksDirective implements AfterViewInit {
       });
   }
 
-  private generateLink(entry : LinkEntry) : string {
+  /**
+   * Generates the string for a complete HTML a-tag Link for the given entry
+   * @param entry
+   * @param matchedPhrase the actually matched string which should be used as text for the link
+   * @return {string}
+   */
+  private generateLink(entry : LinkEntry, matchedPhrase : string) : string {
     let linkable : string = entry.linkable ? '?link=' + entry.linkable : '';
-    return '<a href="/#/' + entry.link + linkable + '">' + entry.phrase + '</a>';
+    return '<a href="/#/' + entry.link + linkable + '">' + matchedPhrase + '</a>';
   }
 
 }

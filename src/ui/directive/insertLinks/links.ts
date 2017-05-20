@@ -13,10 +13,11 @@ export const LINKS : LinkEntry[] = [
   {phrase: 'Dietrich', link: PLAYERS_ROUTE, linkable: 'Flo'},
   {phrase: 'Aurora', link: PLAYERS_ROUTE, linkable: 'Franny'},
   // ---------------------------------------------------------------------------------------------------------- FACTIONS
-  {phrase: 'Speer und Hammer', link: FACTION_ROUTE, linkable: 'Speer und Hammer'},
-  {phrase: 'Nachtwächter', link: FACTION_ROUTE, linkable: 'Nachtwächter'},
-  {phrase: 'Brennende Dämmerung', link: FACTION_ROUTE, linkable: 'Brennende Dämmerung'},
-  {phrase: 'Brennenden Dämmerung', link: FACTION_ROUTE, linkable: 'Brennende Dämmerung'},
+  {phrase: /(Speer und Hammer|S&H)/, link: FACTION_ROUTE, linkable: 'Speer und Hammer'},
+  {phrase: /(Nachtwächter|NW)/, link: FACTION_ROUTE, linkable: 'Nachtwächter'},
+  {phrase: 'Don Volker', link: FACTION_ROUTE, linkable: 'Nachtwächter'},
+  {phrase: 'Halger', link: FACTION_ROUTE, linkable: 'Nachtwächter'},
+  {phrase: /(Brennende[n]? Dämmerung|BD)/, link: FACTION_ROUTE, linkable: 'Brennende Dämmerung'},
   {phrase: 'Schädelschänder', link: FACTION_ROUTE, linkable: 'Schädelschänder'},
   {phrase: 'Kinder des Nebels', link: FACTION_ROUTE, linkable: 'Kinder des Nebels'},
   // ------------------------------------------------------------------------------------------------------------- World
