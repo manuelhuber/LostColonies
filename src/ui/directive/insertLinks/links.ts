@@ -13,13 +13,14 @@ export const LINKS : LinkEntry[] = [
   {phrase: 'Dietrich', link: PLAYERS_ROUTE, linkable: 'Flo'},
   {phrase: 'Aurora', link: PLAYERS_ROUTE, linkable: 'Franny'},
   // ---------------------------------------------------------------------------------------------------------- FACTIONS
-  {phrase: /(Speer und Hammer|S&H)/, link: FACTION_ROUTE, linkable: 'Speer und Hammer'},
-  {phrase: /(Nachtwächter|NW)/, link: FACTION_ROUTE, linkable: 'Nachtwächter'},
+  {phrase: /(Speer und Hammer|S&H)/i, link: FACTION_ROUTE, linkable: 'Speer und Hammer'},
+  {phrase: /(Nachtwächter|NW)/i, link: FACTION_ROUTE, linkable: 'Nachtwächter'},
   {phrase: 'Don Volker', link: FACTION_ROUTE, linkable: 'Nachtwächter'},
   {phrase: 'Halger', link: FACTION_ROUTE, linkable: 'Nachtwächter'},
-  {phrase: /(Brennende[n]? Dämmerung|BD)/, link: FACTION_ROUTE, linkable: 'Brennende Dämmerung'},
+  {phrase: /(Brennende[n]? Dämmerung|BD)/i, link: FACTION_ROUTE, linkable: 'Brennende Dämmerung'},
   {phrase: 'Schädelschänder', link: FACTION_ROUTE, linkable: 'Schädelschänder'},
   {phrase: 'Kinder des Nebels', link: FACTION_ROUTE, linkable: 'Kinder des Nebels'},
+  {phrase: 'Diebesschöpfer', link: FACTION_ROUTE, linkable: 'Kinder des Nebels'},
   // ------------------------------------------------------------------------------------------------------------- World
   // ----------------------------------------------------------------------------------------------- Regierung
   {phrase: 'Adeptus Administratum', link: WORLD_ROUTE, linkable: 'regierung'},
@@ -44,21 +45,22 @@ export const LINKS : LinkEntry[] = [
   {phrase: 'Imperiales Credo', link: WORLD_ROUTE, linkable: 'religion'},
   {phrase: 'Maschinenkult', link: WORLD_ROUTE, linkable: 'religion'},
   // "Kult" but not "Kultur"
-  {phrase: /Kult(?!ur)/, link: WORLD_ROUTE, linkable: 'religion'},
+  {phrase: /Kult(?!ur)/i, link: WORLD_ROUTE, linkable: 'religion'},
   {phrase: 'Psioniker', link: WORLD_ROUTE, linkable: 'warp'},
   // ----------------------------------------------------------------------------------------------- Warp
-  {phrase: /Warp[^rse]/, link: WORLD_ROUTE, linkable: 'warp'},
-  {phrase: /Warpriss[e]?/, link: WORLD_ROUTE, linkable: 'warp'},
-  {phrase: /Warpst[uü]rm[e]/, link: WORLD_ROUTE, linkable: 'warp'},
-  {phrase: /Warpeinfl[uü]ß[e]?/, link: WORLD_ROUTE, linkable: 'warp'},
+  // "Warp" not followed by R, S or E
+  {phrase: /Warp(?![rse])/i, link: WORLD_ROUTE, linkable: 'warp'},
+  {phrase: /Warpriss[e]?/i, link: WORLD_ROUTE, linkable: 'warp'},
+  {phrase: /Warpst[uü]rm[e]/i, link: WORLD_ROUTE, linkable: 'warp'},
+  {phrase: /Warpeinfl[uü]ß[e]?/i, link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Echtzeitraum', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Whisperer', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Psioniker', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Tote', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Leiche', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Todessucher', link: WORLD_ROUTE, linkable: 'warp'},
-  {phrase: /Dämon(en)?/, link: WORLD_ROUTE, linkable: 'warp'},
-  {phrase: 'Leviathan', link: WORLD_ROUTE, linkable: 'warp'},
+  {phrase: /Dämon(en)?/i, link: WORLD_ROUTE, linkable: 'warp'},
+  {phrase: /Leviathan[^b]/i, link: WORLD_ROUTE, linkable: 'warp'},
   // ------------------------------------------------------------------------------------------------------- Ebrichsburg
   {phrase: 'Ebrichsburg', link: CITY_1_ROUTE, linkable: 'ebrichsburg'},
   {phrase: 'Hasard', link: CITY_1_ROUTE, linkable: 'hasard'}
