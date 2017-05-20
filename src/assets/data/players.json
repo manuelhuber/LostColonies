@@ -6,8 +6,19 @@
       "imageUrl": "",
       "sessions": [
         {
+          "name": "Ein Hauch von Loyalität",
+          "date": "2017-05-19",
+          "characters": [
+            "Yuri",
+            "Dietrich",
+            "Kai"
+          ],
+          "description": "Halger schiebt das Bild eines Generals über den großen Eichentisch und sagt zu den Assasinen: \"Ich möchte dass ihr diesen Mann tötet.\" Es handelte sich um Lt. Lion, dem Militär-Arsenalmeister und Inside Mann von Speer und Hammer. Er ist die Pipeline für ihr Waffenschgeschäft und eine prominente Persönlichkeit, doch Halger besteht darauf: \"Wir wollen keinen offenen Krieg anfangen, aber sie waren an Volkers Mord beteiligt und beliefern die Schädelschänder. Das kann nicht ungestraft bleiben.\"\n<br><br>\nDie Crew hat bedenken, da Speer und Hammer ihnen half Fuß zu fasssen und beschließt, dass sie ihnen nicht derart schaden wollen. Sie treffen sich mit Bennet, einem S&H Offizier, um ihn zu warnen. Sie verschweigen, dass sie der Grund waren, dass die Nachtwächter überhaupt erfahren haben, dass S&H involviert ist, aber schlagen ihm vor Lions Tod vorzutäuschen, um die Rachsucht der Nachtwächter zu befriedigen. Dies würde zwar ihren Mann retten, aber S&H würden dennoch die Waffenversorgung verlieren. Bennet ist jedoch zuversichtlich, dass wenn das Amt des Aresnalmeisters nicht direkt an den rangnächsten übergeht, sie genug Einfluß haben um einen ihrer Männer dort zu plazieren. \"Also mehr Tote?\" - \"Ja, wenn seine Nachfolger auch sterben, sollten wir in dem entstehenden Chaos wieder jemanden plaziren können.\"\n<br><br>\nDie Crew schmuggelt eine Bombe und eine Leiche, die Lion ähnlich sieht, in den Raum des Generaltreffens. Lion bringt seine beiden Berater in den Meetingraum und die Crew zündet die Bombe. Während im gesamten Gebäude Alarmstufe Rot ausbricht, schafft es die Crew Lion vom Gelände zu schmuggeln. Auch wenn die Zeitungen den Tod von Lt. Lion verkünden, ahnt Celene, eine hochrangige Offizierin der Militärpolizei, dass etwas nicht so ist, wie es scheint...    ",
+          "author": "Manuel"
+        },
+        {
           "name": "Mord für Münzen",
-          "date": "2017-05-13",
+          "date": "2017-05-12",
           "characters": [
             "Erik",
             "Yuri",
@@ -35,7 +46,7 @@
           "imageUrl": "http://xs-collectibles.com/images/large/fanp-04-p.gif"
         },
         {
-          "name": "Mevlir",
+          "name": "Melvir",
           "description": "Ein Ex-Militärarzt, der nach dem berüchtigten Masaker am Krämergraben das Astra Militarum verlies. Als enger Freund von Yuri hilft er der Gang, wo er kann. Wird er sich Yuri's neuer Crew anschließen oder führt ihn sein Weg bald woanders hin?",
           "imageUrl": "http://imgur.com/1u1vlSm.png"
         }

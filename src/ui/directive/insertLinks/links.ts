@@ -43,19 +43,21 @@ export const LINKS : LinkEntry[] = [
   // ----------------------------------------------------------------------------------------------- Religion
   {phrase: 'Imperiales Credo', link: WORLD_ROUTE, linkable: 'religion'},
   {phrase: 'Maschinenkult', link: WORLD_ROUTE, linkable: 'religion'},
-  {phrase: 'Kult', link: WORLD_ROUTE, linkable: 'religion'},
+  // "Kult" but not "Kultur"
+  {phrase: /Kult(?!ur)/, link: WORLD_ROUTE, linkable: 'religion'},
   {phrase: 'Psioniker', link: WORLD_ROUTE, linkable: 'warp'},
   // ----------------------------------------------------------------------------------------------- Warp
-  {phrase: 'Warp', link: WORLD_ROUTE, linkable: 'warp'},
+  {phrase: /Warp[^rse]/, link: WORLD_ROUTE, linkable: 'warp'},
+  {phrase: /Warpriss[e]?/, link: WORLD_ROUTE, linkable: 'warp'},
+  {phrase: /Warpst[uü]rm[e]/, link: WORLD_ROUTE, linkable: 'warp'},
+  {phrase: /Warpeinfl[uü]ß[e]?/, link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Echtzeitraum', link: WORLD_ROUTE, linkable: 'warp'},
-  {phrase: 'Riss', link: WORLD_ROUTE, linkable: 'warp'},
-  {phrase: 'Warpeinfluß', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Whisperer', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Psioniker', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Tote', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Leiche', link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Todessucher', link: WORLD_ROUTE, linkable: 'warp'},
-  {phrase: 'Dämon', link: WORLD_ROUTE, linkable: 'warp'},
+  {phrase: /Dämon(en)?/, link: WORLD_ROUTE, linkable: 'warp'},
   {phrase: 'Leviathan', link: WORLD_ROUTE, linkable: 'warp'},
   // ------------------------------------------------------------------------------------------------------- Ebrichsburg
   {phrase: 'Ebrichsburg', link: CITY_1_ROUTE, linkable: 'ebrichsburg'},

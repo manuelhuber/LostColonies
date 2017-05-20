@@ -6,7 +6,7 @@
     "highlights": [
       {
         "name": "Manoin",
-        "description": "Die nördlichste Insel besteht zur Hälfte aus Steppenland und zur Hälfte aus hohen Gebirgen. Manoanische Kartelle verlangen ein sehr hohes Maß an Hingabe und Gehorsam. Die Opferbereitschaft selbst niedrigster Mitglieder grenzt oft an Fanatismus. In den brutalen Kämpfen dieser Insel ist eine Kultur von schnell wechselnden Allianzen entstanden - private Zwiespalte werden oft für das wohl des Kartells begraben. Zumindestens zeitweise.",
+        "description": "<b>Bewohner:</b>\n<br>\nManoiner sind bekannt für ihre Erfindergeist und Eigensinnigkeit. Sie sind ehrgeizig und gehen hartnäckig ihren Zielen nach. Ihre Statur ist meistens schmall und klein, kleinen Augen und Mund aber großen Ohren. Im Süden sind rote Haare weit verbreitet wohingegen im Norden schwarze Haare üblich sind.\n<br>\n<b>Kultur:</b>\n<br>\nManoanische Kartelle verlangen ein sehr hohes Maß an Hingabe und Gehorsam. Die Opferbereitschaft selbst niedrigster Mitglieder grenzt oft an Fanatismus. In den brutalen Kämpfen dieser Insel ist eine Kultur von schnell wechselnden Allianzen entstanden - private Zwiespalte werden oft für das wohl des Kartells begraben. Zumindestens zeitweise.\n<br>\n<b>Geographie:</b>\n<br>\nDer Norden der Insel ist von gewaltigen Gebiergszügen dominiert, die nur auf niedrigeren Höhenmetern bewohnbar sind. Im Süden erstreckt sich von der West- bis zur Ostküste eine einzige Steppenlandschafft.",
         "location": {
           "top": 10.5,
           "left": 53
@@ -20,7 +20,7 @@
       },
       {
         "name": "Ageros",
-        "description": "Die von dichten, dunklen Nadelwäldern gezeichnete Insel war einst der Sitz der Imperialen Regierung für alle umliegenden Inseln. Doch mittlerweile sind auch hier die Städte nur noch traurige Abbilder ihres ehemaligen Glanzes. Während man sich in den Palästen die Messer nur metaphorisch in den Rücken rammt, blitzen in der Dunkelheit der Gossen wahre Klingen auf und das tiefrote Blut der ehrgeizigen Ganoven ergießt sich zwischen den Pflastersteinen.",
+        "description": "<b>Bewohner:</b>\n<br>\nAgeros leben im ständigen glauben, dass ihr Leben eigentlich besser sein sollte. Dies macht sie zu sehr zielstrebigen, aber zugleich oft argwöhnisch und zynisch Menschen. Ihre Haare sind meist braun und dunkel und ihre Gesichter sehr markant und eckig. Durch die große Migration nach Ageros, haben jedoch viele Familien noch Merkmale ihrer Vorfahren von anderen Inseln.\n<br>\n<b>Kultur:</b>\n<br>\nDie Vergangenheit als Imperialer Regierungssitz schlägt sich noch heute durch. Die Regierung ist gegeißelt von Bürokratie und der Adel spinnt seine Intrigen in den prunkvollsten Palästen. So wie die Gossen wie ein finsterer Abglanz der Paläste wirken, so sind die Ganoven der finstere Abglanz des Adels. In niemals endenden Bandenkriegen versucht jeder Kleinkriminelle mehr Macht an sich zu reißen und ist bereit seinen Verbündeten das Messer in den Rücken zu rammen.\n<br>\n<b>Geographie:</b>\n<br>\nAgeros ist von dichten, dunklen Nadelwäldern übersäht. Die Warpstürme sind hier besonders schlimm, wodurch der Aufenthalt außerhalb der Heiligen Mauern besonders gefährlich ist.",
         "location": {
           "top": 34.5,
           "left": 26
@@ -34,7 +34,7 @@
       },
       {
         "name": "Skovland",
-        "description": "Die größte und kälteste Insel ist Heimat für viele der gefährlichsten Gangs. Der Kampf zwischen Staatsgewalt und der Unterwelt zwingt mittlerweile beide Seiten zu extremen Maßnahmen. Unter der Brutalität und Rücksichtslosigkeit leiden jedoch vor allem die Bürger, weshalb viele Städte am Rande einer Revolution stehen. Es gibt sogar Gerüchte, dass im Süden Dämonen offen politische Ämter innehalten...",
+        "description": "<b>Bewohner:</b>\n<br>\nSkovlander sind besonders hartgesotten Gesellen. Sie können schlimmste Lebensbedingungen ertragen und kämpfen um ihr Überleben. Sie sind schlank und groß gewachsen, mit sehr blaß, manchmal sogar leicht gräulicher Haut und überlicherweise rabenschwarzen bis schneeweißen Haaren.\n<br>\n<b>Kultur:</b>\n<br>\nSkovland ist Heimat für viele der gefährlichsten Gangs. Der Kampf zwischen Staatsgewalt und der Unterwelt zwingt mittlerweile beide Seiten zu extremen Maßnahmen. Unter der Brutalität und Rücksichtslosigkeit leiden jedoch vor allem die Bürger, weshalb viele Städte am Rande einer Revolution stehen. Es gibt sogar Gerüchte, dass im Süden Dämonen offen politische Ämter innehalten...\n<br>\n<b>Geographie:</b>\n<br>\nSkovland ist die kälteste und größte der bekannten Inseln und besteht zu einem großen Teil aus Tundra. ",
         "location": {
           "top": 65.5,
           "left": 68
@@ -48,7 +48,7 @@
       },
       {
         "name": "Zalia",
-        "description": "Auf dieser durch wärmeres Klima geprägten Insel gehört Korruption zum guten Ton der Beamten, während die größten Banden oft Respekt in der Gesellschaft genießen. Die zalianischen Mafias legen großen Wert Loyalität und die Einhaltung gewisser Regeln im Bandenkrieg. Sie eskalieren Konflikte meistens langsam, aber vergeben nur schwer.",
+        "description": "<b>Bewohner:</b>\n<br>\nZalianer haben eine breite Statur, rundes Gesicht, mit dunklen Haaren und dunkler Haut. Sie sind sehr temperamentvoll, stur und stolz.\n<br>\n<b>Kultur:</b>\n<br>\nWährend Korruption zum guten Ton der Beamten gehört, genießen die größten Banden oft Respekt in der Gesellschaft. Die zalianischen Mafias legen großen Wert Loyalität und die Einhaltung gewisser Regeln im Bandenkrieg. Sie eskalieren Konflikte meistens langsam, aber vergeben nur schwer.\n<br>\n<b>Geographie:</b>\n<br>\nDie Insel ist durch wärmeres Klima geprägten und ist daher einer der wenigen Orte an dem traditionelle Landwirtschafft noch betrieben werden kann. ",
         "location": {
           "top": 61.5,
           "left": 30
@@ -219,7 +219,11 @@
         },
         {
           "title": "Risse",
-          "description": "sind eine temporäre Verbindung zw. Warp und Echtzeitraum"
+          "description": "sind meist temporäre Verbindung zwischen Warp und Echtzeitraum"
+        },
+        {
+          "title": "Warpstürme",
+          "description": "bezeichnet das Wetter, welches durch die wechselnden Risse verursacht wird. In ruhigen Phasen handelt es sich lediglich um vereinzelte Wolken und es besteht kaum Gefahr für Menschen. Während schlimen Phasen herrschen tsunamiartige Zustände, die ein grauenvolles Schicksal für Leib, Verstand und Seele eines jeden Menschen bringen. Städte sind zum Schutz von Heiligen Mauern umgeben, Freihändler besitzen warpresistente Flotten und einige Menschen besitzen angeborene Widerstandskräfte gegen die Warpenergien."
         },
         {
           "title": "Warpeinflüße",
@@ -282,7 +286,7 @@
         },
         {
           "title": "Wetter",
-          "description": "ist durch konstante Warpstürme geprägt. Selbst zur Mittagszeit ist die Sonne kaum sichtbar"
+          "description": "ist durch konstante Warpstürme geprägt. Selbst zur Mittagszeit ist die Sonne kaum sichtbar."
         }
       ]
     }
