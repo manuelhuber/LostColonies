@@ -5,16 +5,18 @@
         <div class="page-accordion-header">{{faction.name}}</div>
       </expandable-header>
       <expandable-content>
-        <div class="page-accordion-content">
-          <img *ngIf="faction.imageUrl" [src]="faction.imageUrl" alt="" class="faction-image">
-          <div *ngIf="faction.description">
-            <div insertLinks [exclude]="excludeLinks(faction)"
-                 [innerHtml]="faction.description"></div>
+        <div>
+          <div class="page-accordion-content">
+            <img *ngIf="faction.imageUrl" [src]="faction.imageUrl" alt="" class="faction-image">
+            <div *ngIf="faction.description">
+              <div insertLinks [exclude]="excludeLinks(faction)"
+                   [innerHtml]="faction.description"></div>
+            </div>
           </div>
-        </div>
-        <div class="page-accordion-content mod-separate" *ngIf="faction.npcs">
-          <div class="headline">NPCs:</div>
-          <npcs [npcs]="faction.npcs" [excludeLinks]="excludeLinks(faction)"></npcs>
+          <div class="page-accordion-content mod-separate" *ngIf="faction.npcs">
+            <div class="headline">NPCs:</div>
+            <npcs [npcs]="faction.npcs" [excludeLinks]="excludeLinks(faction)"></npcs>
+          </div>
         </div>
       </expandable-content>
     </expandable>

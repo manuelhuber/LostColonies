@@ -12,7 +12,7 @@ $menu-icon-transition: all 250ms ease;
 
 .header {
   font-size: 2em;
-  background: url('/assets/images/header.png'), linear-gradient(to bottom, $color-grey-3 0, opacify(black, 0.8) 100%) no-repeat, $color-grey-3;
+  background: url('/assets/images/header_small.png'), linear-gradient(to bottom, $color-grey-3, black) no-repeat, $color-grey-3;
   padding: 8px 8px 4px 8px;
   position: relative;
 }
