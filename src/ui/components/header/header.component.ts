@@ -6,7 +6,6 @@ import { CITY_1_ROUTE, FACTION_ROUTE, META_ROUTE, PLAYERS_ROUTE, WORLD_ROUTE } f
 @Component({
   selector: 'header',
   templateUrl: 'header.component.html',
-  encapsulation: ViewEncapsulation.Native,
   styleUrls: [ 'header.component.scss' ]
 })
 export class HeaderComponent implements OnInit {
