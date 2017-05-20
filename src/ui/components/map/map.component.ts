@@ -93,7 +93,6 @@ export class MapComponent {
     };
   }
 
-
   private descriptionTopNumber(highlight : MapHighlight) {
     let top = highlight.location.top;
     let heightOffset = highlight.size.y / 2;
