@@ -41,6 +41,7 @@ $highlight-description-z-index: 2;
   //transition: all 150ms ease-out;
   box-sizing: border-box;
   &.active {
+    cursor: pointer;
     //transition: all 150ms ease-in;
     border: 150vw solid rgba(0, 0, 0, 0.75);
     width: calc(300vw + 100%);
