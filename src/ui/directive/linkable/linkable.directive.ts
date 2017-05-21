@@ -1,18 +1,18 @@
-import { Directive, ElementRef, Input, OnInit, ViewContainerRef } from '@angular/core';
+import { AfterContentInit, Directive, ElementRef, Input, ViewContainerRef } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { ExpandableComponent, TIME_WHEN_ANIMATION_IS_OVER } from '../../components/expandables/expandable.component';
 
 export const LINKABLE_PARAM : string = 'link';
 
 @Directive({selector: '[linkable]'})
-export class LinkableDirective implements OnInit {
+export class LinkableDirective implements AfterContentInit {
 
   @Input('linkable') public keyword : string;
 
   constructor(private el : ElementRef, private route : ActivatedRoute, private vcRef : ViewContainerRef) {
   }
 
-  public ngOnInit() : void {
+  public ngAfterContentInit() : void {
     this.route.queryParams.subscribe((params : Params) => {
       if (this.el && params[ LINKABLE_PARAM ]
         && params[ LINKABLE_PARAM ].toLowerCase() === this.keyword.toLowerCase()) {
