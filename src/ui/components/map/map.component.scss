@@ -31,7 +31,6 @@ $highlight-description-z-index: 2;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-// This needs to be a separate div since the border animation causes jittering on the highlight dot (because of constant size change and position recalculation)
 .spot {
   position: absolute;
   width: 150vw;
