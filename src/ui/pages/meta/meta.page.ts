@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MetaEntry } from '../../../data/models/metaEntry';
-import { META_ROUTE } from '../../app.routes';
+import { INTRO_ROUTE } from '../../app.routes';
 import { MetaService } from '../../../data/services/meta.service';
 
 @Component({
@@ -9,7 +9,8 @@ import { MetaService } from '../../../data/services/meta.service';
 })
 export class MetaPage {
   public entries : MetaEntry[];
-  public path : string = META_ROUTE;
+  public path : string = INTRO_ROUTE;
+  public firstEntryOpen : boolean = true;
 
   constructor(meta : MetaService) {
     meta.getMeta().subscribe((entries : MetaEntry[]) => this.entries = entries);

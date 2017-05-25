@@ -1,6 +1,7 @@
 <div class="page">
   <accordion *ngIf="entries">
-    <expandable *ngFor="let entry of entries" [linkable]="entry.title">
+    <expandable *ngFor="let entry of entries" [linkable]="entry.title"
+                [visible]="entries.indexOf(entry) === 0 ? true : false">
       <expandable-header>
         <div class="page-accordion-header">{{entry.title}}</div>
       </expandable-header>
