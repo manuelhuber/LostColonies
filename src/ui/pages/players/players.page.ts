@@ -29,6 +29,10 @@ export class PlayersPage {
 
   private data : GangsAndPlayers;
 
+  constructor(private playerService : PlayerService) {
+    playerService.getData().subscribe((data) => this.data = data);
+  }
+
   public linksForPlayer(player : Player) : string[] {
     return [ player.name, ... player.characters.map((value : Character) => value.name) ];
   }
@@ -37,10 +41,6 @@ export class PlayersPage {
     return [ gang.name,
       ... gang.npcs.map((value : Npc) => value.name),
       ... gang.sessions.map((session : Session) => session.name) ];
-  }
-
-  constructor(private playerService : PlayerService) {
-    playerService.getData().subscribe((data) => this.data = data);
   }
 
 }

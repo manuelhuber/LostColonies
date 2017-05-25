@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { ExpandableComponent } from '../expandables/expandable.component';
 import {
@@ -17,6 +17,7 @@ import {
 @Component({
   selector: 'header',
   templateUrl: 'header.component.html',
+  encapsulation: ViewEncapsulation.None,
   styleUrls: [ 'header.component.scss' ]
 })
 export class HeaderComponent implements OnInit {

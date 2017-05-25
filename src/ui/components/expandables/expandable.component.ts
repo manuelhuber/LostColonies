@@ -11,7 +11,9 @@ export const TIME_WHEN_ANIMATION_IS_OVER : number = 500;
 })
 /**
  * The accordion entry. Needs exactly 1 header and 1 content component.
- * Can be styled depending on visible state. Parent div of the whole entry will have the css class "accordion-entry-hidden"
+ * Can be styled depending on visible state
+ * Parent div of the whole entry will have the css class "accordion-entry-hidden" - but to use it you need to set
+ * encapsulation to ViewEncapsulation.None
  */
 export class ExpandableComponent {
 
