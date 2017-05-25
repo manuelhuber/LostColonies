@@ -32,7 +32,6 @@ export class HeaderComponent implements OnInit {
   public metaTitle : string = INTRO_TITLE;
   public metaRoute : string = INTRO_ROUTE;
 
-  public menuOpen : boolean;
   @ViewChild(ExpandableComponent) public menu;
 
   constructor(private route : Router) {
