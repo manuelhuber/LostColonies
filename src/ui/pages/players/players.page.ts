@@ -4,6 +4,9 @@ import { GangsAndPlayers, PlayerService } from '../../../data/services/player.se
 import { Gang } from '../../../data/models/gang';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 import { PLAYERS_ROUTE } from '../../app.routes';
+import { Character } from '../../../data/models/character';
+import { Npc } from '../../../data/models/npc';
+import { Session } from '../../../data/models/session';
 
 @Component({
   selector: 'players',
@@ -25,6 +28,16 @@ export class PlayersPage {
   }
 
   private data : GangsAndPlayers;
+
+  public linksForPlayer(player : Player) : string[] {
+    return [ player.name, ... player.characters.map((value : Character) => value.name) ];
+  }
+
+  public linksForGang(gang : Gang) : string[] {
+    return [ gang.name,
+      ... gang.npcs.map((value : Npc) => value.name),
+      ... gang.sessions.map((session : Session) => session.name) ];
+  }
 
   constructor(private playerService : PlayerService) {
     playerService.getData().subscribe((data) => this.data = data);

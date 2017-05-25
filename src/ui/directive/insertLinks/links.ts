@@ -4,14 +4,14 @@ import { CITY_1_ROUTE, FACTION_ROUTE, PLAYERS_ROUTE, WORLD_GENERAL_ROUTE } from 
 export const LINKS : LinkEntry[] = [
   // ----------------------------------------------------------------------------------------------------------- CREW
   {phrase: 'Assassinen', link: PLAYERS_ROUTE, linkable: 'Assassinen'},
-  {phrase: 'Salia', link: PLAYERS_ROUTE, linkable: 'Assassinen'},
-  {phrase: 'Mevlir', link: PLAYERS_ROUTE, linkable: 'Assassinen'},
+  {phrase: 'Salia', link: PLAYERS_ROUTE, linkable: 'Salia'},
+  {phrase: 'Mevlir', link: PLAYERS_ROUTE, linkable: 'Mevlir'},
   // ----------------------------------------------------------------------------------------------------------- PLAYERS
-  {phrase: 'Yuri', link: PLAYERS_ROUTE, linkable: 'Moritz'},
-  {phrase: 'Erik', link: PLAYERS_ROUTE, linkable: 'Andi'},
-  {phrase: 'Frank', link: PLAYERS_ROUTE, linkable: 'Flo'},
-  {phrase: 'Dietrich', link: PLAYERS_ROUTE, linkable: 'Flo'},
-  {phrase: 'Aurora', link: PLAYERS_ROUTE, linkable: 'Franny'},
+  {phrase: 'Yuri', link: PLAYERS_ROUTE, linkable: 'Yuri'},
+  {phrase: 'Erik', link: PLAYERS_ROUTE, linkable: 'Erik'},
+  {phrase: 'Frank', link: PLAYERS_ROUTE, linkable: 'Frank'},
+  {phrase: 'Dietrich', link: PLAYERS_ROUTE, linkable: 'Dietrich'},
+  {phrase: 'Aurora', link: PLAYERS_ROUTE, linkable: 'Aurora'},
   // ---------------------------------------------------------------------------------------------------------- FACTIONS
   {phrase: /(Speer und Hammer|S&H)/i, link: FACTION_ROUTE, linkable: 'Speer und Hammer'},
   {phrase: /(Nachtwächter|NW)/i, link: FACTION_ROUTE, linkable: 'Nachtwächter'},

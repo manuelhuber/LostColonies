@@ -1,6 +1,6 @@
 <div class="page">
   <accordion *ngIf="factions">
-    <expandable *ngFor="let faction of factions" [linkable]="faction.name">
+    <expandable *ngFor="let faction of factions" [linkable]="[faction.name]">
       <expandable-header>
         <div class="page-accordion-header">{{faction.name}}</div>
       </expandable-header>

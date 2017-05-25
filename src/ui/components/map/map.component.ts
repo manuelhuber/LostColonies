@@ -57,6 +57,11 @@ export class MapComponent {
 
   }
 
+  public highlight(name : string) : void {
+    let target : MapHighlight = this.map.highlights.find((value : MapHighlight) => value.name === name);
+    this.toggle(this.map.highlights.indexOf(target));
+  }
+
   public toggle(i : number) : void {
     if (this.activeDescription === i) {
       this.highlightOverlayAnimation = BORDER_DISAPPEAR_ANIMATION;

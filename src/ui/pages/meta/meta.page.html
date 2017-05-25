@@ -1,6 +1,6 @@
 <div class="page">
   <accordion *ngIf="entries" [openAtStart]="0">
-    <expandable *ngFor="let entry of entries" [linkable]="entry.title">
+    <expandable *ngFor="let entry of entries" [linkable]="[entry.title]">
       <expandable-header>
         <div class="page-accordion-header">{{entry.title}}</div>
       </expandable-header>

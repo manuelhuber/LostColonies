@@ -7,7 +7,7 @@ export const LINKABLE_PARAM : string = 'link';
 @Directive({selector: '[linkable]'})
 export class LinkableDirective implements AfterContentInit {
 
-  @Input('linkable') public keyword : string;
+  @Input('linkable') public keywords : string[];
 
   constructor(private el : ElementRef, private route : ActivatedRoute, private vcRef : ViewContainerRef) {
   }
@@ -15,7 +15,7 @@ export class LinkableDirective implements AfterContentInit {
   public ngAfterContentInit() : void {
     this.route.queryParams.subscribe((params : Params) => {
       if (this.el && params[ LINKABLE_PARAM ]
-        && params[ LINKABLE_PARAM ].toLowerCase() === this.keyword.toLowerCase()) {
+        && this.keywords.some((value) => value.toLowerCase() === params[ LINKABLE_PARAM ].toLowerCase())) {
         // Dirty workaround to access the parent component since there is no official way to do this yet
         // https://github.com/angular/angular/issues/8277
         let parent = (<any> this.vcRef)._data.componentView.component;

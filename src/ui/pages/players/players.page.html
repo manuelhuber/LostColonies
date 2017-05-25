@@ -1,7 +1,7 @@
 <div class="page">
   <accordion *ngIf="players && gang" [openAtStart]="0">
 
-    <expandable [linkable]="gang.name">
+    <expandable [linkable]="linksForGang(gang)">
       <expandable-header>
         <div class="page-accordion-header">{{gang.name}}</div>
       </expandable-header>
@@ -22,7 +22,7 @@
       </expandable-content>
     </expandable>
 
-    <expandable *ngFor="let player of players" [linkable]="player.name">
+    <expandable *ngFor="let player of players" [linkable]="linksForPlayer(player)">
       <expandable-header>
         <div class="page-accordion-header">{{player.name}}</div>
       </expandable-header>
