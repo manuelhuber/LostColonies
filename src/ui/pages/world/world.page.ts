@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { WorldService } from '../../../data/services/world.service';
-import { WORLD_ROUTE } from '../../app.routes';
+import { WORLD_GENERAL_ROUTE } from '../../app.routes';
 import { World } from '../../../data/models/world';
 import { WorldEntry } from '../../../data/models/worldEntry';
 import { MyMap } from '../../../data/models/map';
@@ -14,7 +14,7 @@ export class WorldPage {
 
   public map : MyMap;
   public entries : WorldEntry[];
-  public path : string = WORLD_ROUTE;
+  public path : string = WORLD_GENERAL_ROUTE;
 
   constructor(private worldService : WorldService) {
     worldService.getWorld().subscribe((data : World) => {

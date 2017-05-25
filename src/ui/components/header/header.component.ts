@@ -1,7 +1,18 @@
-import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { ExpandableComponent } from '../expandables/expandable.component';
-import { CITY_1_ROUTE, FACTION_ROUTE, INTRO_ROUTE, PLAYERS_ROUTE, WORLD_ROUTE } from '../../app.routes';
+import {
+  CITY_1_ROUTE,
+  CITY_1_TITLE,
+  FACTION_ROUTE,
+  FACTION_TITLE,
+  INTRO_ROUTE,
+  INTRO_TITLE,
+  PLAYERS_ROUTE,
+  PLAYERS_TITLE,
+  WORLD_GENERAL_ROUTE,
+  WORLD_GENERAL_TITLE
+} from '../../app.routes';
 
 @Component({
   selector: 'header',
@@ -10,10 +21,15 @@ import { CITY_1_ROUTE, FACTION_ROUTE, INTRO_ROUTE, PLAYERS_ROUTE, WORLD_ROUTE } 
 })
 export class HeaderComponent implements OnInit {
 
+  public factionTitle : string = FACTION_TITLE;
   public factionRoute : string = FACTION_ROUTE;
-  public worldRoute : string = WORLD_ROUTE;
+  public worldTitle : string = WORLD_GENERAL_TITLE;
+  public worldRoute : string = WORLD_GENERAL_ROUTE;
+  public playersTitle : string = PLAYERS_TITLE;
   public playersRoute : string = PLAYERS_ROUTE;
+  public city1Title : string = CITY_1_TITLE;
   public city1Route : string = CITY_1_ROUTE;
+  public metaTitle : string = INTRO_TITLE;
   public metaRoute : string = INTRO_ROUTE;
 
   public menuOpen : boolean;

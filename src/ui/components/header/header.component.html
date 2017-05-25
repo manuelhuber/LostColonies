@@ -17,15 +17,10 @@
             </expandable-header>
             <expandable-content>
               <div class="submenu">
-                <div class="menu-entry" [routerLink]="metaRoute">Intro</div>
-                <div class="menu-entry" [routerLink]="playersRoute">Crew</div>
+                <div class="menu-entry" [routerLink]="metaRoute">{{metaTitle}}</div>
+                <div class="menu-entry" [routerLink]="playersRoute">{{playersTitle}}</div>
               </div>
             </expandable-content>
-          </expandable>
-          <expandable>
-            <expandable-header>
-              <div class="menu-entry" [routerLink]="factionRoute">Fraktionen</div>
-            </expandable-header>
           </expandable>
           <expandable>
             <expandable-header>
@@ -33,8 +28,10 @@
             </expandable-header>
             <expandable-content>
               <div class="submenu">
-                <div class="menu-entry" [routerLink]="worldRoute">Allgemein</div>
-                <div class="menu-entry" [routerLink]="city1Route">Ebrichsburg</div>
+                <div class="menu-entry" [routerLink]="factionRoute">{{factionTitle}}</div>
+
+                <div class="menu-entry" [routerLink]="worldRoute">{{worldTitle}}</div>
+                <div class="menu-entry" [routerLink]="city1Route">{{city1Title}}</div>
               </div>
             </expandable-content>
           </expandable>
