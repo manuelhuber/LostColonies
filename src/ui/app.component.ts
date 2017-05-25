@@ -20,6 +20,9 @@ export class AppComponent implements OnInit {
               private titleService : Title) {
   }
 
+  /**
+   * Page title handler - code copied from official angular source
+   */
   public ngOnInit() : void {
     this.router.events
       .filter((event) => event instanceof NavigationEnd)

@@ -56,9 +56,8 @@ export const LINKS : LinkEntry[] = [
   {phrase: 'Echtzeitraum', link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   {phrase: 'Whisperer', link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   {phrase: 'Psioniker', link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
-  {phrase: 'Tote', link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
-  {phrase: 'Leiche', link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   {phrase: 'Todessucher', link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
+  {phrase: /Leiche[n]?/, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   {phrase: /Dämon(en)?/i, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   {phrase: /Leviathan[^b]/i, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   // ------------------------------------------------------------------------------------------------------- Ebrichsburg
