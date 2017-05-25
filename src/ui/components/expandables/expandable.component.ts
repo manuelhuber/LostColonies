@@ -17,8 +17,6 @@ export const TIME_WHEN_ANIMATION_IS_OVER : number = 500;
  */
 export class ExpandableComponent {
 
-  @Input() public expandOnClick : boolean;
-
   /**
    * The content of the entry
    */
