@@ -25,7 +25,7 @@ export class ExpandableComponent {
   @Output()
   public visibleChange : EventEmitter<boolean> = new EventEmitter();
 
-  // For easier use with the accordion
+  // For easier use with the accordion. Kind of dirty code but convenient
   public isVisible : EventEmitter<{ visible : boolean, self : ExpandableComponent }> = new EventEmitter();
 
   /**
