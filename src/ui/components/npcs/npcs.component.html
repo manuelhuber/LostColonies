@@ -4,8 +4,8 @@
   </div>
   <expandable [(visible)]="expanded">
     <expandable-content *ngIf="npcs.length>1">
-      <div class="npc-wrapper" *ngFor="let npc of npcs.slice(1); let i = $index">
-        <npc [npc]="npc" [alignRight]="i % 2 !== 0" [excludeLinks]="excludeLinks"></npc>
+      <div class="npc-wrapper" *ngFor="let npc of npcs.slice(1); let i = index">
+        <npc [npc]="npc" [alignRight]="i % 2 === 0" [excludeLinks]="excludeLinks"></npc>
       </div>
     </expandable-content>
   </expandable>

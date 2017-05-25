@@ -49,6 +49,11 @@
           "name": "Melvir",
           "description": "Ein Ex-Militärarzt, der nach dem berüchtigten Masaker am Krämergraben das Astra Militarum verlies. Als enger Freund von Yuri hilft er der Gang, wo er kann. Wird er sich Yuri's neuer Crew anschließen oder führt ihn sein Weg bald woanders hin?",
           "imageUrl": "http://imgur.com/1u1vlSm.png"
+        },
+        {
+          "name": "Sevoy",
+          "description": "Ein wohlhabender Händler und Kunde der Assassinen. Als Bezahlung für einen Job lässt er sein altes Fischlager leerstehen, welches zum Hauptquartier der Gruppe wurde.",
+          "imageUrl": "http://www.westminstercathedral.org.uk/images/oldsite/tour/bentley/bentley_portray.jpg"
         }
       ],
       "achievements": [
