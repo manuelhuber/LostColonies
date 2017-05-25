@@ -3,6 +3,7 @@ import { WorldService } from '../../../data/services/world.service';
 import { MyMap } from '../../../data/models/map';
 import { CITY_1_ROUTE } from '../../app.routes';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
+import { MapHighlight } from '../../../data/models/mapHighlight';
 
 @Component({
   selector: 'city',
@@ -18,6 +19,10 @@ export class CityPage {
 
   public getExcludeLinks(map : MyMap) : LinkLocation[] {
     return [ {link: CITY_1_ROUTE, linkable: map.name} ];
+  }
+
+  public getLinksForMap(map : MyMap) : string[] {
+    return map && map.highlights && map.highlights.map((value : MapHighlight) => value.name);
   }
 
 }

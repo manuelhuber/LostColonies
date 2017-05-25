@@ -7,7 +7,7 @@
       <expandable-content>
         <div class="page-accordion-content">
           <div class="map-description" insertLinks [exclude]="getExcludeLinks(map)" [innerHtml]="map.description"></div>
-          <map [map]="map" [excludeLinks]="getExcludeLinks(map)"></map>
+          <map [map]="map" [excludeLinks]="getExcludeLinks(map)" [linkable]="getLinksForMap(map)"></map>
         </div>
       </expandable-content>
     </expandable>

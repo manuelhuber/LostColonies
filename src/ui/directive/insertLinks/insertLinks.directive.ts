@@ -1,5 +1,6 @@
 import { AfterViewInit, Directive, ElementRef, Input, Renderer2 } from '@angular/core';
 import { LINKS } from './links';
+import { LINKABLE_MAP_HIGHLIGHT_PARAM, LINKABLE_PARAM } from '../linkable/linkable.directive';
 
 export interface LinkEntry extends LinkLocation {
   phrase : string | RegExp;
@@ -8,6 +9,7 @@ export interface LinkEntry extends LinkLocation {
 export interface LinkLocation {
   link : string;
   linkable : string;
+  mapHighlight ? : string;
 }
 
 @Directive({selector: '[insertLinks]'})
@@ -29,9 +31,11 @@ export class InsertLinksDirective implements AfterViewInit {
     if (newHtml && newHtml.length) {
       this.links.forEach((entry : LinkEntry) => {
         if (!this.locationExcluded(entry)) {
+          // Remove flags from regex string
           let rawRegex : string = entry.phrase.toString().replace(/\/[i]?/g, '');
-          let notInsideLinkRegex : RegExp = new RegExp('(?!link=")(' + rawRegex + ')(?!")');
-          newHtml = newHtml.replace(notInsideLinkRegex, (matched) => this.generateLink(entry, matched));
+          // Regex magic
+          let notInsideATag : RegExp = new RegExp(rawRegex + '(?![^<a]*>|[^<>]*<\/a)');
+          newHtml = newHtml.replace(notInsideATag, (matched) => this.generateLink(entry, matched));
         }
       });
       this.renderer.setProperty(this.el.nativeElement, 'innerHTML', newHtml);
@@ -51,8 +55,10 @@ export class InsertLinksDirective implements AfterViewInit {
    * @return {string}
    */
   private generateLink(entry : LinkEntry, matchedPhrase : string) : string {
-    let linkable : string = entry.linkable ? '?link=' + entry.linkable : '';
-    return '<a href="/#/' + entry.link + linkable + '">' + matchedPhrase + '</a>';
+    let linkable : string = entry.linkable ? LINKABLE_PARAM + '=' + entry.linkable : '';
+    let mapHighlight : string = entry.mapHighlight ? LINKABLE_MAP_HIGHLIGHT_PARAM + '=' + entry.mapHighlight : '';
+    let queryParams : string = [ linkable, mapHighlight ].filter((s : string) => s.length > 0).join('&');
+    return '<a href="/#/' + entry.link + '?' + queryParams + '">' + matchedPhrase + '</a>';
   }
 
 }
