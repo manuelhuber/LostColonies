@@ -24,20 +24,13 @@ export const INTRO_TITLE : string = 'Meta';
 export const INTRO_ROUTE : string = PLAYERS + '/meta';
 
 export const ROUTES : Routes = [
-  {
-    path: '', // PLAYERS
-    children: [
-      {path: PLAYERS_ROUTE, component: PlayersPage, data: {title: PLAYERS_TITLE}},
-      {path: INTRO_ROUTE, component: MetaPage, data: {title: INTRO_TITLE}}
-    ]
-  },
-  {
-    path: '', // WORLD
-    children: [
-      {path: FACTION_ROUTE, component: FactionsPage, data: {title: FACTION_TITLE}},
-      {path: WORLD_GENERAL_ROUTE, component: WorldPage, data: {title: WORLD_GENERAL_TITLE}},
-      {path: CITY_1_ROUTE, component: CityPage, data: {title: CITY_1_TITLE}}
-    ]
-  },
+  // PLAYERS
+  {path: PLAYERS_ROUTE, component: PlayersPage, data: {title: PLAYERS_TITLE}},
+  {path: INTRO_ROUTE, component: MetaPage, data: {title: INTRO_TITLE}},
+  // WORLD
+  {path: FACTION_ROUTE, component: FactionsPage, data: {title: FACTION_TITLE}},
+  {path: WORLD_GENERAL_ROUTE, component: WorldPage, data: {title: WORLD_GENERAL_TITLE}},
+  {path: CITY_1_ROUTE, component: CityPage, data: {title: CITY_1_TITLE}},
+  // Fallback
   {path: '**', redirectTo: PLAYERS_ROUTE}
 ];
