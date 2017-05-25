@@ -1,5 +1,5 @@
 <div class="page">
-  <accordion *ngIf="players && gang">
+  <accordion *ngIf="players && gang" [openAtStart]="0">
 
     <expandable [linkable]="gang.name">
       <expandable-header>
