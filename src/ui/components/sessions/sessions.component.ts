@@ -22,7 +22,6 @@ export class SessionsComponent implements OnInit {
   }
 
   public ngOnInit() : void {
-    this.sessions = this.sessions.sort((a, b) => a.date - b.date);
     this.activeSession = this.sessions.length - 1;
   }
 

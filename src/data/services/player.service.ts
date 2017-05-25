@@ -33,7 +33,7 @@ export class PlayerService {
             gang.sessions = gang.sessions.map((session : Session) => {
               session.date = Date.parse(<any> session.date);
               return session;
-            });
+            }).sort((a, b) => a.date - b.date);
             return gang;
           });
           return res;
