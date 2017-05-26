@@ -12,24 +12,24 @@
       <div class="menu">
         <div class="menu-entry mod-first">Spieler</div>
         <div class="submenu">
-          <div class="menu-entry clickable" [routerLink]="metaRoute">
-            <div class="arrow right submenu-arrow"></div>
-            {{metaTitle}}
-          </div>
           <div class="menu-entry clickable" [routerLink]="playersRoute">
             <div class="arrow right submenu-arrow"></div>
             {{playersTitle}}
           </div>
+          <div class="menu-entry clickable" [routerLink]="metaRoute">
+            <div class="arrow right submenu-arrow"></div>
+            {{metaTitle}}
+          </div>
         </div>
         <div class="menu-entry">Welt</div>
         <div class="submenu">
-          <div class="menu-entry clickable" [routerLink]="factionRoute">
-            <div class="arrow right submenu-arrow"></div>
-            {{factionTitle}}
-          </div>
           <div class="menu-entry clickable" [routerLink]="worldRoute">
             <div class="arrow right submenu-arrow"></div>
             {{worldTitle}}
+          </div>
+          <div class="menu-entry clickable" [routerLink]="factionRoute">
+            <div class="arrow right submenu-arrow"></div>
+            {{factionTitle}}
           </div>
           <div class="menu-entry clickable" [routerLink]="city1Route">
             <div class="arrow right submenu-arrow"></div>
