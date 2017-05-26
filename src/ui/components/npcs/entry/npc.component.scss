@@ -1,12 +1,13 @@
 $margin-image-text: 0.5em;
-$margin-image-top: 0.4em;
+$margin-image-top: 0.6em;
 $margin-image-border: 0.2em;
 
 .npc {
 }
 
 .npc-image-wrapper {
-  max-width: 30%;
+  width: 45%;
+  max-width: 15em;
   max-height: 100%;
   padding: $margin-image-top $margin-image-text 0 $margin-image-border;
   float: left;
@@ -24,7 +25,7 @@ $margin-image-border: 0.2em;
 }
 
 .npc-description {
-
+  text-align: justify;
 }
 
 .right {
