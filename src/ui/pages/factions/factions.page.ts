@@ -30,6 +30,7 @@ export class FactionsPage implements OnInit {
   public allFactions : Faction[];
   // The current selected group
   public group : Faction[];
+  public showSelect : boolean;
 
   private groups : { [group : string] : Faction[] };
   private _activeGroup : string;
@@ -57,6 +58,11 @@ export class FactionsPage implements OnInit {
         }
       }
     );
+  }
+
+  public activateGroup(group : string) : void {
+    this.activeGroup = group;
+    this.showSelect = false;
   }
 
   public excludeLinks(faction : Faction) : LinkLocation[ ] {
