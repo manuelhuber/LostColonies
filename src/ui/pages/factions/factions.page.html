@@ -26,7 +26,9 @@
         <expandable-content>
           <div>
             <div class="page-accordion-content">
-              <img *ngIf="faction.imageUrl" [src]="faction.imageUrl" alt="" class="faction-image">
+              <div class="faction-image-wrapper">
+                <img *ngIf="faction.imageUrl" [src]="faction.imageUrl" alt="" class="faction-image">
+              </div>
               <div *ngIf="faction.description">
                 <div insertLinks [exclude]="excludeLinks(faction)"
                      [innerHtml]="faction.description"></div>

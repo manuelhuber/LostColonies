@@ -94,8 +94,7 @@ $menu-icon-transition: all 250ms ease;
 }
 
 .submenu {
-  // Compensates the bottom margin of entry to avoid bug with expendables.component animation
-  padding: 0 0 0.25em 1em;
+  padding-left: 1em;
   > .menu-entry:first-child {
     margin: 0 0 0.25em 0;
   }

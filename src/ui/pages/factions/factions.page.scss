@@ -1,5 +1,9 @@
-.faction-image {
-  width: 100%;
-  box-sizing: border-box;
+.faction-image-wrapper {
   padding: 0.5em;
+  text-align: center;
+}
+
+.faction-image {
+  max-width: 100%;
+  max-height: 50vw;
 }

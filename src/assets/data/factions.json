@@ -12,10 +12,12 @@
       "npcs": [
         {
           "name": "Don Volker Junior",
-          "description": "Der Sohn des ermordeten Anführer der Nachtwächter, muss nicht nur den Tod seines Vater rächen, sondern auch um die Vorherrschaft in Hasard kämpfen"
+          "imageUrl": "https://s-media-cache-ak0.pinimg.com/736x/97/f7/bb/97f7bb95ffdc40b3f5ef88acf1a4392c.jpg",
+          "description": "Der Sohn des ermordeten Anführer der Nachtwächter, muss nicht nur den Tod seines Vater rächen, sondern auch um die Vorherrschaft in Hasard kämpfen. Um seine Macht zu festigen, greift er hart durch."
         },
         {
-          "name": "Halger",
+          "name": "Mr. Halger",
+          "imageUrl": "https://s-media-cache-ak0.pinimg.com/736x/3d/50/24/3d5024d88926db3873dfde5be9df51af.jpg",
           "description": "Der schmalle, wohl gekleidete Mann ist nicht nur der Hauptkontakt für die Assassinen, sondern auch Don Volkers treuer Berater. Er ist auf das wohl der Organisation bedacht und lässt sich selten von Emotionen leiten. Wegen seiner ruhigen und diplomatischen Art ist er das Gesicht der Nachtwächter für alle befreundeten Gangs."
         }
       ]
@@ -37,6 +39,7 @@
       "npcs": [
         {
           "name": "Diebesschöpfer",
+          "imageUrl": "https://lynnsbooks.files.wordpress.com/2013/10/1aa92-6a00d8346fb29c53ef017eea2799dc970d-800wi.jpg?w=180&h=210",
           "description": "Ein alter Mann, dem als Strafe für seine Diebestaten jeder Finger gebrochen wurde. Mittlerweile nimmt er Waisenkinder auf um seine Scharr an Dieben zu vergrößern. Er kennt die Stadt wie kein Zweiter und ist durch seine Kinder immer bestens informiert über die Geschehnisse in den Straßen."
         }
       ]
@@ -45,12 +48,13 @@
   "Staatlich": [
     {
       "name": "Adeptus Arbites",
-      "description": "Auch bekannt als \"Blaumäntel\", gehören die Gesetzeshüter zu einer der gefährlichsten Gangs in Ebrichsburg. Sie sind korrupt, skrupellos und gut ausgestattet. ",
+      "imageUrl": "http://imgur.com/8rldYE2.png",
+      "description": "Auch bekannt als \"Blaumäntel\", sind die Gesetzeshüter des Imperiums wohl eine der gefährlichsten Gangs in Ebrichsburg. Neben der vollen Unterstützung der Regierung, haben sie auch Zugang zu hochwertigen Ausrüstungen. Der Tod eines Blaumantels wird schnell und hart gestraft, wenn nötig auch ohne Gerichtsverhandlung. ",
       "npcs": [
         {
-          "name": "Zimmer",
+          "name": "Regulator Zimmer",
           "imageUrl": "http://imgur.com/CAL1rew.png",
-          "description": "Yo."
+          "description": "Nicht nur durch seine Verwicklung in den Volker Mord hat dieser höherrangige Blaumantel bewiesen, dass er zur schlechten Hälfte des Adeptus Arbites gehört. Er nutzt seine Position voll aus, um persönliche Ziele mit der gesamten Gewalt des Imperiums zu erreichen."
         }
       ]
     }

@@ -4,8 +4,8 @@ import { CITY_1_ROUTE, FACTION_ROUTE, INTRO_ROUTE, PLAYERS_ROUTE, WORLD_GENERAL_
 export const LINKS : LinkEntry[] = [
   // -------------------------------------------------------------------------------------------------------------- CREW
   {phrase: 'Assassinen', link: PLAYERS_ROUTE, linkable: 'Assassinen'},
-  {phrase: 'Salia', link: PLAYERS_ROUTE, linkable: 'Salia'},
-  {phrase: 'Mevlir', link: PLAYERS_ROUTE, linkable: 'Mevlir'},
+  {phrase: 'Salia', link: PLAYERS_ROUTE, linkable: 'Assassinen'},
+  {phrase: 'Mevlir', link: PLAYERS_ROUTE, linkable: 'Assassinen'},
   // ----------------------------------------------------------------------------------------------------------- PLAYERS
   {phrase: 'Yuri', link: PLAYERS_ROUTE, linkable: 'Yuri'},
   {phrase: 'Erik', link: PLAYERS_ROUTE, linkable: 'Erik'},
