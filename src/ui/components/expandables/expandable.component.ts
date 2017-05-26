@@ -1,5 +1,6 @@
-import { Component, ContentChild, EventEmitter, Input, Output } from '@angular/core';
+import { Component, ContentChild, ElementRef, EventEmitter, Input, Output } from '@angular/core';
 import { ExpandableContentComponent } from './content/expandable-content.component';
+import { ExpandableHeaderComponent } from './header/expandable-header.component';
 
 // MAGIC NUMBER WARNING: the delay should be as long or a bit longer than the animation duration!
 export const TIME_WHEN_ANIMATION_IS_OVER : number = 500;
@@ -21,6 +22,7 @@ export class ExpandableComponent {
    * The content of the entry
    */
   @ContentChild(ExpandableContentComponent) public content : ExpandableContentComponent;
+  @ContentChild(ExpandableHeaderComponent) public header : ExpandableHeaderComponent;
 
   @Output()
   public visibleChange : EventEmitter<boolean> = new EventEmitter();
@@ -35,6 +37,9 @@ export class ExpandableComponent {
 
   private timeout : any;
   private _visible : boolean = false;
+
+  constructor(private elem : ElementRef) {
+  }
 
   /**
    * Makes the content of the entry (in)visible with a nice animation
@@ -54,7 +59,10 @@ export class ExpandableComponent {
       // Increase to the size of the content
       this.height = this.content.height + 'px';
       // Set auto to react to size changes of the content
-      this.timeout = setTimeout(() => this.height = 'auto', TIME_WHEN_ANIMATION_IS_OVER);
+      this.timeout = setTimeout(() => {
+        this.height = 'auto';
+        this.header.scrollIntoView();
+      }, TIME_WHEN_ANIMATION_IS_OVER);
     } else {
       // Set the height from auto to the actual size (needed for animation)
       this.height = this.content.height + 'px';

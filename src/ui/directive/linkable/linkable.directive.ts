@@ -5,6 +5,7 @@ import { MapComponent } from '../../components/map/map.component';
 
 export const LINKABLE_PARAM : string = 'link';
 export const LINKABLE_MAP_HIGHLIGHT_PARAM : string = 'mapHighlight';
+export const DEFAULT_SCROLL_OPTIONS : any = {behavior: 'smooth'};
 
 @Directive({selector: '[linkable]'})
 export class LinkableDirective implements AfterContentInit, AfterViewInit {
@@ -38,12 +39,12 @@ export class LinkableDirective implements AfterContentInit, AfterViewInit {
       // Only scroll to expandable if there is no map
       if (expandable && !mapHighlight) {
         // Works perfectly for expandables, not for maps
-        setTimeout(() => this.el.nativeElement.scrollIntoView(), TIME_WHEN_ANIMATION_IS_OVER);
+        setTimeout(() => this.el.nativeElement.scrollIntoView(DEFAULT_SCROLL_OPTIONS), TIME_WHEN_ANIMATION_IS_OVER);
       } else if (map) {
         // Scroll after viewInit
         this.scrollToMap = true;
       } else {
-        this.el.nativeElement.scrollIntoView();
+        this.el.nativeElement.scrollIntoView(DEFAULT_SCROLL_OPTIONS);
       }
     });
   }
@@ -54,7 +55,7 @@ export class LinkableDirective implements AfterContentInit, AfterViewInit {
    */
   public ngAfterViewInit() : void {
     if (this.scrollToMap) {
-      setTimeout(() => this.el.nativeElement.scrollIntoView(), TIME_WHEN_ANIMATION_IS_OVER);
+      setTimeout(() => this.el.nativeElement.scrollIntoView(DEFAULT_SCROLL_OPTIONS), TIME_WHEN_ANIMATION_IS_OVER);
     }
   }
 

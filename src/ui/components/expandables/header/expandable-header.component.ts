@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
+import { DEFAULT_SCROLL_OPTIONS } from '../../../directive/linkable/linkable.directive';
 
 @Component({
   selector: 'expandable-header',
@@ -9,4 +10,11 @@ import { Component } from '@angular/core';
  * Can be styled depending on visible state. Parent div of the whole entry will have the css class "accordion-entry-hidden"
  */
 export class ExpandableHeaderComponent {
+
+  constructor(private elem : ElementRef) {
+  }
+
+  public scrollIntoView() : void {
+    this.elem.nativeElement.scrollIntoView(DEFAULT_SCROLL_OPTIONS);
+  }
 }
