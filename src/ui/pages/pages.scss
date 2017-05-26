@@ -8,7 +8,7 @@ $margin-top: 0.5em;
 .page {
   //max-width: 600px;
   max-width: 40rem;
-  margin: 0 auto;
+  margin: 0 auto $margin-top auto;
 }
 
 .page-accordion-header {
