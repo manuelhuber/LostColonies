@@ -24,6 +24,8 @@ export class ExpandableComponent {
   @ContentChild(ExpandableContentComponent) public content : ExpandableContentComponent;
   @ContentChild(ExpandableHeaderComponent) public header : ExpandableHeaderComponent;
 
+  @Input() public scrollIntoViewOnExpand : boolean = true;
+
   @Output()
   public visibleChange : EventEmitter<boolean> = new EventEmitter();
 
@@ -61,7 +63,9 @@ export class ExpandableComponent {
       // Set auto to react to size changes of the content
       this.timeout = setTimeout(() => {
         this.height = 'auto';
-        this.header.scrollIntoView();
+        if (this.scrollIntoViewOnExpand && this.header) {
+          this.header.scrollIntoView();
+        }
       }, TIME_WHEN_ANIMATION_IS_OVER);
     } else {
       // Set the height from auto to the actual size (needed for animation)
