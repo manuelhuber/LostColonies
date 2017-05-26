@@ -57,6 +57,18 @@
           "description": "Nicht nur durch seine Verwicklung in den Volker Mord hat dieser höherrangige Blaumantel bewiesen, dass er zur schlechten Hälfte des Adeptus Arbites gehört. Er nutzt seine Position voll aus, um persönliche Ziele mit der gesamten Gewalt des Imperiums zu erreichen."
         }
       ]
+    },
+    {
+      "name": "Astra Militarum",
+      "imageUrl": "https://astronomiconportal.files.wordpress.com/2014/04/am-orders_1.jpg",
+      "description": "Die \"Grünhelme\" sind ultimative Streitkraft im Imperium. Mit Zugriff zu einem unvergleichlichen Arsenal und dem härtesten Trainingsregiment, werden sie als letztes Mittel eingesetzt.",
+      "npcs": [
+        {
+          "name": "Wächterin Celene",
+          "imageUrl": "http://imgur.com/yLZxC6Q.png",
+          "description": "Ihre militärische Laufbahn ist nicht bekannt, aber die tiefen Narben in ihrem Gesicht lassen so manches erahnen. Jetzt ist sie eine hochrangige Offizierin der Militärpolizei. Ihre kalten Augen und psyonischen Fähigkeiten machen sie zu eine der gefährlichsten Interrogatoren, sowohl für korrupte Offiziere, als auch gewöhnliche Verbrecher."
+        }
+      ]
     }
   ]
 }
