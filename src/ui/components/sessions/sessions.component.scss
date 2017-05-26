@@ -68,6 +68,11 @@
   }
 }
 
+.session-description {
+  // Overwrite hammerjs default styling
+  user-select: auto !important;
+}
+
 .session-author {
   text-align: right;
   font-style: italic;
