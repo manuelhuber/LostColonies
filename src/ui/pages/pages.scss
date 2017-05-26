@@ -24,6 +24,9 @@ $margin-top: 0.5em;
   border-bottom: none;
   cursor: pointer;
   transition: border-bottom 0ms $height-animation-duration;
+  &.mod-permanent-border-bot {
+    border-bottom: $dark-border;
+  }
 }
 
 .accordion-entry-hidden {
@@ -47,6 +50,11 @@ $margin-top: 0.5em;
   &.mod-separate {
     border-top: $light-border;
     margin-top: $margin-top;
+  }
+  &.mod-hover-effect {
+    &:hover {
+      background: $color-grey-1 url("/assets/images/blood-splatter-small-bottom-right.png") no-repeat bottom right;
+    }
   }
 }
 

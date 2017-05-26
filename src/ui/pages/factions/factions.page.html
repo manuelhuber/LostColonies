@@ -1,24 +1,44 @@
 <div class="page">
-  <accordion *ngIf="factions">
-    <expandable *ngFor="let faction of factions" [linkable]="[faction.name]">
+  <accordion *ngIf="allFactions && allFactions.length">
+
+    <!-- Group selector -->
+    <expandable>
       <expandable-header>
-        <div class="page-accordion-header">{{faction.name}}</div>
+        <div class="page-accordion-header mod-permanent-border-bot">Anzeigen: {{activeGroup}}</div>
       </expandable-header>
       <expandable-content>
-        <div>
-          <div class="page-accordion-content">
-            <img *ngIf="faction.imageUrl" [src]="faction.imageUrl" alt="" class="faction-image">
-            <div *ngIf="faction.description">
-              <div insertLinks [exclude]="excludeLinks(faction)"
-                   [innerHtml]="faction.description"></div>
-            </div>
-          </div>
-          <div class="page-accordion-content mod-separate" *ngIf="faction.npcs">
-            <div class="headline">NPCs:</div>
-            <npcs [npcs]="faction.npcs" [excludeLinks]="excludeLinks(faction)"></npcs>
-          </div>
+        <div class="page-accordion-content mod-separate mod-hover-effect clickable"
+             *ngFor="let group of selectableGroups"
+             (click)="activeGroup = group">
+          {{group}}
         </div>
       </expandable-content>
     </expandable>
+
+    <!-- Factions -->
+    <!-- We need to render a expandable for every faction and hide them depending on selection to make sure
+    the accordion has a reference to all of them -->
+    <div *ngFor="let faction of allFactions">
+      <expandable [hidden]="group.indexOf(faction) === -1" [linkable]="[faction.name]">
+        <expandable-header>
+          <div class="page-accordion-header">{{faction.name}}</div>
+        </expandable-header>
+        <expandable-content>
+          <div>
+            <div class="page-accordion-content">
+              <img *ngIf="faction.imageUrl" [src]="faction.imageUrl" alt="" class="faction-image">
+              <div *ngIf="faction.description">
+                <div insertLinks [exclude]="excludeLinks(faction)"
+                     [innerHtml]="faction.description"></div>
+              </div>
+            </div>
+            <div class="page-accordion-content mod-separate" *ngIf="faction.npcs">
+              <div class="headline">NPCs:</div>
+              <npcs [npcs]="faction.npcs" [excludeLinks]="excludeLinks(faction)"></npcs>
+            </div>
+          </div>
+        </expandable-content>
+      </expandable>
+    </div>
   </accordion>
 </div>
