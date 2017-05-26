@@ -1,8 +1,8 @@
 import { LinkEntry } from './insertLinks.directive';
-import { CITY_1_ROUTE, FACTION_ROUTE, PLAYERS_ROUTE, WORLD_GENERAL_ROUTE } from '../../app.routes';
+import { CITY_1_ROUTE, FACTION_ROUTE, INTRO_ROUTE, PLAYERS_ROUTE, WORLD_GENERAL_ROUTE } from '../../app.routes';
 
 export const LINKS : LinkEntry[] = [
-  // ----------------------------------------------------------------------------------------------------------- CREW
+  // -------------------------------------------------------------------------------------------------------------- CREW
   {phrase: 'Assassinen', link: PLAYERS_ROUTE, linkable: 'Assassinen'},
   {phrase: 'Salia', link: PLAYERS_ROUTE, linkable: 'Salia'},
   {phrase: 'Mevlir', link: PLAYERS_ROUTE, linkable: 'Mevlir'},
@@ -21,7 +21,10 @@ export const LINKS : LinkEntry[] = [
   {phrase: 'Schädelschänder', link: FACTION_ROUTE, linkable: 'Schädelschänder'},
   {phrase: 'Kinder des Nebels', link: FACTION_ROUTE, linkable: 'Kinder des Nebels'},
   {phrase: 'Diebesschöpfer', link: FACTION_ROUTE, linkable: 'Kinder des Nebels'},
-  // ------------------------------------------------------------------------------------------------------------- World
+  {phrase: 'Adeptus Arbites', link: FACTION_ROUTE, linkable: 'Adeptus Arbites'},
+  {phrase: 'Zimmer', link: FACTION_ROUTE, linkable: 'Adeptus Arbites'},
+  {phrase: /Blaum[aä]ntel/, link: FACTION_ROUTE, linkable: 'Adeptus Arbites'},
+  // ------------------------------------------------------------------------------------------------------------- WORLD
   // ----------------------------------------------------------------------------------------------- Regierung
   {phrase: 'Adeptus Administratum', link: WORLD_GENERAL_ROUTE, linkable: 'regierung'},
   {phrase: 'Adeptus Arbites', link: WORLD_GENERAL_ROUTE, linkable: 'regierung'},
@@ -60,10 +63,12 @@ export const LINKS : LinkEntry[] = [
   {phrase: /Leiche[n]?/, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   {phrase: /Dämon(en)?/i, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   {phrase: /Leviathan[^b]/i, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
-  // ------------------------------------------------------------------------------------------------------- Ebrichsburg
+  // ------------------------------------------------------------------------------------------------------- EBRICHSBURG
   {phrase: 'Ebrichsburg', link: CITY_1_ROUTE, linkable: 'ebrichsburg'},
+  // ----------------------------------------------------------------------------------------------- Maps Hasard
   {phrase: 'Hasard', link: CITY_1_ROUTE, linkable: 'hasard'},
   {phrase: 'Kasino', link: CITY_1_ROUTE, linkable: 'hasard', mapHighlight: 'Volker Kasino'},
-  {phrase: /[Aa]lte.? Fischlager/, link: CITY_1_ROUTE, linkable: 'hasard', mapHighlight: 'Altes Fischlager'}
-
+  {phrase: /[Aa]lte.? Fischlager/, link: CITY_1_ROUTE, linkable: 'hasard', mapHighlight: 'Altes Fischlager'},
+  // ----------------------------------------------------------------------------------------------- Meta
+  {phrase: /Inspiration(en)?/, link: INTRO_ROUTE, linkable: 'Inspiration'}
 ];

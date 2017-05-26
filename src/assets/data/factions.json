@@ -1,5 +1,5 @@
 {
-  "Unterwelt": [
+  "Kriminell": [
     {
       "name": "Speer und Hammer",
       "imageUrl": "http://i.imgur.com/1refLVX.png",
@@ -42,5 +42,17 @@
       ]
     }
   ],
-  "Religion": []
+  "Staatlich": [
+    {
+      "name": "Adeptus Arbites",
+      "description": "Auch bekannt als \"Blaumäntel\", gehören die Gesetzeshüter zu einer der gefährlichsten Gangs in Ebrichsburg. Sie sind korrupt, skrupellos und gut ausgestattet. ",
+      "npcs": [
+        {
+          "name": "Zimmer",
+          "imageUrl": "http://imgur.com/CAL1rew.png",
+          "description": "Yo."
+        }
+      ]
+    }
+  ]
 }
