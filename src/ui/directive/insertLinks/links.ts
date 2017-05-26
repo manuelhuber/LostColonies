@@ -22,8 +22,11 @@ export const LINKS : LinkEntry[] = [
   {phrase: 'Kinder des Nebels', link: FACTION_ROUTE, linkable: 'Kinder des Nebels'},
   {phrase: 'Diebesschöpfer', link: FACTION_ROUTE, linkable: 'Kinder des Nebels'},
   {phrase: 'Adeptus Arbites', link: FACTION_ROUTE, linkable: 'Adeptus Arbites'},
-  {phrase: 'Zimmer', link: FACTION_ROUTE, linkable: 'Adeptus Arbites'},
   {phrase: /Blaum[aä]ntel/, link: FACTION_ROUTE, linkable: 'Adeptus Arbites'},
+  {phrase: 'Zimmer', link: FACTION_ROUTE, linkable: 'Adeptus Arbites'},
+  {phrase: 'Astra Militarum', link: FACTION_ROUTE, linkable: 'Astra Militarum'},
+  {phrase: /Grünhelm[e]?/, link: FACTION_ROUTE, linkable: 'Astra Militarum'},
+  {phrase: 'Celene', link: FACTION_ROUTE, linkable: 'Astra Militarum'},
   // ------------------------------------------------------------------------------------------------------------- WORLD
   // ----------------------------------------------------------------------------------------------- Regierung
   {phrase: 'Adeptus Administratum', link: WORLD_GENERAL_ROUTE, linkable: 'regierung'},
