@@ -10,37 +10,58 @@ $color-grey-4: #202020;
 $color-grey-5: #101010;
 
 @font-face {
-  font-family: 'Kirsty';
-  src: url('/assets/fonts/kirsty/kirsty rg.ttf');
-}
-
-@font-face {
-  font-family: 'Kirsty';
-  src: url('/assets/fonts/kirsty/kirsty bd.ttf');
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Libertine';
-  src: url('/assets/fonts/libertine/LinLibertine_R.ttf')
-}
-
-@font-face {
-  font-family: 'Libertine';
-  src: url('/assets/fonts/libertine/LinLibertine_RB.ttf');
-  font-weight: bold;
-}
-
-@font-face {
   font-family: 'UglyQua';
-  src: url('/assets/fonts/UglaQua/UglyQua.ttf');
+  src: url('/assets/fonts/UglaQua/uglyqua-webfont.woff2') format('woff2'),
+  url('/assets/fonts/UglaQua/uglyqua-webfont.woff') format('woff'),
+  url('/assets/fonts/UglaQua/uglyqua-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Kirsty';
+  src: url('/assets/fonts/kirsty/kirsty_bd-webfont.woff2') format('woff2'),
+  url('/assets/fonts/kirsty/kirsty_bd-webfont.woff') format('woff'),
+  url('/assets/fonts/kirsty/kirsty_bd-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Kirsty';
+  src: url('/assets/fonts/kirsty/kirsty_rg-webfont.woff2') format('woff2'),
+  url('/assets/fonts/kirsty/kirsty_rg-webfont.woff') format('woff'),
+  url('/assets/fonts/kirsty/kirsty_rg-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Libertine';
+  src: url('/assets/fonts/libertine/linlibertine_r-webfont.woff2') format('woff2'),
+  url('/assets/fonts/libertine/linlibertine_r-webfont.woff') format('woff'),
+  url('/assets/fonts/libertine/linlibertine_r-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libertine';
+  src: url('/assets/fonts/libertine/linlibertine_rb-webfont.woff2') format('woff2'),
+  url('/assets/fonts/libertine/linlibertine_rb-webfont.woff') format('woff'),
+  url('/assets/fonts/libertine/linlibertine_rb-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 html, body {
   height: 100%;
   background: $color-grey-1 url("/assets/images/main-background.png") repeat fixed;
   font-size: 17px;
-  font-family: Libertine;
+  font-family: Libertine, Times, Serif;
   margin-bottom: 0;
 }
 
