@@ -1,5 +1,7 @@
+@import "../../app.component";
+
 .character-name {
-  font-family: Kirsty;
+  @include kirsty();
   font-size: 1.25em;
 }
 

@@ -19,7 +19,7 @@ $menu-icon-transition: all 250ms ease;
 
 .header-title {
   color: $color-white-1;
-  font-family: Kirsty;
+  @include kirsty();
   font-weight: bold;
 }
 

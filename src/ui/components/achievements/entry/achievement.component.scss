@@ -69,7 +69,7 @@ $sidebar-margin: 33px;
 }
 
 .achievement-name {
-  font-family: UglyQua;
+  @include uglyqua();
   text-shadow: 0 0 10px $color-grey-0;
 }
 

@@ -40,8 +40,8 @@
 }
 
 .session-name {
+  @include uglyqua();
   font-size: 1.5em;
-  font-family: UglyQua;
   text-align: center;
   position: relative;
 }

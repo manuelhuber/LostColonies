@@ -61,8 +61,16 @@ html, body {
   height: 100%;
   background: $color-grey-1 url("/assets/images/main-background.png") repeat fixed;
   font-size: 17px;
-  font-family: Libertine, Times, Serif;
+  font-family: Libertine, serif;
   margin-bottom: 0;
+}
+
+@mixin uglyqua() {
+  font-family: UglyQua, Impact, Charcoal, sans-serif;
+}
+
+@mixin kirsty() {
+  font-family: Kirsty, Georgia, serif;
 }
 
 a.active {

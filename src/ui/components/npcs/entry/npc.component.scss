@@ -1,3 +1,5 @@
+@import "../../../app.component";
+
 $margin-image-text: 0.5em;
 $margin-image-top: 0.6em;
 $margin-image-border: 0.2em;
@@ -20,7 +22,7 @@ $margin-image-border: 0.2em;
 }
 
 .npc-name {
-  font-family: UglyQua;
+  @include uglyqua();
   font-size: 1.25em;
 }
 
