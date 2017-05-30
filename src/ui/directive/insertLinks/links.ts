@@ -22,7 +22,7 @@ export const LINKS : LinkEntry[] = [
   {phrase: 'Kinder des Nebels', link: FACTION_ROUTE, linkable: 'Kinder des Nebels'},
   {phrase: 'Diebesschöpfer', link: FACTION_ROUTE, linkable: 'Kinder des Nebels'},
   {phrase: 'Adeptus Arbites', link: FACTION_ROUTE, linkable: 'Adeptus Arbites'},
-  {phrase: /Blaum[aä]ntel/, link: FACTION_ROUTE, linkable: 'Adeptus Arbites'},
+  {phrase: /Blaum[aä]ntel[a-z]?/, link: FACTION_ROUTE, linkable: 'Adeptus Arbites'},
   {phrase: 'Zimmer', link: FACTION_ROUTE, linkable: 'Adeptus Arbites'},
   {phrase: 'Astra Militarum', link: FACTION_ROUTE, linkable: 'Astra Militarum'},
   {phrase: /Grünhelm[e]?/, link: FACTION_ROUTE, linkable: 'Astra Militarum'},
@@ -73,5 +73,6 @@ export const LINKS : LinkEntry[] = [
   {phrase: 'Kasino', link: CITY_1_ROUTE, linkable: 'hasard', mapHighlight: 'Volker Kasino'},
   {phrase: /[Aa]lte.? Fischlager/, link: CITY_1_ROUTE, linkable: 'hasard', mapHighlight: 'Altes Fischlager'},
   // ----------------------------------------------------------------------------------------------- Meta
-  {phrase: /Inspiration(en)?/, link: INTRO_ROUTE, linkable: 'Inspiration'}
+  {phrase: /Inspiration(en)?/, link: INTRO_ROUTE, linkable: 'Inspiration'},
+  {phrase: 'Charakterbeschreibung', link: INTRO_ROUTE, linkable: 'Charaktere'}
 ];
