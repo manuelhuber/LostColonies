@@ -11,7 +11,6 @@ export const LINKS : LinkEntry[] = [
   {phrase: 'Erik', link: PLAYERS_ROUTE, linkable: 'Erik'},
   {phrase: 'Frank', link: PLAYERS_ROUTE, linkable: 'Frank'},
   {phrase: 'Dietrich', link: PLAYERS_ROUTE, linkable: 'Dietrich'},
-  {phrase: 'Aurora', link: PLAYERS_ROUTE, linkable: 'Aurora'},
   // ---------------------------------------------------------------------------------------------------------- FACTIONS
   {phrase: /(Speer und Hammer|S&H)/i, link: FACTION_ROUTE, linkable: 'Speer und Hammer'},
   {phrase: /(Nachtwächter|NW)/i, link: FACTION_ROUTE, linkable: 'Nachtwächter'},

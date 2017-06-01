@@ -131,23 +131,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "Franny",
-      "characters": [
-        {
-          "name": "Aurora",
-          "imageUrl": "https://s-media-cache-ak0.pinimg.com/736x/76/f0/14/76f014d71724125b04d5488ca64037a3.jpg",
-          "description": "Als eines der vielen Trauerhügel-Waisenkinder wurde sie wegen ihrer Diebesfähigkeiten an Erik & Yuri verkauft. Der Überlebenskampf in der Gosse hat sie hart gemacht, doch nun muss sie sich in den Straßen der Gangs zurecht finden.",
-          "achievements": [
-            {
-              "name": "Zwei Silbermünzen",
-              "description": "Die Freiheit riecht süß, doch was wenn deine Seele verkauft wurde?",
-              "imageUrl": "http://media.salemwebnetwork.com/cms/RT/38212-coins-facebook.800w.tn.jpg"
-            }
-          ]
-        }
-      ]
     }
   ]
 }
