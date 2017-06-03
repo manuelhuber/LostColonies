@@ -7,10 +7,12 @@
         <div class="page-accordion-header mod-permanent-border-bot">Anzeigen: {{activeGroup}}</div>
       </expandable-header>
       <expandable-content>
-        <div class="page-accordion-content mod-separate mod-hover-effect clickable"
-             *ngFor="let group of selectableGroups"
-             (click)="activateGroup(group)">
-          {{group}}
+        <div class="page-accordion-seperate-content-fix">
+          <div class="page-accordion-content mod-separate mod-hover-effect clickable"
+               *ngFor="let group of selectableGroups"
+               (click)="activateGroup(group)">
+            {{group}}
+          </div>
         </div>
       </expandable-content>
     </expandable>
