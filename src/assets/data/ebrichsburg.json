@@ -38,7 +38,7 @@
         },
         {
           "name": "Docks",
-          "description": "Einer der größeren Handelshafen in Ebrichsburg",
+          "description": "Einer der größeren Handelshafen in Ebrichsburg. Die Arbeiter sind größtenteils von zalianischer Herkunft und freunndlich zu den Nachtwächtern.",
           "location": {
             "top": 86,
             "left": 39
@@ -51,8 +51,8 @@
           "displayDot": true
         },
         {
-          "name": "Altes Fischlager",
-          "description": "Das geheime Quartier der Assassinen ist in einem verlassenen Lagerhause in der nähe des Hafens",
+          "name": "Fish'n'Things",
+          "description": "Das leerstehende Fischlager im Hafen Hasards dient als geheimes Quartier der Assassinen.",
           "location": {
             "top": 84,
             "left": 59
