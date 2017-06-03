@@ -9,7 +9,7 @@ export const LINKS : LinkEntry[] = [
   // ---------------------------------------------------------------------------------------------------------- PLAYERS
   {phrase: 'Yuri', link: PLAYERS_ROUTE, linkable: 'Yuri'},
   {phrase: 'Erik', link: PLAYERS_ROUTE, linkable: 'Erik'},
-  {phrase: 'Frank', link: PLAYERS_ROUTE, linkable: 'Frank'},
+  {phrase: 'Frank', link: PLAYERS_ROUTE, linkable: 'Dietrich'},
   {phrase: 'Dietrich', link: PLAYERS_ROUTE, linkable: 'Dietrich'},
   // --------------------------------------------------------------------------------------------------------- FACTIONS
   {phrase: /(Speer und Hammer|S&H)/i, link: FACTION_ROUTE, linkable: 'Speer und Hammer'},
