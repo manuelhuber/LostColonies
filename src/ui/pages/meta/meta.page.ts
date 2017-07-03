@@ -10,7 +10,6 @@ import { MetaService } from '../../../data/services/meta.service';
 export class MetaPage {
   public entries : MetaEntry[];
   public path : string = INTRO_ROUTE;
-  public firstEntryOpen : boolean = true;
 
   constructor(meta : MetaService) {
     meta.getMeta().subscribe((entries : MetaEntry[]) => this.entries = entries);

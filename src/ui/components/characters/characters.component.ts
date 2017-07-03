@@ -17,7 +17,4 @@ export class CharactersComponent {
   public path : string = PLAYERS_ROUTE;
   public character : Character;
 
-  public getDescriptions(faction : Character) : string[] {
-    return Object.keys(faction.description);
-  }
 }

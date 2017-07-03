@@ -40,9 +40,6 @@ export class ExpandableComponent {
   private timeout : any;
   private _visible : boolean = false;
 
-  constructor(private elem : ElementRef) {
-  }
-
   /**
    * Makes the content of the entry (in)visible with a nice animation
    */
