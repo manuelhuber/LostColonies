@@ -6,6 +6,28 @@
       "imageUrl": "",
       "sessions": [
         {
+          "name": "Öl ins Feuer",
+          "date": "2017-06-27",
+          "characters": [
+            "Yuri",
+            "Dietrich",
+            "Erik"
+          ],
+          "description": "Dietrich stößt Nachts auf die Leiche einer jungen Frau - es handelt sich um die Sekretärin ihres neuen Kontaktmannes, Anwalt Schäfer. In einem Gespräch offenbart er, dass der Mann den er von der Crew töten lies nicht nur der Liebhaber seiner Schwester ist, sondern sein Konkurrent war und mit einem alten Todeskult namens Sensensänger zusammenarbeitete. Die tote Sekretärin sei ein Warnzeichen und die Crew entscheidet sich nichts weiter zu unternehmen.\n<br>\nBei dem Versuch einen BD Schläger, der in der Nacht von Salmons Mord in der selben Bar war, zu entführen, entgleist die Situation. Die Crew tötete 3 Männer, die vermutlich zur Dämmerung gehörten, und verursachten eine kleine Explosion in einem Wohnhaus. Ihr Ziel entkam, aber Yuri konnte einen der Männer mit seiner dämonischen Munition töten und den Splitter bergen.\n<br>\nWährend eines Eintreiber Jobs wird Dietrich von einer Gruppe Blaumäntel konfrontiert: Es gibt einen Haftbefehl gegen ihn! Ohne Geld für eine Bestechung blieb ihm nichts anderes übrig, als zu fliehen. ",
+          "author": "Manuel"
+        },
+        {
+          "name": "Öl ins Feuer",
+          "date": "2017-05-30",
+          "characters": [
+            "Yuri",
+            "Dietrich",
+            "Erik"
+          ],
+          "description": "Die Crew beschloß, einen Kontaktmann für hochbezahlte Adelsjobs zu finden. Erik unterschrieb mit falschen Namen einen Vertrag mit einem Anwalt namens Schäfer, welcher unter dem Schutz seines Anwalt-Klienten-Privilegs illegale Dienste vermittelt.\nUm ihre Fähigkeiten zu beweisen, tötete die Crew den Liebhaber seiner Schwester. Auch wenn der Mord von den Blaumänteln als Unfall geurteilt wurde, so gibt es genug die Wissen was wirklich passiert ist. Schäfer war zufrieden mit der Leistung der Crew und ist bereit mit ihnen zu arbeiten.\n<br>\nAuf dem Weg zurück von den Hahnenkämpfen macht ein Dämon mit einem gewaltigen Grinsen voller langer spitzer Zähne Yuri ein Angebot. Er möchte dass Yuri seine Opfer mit Kugeln aus einem mysteriösen dunklen lila Stein tötet. Das Versprechen von fürstlicher Entlohnung verleitet Yuri dazu das Angebot anzunehmen.\n<br>\nWährenddessen erfahren Dietrich und Erik, die Schädelschänder einige Blocks der Nachtwächter übernahmen und der Krieg, der lange schon am brauen war nun ausbrach. Sie erfuhren auch, dass die Nachtwächter mit der Brennenden Dämmerung irgendeine Art von Deal gemacht haben, da die BD Droge \"Konn\" in den Spielehöllen der Wächter verkauft wird. Um den Konflikt noch weiter zu schüren beschließt die Crew, die Dämmerung auch in den Krieg zu ziehen.\n<br>\nDie Crew greift als Schädelschänder verkleidet ein BD Drogenlabor an. Dort sehen sie ein Treffen zwischen einen von Halgers Männer und der Dämmerung und beschließen alle zu töten. Erik und Yuri brennen das Labor nieder, aus dem nur eine Person entkommen ist. Dietrich verfolgte ihn und tötete ihn mit einer Wurfaxt auf offener Straße. Um die Schuld auf die Schänder zu lenken, tötete die Crew eine kleine Gruppe von ihnen und liesen die Leichen am Labor zurück.\n<br>\nDietrich begleitete Yuri, als dieser von Sgt. Bennet zu sich gerufen wurde. Bennet offenbahrte den beiden, dass er weiß, dass sie für das verschwinden von Salmon verantwortlich sind. Um einen Konflikt zu vermeiden darf dieses Geheimnis jedoch niemals rauskommen darf. Die Crew soll jedoch Salmons Vater, Vincent, einen Sündenbock liefern um seine Rachsucht zu befriedigen.",
+          "author": "Manuel"
+        },
+        {
           "name": "Ein Hauch von Loyalität",
           "date": "2017-05-19",
           "characters": [
@@ -47,7 +69,7 @@
         },
         {
           "name": "Melvir",
-          "description": "Ein Ex-Militärarzt, der nach dem berüchtigten Masaker am Krämergraben das Astra Militarum verlies. Als enger Freund von Yuri hilft er der Gang, wo er kann. Wird er sich Yuri's neuer Crew anschließen oder führt ihn sein Weg bald woanders hin?",
+          "description": "Ein Ex-Militärarzt, der nach dem berüchtigten Masaker am Krämergraben das Astra Militarum verlies. Yuri konnte ihn überzeugen sich der Crew statt S&H anzuschließen - arbeit wird es genug für ihn geben.",
           "imageUrl": "http://imgur.com/1u1vlSm.png"
         },
         {
@@ -79,6 +101,11 @@
           "description": "Ex-Militär, ausgebildeter Scharfschütze. Nach einem misslungenen Einsatz, bei dem alle Soldatten außer ihm ums Leben gekommen sind und er nicht glaubhaft abstreiten konnte, die Mission sabotiert zu haben, wurde er unerehrenhaft aus dem Militär entlassen. Ohne ein gesichertes Einkommen und die Aussicht, dass seine Fähigkeiten in der legalen Welt von Nutzen sind, ist Yuri gezwungen, im Untergrund seine Fähigkeiten einzusetzen, um sein Überleben zu sichern.",
           "imageUrl": "https://s-media-cache-ak0.pinimg.com/originals/8f/a3/ee/8fa3eef837da75a270537031abc794a6.jpg",
           "achievements": [
+            {
+              "name": "Teuflisch gutes Angebot",
+              "description": "Töte für einen Dämon.",
+              "imageUrl": "http://imgur.com/Ci0Q1ar.png"
+            },
             {
               "name": "Versiegelte Lippen",
               "description": "Sag kein Wort, egal was sie dir antun.",
@@ -123,6 +150,11 @@
           "imageUrl": "https://s-media-cache-ak0.pinimg.com/originals/63/b7/c6/63b7c6098e869f1f062733c43345dc51.jpg",
           "description": "Frank Völker, gemeinhin nur als \"Dietrich\" bekannt, hat einen 25-jährigen Lebensweg hinter sich, der die meisten Männer auf halber Strecke gebrochen hätte: Geboren als namenloses Kind einer 12-jährigen Prostituierten, verbrachte er das erste halbe Jahr seines Lebens größtenteils unbeachtet mit den anderen Hurenkindern im Hinterhaus des Bordells, bis seine Mutter eines Tages aufbrach und ihn seinem Schicksal überließ. Da niemand mehr für ihn sorgte, warf man das Kleinkind kurzerhand vor die Tür. <br><br> Im Sommer lebte er Teils unter Brücken, im Winter in verlassenen Häusern, Lagerhallen oder unbeachteten Kellern. Doch die Zeit auf der Straße lehrte ihn vor allem eines: Es gab kaum ein Problem, was sich für ihn nicht mit Gewalt lösen ließ. Trotz seiner jungen Jahre war er bereits sehr groß gewachsen und kräftiger als die meisten Erwachsenen. Ein einziger Schlag seiner Faust reichte oft um die Lichter eines stattlichen Mannes ausgehen zu lassen und ein kräftiger Tritt hebelte jede noch so dicke Tür aus den Angeln, was ihm den Spitznamen \"Dietrich\" verlieh. <br><br> Franks massive Masse machte ihn zwar zu einer Naturgewalt, ist aber auch der wichtigste Grund dafür, warum er immer wieder im Gefängnis landete: Seine imposante Gestalt macht ihn einerseits mehr als auffällig, andererseits langsam. Wenn alle Mitglieder seiner Crew schon lang in den Seitengassen von Steinfeld verschwunden waren, blieb Frank meist allein in den Fängen der Blaumäntel. <br><br> Frank ist 1.93m groß, wiegt 160kg und stemmt das doppelte. Sein beeindruckender Bart sucht seinesgleichen, sein Kopf ist dafür seit Jahren kahl. Er handelt selten bis nicht aus moralischen Motiven sondern hat durch seinen jahrelangen Überlebenskampf eine mehr als egoistische, sozialdarwinistische Lebenseinstellung entwickelt. Er ist misanthrop und gewalttätig, sowie einfach und stumpfsinnig. Trotzdem erkennt er die Vorteile von Verbündeten und seiner Zugehörigkeit zu einer starken Gemeinschaft, die ihn im Austausch für seine uneingeschränkte Loyalität belohnt.",
           "achievements": [
+            {
+              "name": "Haftbefehl",
+              "description": "Welche Beweiße haben sie gegen dich? Etwa einen Zeugen...?",
+              "imageUrl": "http://imgur.com/p2mhNLu.png"
+            },
             {
               "name": "Diese Hände können nur zerstören!",
               "description": "Töte jemanden ohne Absicht.",
