@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Faction } from '../models/faction';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
 export class FactionService {
 
-  private factions : Observable<Faction[]>;
+  private factions : Observable<any>;
 
   constructor(private http : Http) {
   }
