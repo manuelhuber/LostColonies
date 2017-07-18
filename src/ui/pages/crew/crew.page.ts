@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PlayerService } from '../../../data/services/player.service';
+import { CrewService } from '../../../data/services/crew.service';
 import { Gang } from '../../../data/models/gang';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 import { PLAYERS_ROUTE } from '../../app.routes';
@@ -20,7 +20,7 @@ export class CrewPage {
 
   public gang : Gang;
 
-  constructor(private playerService : PlayerService) {
+  constructor(private playerService : CrewService) {
     playerService.getCrewOneData().subscribe((data) => this.gang = data);
   }
 

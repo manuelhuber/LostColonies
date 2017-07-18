@@ -6,7 +6,7 @@ import { Gang } from '../models/gang';
 import { Session } from '../models/session';
 
 @Injectable()
-export class PlayerService {
+export class CrewService {
 
   private crewOne : Observable<Gang>;
 

@@ -21,7 +21,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FactionService } from '../data/services/faction.service';
 import { WorldPage } from './pages/world/world.page';
 import { WorldService } from '../data/services/world.service';
-import { PlayerService } from '../data/services/player.service';
+import { CrewService } from '../data/services/crew.service';
 import { CrewPage } from './pages/crew/crew.page';
 import { AchievementComponent } from './components/achievements/entry/achievement.component';
 import { AchievementsComponent } from './components/achievements/achievements.component';
@@ -45,7 +45,7 @@ import { MetaService } from '../data/services/meta.service';
 const APP_PROVIDERS = [
   FactionService,
   WorldService,
-  PlayerService,
+  CrewService,
   MetaService
 ];
 
