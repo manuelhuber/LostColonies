@@ -4,12 +4,12 @@ import { ExpandableComponent } from '../expandables/expandable.component';
 import {
   CITY_1_ROUTE,
   CITY_1_TITLE,
+  CREW_1_ROUTE,
+  CREW_1_TITLE,
   FACTION_ROUTE,
   FACTION_TITLE,
   INTRO_ROUTE,
   INTRO_TITLE,
-  PLAYERS_ROUTE,
-  PLAYERS_TITLE,
   WORLD_GENERAL_ROUTE,
   WORLD_GENERAL_TITLE
 } from '../../app.routes';
@@ -26,8 +26,8 @@ export class HeaderComponent implements OnInit {
   public factionRoute : string = FACTION_ROUTE;
   public worldTitle : string = WORLD_GENERAL_TITLE;
   public worldRoute : string = WORLD_GENERAL_ROUTE;
-  public playersTitle : string = PLAYERS_TITLE;
-  public playersRoute : string = PLAYERS_ROUTE;
+  public crewOneTitle : string = CREW_1_TITLE;
+  public crewOneRoute : string = CREW_1_ROUTE;
   public city1Title : string = CITY_1_TITLE;
   public city1Route : string = CITY_1_ROUTE;
   public metaTitle : string = INTRO_TITLE;

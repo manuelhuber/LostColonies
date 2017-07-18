@@ -17,20 +17,20 @@ export const CITY_1_TITLE : string = 'Ebrichsburg';
 export const CITY_1_ROUTE : string = WORLD + '/ebrichsburg';
 
 const PLAYERS : string = 'spieler';
-export const PLAYERS_TITLE : string = 'Crew';
-export const PLAYERS_ROUTE : string = PLAYERS + '/crew';
+export const CREW_1_TITLE : string = 'Crew';
+export const CREW_1_ROUTE : string = PLAYERS + '/crew';
 
 export const INTRO_TITLE : string = 'Meta';
 export const INTRO_ROUTE : string = PLAYERS + '/meta';
 
 export const ROUTES : Routes = [
   // PLAYERS
-  {path: PLAYERS_ROUTE, component: CrewPage, data: {title: PLAYERS_TITLE}},
   {path: INTRO_ROUTE, component: MetaPage, data: {title: INTRO_TITLE}},
+  {path: CREW_1_ROUTE, component: CrewPage, data: {title: CREW_1_TITLE, path: CREW_1_ROUTE}},
   // WORLD
   {path: FACTION_ROUTE, component: FactionsPage, data: {title: FACTION_TITLE}},
   {path: WORLD_GENERAL_ROUTE, component: WorldPage, data: {title: WORLD_GENERAL_TITLE}},
   {path: CITY_1_ROUTE, component: CityPage, data: {title: CITY_1_TITLE}},
   // Fallback
-  {path: '**', redirectTo: PLAYERS_ROUTE}
+  {path: '**', redirectTo: INTRO_ROUTE}
 ];

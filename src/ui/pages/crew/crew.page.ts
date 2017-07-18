@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { CrewService } from '../../../data/services/crew.service';
 import { Gang } from '../../../data/models/gang';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
-import { PLAYERS_ROUTE } from '../../app.routes';
 import { Character } from '../../../data/models/character';
 import { Npc } from '../../../data/models/npc';
 import { Session } from '../../../data/models/session';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'crew',
@@ -14,18 +14,21 @@ import { Session } from '../../../data/models/session';
 })
 export class CrewPage {
 
-  get excludeGangLinks() : LinkLocation[] {
-    return this.gang && [ {link: PLAYERS_ROUTE, linkable: this.gang.name} ];
-  }
-
   public gang : Gang;
 
-  constructor(private playerService : CrewService) {
+  private path : string;
+
+  constructor(private playerService : CrewService, private activatedRoute : ActivatedRoute) {
+    activatedRoute.data.subscribe((data) => this.path = data.path);
     playerService.getCrewOneData().subscribe((data) => this.gang = data);
   }
 
+  public excludeGangLinks(gang : Gang) : LinkLocation[] {
+    return [ {link: this.path, linkable: gang.name} ];
+  }
+
   public excludeCharacterLinks(character : Character) : LinkLocation[] {
-    return [ {link: PLAYERS_ROUTE, linkable: character.name} ];
+    return [ {link: this.path, linkable: character.name} ];
   }
 
   public linksForCharacter(character : Character) : string[] {
