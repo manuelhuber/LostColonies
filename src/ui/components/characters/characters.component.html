@@ -7,6 +7,7 @@
   <achievements *ngIf="character.achievements" [achievements]="character.achievements"></achievements>
   <div class="character-description"
        *ngIf="character.description"
-       insertLinks [exclude]="[{link:path,linkable:playerName},{link:path,linkable:character.name}]"
+       insertLinks
+       [exclude]="excludeLinks"
        [innerHtml]="character.description"></div>
 </div>

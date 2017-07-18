@@ -12,11 +12,11 @@
           </div>
           <div class="page-accordion-content mod-separate" *ngIf="gang">
             <div class="headline">Episoden:</div>
-            <sessions [sessions]="gang.sessions" [gangName]="gang.name" [excludeLinks]="excludeLinks"></sessions>
+            <sessions [sessions]="gang.sessions" [gangName]="gang.name" [excludeLinks]="excludeGangLinks"></sessions>
           </div>
           <div class="page-accordion-content mod-separate" *ngIf="gang.npcs">
             <div class="headline">NPCs:</div>
-            <npcs [npcs]="gang.npcs" [excludeLinks]="excludeLinks"></npcs>
+            <npcs [npcs]="gang.npcs" [excludeLinks]="excludeGangLinks"></npcs>
           </div>
         </div>
       </expandable-content>
@@ -30,7 +30,9 @@
         <div class="page-accordion-content">
           <achievements *ngIf="player.achievements" [achievements]="player.achievements"
                         [maxAmount]="3"></achievements>
-          <characters [characters]="player.characters" [playerName]="player.name"></characters>
+          <characters [characters]="player.characters"
+                      [excludeLinks]="excludePlayerLinks(player)">
+          </characters>
         </div>
       </expandable-content>
     </expandable>

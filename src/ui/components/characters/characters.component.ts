@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Character } from '../../../data/models/character';
-import { PLAYERS_ROUTE } from '../../app.routes';
+import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 
 @Component({
   selector: 'characters',
@@ -12,9 +12,8 @@ export class CharactersComponent {
     this.character = chars[ 0 ];
   };
 
-  @Input() public playerName : string;
+  @Input() public excludeLinks : LinkLocation[];
 
-  public path : string = PLAYERS_ROUTE;
   public character : Character;
 
 }

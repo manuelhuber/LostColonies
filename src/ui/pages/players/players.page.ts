@@ -15,7 +15,7 @@ import { Session } from '../../../data/models/session';
 })
 export class PlayersPage {
 
-  get excludeLinks() : LinkLocation[] {
+  get excludeGangLinks() : LinkLocation[] {
     return this.gang && [ {link: PLAYERS_ROUTE, linkable: this.gang.name} ];
   }
 
@@ -31,6 +31,13 @@ export class PlayersPage {
 
   constructor(private playerService : PlayerService) {
     playerService.getData().subscribe((data) => this.data = data);
+  }
+
+  public excludePlayerLinks(player : Player) : LinkLocation[] {
+    return [
+      {link: PLAYERS_ROUTE, linkable: player.name},
+      {link: PLAYERS_ROUTE, linkable: player.characters[ 0 ].name}
+    ];
   }
 
   public linksForPlayer(player : Player) : string[] {
