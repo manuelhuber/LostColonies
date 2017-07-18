@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Session } from '../../../data/models/session';
-import { PLAYERS_ROUTE } from '../../app.routes';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 
 @Component({
@@ -15,7 +14,6 @@ export class SessionsComponent implements OnInit {
   public sessionExpanded : boolean = false;
 
   @Input() public gangName : string;
-  public path : string = PLAYERS_ROUTE;
 
   public toggleSession() : void {
     this.sessionExpanded = !this.sessionExpanded;
