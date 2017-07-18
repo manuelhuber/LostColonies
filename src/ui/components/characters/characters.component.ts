@@ -3,17 +3,12 @@ import { Character } from '../../../data/models/character';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 
 @Component({
-  selector: 'characters',
+  selector: 'character',
   templateUrl: 'characters.component.html',
   styleUrls: [ 'characters.component.scss' ]
 })
 export class CharactersComponent {
-  @Input() set characters(chars : Character[]) {
-    this.character = chars[ 0 ];
-  };
-
   @Input() public excludeLinks : LinkLocation[];
-
-  public character : Character;
+  @Input() public character : Character;
 
 }

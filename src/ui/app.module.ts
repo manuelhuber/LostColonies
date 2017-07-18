@@ -22,7 +22,7 @@ import { FactionService } from '../data/services/faction.service';
 import { WorldPage } from './pages/world/world.page';
 import { WorldService } from '../data/services/world.service';
 import { PlayerService } from '../data/services/player.service';
-import { PlayersPage } from './pages/players/players.page';
+import { CrewPage } from './pages/crew/crew.page';
 import { AchievementComponent } from './components/achievements/entry/achievement.component';
 import { AchievementsComponent } from './components/achievements/achievements.component';
 import { CharactersComponent } from './components/characters/characters.component';
@@ -62,7 +62,7 @@ type StoreType = {
   declarations: [
     FactionsPage,
     WorldPage,
-    PlayersPage,
+    CrewPage,
     CityPage,
     MetaPage,
     AppComponent,

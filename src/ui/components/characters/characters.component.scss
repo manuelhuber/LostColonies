@@ -1,10 +1,5 @@
 @import "../../app.component";
 
-.character-name {
-  @include kirsty();
-  font-size: 1.25em;
-}
-
 .image-wrapper {
   text-align: center;
   margin-bottom: 0.5em;

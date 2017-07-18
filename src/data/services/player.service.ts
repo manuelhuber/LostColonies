@@ -16,28 +16,26 @@ export class PlayerService {
 
   private data : Observable<GangsAndPlayers>;
 
+  private crewOne : Observable<Gang>;
+
   constructor(private http : Http) {
   }
 
-  public getData() : Observable<GangsAndPlayers> {
-    this.fetchData();
-    return this.data;
+  public getCrewOneData() : Observable<Gang> {
+    if (!this.crewOne) {
+      this.crewOne = this.http.get('/assets/data/assassins.json').map((res) => res.json()).map((gang : Gang) => {
+        gang.sessions = this.sortSessions(gang.sessions);
+        return gang;
+      });
+    }
+    return this.crewOne;
   }
 
-  private fetchData() {
-    if (this.data === undefined) {
-      this.data = this.http.get('/assets/data/players.json')
-        .map((res) => res.json())
-        .map((res : GangsAndPlayers) => {
-          res.gangs = res.gangs.map((gang : Gang) => {
-            gang.sessions = gang.sessions.map((session : Session) => {
-              session.date = Date.parse(<any> session.date);
-              return session;
-            }).sort((a, b) => a.date - b.date);
-            return gang;
-          });
-          return res;
-        });
-    }
+  private sortSessions(sessions : Session[]) : Session[] {
+    return sessions.map((session : Session) => {
+      session.date = Date.parse(<any> session.date);
+      return session;
+    }).sort((a, b) => a.date - b.date);
   }
+
 }
