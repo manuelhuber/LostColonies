@@ -4,10 +4,10 @@ import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive'
 
 @Component({
   selector: 'character',
-  templateUrl: 'characters.component.html',
-  styleUrls: [ 'characters.component.scss' ]
+  templateUrl: 'character.component.html',
+  styleUrls: [ 'character.component.scss' ]
 })
-export class CharactersComponent {
+export class CharacterComponent {
   @Input() public excludeLinks : LinkLocation[];
   @Input() public character : Character;
 
