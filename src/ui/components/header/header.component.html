@@ -12,14 +12,18 @@
       <div class="menu">
         <div class="menu-entry mod-first">Spieler</div>
         <div class="submenu">
-          <div class="menu-entry clickable" [routerLink]="crewOneRoute">
-            <div class="arrow right submenu-arrow"></div>
-            {{crewOneTitle}}
-          </div>
           <div class="menu-entry clickable" [routerLink]="metaRoute">
             <div class="arrow right submenu-arrow"></div>
             {{metaTitle}}
           </div>
+          <div class="menu-entry clickable" [routerLink]="crewOneRoute">
+            <div class="arrow right submenu-arrow"></div>
+            {{crewOneTitle}}
+          </div>
+          <!--<div class="menu-entry clickable" [routerLink]="crewTwoRoute">-->
+            <!--<div class="arrow right submenu-arrow"></div>-->
+            <!--{{crewTwoTitle}}-->
+          <!--</div>-->
         </div>
         <div class="menu-entry">Welt</div>
         <div class="submenu">

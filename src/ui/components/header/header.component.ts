@@ -6,6 +6,8 @@ import {
   CITY_1_TITLE,
   CREW_1_ROUTE,
   CREW_1_TITLE,
+  CREW_2_ROUTE,
+  CREW_2_TITLE,
   FACTION_ROUTE,
   FACTION_TITLE,
   INTRO_ROUTE,
@@ -28,6 +30,8 @@ export class HeaderComponent implements OnInit {
   public worldRoute : string = WORLD_GENERAL_ROUTE;
   public crewOneTitle : string = CREW_1_TITLE;
   public crewOneRoute : string = CREW_1_ROUTE;
+  public crewTwoTitle : string = CREW_2_TITLE;
+  public crewTwoRoute : string = CREW_2_ROUTE;
   public city1Title : string = CITY_1_TITLE;
   public city1Route : string = CITY_1_ROUTE;
   public metaTitle : string = INTRO_TITLE;

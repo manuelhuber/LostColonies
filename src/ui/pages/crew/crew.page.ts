@@ -19,8 +19,10 @@ export class CrewPage {
   private path : string;
 
   constructor(private playerService : CrewService, private activatedRoute : ActivatedRoute) {
-    activatedRoute.data.subscribe((data) => this.path = data.path);
-    playerService.getCrewOneData().subscribe((data) => this.gang = data);
+    activatedRoute.data.subscribe((data) => {
+      this.path = data.path;
+      playerService.getCrewDataForPath(this.path).subscribe((gang) => this.gang = gang);
+    });
   }
 
   public excludeGangLinks(gang : Gang) : LinkLocation[] {
