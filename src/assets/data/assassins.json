@@ -1,5 +1,5 @@
 {
-  "name": "Assassinen",
+  "name": "Die Angler",
   "description": "Aus Not zusammengebracht, operiert diese Gruppe von Killern aus Fish'n'Things im Süden Hasards - ein Stadtteil in dem die Bandenkämpfe nach einer längeren Friedenszeit gerade wieder ausgebrochen sind.",
   "imageUrl": "",
   "sessions": [
@@ -10,7 +10,7 @@
         "Erik",
         "Yuri"
       ],
-      "description": "TODO",
+      "description": "<i>3 Monate vor der Eröffnung von Fish'n'Things</i>\n<br>\nIn der Ecke einer schäbigen Hafenbar sitzen Erik und Yuri einem Mann gegenüber, dessen Gesicht im Schatten eines Huttes verdeckt ist. \"Bisher gab es zwei Opfer. Die Madame des Freudenhauses hier in Hasad und einer seiner loyalsten Schuldeneintreiber. Die Tode wirkten inszeniert, fast schon theatralisch. Keiner von Herrn Sevoys geschäftlichen Rivalen würde soetwas tun.\" - \"Wir werden uns darum kümmern.\"\n<br>\nBei ihren Nachforschungen stößt die Crew auf ein altes Ritual, in dem ein eine Hure, ein Henker und ein Priester geopfert werden müssen. Da nur noch der Priester fehlt, beschließt Yuri die alt ehrwürdige Sankt Elana Kapelle im Auge zu behalten. Er beobachtet 2 verdächtige Kirchenbesucher, die mehr an den Räumlichkeiten als am Gottimperator interessiert zu sein scheinen.\n<br>\nIn einer der darauffolgenden Nächte sehen Erik und Yuri erneut die Gestalten, doch diesesmal nehmen sie Stellung an, direkt am Altar und dem einzigen Eingang zur Sakristei und der Wohnung des Priesters. Die Crew handelt schnell und schaffen es die Angreifer auszuschalten, bevor sie den Priester erreichen. Einer der Männer gibt sich als ein Mitglied der \"Versöhnten\" preis. Ein Geisterkult. Die Crew flieht vor der Verstärkung des Fanatikers und bringt den Priester in den Schutz der Blaumäntel.\n<br>\nErik und Yuri geben sich allerdings noch nicht damit zu frieden - sie wollen den Anführer des Kultes töten. Sie steigen Nachts im obersten Stock seines alten Adelshauses ein und können den   Schatten der das Haus bewacht mit den Schutzsymbolen des Priesters abwehren. Dann dringen sie tiefer in das Haus ein. Stille. Das gesamte Haus war leer. Erst als Erik die Tür zum Turm im 5ten Stock öffnet, hören sie den schauerlichen Gesang des Kultes. Als sie an der Rundtreppe entlang nach oben gehen, sehen sie, dass dort oben ein Ritual vollzogen wird. Dieser Ketzerei muss ein ende gesetzt werden. Sie tränken die Treppe und den Boden des Turmes in Öl aus der Küche und setzten es in Brand. Doch lange bevor die Flammen die Spitze erreicht, bricht der Gesang ab. Erst als der Boden unter den Flammen nach gibt und samt Kultisten hinabstürzt, wird Erik und Yuri klar, was passiert ist. Die  Versöhnten hatten sich bereits ihre Kehlen durchgeschnitten. Ihr Ritual! Aus den Trümern des Turmes erscheint der Geist des Kultistenpriesters und greift nach Eriks Herz. Yuri kann ihn gerade noch retten, indem er ein gesamtes Magazin elektroplasmischer Munition in den Kopf des schrecklichen Wesens jagte. Die Leichen der anderen Kultisten fingen an sich leicht zu bewegen, aber bevor der erste ihrer Geister seinen Körper vollständig verlies, ist die Crew bereits geflohen.\n<br>\nAls sie ihren Kontaktmann erneut trafen, sagte er \"Herr Sevoy möchte sie persönlich treffen\". Sie gingen durch dunkle Seitengassen und betraten ein altes Haus durch eine schwere Tür. Ihre Augen hatten sich noch nicht an die Dunkelheit im inneren des Gebäudes gewöhnt, als die Tür zuviel. \"Herzlich Willkommen\", sagte eine freundliche Stimme mit russischem Aktzen. Sie befanden sich in einer Lagerhalle, in deren Mitte ein gut gebauter Mann stand. \"Ihr müsst Erik sein. Und Yuri!\". Erik erwiderte die Höfflichkeiten ihres Auftraggebers, doch er konnte seine Verwirrung nicht verbergen, als Sevoy ihm den Schlüssel zu dem Gebäude reichte. \"Wieso schenkt ihr uns ein Lagerhaus?\". Sevoy lachte. \"Das ist kein Geschenk. Ich bin Geschäftsmann - und das ist eine Investition, in die Zukunft Ihres Unternehmens.\" Er öffnet die Tür zu einem kleinen Büro, dessen Wände mit Messern, Geweheren und weiteren Utensilien bestückt ist. \"Lasst uns über diese Zukunft reden.\"",
       "author": "Manuel"
     },
     {
@@ -82,7 +82,7 @@
     },
     {
       "name": "Sevoy",
-      "description": "Ein wohlhabender Händler und Kunde der Assassinen. Er ist Besitzer des altes Fischlager Fish'n'Things, welches zum Hauptquartier der Gruppe wurde.",
+      "description": "Ein wohlhabender Händler und Kunde der Angler. Er ist Besitzer des altes Fischlager Fish'n'Things, welches zum Hauptquartier der Gruppe wurde.",
       "imageUrl": "http://www.westminstercathedral.org.uk/images/oldsite/tour/bentley/bentley_portray.jpg"
     }
   ],
