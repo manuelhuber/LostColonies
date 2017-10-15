@@ -2,11 +2,12 @@ import { LinkEntry } from './insertLinks.directive';
 import { CITY_1_ROUTE, CREW_1_ROUTE, FACTION_ROUTE, INTRO_ROUTE, WORLD_GENERAL_ROUTE } from '../../app.routes';
 
 export const LINKS : LinkEntry[] = [
-  // ------------------------------------------------------------------------------------------------------------- CREW
-  {phrase: 'Assassinen', link: CREW_1_ROUTE, linkable: 'Assassinen'},
-  {phrase: 'Salia', link: CREW_1_ROUTE, linkable: 'Assassinen'},
-  {phrase: 'Melvir', link: CREW_1_ROUTE, linkable: 'Assassinen'},
-  // ------------------------------------------------------------------------------------------------------- CHARACTERS
+  // ----------------------------------------------------------------------------------------------------------- CREW 1
+  // ----------------------------------------------------------------------------------------------- gang
+  {phrase: 'Angler', link: CREW_1_ROUTE, linkable: 'Die Angler'},
+  {phrase: 'Salia', link: CREW_1_ROUTE, linkable: 'Die Angler'},
+  {phrase: 'Melvir', link: CREW_1_ROUTE, linkable: 'Die Angler'},
+  // ----------------------------------------------------------------------------------------------- characters
   {phrase: 'Yuri', link: CREW_1_ROUTE, linkable: 'Yuri'},
   {phrase: 'Erik', link: CREW_1_ROUTE, linkable: 'Erik'},
   {phrase: 'Frank', link: CREW_1_ROUTE, linkable: 'Dietrich'},

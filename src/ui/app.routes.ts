@@ -17,7 +17,7 @@ export const CITY_1_TITLE : string = 'Ebrichsburg';
 export const CITY_1_ROUTE : string = WORLD + '/ebrichsburg';
 
 const PLAYERS : string = 'spieler';
-export const CREW_1_TITLE : string = 'Crew';
+export const CREW_1_TITLE : string = 'Die Angler';
 export const CREW_2_TITLE : string = 'Crew2';
 export const CREW_1_ROUTE : string = PLAYERS + '/crew';
 export const CREW_2_ROUTE : string = PLAYERS + '/crew2';
