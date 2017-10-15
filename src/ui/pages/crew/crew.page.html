@@ -8,15 +8,16 @@
       <expandable-content>
         <div>
           <div class="page-accordion-content">
-            <gang [gang]="gang" [excludeLinks]="excludeGangLinks"></gang>
+            <gang [gang]="gang" [excludeLinks]="excludeGangLinks(gang)"></gang>
           </div>
           <div class="page-accordion-content mod-separate" *ngIf="gang">
             <div class="headline">Episoden:</div>
-            <sessions [sessions]="gang.sessions" [gangName]="gang.name" [excludeLinks]="excludeGangLinks"></sessions>
+            <sessions [sessions]="gang.sessions" [gangName]="gang.name"
+                      [excludeLinks]="excludeGangLinks(gang)"></sessions>
           </div>
           <div class="page-accordion-content mod-separate" *ngIf="gang.npcs">
             <div class="headline">NPCs:</div>
-            <npcs [npcs]="gang.npcs" [excludeLinks]="excludeGangLinks"></npcs>
+            <npcs [npcs]="gang.npcs" [excludeLinks]="excludeGangLinks(gang)"></npcs>
           </div>
         </div>
       </expandable-content>

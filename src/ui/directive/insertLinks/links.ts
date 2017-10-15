@@ -1,16 +1,16 @@
 import { LinkEntry } from './insertLinks.directive';
-import { CITY_1_ROUTE, FACTION_ROUTE, INTRO_ROUTE, PLAYERS_ROUTE, WORLD_GENERAL_ROUTE } from '../../app.routes';
+import { CITY_1_ROUTE, CREW_1_ROUTE, FACTION_ROUTE, INTRO_ROUTE, WORLD_GENERAL_ROUTE } from '../../app.routes';
 
 export const LINKS : LinkEntry[] = [
   // ------------------------------------------------------------------------------------------------------------- CREW
-  {phrase: 'Assassinen', link: PLAYERS_ROUTE, linkable: 'Assassinen'},
-  {phrase: 'Salia', link: PLAYERS_ROUTE, linkable: 'Assassinen'},
-  {phrase: 'Mevlir', link: PLAYERS_ROUTE, linkable: 'Assassinen'},
-  // ---------------------------------------------------------------------------------------------------------- PLAYERS
-  {phrase: 'Yuri', link: PLAYERS_ROUTE, linkable: 'Yuri'},
-  {phrase: 'Erik', link: PLAYERS_ROUTE, linkable: 'Erik'},
-  {phrase: 'Frank', link: PLAYERS_ROUTE, linkable: 'Dietrich'},
-  {phrase: 'Dietrich', link: PLAYERS_ROUTE, linkable: 'Dietrich'},
+  {phrase: 'Assassinen', link: CREW_1_ROUTE, linkable: 'Assassinen'},
+  {phrase: 'Salia', link: CREW_1_ROUTE, linkable: 'Assassinen'},
+  {phrase: 'Melvir', link: CREW_1_ROUTE, linkable: 'Assassinen'},
+  // ------------------------------------------------------------------------------------------------------- CHARACTERS
+  {phrase: 'Yuri', link: CREW_1_ROUTE, linkable: 'Yuri'},
+  {phrase: 'Erik', link: CREW_1_ROUTE, linkable: 'Erik'},
+  {phrase: 'Frank', link: CREW_1_ROUTE, linkable: 'Dietrich'},
+  {phrase: 'Dietrich', link: CREW_1_ROUTE, linkable: 'Dietrich'},
   // --------------------------------------------------------------------------------------------------------- FACTIONS
   {phrase: /(Speer und Hammer|S&H)/i, link: FACTION_ROUTE, linkable: 'Speer und Hammer'},
   {phrase: /(Nachtwächter|NW)/i, link: FACTION_ROUTE, linkable: 'Nachtwächter'},
