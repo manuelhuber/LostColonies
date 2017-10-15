@@ -1,6 +1,7 @@
 import { Session } from './session';
 import { Npc } from './npc';
 import { Achievement } from './achievement';
+import { Character } from './character';
 
 export class Gang {
   public name : string;
@@ -9,4 +10,5 @@ export class Gang {
   public sessions : Session[];
   public npcs : Npc[];
   public achievements : Achievement[];
+  public characters : Character[];
 }

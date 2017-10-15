@@ -1,5 +1,4 @@
 <div>
-  <div class="character-name">{{character.name}}</div>
   <div class="image-wrapper">
     <img [src]="character.imageUrl" class="character-image">
   </div>
@@ -7,6 +6,7 @@
   <achievements *ngIf="character.achievements" [achievements]="character.achievements"></achievements>
   <div class="character-description"
        *ngIf="character.description"
-       insertLinks [exclude]="[{link:path,linkable:playerName},{link:path,linkable:character.name}]"
+       insertLinks
+       [exclude]="excludeLinks"
        [innerHtml]="character.description"></div>
 </div>

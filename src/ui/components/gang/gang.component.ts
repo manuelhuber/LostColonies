@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Gang } from '../../../data/models/gang';
-import { PLAYERS_ROUTE } from '../../app.routes';
+import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 
 @Component({
   selector: 'gang',
@@ -9,6 +9,5 @@ import { PLAYERS_ROUTE } from '../../app.routes';
 })
 export class GangComponent {
   @Input() public gang : Gang;
-  public path : string = PLAYERS_ROUTE;
-
+  @Input() public excludeLinks : LinkLocation[];
 }

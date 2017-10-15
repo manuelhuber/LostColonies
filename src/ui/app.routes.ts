@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { FactionsPage } from './pages/factions/factions.page';
 import { WorldPage } from './pages/world/world.page';
-import { PlayersPage } from './pages/players/players.page';
+import { CrewPage } from './pages/crew/crew.page';
 import { CityPage } from './pages/city/city.page';
 import { MetaPage } from './pages/meta/meta.page';
 
@@ -25,7 +25,7 @@ export const INTRO_ROUTE : string = PLAYERS + '/meta';
 
 export const ROUTES : Routes = [
   // PLAYERS
-  {path: PLAYERS_ROUTE, component: PlayersPage, data: {title: PLAYERS_TITLE}},
+  {path: PLAYERS_ROUTE, component: CrewPage, data: {title: PLAYERS_TITLE}},
   {path: INTRO_ROUTE, component: MetaPage, data: {title: INTRO_TITLE}},
   // WORLD
   {path: FACTION_ROUTE, component: FactionsPage, data: {title: FACTION_TITLE}},

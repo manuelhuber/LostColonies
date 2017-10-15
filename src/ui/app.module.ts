@@ -21,11 +21,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { FactionService } from '../data/services/faction.service';
 import { WorldPage } from './pages/world/world.page';
 import { WorldService } from '../data/services/world.service';
-import { PlayerService } from '../data/services/player.service';
-import { PlayersPage } from './pages/players/players.page';
+import { CrewService } from '../data/services/crew.service';
+import { CrewPage } from './pages/crew/crew.page';
 import { AchievementComponent } from './components/achievements/entry/achievement.component';
 import { AchievementsComponent } from './components/achievements/achievements.component';
-import { CharactersComponent } from './components/characters/characters.component';
+import { CharacterComponent } from './components/character/character.component';
 import { CityPage } from './pages/city/city.page';
 import { MapComponent } from './components/map/map.component';
 import { GangComponent } from './components/gang/gang.component';
@@ -45,7 +45,7 @@ import { MetaService } from '../data/services/meta.service';
 const APP_PROVIDERS = [
   FactionService,
   WorldService,
-  PlayerService,
+  CrewService,
   MetaService
 ];
 
@@ -62,7 +62,7 @@ type StoreType = {
   declarations: [
     FactionsPage,
     WorldPage,
-    PlayersPage,
+    CrewPage,
     CityPage,
     MetaPage,
     AppComponent,
@@ -73,7 +73,7 @@ type StoreType = {
     ExpandableContentComponent,
     AchievementComponent,
     AchievementsComponent,
-    CharactersComponent,
+    CharacterComponent,
     MapComponent,
     GangComponent,
     SessionsComponent,
