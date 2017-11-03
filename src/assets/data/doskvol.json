@@ -1,0 +1,301 @@
+{
+  "maps": [
+    {
+      "name": "Doskvol",
+      "description": "Die alte imperiale Stadt erstreckt sich über mehrere kleine Inseln. Während der Adel im Norden in höher gelegenen Stadtteilen lebt, kämpfen Gangs um die Gossen. Abgesehen von den wenigen alten Militärgebäuden und Kathedralen besteht die Stadt aus dunklen Steingebäuden. Die Heiligen Mauern umgeben die komplette Stadt und schützen sie vor den konstanten Warpstürmen, die die Sonne verdecken. Die Pilz- & Aal-Farmen versorgen die Bevölkerung mit Nahrung und die Freihändler versorgen die Zivilisation mit dem Treibstoff Leviathanblut. Durch den Hafen und Handel sind in Doskvol mehr ausländische Gangs als üblich aktiv.<br><br>Im Gegensatz zu vielen anderen Städten, hat in Doskvol bisher keine Gang die Oberhand ergriffen. Selbst die Kontrolle über einzelne Viertel werden nur selten lange gehalten. ",
+      "imageUrl": "/assets/images/doskvol.png",
+      "highlights": [
+        {
+          "name": "Whitecrown",
+          "description": "Foobar.",
+          "location": {
+            "top": 21,
+            "left": 32
+          },
+          "size": {
+            "x": 60,
+            "y": 20,
+            "rotation": -23
+          }
+        },
+        {
+          "name": "Silkshore",
+          "description": "Foobar.",
+          "location": {
+            "top": 52,
+            "left": 21
+          },
+          "size": {
+            "x": 23,
+            "y": 23,
+            "rotation": -33
+          }
+        },
+        {
+          "name": "Barrowcleft",
+          "description": "Foobar.",
+          "location": {
+            "top": 64,
+            "left": 14
+          },
+          "size": {
+            "x": 15,
+            "y": 23,
+            "rotation": 0
+          }
+        },
+        {
+          "name": "The Docks",
+          "description": "Foobar.",
+          "location": {
+            "top": 36,
+            "left": 39
+          },
+          "size": {
+            "x": 24,
+            "y": 16
+          }
+        },
+        {
+          "name": "Crow's Foot",
+          "description": "Foobar.",
+          "location": {
+            "top": 46,
+            "left": 40
+          },
+          "size": {
+            "x": 22,
+            "y": 15
+          }
+        },
+        {
+          "name": "Charhollow",
+          "description": "Foobar.",
+          "location": {
+            "top": 58,
+            "left": 42
+          },
+          "size": {
+            "x": 25,
+            "y": 15,
+            "rotation": 45
+          }
+        },
+        {
+          "name": "Dunslough",
+          "description": "Foobar.",
+          "location": {
+            "top": 78,
+            "left": 51
+          },
+          "size": {
+            "x": 26,
+            "y": 11
+          }
+        },
+        {
+          "name": "Brightstone",
+          "description": "Foobar.",
+          "location": {
+            "top": 33,
+            "left": 64
+          },
+          "size": {
+            "x": 32,
+            "y": 14,
+            "rotation": -13
+          }
+        },
+        {
+          "name": "Charterhall",
+          "description": "Foobar.",
+          "location": {
+            "top": 49,
+            "left": 62
+          },
+          "size": {
+            "x": 31,
+            "y": 20
+          }
+        },
+        {
+          "name": "Coalridge",
+          "description": "Foobar.",
+          "location": {
+            "top": 68,
+            "left": 65
+          },
+          "size": {
+            "x": 22,
+            "y": 24,
+            "rotation": -30
+          }
+        },
+        {
+          "name": "Six Towers",
+          "description": "Foobar.",
+          "location": {
+            "top": 44,
+            "left": 80
+          },
+          "size": {
+            "x": 20,
+            "y": 23
+          }
+        },
+        {
+          "name": "Nightmarket",
+          "description": "Foobar.",
+          "location": {
+            "top": 61,
+            "left": 81
+          },
+          "size": {
+            "x": 25,
+            "y": 14
+          }
+        },
+        {
+          "name": "Der verlorene District",
+          "description": "Foobar.",
+          "location": {
+            "top": 17,
+            "left": 89
+          },
+          "size": {
+            "x": 28,
+            "y": 20
+          },
+          "displayDot": true
+        },
+        {
+          "name": "Ironhook Prison",
+          "description": "Foobar.",
+          "location": {
+            "top": 72,
+            "left": 46
+          },
+          "size": {
+            "x": 15,
+            "y": 10
+          },
+          "displayDot": true
+        },
+        {
+          "name": "Aal- & Pilzfarmen",
+          "description": "Foobar.",
+          "location": {
+            "top": 81,
+            "left": 34
+          },
+          "size": {
+            "x": 15,
+            "y": 14
+          },
+          "displayDot": true
+        },
+        {
+          "name": "Alter Nordhafen",
+          "description": "Foobar.",
+          "location": {
+            "top": 90,
+            "left": 15
+          },
+          "size": {
+            "x": 13,
+            "y": 9
+          },
+          "displayDot": true
+        },
+        {
+          "name": "Gaddoc Bahnhof",
+          "description": "Foobar.",
+          "location": {
+            "top": 73,
+            "left": 80
+          },
+          "size": {
+            "x": 14,
+            "y": 16
+          },
+          "displayDot": true
+        },
+        {
+          "name": "Deathlands",
+          "description": "Foobar.",
+          "location": {
+            "top": 97,
+            "left": 46
+          },
+          "size": {
+            "x": 67,
+            "y": 10
+          },
+          "displayDot": true
+        }
+      ]
+    },
+    {
+      "name": "Hasard",
+      "description": "Dieser Stadtteil ist von Glückspiel und Handel geprägt. Während die Hauptstraßen mit vollen Taschen und dicken Bäuchen gefüllt sind, findet man in den Hintergassen hauptsächlich Hafenarbeiter und zwielichtige Gestalten. Durch seinen Hafen und der zentralen Lage in Doskvol ist Hasard nicht nur einer der größten Umschlagsplätze für legale und illegale Ware sondern auch Teil vieler Schmuggelrouten.",
+      "imageUrl": "http://imgur.com/2nkv7Zi.png",
+      "highlights": [
+        {
+          "name": "Volker Kasino",
+          "description": "Das einzig legale Kasino der Stadt lockt auch reichere Gäste an und hebt den Status des Viertels. Es wurde zu Ehren des ermordeten Don Volker benannt.",
+          "location": {
+            "top": 64,
+            "left": 41
+          },
+          "size": {
+            "x": 25,
+            "y": 15,
+            "rotation": 10
+          },
+          "displayDot": true
+        },
+        {
+          "name": "Wachturm Cadia",
+          "description": "Ein stählerner Wachturm aus dem Goldenen Zeitalter. Dieses unzerstörbare Gebäude ist der Standfuß von Speer und Hammer in Hasard.",
+          "location": {
+            "top": 6,
+            "left": 45
+          },
+          "size": {
+            "x": 15,
+            "y": 8
+          },
+          "displayDot": true
+        },
+        {
+          "name": "Docks",
+          "description": "Einer der größeren Handelshafen in Doskvol. Die Arbeiter sind größtenteils von zalianischer Herkunft und freunndlich zu den Nachtwächtern.",
+          "location": {
+            "top": 86,
+            "left": 39
+          },
+          "size": {
+            "x": 75,
+            "y": 25,
+            "rotation": 12
+          },
+          "displayDot": true
+        },
+        {
+          "name": "Fish'n'Things",
+          "description": "Das leerstehende Fischlager im Hafen Hasards dient als geheimes Quartier der Angler.",
+          "location": {
+            "top": 84,
+            "left": 59
+          },
+          "size": {
+            "x": 15,
+            "y": 8,
+            "rotation": 0
+          },
+          "displayDot": true
+        }
+      ]
+    }
+  ]
+}

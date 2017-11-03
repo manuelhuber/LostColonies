@@ -67,7 +67,7 @@ export const LINKS : LinkEntry[] = [
   {phrase: /Dämon(en)?/i, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   {phrase: /Leviathan[^b]/i, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   // ------------------------------------------------------------------------------------------------------ EBRICHSBURG
-  {phrase: 'Ebrichsburg', link: CITY_1_ROUTE, linkable: 'ebrichsburg'},
+  {phrase: 'Doskvol', link: CITY_1_ROUTE, linkable: 'dokvol'},
   // ----------------------------------------------------------------------------------------------- Maps Hasard
   {phrase: /Hasard[s]?/, link: CITY_1_ROUTE, linkable: 'hasard'},
   {phrase: 'Kasino', link: CITY_1_ROUTE, linkable: 'hasard', mapHighlight: 'Volker Kasino'},

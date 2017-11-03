@@ -19,7 +19,7 @@ export class WorldService {
     return this.world;
   }
 
-  public getEbrichsburg() {
-    return this.http.get('/assets/data/ebrichsburg.json').map((res) => res.json());
+  public getDoskvol() {
+    return this.http.get('/assets/data/doskvol.json').map((res) => res.json());
   }
 }

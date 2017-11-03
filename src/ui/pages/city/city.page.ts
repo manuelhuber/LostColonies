@@ -14,7 +14,7 @@ export class CityPage {
   public maps : MyMap[];
 
   constructor(private worldService : WorldService) {
-    worldService.getEbrichsburg().subscribe((data : any) => this.maps = data[ 'maps' ]);
+    worldService.getDoskvol().subscribe((data : any) => this.maps = data[ 'maps' ]);
   }
 
   public getExcludeLinks(map : MyMap) : LinkLocation[] {

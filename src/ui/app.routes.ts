@@ -13,8 +13,8 @@ export const FACTION_ROUTE : string = WORLD + '/fraktionen';
 export const WORLD_GENERAL_TITLE : string = 'Allgemein';
 export const WORLD_GENERAL_ROUTE : string = WORLD + '/allgemein';
 
-export const CITY_1_TITLE : string = 'Ebrichsburg';
-export const CITY_1_ROUTE : string = WORLD + '/ebrichsburg';
+export const CITY_1_TITLE : string = 'Doskvol';
+export const CITY_1_ROUTE : string = WORLD + '/doskvol';
 
 const PLAYERS : string = 'spieler';
 export const CREW_1_TITLE : string = 'Die Angler';
