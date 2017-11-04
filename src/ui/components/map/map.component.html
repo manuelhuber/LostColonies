@@ -29,9 +29,9 @@
            bottom:descriptionBottomValue(highlight),
            maxHeight: descriptionMaxHeightValue(highlight)}"
            (click)="toggle(i)">
-        <div class="highlight-description">
+        <div class="highlight-description" insertLinks [exclude]="excludeLinks">
           <div class="highlight-description-title">{{highlight.name}}</div>
-          <div insertLinks [exclude]="excludeLinks" [innerHtml]="highlight.description"></div>
+          <div [innerHtml]="highlight.description"></div>
         </div>
       </div>
 
