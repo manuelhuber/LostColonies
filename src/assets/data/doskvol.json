@@ -2,12 +2,25 @@
   "maps": [
     {
       "name": "Doskvol",
-      "description": "Die alte imperiale Stadt erstreckt sich über mehrere kleine Inseln. Während der Adel im Norden in höher gelegenen Stadtteilen lebt, kämpfen Gangs um die Gossen. Abgesehen von den wenigen alten Militärgebäuden und Kathedralen besteht die Stadt aus dunklen Steingebäuden. Die Heiligen Mauern umgeben die komplette Stadt und schützen sie vor den konstanten Warpstürmen, die die Sonne verdecken. Die Pilz- & Aal-Farmen versorgen die Bevölkerung mit Nahrung und die Freihändler versorgen die Zivilisation mit dem Treibstoff Leviathanblut. Durch den Hafen und Handel sind in Doskvol mehr ausländische Gangs als üblich aktiv.<br><br>Im Gegensatz zu vielen anderen Städten, hat in Doskvol bisher keine Gang die Oberhand ergriffen. Selbst die Kontrolle über einzelne Viertel werden nur selten lange gehalten. ",
+      "description": "Foobar",
       "imageUrl": "/assets/images/doskvol.png",
       "highlights": [
         {
+          "name": "Warpmeer",
+          "description": "Durch die Warpstürme wandelte sich das Meer zu schwarzer Tinte. Kleine Lichtpunkte, angeordnet wie Sternenkonstelationen sind tief unter der Oberfläche sichtbar in einem Meer das so schwarz und dunkel ist wie der Himmel. Nur die mutigsten oder verzweifelsten Kapitäne wagen es soweit hinauszusegeln, dass sie das Land aus den Augen verlieren. Die Geister, die das Land heimsuchen meiden das offene Meer, aber in den Tiefen lauern noch abscheulichere Dinge.",
+          "location": {
+            "top": 5,
+            "left": 62
+          },
+          "size": {
+            "x": 47,
+            "y": 14
+          },
+          "displayDot": true
+        },
+        {
           "name": "Whitecrown",
-          "description": "Foobar.",
+          "description": "Die ausschweifenden Anwesen des Lord Gouverneur, Jagdkommandeur, Aufsichtsmeisters und der Doskvol Akademie.",
           "location": {
             "top": 21,
             "left": 32
@@ -20,7 +33,7 @@
         },
         {
           "name": "Silkshore",
-          "description": "Foobar.",
+          "description": "Das Rotlichtviertel und Künstler Gemeinden",
           "location": {
             "top": 52,
             "left": 21
@@ -33,7 +46,7 @@
         },
         {
           "name": "Barrowcleft",
-          "description": "Foobar.",
+          "description": "Heimat & Markt für die Bauern der Feldern und Aalfarmen",
           "location": {
             "top": 64,
             "left": 14
@@ -46,7 +59,7 @@
         },
         {
           "name": "The Docks",
-          "description": "Foobar.",
+          "description": "Schroffe Tavernen, Tattoostudios, Kampfgruben und Lagerhäuser",
           "location": {
             "top": 36,
             "left": 39
@@ -59,7 +72,7 @@
         },
         {
           "name": "Crow's Foot",
-          "description": "Foobar.",
+          "description": "Eine vollgestopfte Nachbarschaft mit mehrstöckigen Straßen, die von Gangs kontrolliert werden.",
           "location": {
             "top": 46,
             "left": 40
@@ -72,7 +85,7 @@
         },
         {
           "name": "Charhollow",
-          "description": "Foobar.",
+          "description": "Ein Labyrinth aus Mietswohnungen und armseligen Reihenhäusern.",
           "location": {
             "top": 58,
             "left": 42
@@ -85,7 +98,7 @@
         },
         {
           "name": "Dunslough",
-          "description": "Foobar.",
+          "description": "Ein Arbeitslager für Sträflinge und Ghetto für Arme.",
           "location": {
             "top": 78,
             "left": 51
@@ -98,7 +111,7 @@
         },
         {
           "name": "Brightstone",
-          "description": "Foobar.",
+          "description": "The prächtigen Villen und Luxusgeschäfte der wohlhabenden Elite.",
           "location": {
             "top": 33,
             "left": 64
@@ -111,7 +124,7 @@
         },
         {
           "name": "Charterhall",
-          "description": "Foobar.",
+          "description": "Die Adeptus Administratum Büros und Zentrum für Geschäfte, Kunsthandwerker und Handel.",
           "location": {
             "top": 49,
             "left": 62
@@ -124,7 +137,7 @@
         },
         {
           "name": "Coalridge",
-          "description": "Foobar.",
+          "description": "Die Überreste der alte Minensiedlung sind nun Heimat für Arbeiter und Fabriken.",
           "location": {
             "top": 68,
             "left": 65
@@ -137,7 +150,7 @@
         },
         {
           "name": "Six Towers",
-          "description": "Foobar.",
+          "description": "Ein ehemals reiches Viertel, mittlerweile heruntergekommen und verrottet.",
           "location": {
             "top": 44,
             "left": 80
@@ -150,7 +163,7 @@
         },
         {
           "name": "Nightmarket",
-          "description": "Foobar.",
+          "description": "Der Handelsplatz für exotische Waren, die per Zug importiert wurden. Viele Händler bieten auch illegale Waren an.",
           "location": {
             "top": 61,
             "left": 81
@@ -162,8 +175,8 @@
           }
         },
         {
-          "name": "Der verlorene District",
-          "description": "Foobar.",
+          "name": "Der verlorene Distrikt",
+          "description": "Ein einst reicher Distrikt, der von einer Seuche heimgesucht und dann Teil der Todesländer wurde, also die zweite Heilige Mauer gebaut wurde. Verbirgt noch viele verlorene Schätze für Alle, die waghalsigen genug sind dannach zu suchen.",
           "location": {
             "top": 17,
             "left": 89
@@ -177,7 +190,7 @@
         },
         {
           "name": "Ironhook Prison",
-          "description": "Foobar.",
+          "description": "Eine gewaltige metallerne Festung, die die schlimmsten Verbrecher beherbergt. Viele werden gezwungen in den südlichen Feldern und Minen zu arbeiten. Manche werden dazu verurteilt in den Todesländern nach Wertstoffen zu forsten.",
           "location": {
             "top": 72,
             "left": 46
@@ -191,7 +204,7 @@
         },
         {
           "name": "Aal- & Pilzfarmen",
-          "description": "Foobar.",
+          "description": "Zirka die Hälfte von Doskvol's Nahrungsbedarf wird durch Import bedient; die andere Hälfte wird hier gesammelt von den Aalfarmen, Pilzhöhlen und Pflanzen, die vom Schein der wundersamen Energielampen genährt werden.",
           "location": {
             "top": 81,
             "left": 34
@@ -205,7 +218,7 @@
         },
         {
           "name": "Alter Nordhafen",
-          "description": "Foobar.",
+          "description": "Vor der Sinnflut im zweiten Jahrhundert war der Fluß Dosk nur ein flaches Moor das eine Minensiedlung umgibt. Schiffe benutzten den alten Nordhafen zum ankern und Vorräte aufzufüllen, bevor sie das offene Meer nach Skovlan überquerten.",
           "location": {
             "top": 90,
             "left": 15
@@ -219,7 +232,7 @@
         },
         {
           "name": "Gaddoc Bahnhof",
-          "description": "Foobar.",
+          "description": "Züge aus allen Ecken des Imperiums kommen hier täglich mit Waren und Passagieren an.",
           "location": {
             "top": 73,
             "left": 80
@@ -233,7 +246,7 @@
         },
         {
           "name": "Deathlands",
-          "description": "Foobar.",
+          "description": "Jenseits der Heiligen Mauern liegt eine brache Wüste mit versteinerten Bäumen, Asche und erstickenden Gaswolken. Legionen von ruhelosen Geistern suchen durchgehend nach dem kleinsten Lebensfunken um ihm aufzulauern.",
           "location": {
             "top": 97,
             "left": 46
@@ -248,66 +261,52 @@
       ]
     },
     {
-      "name": "Hasard",
-      "description": "Dieser Stadtteil ist von Glückspiel und Handel geprägt. Während die Hauptstraßen mit vollen Taschen und dicken Bäuchen gefüllt sind, findet man in den Hintergassen hauptsächlich Hafenarbeiter und zwielichtige Gestalten. Durch seinen Hafen und der zentralen Lage in Doskvol ist Hasard nicht nur einer der größten Umschlagsplätze für legale und illegale Ware sondern auch Teil vieler Schmuggelrouten.",
-      "imageUrl": "http://imgur.com/2nkv7Zi.png",
-      "highlights": [
-        {
-          "name": "Volker Kasino",
-          "description": "Das einzig legale Kasino der Stadt lockt auch reichere Gäste an und hebt den Status des Viertels. Es wurde zu Ehren des ermordeten Don Volker benannt.",
-          "location": {
-            "top": 64,
-            "left": 41
-          },
-          "size": {
-            "x": 25,
-            "y": 15,
-            "rotation": 10
-          },
-          "displayDot": true
-        },
-        {
-          "name": "Wachturm Cadia",
-          "description": "Ein stählerner Wachturm aus dem Goldenen Zeitalter. Dieses unzerstörbare Gebäude ist der Standfuß von Speer und Hammer in Hasard.",
-          "location": {
-            "top": 6,
-            "left": 45
-          },
-          "size": {
-            "x": 15,
-            "y": 8
-          },
-          "displayDot": true
-        },
-        {
-          "name": "Docks",
-          "description": "Einer der größeren Handelshafen in Doskvol. Die Arbeiter sind größtenteils von zalianischer Herkunft und freunndlich zu den Nachtwächtern.",
-          "location": {
-            "top": 86,
-            "left": 39
-          },
-          "size": {
-            "x": 75,
-            "y": 25,
-            "rotation": 12
-          },
-          "displayDot": true
-        },
-        {
-          "name": "Fish'n'Things",
-          "description": "Das leerstehende Fischlager im Hafen Hasards dient als geheimes Quartier der Angler.",
-          "location": {
-            "top": 84,
-            "left": 59
-          },
-          "size": {
-            "x": 15,
-            "y": 8,
-            "rotation": 0
-          },
-          "displayDot": true
-        }
-      ]
+      "name": "Whitecrown",
+      "description": "Die ausschweifenden Anwesen des Lord Gouverneur, Jagdkommandeur, Aufsichtsmeisters und Doskvol Akademie."
+    },
+    {
+      "name": "Silkshore",
+      "description": "Foobar."
+    },
+    {
+      "name": "Barrowcleft",
+      "description": "Barrowcleft ist die Heimat von Arbeitern und den Verwaltern des Adeptus Administratum, die die Aal- & Pilzfarmen streng kontrollieren. Es ist ein staubiger, ländlicher Distrikt mit einfachen ein- oder zweistöckigen Holzgebäuden und breiten unbefestigten Straßen für große Transportfahrzeuge. Die Bauern in Barrowcleft sind in eng verstrickten familienzentrierten Klans organisiert, welche stolz sind auf ihren wichtigen Beitrag für das Überleben der Stadt. Sie halten sich fern vom \"Stadtvolk\" jenseits des Flusses. Außenseiter, die ehrlichen Handel betreiben werden willkommen geheißen, der Rest wird mit kaltem Argwohn behandelt."
+    },
+    {
+      "name": "The Docks",
+      "description": "Foobar."
+    },
+    {
+      "name": "Crow's Foot",
+      "description": "Crow's Foot ist der Knotenpunkt der Stadt, in dem viele Eigenschaften der Nachbarviertel zusammenkommen: Die illegalen Laster von Silkshore, Arbeit & Handel der Docks, Armut von Charhollow und die klassische Architektur von Charterhall. Der Distrikt ist ein Flickwerk welcher gleichzeitig zusammengehalten, aber auch in ständiger Gefahr ist auseinandergerissen zu werden durch die große "
+    },
+    {
+      "name": "Charhollow",
+      "description": "Dieser überfüllte Distrikt ist die Heimat für den Großteil der Arbeiterschaft der Stadt - Bedienstete, Hafenarbeiter, Vieh- & Aalfarmarbeiter, Gondoliere unter anderen. Es ist billig, laut, vollgestopft, drückend heiß von den Kochstellen und zischenden Dampfrohren und doch gibt es eine familiäre Kameradschaft unter den Bewohnern, welche sonst niergendwo zu finden ist. Die Menschen aus Charhollow sind eine wahre Gemeinschaft, zusammengebracht durch ihre Umstände, bieten sie sich gegenseitig Rückhalt und Unterstützung - ein starker Gegensatz zur halsabschneiderischen Ruchlosigkeit, die im Rest der Stadt zum guten Ton gehört."
+    },
+    {
+      "name": "Dunslough",
+      "description": "Foobar."
+    },
+    {
+      "name": "Brightstone",
+      "description": "Brightstone beherbergt viele der wohlhabendsten und einflussreichsten Bürger Doskvols. Die Straßen sind breit und gepflastert, unter den Brücken gibt es elektrisches Licht; die Kanäle sind funkelnd und rein, mit parfümiertem Wasser; die Häuser sind alle aus perfektem, helle Marmorstein, hochwertigem Holz und aufwendigen Eisenbeschlägen. Es gibt gepflegte Grünanlagen beleuchtet mit Glanzlichtern; ausschweifende Restaurants und Cafés; Juweliere, Schneider und andere Luxusläden. Straßenhändler sind verboten hier, wodurch eine gelassene & geräumige Atmosphäre entsteht, welche durch gelegentliche Kutschen oder Blaumäntel Patrouille akzentuiert wird."
+    },
+    {
+      "name": "Charterhall",
+      "description": "Charterhall war der Bauplatz des ersten großen imperialen Bauvorhabens in der Zeit vor den Warpstürmen. Die alten Mauern, welche auch die ersten Heiligen Mauern im Imperium wurden, stehen heute zum Teil noch als Ruinen in diesem Viertel. Dieses Gebiet ist nun Heimat für die Verwaltungsgebäude, Gerichte, Banken und Archive des Adeptus Administratum. Beamte und Studenten der Charterhall Universität wohnen hier neben den Adeptus Mechanicus Hohepriestern, welche es bevorzugen in Sichtweite ihrer Reichtümer zu wohnen."
+    },
+    {
+      "name": "Coalridge",
+      "description": "Coalridge beherbergt die meisten Adeptus Mechanicus Priester und Fabrikarbeiter der Stadt. Es ist beengend, rußbefleckt und laut - dichte schwarze Rauchwolken, Funkenregen und brennender Zunder. Die alten Gleise, die einst Kohle transportierten, liefern nun schwere Maschinen und Rohmaterialien von und zum Gaddoc Bahnhof, wobei auch viele der historischen Strecken & Wägen verlassen und dann als Wohnanlagen besetzt wurden."
+    },
+    {
+      "name": "Six Towers",
+      "description": "Foobar."
+    },
+    {
+      "name": "Nightmarket",
+      "description": "Foobar."
     }
   ]
 }
