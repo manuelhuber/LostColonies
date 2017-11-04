@@ -66,13 +66,26 @@ export const LINKS : LinkEntry[] = [
   {phrase: /Leiche[n]?/, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   {phrase: /Dämon(en)?/i, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   {phrase: /Leviathan[^b]/i, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
-  // ------------------------------------------------------------------------------------------------------ EBRICHSBURG
-  {phrase: 'Doskvol', link: CITY_1_ROUTE, linkable: 'dokvol'},
+  // ----------------------------------------------------------------------------------------------------------- DOSKVOL
+  {phrase: 'Doskvol', link: CITY_1_ROUTE, linkable: 'doskvol'},
+  // ----------------------------------------------------------------------------------------------- Districts
+  {phrase: 'Whitecrown', link: CITY_1_ROUTE, linkable: 'whitecrown'},
+  {phrase: 'Silkshore', link: CITY_1_ROUTE, linkable: 'silkshore'},
+  {phrase: 'Barrowcleft', link: CITY_1_ROUTE, linkable: 'barrowcleft'},
+  {phrase: 'The Docks', link: CITY_1_ROUTE, linkable: 'the docks'},
+  {phrase: 'Crow\'s Foot', link: CITY_1_ROUTE, linkable: 'crow\'s foot'},
+  {phrase: 'Charhollow', link: CITY_1_ROUTE, linkable: 'charhollow'},
+  {phrase: 'Dunslough', link: CITY_1_ROUTE, linkable: 'dunslough'},
+  {phrase: 'Brightstone', link: CITY_1_ROUTE, linkable: 'brightstone'},
+  {phrase: 'Charterhall', link: CITY_1_ROUTE, linkable: 'charterhall'},
+  {phrase: 'Coalridge', link: CITY_1_ROUTE, linkable: 'coalridge'},
+  {phrase: 'Six Towers', link: CITY_1_ROUTE, linkable: 'six towers'},
+  {phrase: 'Nightmarket', link: CITY_1_ROUTE, linkable: 'nightmarket'},
   // ----------------------------------------------------------------------------------------------- Maps Hasard
   {phrase: /Hasard[s]?/, link: CITY_1_ROUTE, linkable: 'hasard'},
   {phrase: 'Kasino', link: CITY_1_ROUTE, linkable: 'hasard', mapHighlight: 'Volker Kasino'},
   {phrase: 'Fish\'n\'Things', link: CITY_1_ROUTE, linkable: 'hasard', mapHighlight: 'Fish\'n\'Things'},
-  // ----------------------------------------------------------------------------------------------- Meta
+  // -------------------------------------------------------------------------------------------------------------- META
   {phrase: /Inspiration(en)?/, link: INTRO_ROUTE, linkable: 'Inspiration'},
   {phrase: 'Charakterbeschreibung', link: INTRO_ROUTE, linkable: 'Charaktere'}
 ];
