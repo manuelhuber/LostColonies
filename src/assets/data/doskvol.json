@@ -58,7 +58,7 @@
           }
         },
         {
-          "name": "The Docks",
+          "name": "Die Docks",
           "description": "Schroffe Tavernen, Tattoostudios, Kampfgruben und Lagerhäuser",
           "location": {
             "top": 36,
@@ -111,7 +111,7 @@
         },
         {
           "name": "Brightstone",
-          "description": "The prächtigen Villen und Luxusgeschäfte der wohlhabenden Elite.",
+          "description": "Die prächtigen Villen und Luxusgeschäfte der wohlhabenden Elite.",
           "location": {
             "top": 33,
             "left": 64
@@ -189,7 +189,7 @@
           "displayDot": true
         },
         {
-          "name": "Ironhook Prison",
+          "name": "Ironhook Gefängnis",
           "description": "Eine gewaltige metallerne Festung, die die schlimmsten Verbrecher beherbergt. Viele werden gezwungen in den südlichen Feldern und Minen zu arbeiten. Manche werden dazu verurteilt in den Todesländern nach Wertstoffen zu forsten.",
           "location": {
             "top": 72,
@@ -262,23 +262,23 @@
     },
     {
       "name": "Whitecrown",
-      "description": "Die ausschweifenden Anwesen des Lord Gouverneur, Jagdkommandeur, Aufsichtsmeisters und Doskvol Akademie."
+      "description": "Whitecrom ist auf einer gewaltigen Erhöhung auf der Insel jenseits des Nord Hook Kanals. Aus dieser erhabenen Position sieht die Festung des Lord Gouverneurs alles, umgeben von den gewaltigen Anwesen der mächtigsten Adeligen und dem luxuriösen Campus der Doskvol Akademie. Whitecrown ist eine eigene reiche und exklusive Welt - die meisten Bürger verbringen ihr gesamtes Leben in Doskvol ohne auch nur einmal die Brücke zu den glitzernden Türmen des Reichtums und Macht zu überqueren."
     },
     {
       "name": "Silkshore",
-      "description": "Foobar."
+      "description": "Durch das Zickzack der duzenden enger Kanäle, reist man in Dunslough am besten mit Gondel, wie es auch die meisten Besucher dieses Rotlichtviertels tun. Die Bordelle, Drogenhöhlen, Essensstände und exotischen Läden sitzen alle an Ufern, bereit jeden Wunsch der Kunden zu erfüllen ohne Fragen zu stellen. Silkshore ist ein Platz des öffentlichen Genusses und privaten Unanständigkeit, wo jedes vorstellbare Verlangen erfüllt wird - und auch einige nicht vorstellbare."
     },
     {
       "name": "Barrowcleft",
       "description": "Barrowcleft ist die Heimat von Arbeitern und den Verwaltern des Adeptus Administratum, die die Aal- & Pilzfarmen streng kontrollieren. Es ist ein staubiger, ländlicher Distrikt mit einfachen ein- oder zweistöckigen Holzgebäuden und breiten unbefestigten Straßen für große Transportfahrzeuge. Die Bauern in Barrowcleft sind in eng verstrickten familienzentrierten Klans organisiert, welche stolz sind auf ihren wichtigen Beitrag für das Überleben der Stadt. Sie halten sich fern vom \"Stadtvolk\" jenseits des Flusses. Außenseiter, die ehrlichen Handel betreiben werden willkommen geheißen, der Rest wird mit kaltem Argwohn behandelt."
     },
     {
-      "name": "The Docks",
-      "description": "Foobar."
+      "name": "Die Docks",
+      "description": "Die Docks von Doskvol sind uralt, aus der Zeit vor den Warpstürmen als hier nur eine kleine Siedlung war, die mit Skov Königreich handeln konnte ohne das raue Nordmeer zu überqueren. Heutzutage findet ein Teil des Handels über die Elektrogleise des Imperiums statt, aber der Hafen ist immernoch hektisch mit Frachtschiffen, Fischerboote und den angesehenen Freihändler Schiffen, die das rohe Leviathanblut erjagen und damit die Stadt am Laufen halten."
     },
     {
       "name": "Crow's Foot",
-      "description": "Crow's Foot ist der Knotenpunkt der Stadt, in dem viele Eigenschaften der Nachbarviertel zusammenkommen: Die illegalen Laster von Silkshore, Arbeit & Handel der Docks, Armut von Charhollow und die klassische Architektur von Charterhall. Der Distrikt ist ein Flickwerk welcher gleichzeitig zusammengehalten, aber auch in ständiger Gefahr ist auseinandergerissen zu werden durch die große "
+      "description": "Crow's Foot ist der Knotenpunkt der Stadt, in dem viele Eigenschaften der Nachbarviertel zusammenkommen: Die illegalen Laster von Silkshore, Arbeit & Handel der Docks, Armut von Charhollow und die klassische Architektur von Charterhall. Der Distrikt ist ein Flickwerk welcher gleichzeitig zusammengehalten, aber auch in ständiger Gefahr ist auseinandergerissen zu werden durch die große Menge an verfeindeten Gangs und Blaumantel Truppen, die jede Gasse und Straßenecke beanspruchen in einem endlossen Bandenkrieg."
     },
     {
       "name": "Charhollow",
@@ -286,7 +286,7 @@
     },
     {
       "name": "Dunslough",
-      "description": "Foobar."
+      "description": "Dunslough ist ein Ghetto für die verzweifelten Armen der Stadt und auch Standort des Ironhook Gefängnis & Arbeitslager. Ursprünglich war das Ghetto eine Nachbarschaft für Familien von Gefangenen, aber über die Jahre ruinierten die extreme Armut und Verwahrlosung die Gegend. Der Teufelskreis aus Kriminalität aus Verzeweiflung, Verhaftung, Haftstrafe, Entlasung nach Dunslough versorgt das Ironhook Gefängnis mit einem endlossen Nachschub an ausnutzbaren Arbeitskräften."
     },
     {
       "name": "Brightstone",
@@ -302,11 +302,11 @@
     },
     {
       "name": "Six Towers",
-      "description": "Foobar."
+      "description": "Dieses ehemals reiche Viertel ist verblasst im Laufe der Jahrhunderte zu einem Schatten seines früheren Glanzes. Die namensgebenden sechs Türme waren einst die Wohnsitze der ersten Adelsfamilien in Doskvol. Alle außer zwei (Haus Bowmore und Haus Rowan) wurden verkauft und entweder in billige Wohnungen verwandelt oder sind zu Ruinen verkommen. Das Viertel hat eine leere, verspukte Atmoshpäre mit vielen wuchernden alten Bauten, dunkel ohne Strom, breiten Steintraßen, rissig und uneben und den Feuern von Hausbesetzern, die in verwilderten Grundstücken leben."
     },
     {
       "name": "Nightmarket",
-      "description": "Foobar."
+      "description": "Der Nachtmarkt ist ein Handelsviertel. Nahe des Gaddoc Bahnhofes, erhält der Nachtmarkt einen Großteil der Güter aus den Frachtzügen, die quer durch das Imperium fahren und exotische und seltene Waren nach Doskvol bringen. Die Bürger, die den Nachtmarkt ihre Heimat nennen sind eine neue Klasse der \"Elite\" - wohlhabende Bürger, die keinen Adelstitel tragen, aber dennoch Land, Ansehen und Macht innehaben. Der Distrikt wird überrannt mit neuen Bauvorhaben, die verschwenderische Privathäuser mit allen Extras, die Geld kaufen kann."
     }
   ]
 }
