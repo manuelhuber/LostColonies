@@ -72,7 +72,7 @@ export const LINKS : LinkEntry[] = [
   {phrase: 'Whitecrown', link: CITY_1_ROUTE, linkable: 'whitecrown'},
   {phrase: 'Silkshore', link: CITY_1_ROUTE, linkable: 'silkshore'},
   {phrase: 'Barrowcleft', link: CITY_1_ROUTE, linkable: 'barrowcleft'},
-  {phrase: 'The Docks', link: CITY_1_ROUTE, linkable: 'the docks'},
+  {phrase: 'Docks', link: CITY_1_ROUTE, linkable: 'die docks'},
   {phrase: 'Crow\'s Foot', link: CITY_1_ROUTE, linkable: 'crow\'s foot'},
   {phrase: 'Charhollow', link: CITY_1_ROUTE, linkable: 'charhollow'},
   {phrase: 'Dunslough', link: CITY_1_ROUTE, linkable: 'dunslough'},
@@ -81,6 +81,7 @@ export const LINKS : LinkEntry[] = [
   {phrase: 'Coalridge', link: CITY_1_ROUTE, linkable: 'coalridge'},
   {phrase: 'Six Towers', link: CITY_1_ROUTE, linkable: 'six towers'},
   {phrase: 'Nightmarket', link: CITY_1_ROUTE, linkable: 'nightmarket'},
+  {phrase: 'Nachtmarkt', link: CITY_1_ROUTE, linkable: 'nightmarket'},
   // ----------------------------------------------------------------------------------------------- Maps Hasard
   {phrase: /Hasard[s]?/, link: CITY_1_ROUTE, linkable: 'hasard'},
   {phrase: 'Kasino', link: CITY_1_ROUTE, linkable: 'hasard', mapHighlight: 'Volker Kasino'},

@@ -33,12 +33,12 @@
         "name": "Iruvia",
         "description": "Ein Land voller schwarzer Wüsten, Obsidianberge und tobenden Vulkanen. Manche sagen, dass dort Dämonen offen Machtpositionen innehalten. Iruvianer haben für gewöhnlich bernsteinfarbene Haut und dunkle Haare.",
         "location": {
-          "top": 78.5,
-          "left": 68
+          "top": 79.5,
+          "left": 65
         },
         "size": {
-          "x": 54,
-          "y": 35,
+          "x": 46,
+          "y": 32,
           "rotation": 0
         }
       },

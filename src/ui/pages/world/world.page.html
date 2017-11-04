@@ -1,5 +1,5 @@
 <div class="page">
-  <accordion *ngIf="entries || map">
+  <accordion *ngIf="entries || map" [openAtStart]="0">
 
     <expandable *ngIf="map" [linkable]="[map.name]">
       <expandable-header>
