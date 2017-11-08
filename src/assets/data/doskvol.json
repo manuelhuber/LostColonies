@@ -2,7 +2,7 @@
   "maps": [
     {
       "name": "Doskvol",
-      "description": "Foobar",
+      "description": "Klicke die Punkte und Namen auf der Karte für mehr Informationen.",
       "imageUrl": "/assets/images/doskvol.png",
       "highlights": [
         {
@@ -245,7 +245,7 @@
           "displayDot": true
         },
         {
-          "name": "Deathlands",
+          "name": "Warpwüste",
           "description": "Jenseits der Heiligen Mauern liegt eine brache Wüste mit versteinerten Bäumen, Asche und erstickenden Gaswolken. Legionen von ruhelosen Geistern suchen durchgehend nach dem kleinsten Lebensfunken um ihm aufzulauern.",
           "location": {
             "top": 97,

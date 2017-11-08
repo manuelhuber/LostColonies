@@ -54,8 +54,8 @@ export const LINKS : LinkEntry[] = [
   {phrase: /Kult(?!ur)/i, link: WORLD_GENERAL_ROUTE, linkable: 'religion'},
   {phrase: 'Psioniker', link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   // ----------------------------------------------------------------------------------------------- Warp
-  // "Warp" not followed by R, S or E
-  {phrase: /Warp(?![rse])/i, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
+  // "Warp" not followed by R, S, W or E
+  {phrase: /Warp(?![rswe])/i, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   {phrase: /Warpriss[e]?/i, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   {phrase: /Warpst[uü]rm[e]/i, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
   {phrase: /Warpeinfl[uü]ß[e]?/i, link: WORLD_GENERAL_ROUTE, linkable: 'warp'},
@@ -69,19 +69,48 @@ export const LINKS : LinkEntry[] = [
   // ----------------------------------------------------------------------------------------------------------- DOSKVOL
   {phrase: 'Doskvol', link: CITY_1_ROUTE, linkable: 'doskvol'},
   // ----------------------------------------------------------------------------------------------- Districts
-  {phrase: 'Whitecrown', link: CITY_1_ROUTE, linkable: 'whitecrown'},
-  {phrase: 'Silkshore', link: CITY_1_ROUTE, linkable: 'silkshore'},
-  {phrase: 'Barrowcleft', link: CITY_1_ROUTE, linkable: 'barrowcleft'},
-  {phrase: 'Docks', link: CITY_1_ROUTE, linkable: 'die docks'},
-  {phrase: 'Crow\'s Foot', link: CITY_1_ROUTE, linkable: 'crow\'s foot'},
-  {phrase: 'Charhollow', link: CITY_1_ROUTE, linkable: 'charhollow'},
-  {phrase: 'Dunslough', link: CITY_1_ROUTE, linkable: 'dunslough'},
-  {phrase: 'Brightstone', link: CITY_1_ROUTE, linkable: 'brightstone'},
-  {phrase: 'Charterhall', link: CITY_1_ROUTE, linkable: 'charterhall'},
-  {phrase: 'Coalridge', link: CITY_1_ROUTE, linkable: 'coalridge'},
-  {phrase: 'Six Towers', link: CITY_1_ROUTE, linkable: 'six towers'},
-  {phrase: 'Nightmarket', link: CITY_1_ROUTE, linkable: 'nightmarket'},
-  {phrase: 'Nachtmarkt', link: CITY_1_ROUTE, linkable: 'nightmarket'},
+  // District links should go to the map
+  {phrase: 'Whitecrown', link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Whitecrown'},
+  {phrase: 'Silkshore', link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Silkshore'},
+  {phrase: 'Barrowcleft', link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Barrowcleft'},
+  {phrase: /(Die )?Dock[s]?/i, link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Die Docks'},
+  {phrase: 'Crow\'s Foot', link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Crow\'s Foot'},
+  {phrase: 'Charhollow', link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Charhollow'},
+  {phrase: 'Dunslough', link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Dunslough'},
+  {phrase: 'Brightstone', link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Brightstone'},
+  {phrase: 'Charterhall', link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Charterhall'},
+  {phrase: 'Coalridge', link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Coalridge'},
+  {phrase: 'Six Towers', link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Six Towers'},
+  {phrase: 'Nightmarket', link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Nightmarket'},
+  {phrase: 'Nachtmarkt', link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Nightmarket'},
+
+  // Links on the map should go to the detailed sections
+  {phrase: 'Whitecrown', link: CITY_1_ROUTE, linkable: 'Whitecrown'},
+  {phrase: 'Silkshore', link: CITY_1_ROUTE, linkable: 'Silkshore'},
+  {phrase: 'Barrowcleft', link: CITY_1_ROUTE, linkable: 'Barrowcleft'},
+  {phrase: /(Die )?Dock[s]?/i, link: CITY_1_ROUTE, linkable: 'Die Docks'},
+  {phrase: 'Crow\'s Foot', link: CITY_1_ROUTE, linkable: 'Crow\'s Foot'},
+  {phrase: 'Charhollow', link: CITY_1_ROUTE, linkable: 'Charhollow'},
+  {phrase: 'Dunslough', link: CITY_1_ROUTE, linkable: 'Dunslough'},
+  {phrase: 'Brightstone', link: CITY_1_ROUTE, linkable: 'Brightstone'},
+  {phrase: 'Charterhall', link: CITY_1_ROUTE, linkable: 'Charterhall'},
+  {phrase: 'Coalridge', link: CITY_1_ROUTE, linkable: 'Coalridge'},
+  {phrase: 'Six Towers', link: CITY_1_ROUTE, linkable: 'Six Towers'},
+  {phrase: 'Nightmarket', link: CITY_1_ROUTE, linkable: 'Nightmarket'},
+  {phrase: 'Nachtmarkt', link: CITY_1_ROUTE, linkable: 'Nightmarket'},
+
+  {phrase: /verloren[^\s]* Distrikt/i, link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Der verlorene Distrikt'},
+  {phrase: /Ironhook|Gefängnis/i, link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Ironhook Gefängnis'},
+  {phrase: /Aal|Pilz|Farm/, link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Aal- & Pilzfarmen'},
+  {phrase: /(Alter )?Nordhafen/i, link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Alter Nordhafen'},
+  // 'Gaddoc' or 'Bahnhof' or 'Gaddoc Bahnhof' or 'Bahnhof Gaddoc'
+  {
+    phrase: /(?:\bGaddoc\b\s*|\bBahnhof\b\s*)+/i,
+    link: CITY_1_ROUTE,
+    linkable: 'doskvol',
+    mapHighlight: 'Gaddoc Bahnhof'
+  },
+  {phrase: 'Warpwüste', link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Warpwüste'},
   // ----------------------------------------------------------------------------------------------- Maps Hasard
   {phrase: /Hasard[s]?/, link: CITY_1_ROUTE, linkable: 'hasard'},
   {phrase: 'Kasino', link: CITY_1_ROUTE, linkable: 'hasard', mapHighlight: 'Volker Kasino'},
