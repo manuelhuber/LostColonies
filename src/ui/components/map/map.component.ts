@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { AfterContentInit, Component, Input } from '@angular/core';
 import { MyMap } from '../../../data/models/map';
 import { MapHighlight } from '../../../data/models/MapHighlight';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
@@ -14,11 +14,12 @@ const BORDER_NO_ANIMATION : string = 'transform 500ms';
   templateUrl: 'map.component.html',
   styleUrls: [ 'map.component.scss' ]
 })
-export class MapComponent {
+export class MapComponent implements AfterContentInit {
   public activeDescription : number = -1;
   public highlightOverlayAnimation : string;
   @Input() public map : MyMap;
   @Input() public excludeLinks : LinkLocation[];
+  @Input() public autoHighlight : string;
 
   get activeHighlight() : MapHighlight {
     return this.map.highlights[ this.activeDescription ];
@@ -55,6 +56,10 @@ export class MapComponent {
       };
     }
 
+  }
+
+  public ngAfterContentInit() : void {
+    this.highlight(this.autoHighlight);
   }
 
   public highlight(name : string) : void {

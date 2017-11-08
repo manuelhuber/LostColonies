@@ -1,7 +1,7 @@
 {
   "map": {
     "name": "Welt",
-    "description": "",
+    "description": "Klicke auf die Kontinente um mehr zu erfahren.",
     "imageUrl": "/assets/images/officialWorldMap.png",
     "highlights": [
       {
