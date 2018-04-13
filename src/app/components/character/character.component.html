@@ -3,7 +3,7 @@
     <img [src]="character.imageUrl" class="character-image">
   </div>
   <div class="character-achievements">Erfolge:</div>
-  <achievements *ngIf="character.achievements" [achievements]="character.achievements"></achievements>
+  <lc-achievements *ngIf="character.achievements" [achievements]="character.achievements"></lc-achievements>
   <div class="character-description"
        *ngIf="character.description"
        lcInsertLinks

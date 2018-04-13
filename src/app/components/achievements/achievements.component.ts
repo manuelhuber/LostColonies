@@ -3,7 +3,7 @@ import { Achievement } from '../../../data/models/achievement';
 import { ExpandableComponent } from '../expandables/expandable.component';
 
 @Component({
-  selector: 'achievements',
+  selector: 'lc-achievements',
   templateUrl: 'achievements.component.html',
   styleUrls: [ 'achievements.component.scss' ]
 })
