@@ -7,12 +7,12 @@ import { MetaEntry } from '../models/metaEntry';
 @Injectable()
 export class MetaService {
 
-  private entries : Observable<MetaEntry[]>;
+  private entries: Observable<MetaEntry[]>;
 
-  constructor(private http : Http) {
+  constructor(private http: Http) {
   }
 
-  public getMeta() : Observable<any> {
+  public getMeta(): Observable<any> {
     if (this.entries === undefined) {
       this.entries = this.http.get('/assets/data/meta.json').map((res) => res.json());
     }
