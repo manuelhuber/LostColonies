@@ -5,8 +5,8 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
-      ]
+        AppComponent,
+      ],
     }).compileComponents();
   }));
   it('should create the app', async(() => {

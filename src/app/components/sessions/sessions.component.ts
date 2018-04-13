@@ -5,7 +5,7 @@ import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive'
 @Component({
   selector: 'lc-sessions',
   templateUrl: 'sessions.component.html',
-  styleUrls: [ 'sessions.component.scss' ]
+  styleUrls: [ 'sessions.component.scss' ],
 })
 export class SessionsComponent implements OnInit {
   @Input() public sessions: Session[];

@@ -10,7 +10,7 @@ import { Title } from '@angular/platform-browser';
   selector: 'lc-app',
   encapsulation: ViewEncapsulation.None,
   styleUrls: [ 'app.component.scss', './pages/pages.scss' ],
-  templateUrl: 'app.component.html'
+  templateUrl: 'app.component.html',
 })
 export class AppComponent implements OnInit {
   constructor(private router: Router,

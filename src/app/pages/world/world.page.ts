@@ -8,7 +8,7 @@ import { HighlightMap } from '../../../data/models/map';
 @Component({
   selector: 'lc-world',
   styleUrls: [ 'world.page.scss' ],
-  templateUrl: 'world.page.html'
+  templateUrl: 'world.page.html',
 })
 export class WorldPage {
 

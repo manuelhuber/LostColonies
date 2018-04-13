@@ -12,7 +12,7 @@ const BORDER_NO_ANIMATION = 'transform 500ms';
 @Component({
   selector: 'lc-map',
   templateUrl: 'map.component.html',
-  styleUrls: [ 'map.component.scss' ]
+  styleUrls: [ 'map.component.scss' ],
 })
 export class MapComponent implements AfterContentInit {
   public activeDescription = -1;
@@ -31,14 +31,14 @@ export class MapComponent implements AfterContentInit {
         top: this.activeHighlight.location.top + '%',
         left: this.activeHighlight.location.left + '%',
         width: this.activeHighlight.size.x + '%',
-        height: this.activeHighlight.size.y + '%'
+        height: this.activeHighlight.size.y + '%',
       };
     } else {
       return {
         top: '50%',
         left: '50%',
         width: '100%',
-        height: '100%'
+        height: '100%',
       };
     }
   }
@@ -47,12 +47,12 @@ export class MapComponent implements AfterContentInit {
     if (this.activeDescription !== -1) {
       return {
         transform: 'rotate(' + this.activeHighlight.size.rotation + 'deg)',
-        transition: this.highlightOverlayAnimation
+        transition: this.highlightOverlayAnimation,
       };
     } else {
       return {
         transform: 'rotate(0deg)',
-        transition: this.highlightOverlayAnimation
+        transition: this.highlightOverlayAnimation,
       };
     }
 
@@ -102,7 +102,7 @@ export class MapComponent implements AfterContentInit {
       top: highlight.location.top + '%',
       left: highlight.location.left + '%',
       width: highlight.size.x + '%',
-      height: highlight.size.y + '%'
+      height: highlight.size.y + '%',
     };
   }
 

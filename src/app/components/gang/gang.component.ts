@@ -5,7 +5,7 @@ import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive'
 @Component({
   selector: 'lc-gang',
   templateUrl: 'gang.component.html',
-  styleUrls: [ 'gang.component.scss' ]
+  styleUrls: [ 'gang.component.scss' ],
 })
 export class GangComponent {
   @Input() public gang: Gang;

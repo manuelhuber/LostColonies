@@ -44,7 +44,7 @@ const APP_PROVIDERS = [
   FactionService,
   WorldService,
   CrewService,
-  MetaService
+  MetaService,
 ];
 
 registerLocaleData(localeDE);
@@ -75,27 +75,27 @@ registerLocaleData(localeDE);
     LinkableDirective,
     InsertLinksDirective,
     NpcComponent,
-    NpcsComponent
+    NpcsComponent,
   ],
   imports: [ // import Angular's modules
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(ROUTES, {useHash: true, preloadingStrategy: PreloadAllModules})
+    RouterModule.forRoot(ROUTES, {useHash: true, preloadingStrategy: PreloadAllModules}),
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     APP_PROVIDERS,
     {
       provide: HAMMER_GESTURE_CONFIG,
-      useClass: MyHammerConfig
+      useClass: MyHammerConfig,
     },
     {
       provide: LOCALE_ID,
-      useValue: 'de-DE'
-    }
+      useValue: 'de-DE',
+    },
 
-  ]
+  ],
 })
 export class AppModule {
 }

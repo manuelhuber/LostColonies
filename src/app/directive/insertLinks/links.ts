@@ -108,7 +108,7 @@ export const LINKS: LinkEntry[] = [
     phrase: /(?:\bGaddoc\b\s*|\bBahnhof\b\s*)+/i,
     link: CITY_1_ROUTE,
     linkable: 'doskvol',
-    mapHighlight: 'Gaddoc Bahnhof'
+    mapHighlight: 'Gaddoc Bahnhof',
   },
   {phrase: 'Warpwüste', link: CITY_1_ROUTE, linkable: 'doskvol', mapHighlight: 'Warpwüste'},
   // ----------------------------------------------------------------------------------------------- Maps Hasard
@@ -117,5 +117,5 @@ export const LINKS: LinkEntry[] = [
   {phrase: 'Fish\'n\'Things', link: CITY_1_ROUTE, linkable: 'hasard', mapHighlight: 'Fish\'n\'Things'},
   // -------------------------------------------------------------------------------------------------------------- META
   {phrase: /Inspiration(en)?/, link: INTRO_ROUTE, linkable: 'Inspiration'},
-  {phrase: 'Charakterbeschreibung', link: INTRO_ROUTE, linkable: 'Charaktere'}
+  {phrase: 'Charakterbeschreibung', link: INTRO_ROUTE, linkable: 'Charaktere'},
 ];

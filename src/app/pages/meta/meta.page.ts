@@ -5,7 +5,7 @@ import { MetaService } from '../../../data/services/meta.service';
 
 @Component({
   selector: 'lc-meta-page',
-  templateUrl: 'meta.page.html'
+  templateUrl: 'meta.page.html',
 })
 export class MetaPage {
   public entries: MetaEntry[];

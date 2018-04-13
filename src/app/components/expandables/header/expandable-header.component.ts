@@ -3,7 +3,7 @@ import { DEFAULT_SCROLL_OPTIONS } from '../../../shared/scroll.model';
 
 @Component({
   selector: 'lc-expandable-header',
-  templateUrl: 'expandable-header.component.html'
+  templateUrl: 'expandable-header.component.html',
 })
 /**
  * The header for the accordion entry. Is always visible. The AccordionComponent will add click handlers

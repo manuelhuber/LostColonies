@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'lc-crew',
   templateUrl: 'crew.page.html',
-  styleUrls: [ 'crew.page.scss' ]
+  styleUrls: [ 'crew.page.scss' ],
 })
 export class CrewPage {
 

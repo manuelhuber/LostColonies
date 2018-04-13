@@ -5,7 +5,7 @@ import { LINKABLE_PARAM } from '../../directive/linkable/linkable.directive';
 
 @Component({
   selector: 'lc-accordion',
-  templateUrl: 'accordion.component.html'
+  templateUrl: 'accordion.component.html',
 })
 /**
  * The component handling multiple accordion entries. Only 1 entry can be open at once.

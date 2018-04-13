@@ -5,7 +5,7 @@ import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive'
 @Component({
   selector: 'lc-npcs',
   templateUrl: 'npcs.component.html',
-  styleUrls: [ 'npcs.component.scss' ]
+  styleUrls: [ 'npcs.component.scss' ],
 })
 export class NpcsComponent {
   @Input() public npcs: Npc[];

@@ -16,7 +16,7 @@ import {
   INTRO_ROUTE,
   INTRO_TITLE,
   WORLD_GENERAL_ROUTE,
-  WORLD_GENERAL_TITLE
+  WORLD_GENERAL_TITLE,
 } from './app.routes.model';
 
 
@@ -30,5 +30,5 @@ export const ROUTES: Routes = [
   {path: WORLD_GENERAL_ROUTE, component: WorldPage, data: {title: WORLD_GENERAL_TITLE}},
   {path: CITY_1_ROUTE, component: CityPage, data: {title: CITY_1_TITLE}},
   // Fallback
-  {path: '**', redirectTo: INTRO_ROUTE}
+  {path: '**', redirectTo: INTRO_ROUTE},
 ];

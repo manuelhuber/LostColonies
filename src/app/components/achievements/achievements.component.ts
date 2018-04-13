@@ -5,7 +5,7 @@ import { ExpandableComponent } from '../expandables/expandable.component';
 @Component({
   selector: 'lc-achievements',
   templateUrl: 'achievements.component.html',
-  styleUrls: [ 'achievements.component.scss' ]
+  styleUrls: [ 'achievements.component.scss' ],
 })
 export class AchievementsComponent {
 

@@ -16,15 +16,14 @@ const closed = 'closed';
   animations: [
     trigger('expandableContent', [
       state(open, style({
-        height: '*'
+        height: '*',
       })),
       state(closed, style({
-        height: '0'
+        height: '0',
       })),
-      transition('open <=> closed', animate(EXPENDABLE_ANIMATION_DURATION + 'ms ease-out'))
-    ])
-
-  ]
+      transition('open <=> closed', animate(EXPENDABLE_ANIMATION_DURATION + 'ms ease-out')),
+    ]),
+  ],
 })
 /**
  * The accordion entry. Needs exactly 1 header and 1 content component.

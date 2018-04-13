@@ -2,7 +2,7 @@ import { Component, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'lc-expandable-content',
-  templateUrl: 'expandable-content.component.html'
+  templateUrl: 'expandable-content.component.html',
 })
 /**
  * The content for the accordion entries. Will be collapsed when the accordion entry is closed

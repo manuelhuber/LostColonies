@@ -8,7 +8,7 @@ import { MapHighlight } from '../../../data/models/mapHighlight';
 @Component({
   selector: 'lc-city',
   styleUrls: [ 'city.page.scss' ],
-  templateUrl: 'city.page.html'
+  templateUrl: 'city.page.html',
 })
 export class CityPage {
   public maps: HighlightMap[];

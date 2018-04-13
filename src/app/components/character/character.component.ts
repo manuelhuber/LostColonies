@@ -5,7 +5,7 @@ import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive'
 @Component({
   selector: 'lc-character',
   templateUrl: 'character.component.html',
-  styleUrls: [ 'character.component.scss' ]
+  styleUrls: [ 'character.component.scss' ],
 })
 export class CharacterComponent {
   @Input() public excludeLinks: LinkLocation[];

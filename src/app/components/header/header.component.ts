@@ -13,14 +13,14 @@ import {
   INTRO_ROUTE,
   INTRO_TITLE,
   WORLD_GENERAL_ROUTE,
-  WORLD_GENERAL_TITLE
+  WORLD_GENERAL_TITLE,
 } from '../../app.routes.model';
 
 @Component({
   selector: 'lc-header',
   templateUrl: 'header.component.html',
   encapsulation: ViewEncapsulation.None,
-  styleUrls: [ 'header.component.scss' ]
+  styleUrls: [ 'header.component.scss' ],
 })
 export class HeaderComponent implements OnInit {
 
