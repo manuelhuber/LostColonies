@@ -1,5 +1,5 @@
 <div class="page">
-  <accordion *ngIf="entries || map" [openAtStart]="0">
+  <lc-accordion *ngIf="entries || map" [openAtStart]="0">
 
     <lc-expandable *ngIf="map" [lcLinkable]="[map.name]">
       <lc-expandable-header>
@@ -32,5 +32,5 @@
         </div>
       </lc-expandable-content>
     </lc-expandable>
-  </accordion>
+  </lc-accordion>
 </div>

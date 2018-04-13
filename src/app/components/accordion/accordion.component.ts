@@ -4,7 +4,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { LINKABLE_PARAM } from '../../directive/linkable/linkable.directive';
 
 @Component({
-  selector: 'accordion',
+  selector: 'lc-accordion',
   templateUrl: 'accordion.component.html'
 })
 /**
