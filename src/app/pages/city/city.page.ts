@@ -6,7 +6,7 @@ import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive'
 import { MapHighlight } from '../../../data/models/mapHighlight';
 
 @Component({
-  selector: 'city',
+  selector: 'lc-city',
   styleUrls: [ 'city.page.scss' ],
   templateUrl: 'city.page.html'
 })

@@ -3,13 +3,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule } from '@angular/router';
-/*
- * Platform and Environment providers/directives/pipes
- */
-import { ROUTES } from './app.routes';
-// App is our top level component
-import { AppComponent } from './app.component';
 
+import 'hammerjs';
+import 'hammer-timejs';
+import '../rxjs-imports';
+
+import { ROUTES } from './app.routes';
+import { AppComponent } from './app.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { ExpandableHeaderComponent } from './components/expandables/header/expandable-header.component';
 import { ExpandableComponent } from './components/expandables/expandable.component';
@@ -28,9 +28,6 @@ import { CityPage } from './pages/city/city.page';
 import { MapComponent } from './components/map/map.component';
 import { GangComponent } from './components/gang/gang.component';
 import { SessionsComponent } from './components/sessions/sessions.component';
-
-import 'hammerjs';
-import 'hammer-timejs';
 import { LinkableDirective } from './directive/linkable/linkable.directive';
 import { InsertLinksDirective } from './directive/insertLinks/insertLinks.directive';
 import { MyHammerConfig } from '../hammer.conf';

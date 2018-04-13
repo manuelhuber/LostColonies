@@ -9,7 +9,7 @@ export const FACTION_PARAM = 'group';
 export const ALL_GROUPS = 'Alle';
 
 @Component({
-  selector: 'factions',
+  selector: 'lc-factions',
   templateUrl: 'factions.page.html',
   styleUrls: [ 'factions.page.scss' ]
 })

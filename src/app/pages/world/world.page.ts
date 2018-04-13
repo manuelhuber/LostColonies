@@ -6,7 +6,7 @@ import { WorldEntry } from '../../../data/models/worldEntry';
 import { MyMap } from '../../../data/models/map';
 
 @Component({
-  selector: 'world',
+  selector: 'lc-world',
   styleUrls: [ 'world.page.scss' ],
   templateUrl: 'world.page.html'
 })

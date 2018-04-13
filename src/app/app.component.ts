@@ -1,15 +1,13 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import 'rxjs/add/operator/filter';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/mergeMap';
+
 /*
  * App Component
  * Top Level Component
  */
 @Component({
-  selector: 'app',
+  selector: 'lc-app',
   encapsulation: ViewEncapsulation.None,
   styleUrls: [ 'app.component.scss', '/pages/pages.scss' ],
   templateUrl: 'app.component.html'

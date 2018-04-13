@@ -4,7 +4,7 @@ import { INTRO_ROUTE } from '../../app.routes';
 import { MetaService } from '../../../data/services/meta.service';
 
 @Component({
-  selector: 'metaPage',
+  selector: 'lc-meta-page',
   templateUrl: 'meta.page.html'
 })
 export class MetaPage {

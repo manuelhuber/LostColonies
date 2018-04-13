@@ -8,7 +8,7 @@ import { Session } from '../../../data/models/session';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'crew',
+  selector: 'lc-crew',
   templateUrl: 'crew.page.html',
   styleUrls: [ 'crew.page.scss' ]
 })
