@@ -2,7 +2,7 @@
   <accordion *ngIf="allFactions && allFactions.length">
 
     <!-- Group selector -->
-    <expandable [(visible)]="showSelect">
+    <lc-expandable [(visible)]="showSelect">
       <expandable-header>
         <div class="page-accordion-header mod-permanent-border-bot">Anzeigen: {{activeGroup}}</div>
       </expandable-header>
@@ -15,13 +15,13 @@
           </div>
         </div>
       </expandable-content>
-    </expandable>
+    </lc-expandable>
 
     <!-- Factions -->
     <!-- We need to render every faction and hide them depending on selection to make sure
     the accordion has a reference to all of them -->
     <div *ngFor="let faction of allFactions">
-      <expandable [hidden]="group.indexOf(faction) === -1" [lcLinkable]="[faction.name]">
+      <lc-expandable [hidden]="group.indexOf(faction) === -1" [lcLinkable]="[faction.name]">
         <expandable-header>
           <div class="page-accordion-header">{{faction.name}}</div>
         </expandable-header>
@@ -42,7 +42,7 @@
             </div>
           </div>
         </expandable-content>
-      </expandable>
+      </lc-expandable>
     </div>
   </accordion>
 </div>

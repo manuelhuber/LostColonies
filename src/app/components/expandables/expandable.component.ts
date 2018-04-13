@@ -6,7 +6,7 @@ import { ExpandableHeaderComponent } from './header/expandable-header.component'
 export const TIME_WHEN_ANIMATION_IS_OVER = 500;
 
 @Component({
-  selector: 'expandable',
+  selector: 'lc-expandable',
   templateUrl: 'expandable.component.html',
   styleUrls: [ 'expandable.component.scss' ]
 })

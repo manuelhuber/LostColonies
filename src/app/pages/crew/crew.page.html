@@ -1,7 +1,7 @@
 <div class="page">
   <accordion *ngIf="gang" [openAtStart]="0">
 
-    <expandable [lcLinkable]="linksForGang(gang)">
+    <lc-expandable [lcLinkable]="linksForGang(gang)">
       <expandable-header>
         <div class="page-accordion-header">{{gang.name}}</div>
       </expandable-header>
@@ -21,9 +21,9 @@
           </div>
         </div>
       </expandable-content>
-    </expandable>
+    </lc-expandable>
 
-    <expandable *ngFor="let character of gang.characters" [lcLinkable]="linksForCharacter(character)">
+    <lc-expandable *ngFor="let character of gang.characters" [lcLinkable]="linksForCharacter(character)">
       <expandable-header>
         <div class="page-accordion-header">{{character.name}}</div>
       </expandable-header>
@@ -34,6 +34,6 @@
           </character>
         </div>
       </expandable-content>
-    </expandable>
+    </lc-expandable>
   </accordion>
 </div>
