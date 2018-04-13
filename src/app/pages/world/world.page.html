@@ -1,0 +1,36 @@
+<div class="page">
+  <lc-accordion *ngIf="entries || map" [openAtStart]="0">
+
+    <lc-expandable *ngIf="map" [lcLinkable]="[map.name]">
+      <lc-expandable-header>
+        <div class="page-accordion-header">{{map.name}}</div>
+      </lc-expandable-header>
+      <lc-expandable-content>
+        <div class="page-accordion-content mod-no-padding">
+          <lc-map [map]="map"
+               autoHighlight="Akoros"></lc-map>
+        </div>
+      </lc-expandable-content>
+    </lc-expandable>
+
+    <lc-expandable *ngFor="let entry of entries" [lcLinkable]="[entry.title]">
+      <lc-expandable-header>
+        <div class="page-accordion-header">{{entry.title}}</div>
+      </lc-expandable-header>
+      <lc-expandable-content>
+        <div class="page-accordion-content" lcInsertLinks [exclude]="[{link:path,linkable:entry.title}]">
+          <div *ngIf="entry.subEntries">
+            <div class="world-paragraph" *ngFor="let subEntry of entry.subEntries">
+              <b>{{subEntry.title}}</b> {{subEntry.description}}
+              <div *ngIf="subEntry.subEntries">
+                <div class="world-sub-list" *ngFor="let subsubentry of subEntry.subEntries">
+                  <b>{{subsubentry.title}}</b> {{subsubentry.description}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </lc-expandable-content>
+    </lc-expandable>
+  </lc-accordion>
+</div>

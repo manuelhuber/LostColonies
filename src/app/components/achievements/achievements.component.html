@@ -1,0 +1,39 @@
+<div class="achievements"
+     (swipeLeft)="next()"
+     (swipeRight)="previous()">
+  <div class="achievements-slider"
+       [ngStyle]="{'transform' : translateValue, 'width': (achievementsToDisplay.length*100 +'%')}">
+    <div class="achievements-flex-parent">
+      <div class="achievement-flex-children" *ngFor="let subArray of achievementsToDisplay">
+        <div class="achievement-wrapper">
+          <lc-achievement [achievement]="subArray[0]"></lc-achievement>
+        </div>
+      </div>
+    </div>
+    <lc-expandable>
+      <lc-expandable-content>
+        <div class="achievements-flex-parent">
+          <div class="achievement-flex-children" *ngFor="let subArray of achievementsToDisplay">
+            <div class="achievement-wrapper" *ngFor="let achievement of subArray.slice(1)">
+              <lc-achievement [achievement]="achievement"></lc-achievement>
+            </div>
+          </div>
+        </div>
+      </lc-expandable-content>
+    </lc-expandable>
+  </div>
+
+
+  <div class="bottom-row" *ngIf="achievementsToDisplay[0].length>1">
+    <div class="left-arrow clickable" *ngIf="previousAvailable" (click)="previous()">
+      <div class="arrow left"></div>
+    </div>
+    <div class="right-arrow clickable" *ngIf="nextAvailable" (click)="next()">
+      <div class="arrow right"></div>
+    </div>
+    <div class="toggle clickable middle-arrow" (click)="toggle()" [ngClass]="{up: isVisible}">
+      <div class="arrow mod-big"
+           [ngClass]="{up: isVisible, down: !isVisible}"></div>
+    </div>
+  </div>
+</div>

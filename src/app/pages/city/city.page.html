@@ -1,0 +1,15 @@
+<div class="page">
+  <lc-accordion *ngIf="maps" [openAtStart]="0">
+    <lc-expandable *ngFor="let map of maps" [lcLinkable]="[map.name]">
+      <lc-expandable-header>
+        <div class="page-accordion-header">{{map.name}}</div>
+      </lc-expandable-header>
+      <lc-expandable-content>
+        <div class="page-accordion-content">
+          <div class="map-description" lcInsertLinks [exclude]="getExcludeLinks(map)" [innerHtml]="map.description"></div>
+          <lc-map [map]="map" [excludeLinks]="getExcludeLinks(map)" [lcLinkable]="getLinksForMap(map)"></lc-map>
+        </div>
+      </lc-expandable-content>
+    </lc-expandable>
+  </lc-accordion>
+</div>

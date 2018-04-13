@@ -1,0 +1,48 @@
+<div>
+  <div class="map" *ngIf="map.imageUrl">
+
+    <!-- highlight spot overlay -->
+    <div class="spot-wrapper"
+         [ngStyle]="overlayWrapperStyle">
+      <div class="spot"
+           [ngClass]="{active: activeDescription !== -1}"
+           [ngStyle]="overlayStyle"
+           (click)="toggle(activeDescription)"></div>
+    </div>
+
+    <img [src]="map.imageUrl" class="map-image">
+    <div *ngFor="let highlight of map.highlights;let i = index;"
+         [ngClass]="{top: highlight.location.top > 50}">
+
+      <!-- Highlight dot -->
+      <div class="highlight clickable"
+           [ngClass]="{displayDot: highlight.displayDot}"
+           [ngStyle]="getLocationAndSize(highlight)"
+           (click)="toggle(i)">
+      </div>
+
+      <!-- Highlight description -->
+      <div class="highlight-description-wrapper clickable"
+           *ngIf="activeDescription === i"
+           [ngStyle]="{
+           top: descriptionTopValue(highlight),
+           bottom:descriptionBottomValue(highlight),
+           maxHeight: descriptionMaxHeightValue(highlight)}"
+           (click)="toggle(i)">
+        <div class="highlight-description" lcInsertLinks [exclude]="excludeLinks">
+          <div class="highlight-description-title">{{highlight.name}}</div>
+          <div [innerHtml]="highlight.description"></div>
+        </div>
+      </div>
+
+      <!-- Nose of description box -->
+      <div class="highlight-description-nose clickable"
+           *ngIf="activeDescription === i"
+           [ngStyle]="{
+           top: descriptionTopValue(highlight),
+           bottom:descriptionBottomValue(highlight),
+           left: highlight.location.left+'%'}"
+           (click)="toggle(i)"></div>
+    </div>
+  </div>
+</div>

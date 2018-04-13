@@ -1,7 +1,7 @@
 import { WorldEntry } from './worldEntry';
-import { MyMap } from './map';
+import { HighlightMap } from './map';
 
 export class World {
-  public map : MyMap;
-  public entries : WorldEntry[];
+  public map: HighlightMap;
+  public entries: WorldEntry[];
 }

@@ -1,5 +1,5 @@
 export class Npc {
-  public name : string;
-  public description : string;
-  public imageUrl : string;
+  public name: string;
+  public description: string;
+  public imageUrl: string;
 }

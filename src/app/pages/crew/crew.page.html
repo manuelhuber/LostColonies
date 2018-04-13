@@ -1,0 +1,39 @@
+<div class="page">
+  <lc-accordion *ngIf="gang" [openAtStart]="0">
+
+    <lc-expandable [lcLinkable]="linksForGang(gang)">
+      <lc-expandable-header>
+        <div class="page-accordion-header">{{gang.name}}</div>
+      </lc-expandable-header>
+      <lc-expandable-content>
+        <div>
+          <div class="page-accordion-content">
+            <lc-gang [gang]="gang" [excludeLinks]="excludeGangLinks(gang)"></lc-gang>
+          </div>
+          <div class="page-accordion-content mod-separate" *ngIf="gang">
+            <div class="headline">Episoden:</div>
+          <lc-sessions [sessions]="gang.sessions" [gangName]="gang.name"
+                      [excludeLinks]="excludeGangLinks(gang)"></lc-sessions>
+          </div>
+          <div class="page-accordion-content mod-separate" *ngIf="gang.npcs">
+            <div class="headline">NPCs:</div>
+            <lc-npcs [npcs]="gang.npcs" [excludeLinks]="excludeGangLinks(gang)"></lc-npcs>
+          </div>
+        </div>
+      </lc-expandable-content>
+    </lc-expandable>
+
+    <lc-expandable *ngFor="let character of gang.characters" [lcLinkable]="linksForCharacter(character)">
+      <lc-expandable-header>
+        <div class="page-accordion-header">{{character.name}}</div>
+      </lc-expandable-header>
+      <lc-expandable-content>
+        <div class="page-accordion-content">
+          <lc-character [character]="character"
+                        [excludeLinks]="excludeCharacterLinks(character)">
+          </lc-character>
+        </div>
+      </lc-expandable-content>
+    </lc-expandable>
+  </lc-accordion>
+</div>

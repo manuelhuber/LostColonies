@@ -1,0 +1,43 @@
+<div>
+  <div *ngFor="let session of sessions; let i = index"
+       class="session-entry"
+       [ngClass]="{active: activeSession === i}"
+       (swipeLeft)="next()"
+       (swipeRight)="previous()">
+    <lc-expandable [(visible)]="sessionExpanded">
+      <lc-expandable-header>
+        <div class="session-headline clickable">
+          <div class="session-name">
+            <span>{{session.name}}</span>
+            <div class="previous-session"
+                 *ngIf="previousAvailable"
+                 (click)="previous();$event.stopPropagation()">
+              <div class="arrow left clickable"></div>
+            </div>
+            <div class="next-session"
+                 *ngIf="nextAvailable"
+                 (click)="next();$event.stopPropagation()">
+              <div class="arrow right clickable"></div>
+            </div>
+          </div>
+          <div class="session-date">{{session.date | date}}</div>
+          <div class="session-characters">
+            <span *ngFor="let character of session.characters">{{character}}</span>
+          </div>
+        </div>
+      </lc-expandable-header>
+
+      <lc-expandable-content>
+        <div>
+          <div class="session-description"
+               lcInsertLinks [exclude]="excludeLinks"
+               [innerHtml]="session.description"></div>
+          <div class="session-author">{{session.author}}</div>
+        </div>
+      </lc-expandable-content>
+    </lc-expandable>
+    <div class="session-close-description clickable arrow mod-big"
+         [ngClass]="{up: sessionExpanded, down: !sessionExpanded}"
+         (click)="toggleSession()"></div>
+  </div>
+</div>

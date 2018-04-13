@@ -1,0 +1,7 @@
+<div class="npc clearfix" [ngClass]="{right: alignRight}">
+  <div class="npc-image-wrapper" *ngIf="npc.imageUrl">
+    <img [src]="npc.imageUrl" class="npc-image">
+  </div>
+  <div class="npc-name">{{npc.name}}</div>
+  <div lcInsertLinks [exclude]="excludeLinks" class="npc-description">{{npc.description}}</div>
+</div>

@@ -1,0 +1,48 @@
+<div class="page">
+  <lc-accordion *ngIf="allFactions && allFactions.length">
+
+    <!-- Group selector -->
+    <lc-expandable [(visible)]="showSelect">
+      <lc-expandable-header>
+        <div class="page-accordion-header mod-permanent-border-bot">Anzeigen: {{activeGroup}}</div>
+      </lc-expandable-header>
+      <lc-expandable-content>
+        <div class="page-accordion-seperate-content-fix">
+          <div class="page-accordion-content mod-separate mod-hover-effect clickable"
+               *ngFor="let group of selectableGroups"
+               (click)="activateGroup(group)">
+            {{group}}
+          </div>
+        </div>
+      </lc-expandable-content>
+    </lc-expandable>
+
+    <!-- Factions -->
+    <!-- We need to render every faction and hide them depending on selection to make sure
+    the accordion has a reference to all of them -->
+    <div *ngFor="let faction of allFactions">
+      <lc-expandable [hidden]="group.indexOf(faction) === -1" [lcLinkable]="[faction.name]">
+        <lc-expandable-header>
+          <div class="page-accordion-header">{{faction.name}}</div>
+        </lc-expandable-header>
+        <lc-expandable-content>
+          <div>
+            <div class="page-accordion-content">
+              <div class="faction-image-wrapper">
+                <img *ngIf="faction.imageUrl" [src]="faction.imageUrl" alt="" class="faction-image">
+              </div>
+              <div *ngIf="faction.description">
+                <div lcInsertLinks [exclude]="excludeLinks(faction)"
+                     [innerHtml]="faction.description"></div>
+              </div>
+            </div>
+            <div class="page-accordion-content mod-separate" *ngIf="faction.npcs">
+              <div class="headline">NPCs:</div>
+              <lc-npcs [npcs]="faction.npcs" [excludeLinks]="excludeLinks(faction)"></lc-npcs>
+            </div>
+          </div>
+        </lc-expandable-content>
+      </lc-expandable>
+    </div>
+  </lc-accordion>
+</div>

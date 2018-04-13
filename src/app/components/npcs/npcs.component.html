@@ -1,0 +1,19 @@
+<div>
+  <div>
+    <lc-npc [npc]="npcs[0]" [excludeLinks]="excludeLinks"></lc-npc>
+  </div>
+  <lc-expandable [(visible)]="expanded">
+    <lc-expandable-content *ngIf="npcs.length>1">
+      <div class="npc-wrapper" *ngFor="let npc of npcs.slice(1); let i = index">
+        <lc-npc [npc]="npc" [alignRight]="i % 2 === 0" [excludeLinks]="excludeLinks"></lc-npc>
+      </div>
+    </lc-expandable-content>
+  </lc-expandable>
+
+  <div class="bottom-row" *ngIf="npcs.length>1">
+    <div class="toggle clickable middle-arrow" (click)="expanded = !expanded" [ngClass]="{up: expanded}">
+      <div class="arrow mod-big"
+           [ngClass]="{up: expanded, down: !expanded}"></div>
+    </div>
+  </div>
+</div>
