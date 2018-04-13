@@ -3,7 +3,7 @@ import { Observable } from 'rxjs/Observable';
 import { Gang } from '../models/gang';
 import { Session } from '../models/session';
 import { CREW_2_ROUTE } from '../../app/app.routes';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class CrewService {
@@ -11,7 +11,7 @@ export class CrewService {
   private crewOne: Observable<Gang>;
   private crewTwo: Observable<Gang>;
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
   }
 
   public getCrewDataForPath(path: string): Observable<Gang> {
@@ -37,7 +37,7 @@ export class CrewService {
   }
 
   private getCrew(filename: string): Observable<Gang> {
-    return this.http.get('/assets/data/' + filename + '.json').map((res) => res.json()).map((gang: Gang) => {
+    return this.http.get('/assets/data/' + filename + '.json').map((gang: Gang) => {
       gang.sessions = this.sortSessions(gang.sessions);
       return gang;
     });

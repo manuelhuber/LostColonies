@@ -1,19 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { Http } from '@angular/http';
 import { MetaEntry } from '../models/metaEntry';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class MetaService {
 
   private entries: Observable<MetaEntry[]>;
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
   }
 
   public getMeta(): Observable<any> {
     if (this.entries === undefined) {
-      this.entries = this.http.get('/assets/data/meta.json').map((res) => res.json());
+      this.entries = <Observable<MetaEntry[]>>this.http.get('/assets/data/meta.json');
     }
     return this.entries;
   }
