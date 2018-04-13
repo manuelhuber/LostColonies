@@ -3,9 +3,9 @@
 
     <!-- Group selector -->
     <lc-expandable [(visible)]="showSelect">
-      <expandable-header>
+      <lc-expandable-header>
         <div class="page-accordion-header mod-permanent-border-bot">Anzeigen: {{activeGroup}}</div>
-      </expandable-header>
+      </lc-expandable-header>
       <expandable-content>
         <div class="page-accordion-seperate-content-fix">
           <div class="page-accordion-content mod-separate mod-hover-effect clickable"
@@ -22,9 +22,9 @@
     the accordion has a reference to all of them -->
     <div *ngFor="let faction of allFactions">
       <lc-expandable [hidden]="group.indexOf(faction) === -1" [lcLinkable]="[faction.name]">
-        <expandable-header>
+        <lc-expandable-header>
           <div class="page-accordion-header">{{faction.name}}</div>
-        </expandable-header>
+        </lc-expandable-header>
         <expandable-content>
           <div>
             <div class="page-accordion-content">

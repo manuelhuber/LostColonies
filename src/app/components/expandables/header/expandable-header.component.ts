@@ -2,7 +2,7 @@ import { Component, ElementRef } from '@angular/core';
 import { DEFAULT_SCROLL_OPTIONS } from '../../../shared/scroll.model';
 
 @Component({
-  selector: 'expandable-header',
+  selector: 'lc-expandable-header',
   templateUrl: 'expandable-header.component.html'
 })
 /**

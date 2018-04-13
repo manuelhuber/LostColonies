@@ -5,7 +5,7 @@
        (swipeLeft)="next()"
        (swipeRight)="previous()">
     <lc-expandable [(visible)]="sessionExpanded">
-      <expandable-header>
+      <lc-expandable-header>
         <div class="session-headline clickable">
           <div class="session-name">
             <span>{{session.name}}</span>
@@ -25,7 +25,7 @@
             <span *ngFor="let character of session.characters">{{character}}</span>
           </div>
         </div>
-      </expandable-header>
+      </lc-expandable-header>
 
       <expandable-content>
         <div>
