@@ -8,10 +8,10 @@ export const LINKABLE_PARAM = 'link';
 export const LINKABLE_MAP_HIGHLIGHT_PARAM = 'mapHighlight';
 
 
-@Directive({selector: '[linkable]'})
+@Directive({selector: '[lcLinkable]'})
 export class LinkableDirective implements AfterContentInit, AfterViewInit {
 
-  @Input('linkable') public keywords: string[];
+  @Input('lcLinkable') public keywords: string[];
   private scrollToMap = false;
 
   constructor(private el: ElementRef, private route: ActivatedRoute, private vcRef: ViewContainerRef) {

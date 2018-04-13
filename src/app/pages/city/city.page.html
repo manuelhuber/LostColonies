@@ -1,13 +1,13 @@
 <div class="page">
   <accordion *ngIf="maps" [openAtStart]="0">
-    <expandable *ngFor="let map of maps" [linkable]="[map.name]">
+    <expandable *ngFor="let map of maps" [lcLinkable]="[map.name]">
       <expandable-header>
         <div class="page-accordion-header">{{map.name}}</div>
       </expandable-header>
       <expandable-content>
         <div class="page-accordion-content">
           <div class="map-description" insertLinks [exclude]="getExcludeLinks(map)" [innerHtml]="map.description"></div>
-          <map [map]="map" [excludeLinks]="getExcludeLinks(map)" [linkable]="getLinksForMap(map)"></map>
+          <map [map]="map" [excludeLinks]="getExcludeLinks(map)" [lcLinkable]="getLinksForMap(map)"></map>
         </div>
       </expandable-content>
     </expandable>

@@ -21,7 +21,7 @@
     <!-- We need to render every faction and hide them depending on selection to make sure
     the accordion has a reference to all of them -->
     <div *ngFor="let faction of allFactions">
-      <expandable [hidden]="group.indexOf(faction) === -1" [linkable]="[faction.name]">
+      <expandable [hidden]="group.indexOf(faction) === -1" [lcLinkable]="[faction.name]">
         <expandable-header>
           <div class="page-accordion-header">{{faction.name}}</div>
         </expandable-header>
