@@ -1,7 +1,7 @@
 import { Component, ElementRef } from '@angular/core';
 
 @Component({
-  selector: 'expandable-content',
+  selector: 'lc-expandable-content',
   templateUrl: 'expandable-content.component.html'
 })
 /**

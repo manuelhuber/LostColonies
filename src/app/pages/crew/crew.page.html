@@ -5,7 +5,7 @@
       <lc-expandable-header>
         <div class="page-accordion-header">{{gang.name}}</div>
       </lc-expandable-header>
-      <expandable-content>
+      <lc-expandable-content>
         <div>
           <div class="page-accordion-content">
             <gang [gang]="gang" [excludeLinks]="excludeGangLinks(gang)"></gang>
@@ -20,20 +20,20 @@
             <npcs [npcs]="gang.npcs" [excludeLinks]="excludeGangLinks(gang)"></npcs>
           </div>
         </div>
-      </expandable-content>
+      </lc-expandable-content>
     </lc-expandable>
 
     <lc-expandable *ngFor="let character of gang.characters" [lcLinkable]="linksForCharacter(character)">
       <lc-expandable-header>
         <div class="page-accordion-header">{{character.name}}</div>
       </lc-expandable-header>
-      <expandable-content>
+      <lc-expandable-content>
         <div class="page-accordion-content">
           <character [character]="character"
                      [excludeLinks]="excludeCharacterLinks(character)">
           </character>
         </div>
-      </expandable-content>
+      </lc-expandable-content>
     </lc-expandable>
   </accordion>
 </div>

@@ -4,13 +4,13 @@
       <lc-expandable-header>
         <div class="page-accordion-header">{{entry.title}}</div>
       </lc-expandable-header>
-      <expandable-content>
+      <lc-expandable-content>
         <div class="page-accordion-content"
              lcInsertLinks
              [exclude]="[{link:path,linkable:entry.title}]"
              [innerHtml]="entry.html">
         </div>
-      </expandable-content>
+      </lc-expandable-content>
     </lc-expandable>
   </accordion>
 </div>

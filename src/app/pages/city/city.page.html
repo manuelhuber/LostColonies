@@ -4,12 +4,12 @@
       <lc-expandable-header>
         <div class="page-accordion-header">{{map.name}}</div>
       </lc-expandable-header>
-      <expandable-content>
+      <lc-expandable-content>
         <div class="page-accordion-content">
           <div class="map-description" lcInsertLinks [exclude]="getExcludeLinks(map)" [innerHtml]="map.description"></div>
           <map [map]="map" [excludeLinks]="getExcludeLinks(map)" [lcLinkable]="getLinksForMap(map)"></map>
         </div>
-      </expandable-content>
+      </lc-expandable-content>
     </lc-expandable>
   </accordion>
 </div>

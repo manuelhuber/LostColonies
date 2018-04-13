@@ -27,14 +27,14 @@
         </div>
       </lc-expandable-header>
 
-      <expandable-content>
+      <lc-expandable-content>
         <div>
           <div class="session-description"
                lcInsertLinks [exclude]="excludeLinks"
                [innerHtml]="session.description"></div>
           <div class="session-author">{{session.author}}</div>
         </div>
-      </expandable-content>
+      </lc-expandable-content>
     </lc-expandable>
     <div class="session-close-description clickable arrow mod-big"
          [ngClass]="{up: sessionExpanded, down: !sessionExpanded}"

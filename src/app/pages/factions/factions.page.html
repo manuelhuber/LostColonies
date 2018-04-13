@@ -6,7 +6,7 @@
       <lc-expandable-header>
         <div class="page-accordion-header mod-permanent-border-bot">Anzeigen: {{activeGroup}}</div>
       </lc-expandable-header>
-      <expandable-content>
+      <lc-expandable-content>
         <div class="page-accordion-seperate-content-fix">
           <div class="page-accordion-content mod-separate mod-hover-effect clickable"
                *ngFor="let group of selectableGroups"
@@ -14,7 +14,7 @@
             {{group}}
           </div>
         </div>
-      </expandable-content>
+      </lc-expandable-content>
     </lc-expandable>
 
     <!-- Factions -->
@@ -25,7 +25,7 @@
         <lc-expandable-header>
           <div class="page-accordion-header">{{faction.name}}</div>
         </lc-expandable-header>
-        <expandable-content>
+        <lc-expandable-content>
           <div>
             <div class="page-accordion-content">
               <div class="faction-image-wrapper">
@@ -41,7 +41,7 @@
               <npcs [npcs]="faction.npcs" [excludeLinks]="excludeLinks(faction)"></npcs>
             </div>
           </div>
-        </expandable-content>
+        </lc-expandable-content>
       </lc-expandable>
     </div>
   </accordion>
