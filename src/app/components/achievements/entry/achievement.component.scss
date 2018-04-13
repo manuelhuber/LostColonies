@@ -17,19 +17,20 @@ $sidebar-margin: 33px;
 }
 
 .image-wrapper {
+  width: 100%;
   position: absolute;
   box-sizing: border-box;
-  width: $achievement-icon-size-with-margin;
   height: 100%;
+  transform: translateX((calc(-100% + #{$achievement-icon-size-with-margin})));
   background: $color-grey-4;
-  transition: all 500ms;
+  transition: transform 500ms;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .expanded {
-  width: 100%;
+  transform: translateX(0);
   & .achievement-description {
     opacity: 1;
     transition: opacity 200ms 500ms;
