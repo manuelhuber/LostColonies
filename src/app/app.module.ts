@@ -2,6 +2,8 @@ import { BrowserModule, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LOCALE_ID, NgModule } from '@angular/core';
+import localeDE from '@angular/common/locales/de';
+import { registerLocaleData } from '@angular/common';
 import { PreloadAllModules, RouterModule } from '@angular/router';
 
 import 'hammerjs';
@@ -43,6 +45,8 @@ const APP_PROVIDERS = [
   CrewService,
   MetaService
 ];
+
+registerLocaleData(localeDE);
 
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
