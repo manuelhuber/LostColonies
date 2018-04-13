@@ -1,5 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
-import { DEFAULT_SCROLL_OPTIONS } from '../../../directive/linkable/linkable.directive';
+import { DEFAULT_SCROLL_OPTIONS } from '../../../shared/scroll.model';
 
 @Component({
   selector: 'expandable-header',

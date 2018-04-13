@@ -4,26 +4,21 @@ import { WorldPage } from './pages/world/world.page';
 import { CrewPage } from './pages/crew/crew.page';
 import { CityPage } from './pages/city/city.page';
 import { MetaPage } from './pages/meta/meta.page';
+import {
+  CITY_1_ROUTE,
+  CITY_1_TITLE,
+  CREW_1_ROUTE,
+  CREW_1_TITLE,
+  CREW_2_ROUTE,
+  CREW_2_TITLE,
+  FACTION_ROUTE,
+  FACTION_TITLE,
+  INTRO_ROUTE,
+  INTRO_TITLE,
+  WORLD_GENERAL_ROUTE,
+  WORLD_GENERAL_TITLE
+} from './app.routes.model';
 
-const WORLD = 'welt';
-
-export const FACTION_TITLE = 'Fraktionen';
-export const FACTION_ROUTE: string = WORLD + '/fraktionen';
-
-export const WORLD_GENERAL_TITLE = 'Allgemein';
-export const WORLD_GENERAL_ROUTE: string = WORLD + '/allgemein';
-
-export const CITY_1_TITLE = 'Doskvol';
-export const CITY_1_ROUTE: string = WORLD + '/doskvol';
-
-const PLAYERS = 'spieler';
-export const CREW_1_TITLE = 'Die Angler';
-export const CREW_2_TITLE = 'Crew2';
-export const CREW_1_ROUTE: string = PLAYERS + '/crew';
-export const CREW_2_ROUTE: string = PLAYERS + '/crew2';
-
-export const INTRO_TITLE = 'Meta';
-export const INTRO_ROUTE: string = PLAYERS + '/meta';
 
 export const ROUTES: Routes = [
   // PLAYERS

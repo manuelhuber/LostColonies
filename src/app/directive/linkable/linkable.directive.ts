@@ -2,10 +2,11 @@ import { AfterContentInit, AfterViewInit, Directive, ElementRef, Input, ViewCont
 import { ActivatedRoute, Params } from '@angular/router';
 import { ExpandableComponent, TIME_WHEN_ANIMATION_IS_OVER } from '../../components/expandables/expandable.component';
 import { MapComponent } from '../../components/map/map.component';
+import { DEFAULT_SCROLL_OPTIONS } from '../../shared/scroll.model';
 
 export const LINKABLE_PARAM = 'link';
 export const LINKABLE_MAP_HIGHLIGHT_PARAM = 'mapHighlight';
-export const DEFAULT_SCROLL_OPTIONS: any = {behavior: 'smooth'};
+
 
 @Directive({selector: '[linkable]'})
 export class LinkableDirective implements AfterContentInit, AfterViewInit {

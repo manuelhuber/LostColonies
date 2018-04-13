@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Gang } from '../models/gang';
 import { Session } from '../models/session';
-import { CREW_2_ROUTE } from '../../app/app.routes';
+import { CREW_2_ROUTE } from '../../app/app.routes.model';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable()

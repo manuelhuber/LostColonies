@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { WorldService } from '../../../data/services/world.service';
-import { WORLD_GENERAL_ROUTE } from '../../app.routes';
+import { WORLD_GENERAL_ROUTE } from '../../app.routes.model';
 import { World } from '../../../data/models/world';
 import { WorldEntry } from '../../../data/models/worldEntry';
 import { MyMap } from '../../../data/models/map';

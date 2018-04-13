@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FactionService } from '../../../data/services/faction.service';
 import { Faction } from '../../../data/models/faction';
 import { ActivatedRoute } from '@angular/router';
-import { FACTION_ROUTE } from '../../app.routes';
+import { FACTION_ROUTE } from '../../app.routes.model';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 
 export const FACTION_PARAM = 'group';

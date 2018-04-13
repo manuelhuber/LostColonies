@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { WorldService } from '../../../data/services/world.service';
 import { MyMap } from '../../../data/models/map';
-import { CITY_1_ROUTE } from '../../app.routes';
+import { CITY_1_ROUTE } from '../../app.routes.model';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 import { MapHighlight } from '../../../data/models/mapHighlight';
 

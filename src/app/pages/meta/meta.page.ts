@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MetaEntry } from '../../../data/models/metaEntry';
-import { INTRO_ROUTE } from '../../app.routes';
+import { INTRO_ROUTE } from '../../app.routes.model';
 import { MetaService } from '../../../data/services/meta.service';
 
 @Component({

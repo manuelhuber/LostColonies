@@ -1,0 +1,14 @@
+const WORLD = 'welt';
+export const FACTION_TITLE = 'Fraktionen';
+export const FACTION_ROUTE: string = WORLD + '/fraktionen';
+export const WORLD_GENERAL_TITLE = 'Allgemein';
+export const WORLD_GENERAL_ROUTE: string = WORLD + '/allgemein';
+export const CITY_1_TITLE = 'Doskvol';
+export const CITY_1_ROUTE: string = WORLD + '/doskvol';
+const PLAYERS = 'spieler';
+export const CREW_1_TITLE = 'Die Angler';
+export const CREW_2_TITLE = 'Crew2';
+export const CREW_1_ROUTE: string = PLAYERS + '/crew';
+export const CREW_2_ROUTE: string = PLAYERS + '/crew2';
+export const INTRO_TITLE = 'Meta';
+export const INTRO_ROUTE: string = PLAYERS + '/meta';
