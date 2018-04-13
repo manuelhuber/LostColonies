@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { World } from '../models/world';
 import { HttpClient } from '@angular/common/http';
+import { HighlightMap } from '../models/map';
 
 @Injectable()
 export class WorldService {
@@ -18,7 +19,7 @@ export class WorldService {
     return this.world;
   }
 
-  public getDoskvol() {
-    return this.http.get('/assets/data/doskvol.json');
+  public getDoskvol(): Observable<HighlightMap[]> {
+    return <Observable<HighlightMap[]>>this.http.get('/assets/data/doskvol.json');
   }
 }

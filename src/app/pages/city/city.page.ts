@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { WorldService } from '../../../data/services/world.service';
-import { MyMap } from '../../../data/models/map';
+import { HighlightMap } from '../../../data/models/map';
 import { CITY_1_ROUTE } from '../../app.routes.model';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 import { MapHighlight } from '../../../data/models/mapHighlight';
@@ -11,17 +11,17 @@ import { MapHighlight } from '../../../data/models/mapHighlight';
   templateUrl: 'city.page.html'
 })
 export class CityPage {
-  public maps: MyMap[];
+  public maps: HighlightMap[];
 
   constructor(private worldService: WorldService) {
-    worldService.getDoskvol().subscribe((data: any) => this.maps = data[ 'maps' ]);
+    worldService.getDoskvol().subscribe(maps => this.maps = maps);
   }
 
-  public getExcludeLinks(map: MyMap): LinkLocation[] {
+  public getExcludeLinks(map: HighlightMap): LinkLocation[] {
     return [ {link: CITY_1_ROUTE, linkable: map.name} ];
   }
 
-  public getLinksForMap(map: MyMap): string[] {
+  public getLinksForMap(map: HighlightMap): string[] {
     return map && map.highlights && map.highlights.map((value: MapHighlight) => value.name);
   }
 

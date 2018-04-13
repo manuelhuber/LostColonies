@@ -1,5 +1,5 @@
 import { AfterContentInit, Component, Input } from '@angular/core';
-import { MyMap } from '../../../data/models/map';
+import { HighlightMap } from '../../../data/models/map';
 import { MapHighlight } from '../../../data/models/MapHighlight';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 
@@ -17,7 +17,7 @@ const BORDER_NO_ANIMATION = 'transform 500ms';
 export class MapComponent implements AfterContentInit {
   public activeDescription = -1;
   public highlightOverlayAnimation: string;
-  @Input() public map: MyMap;
+  @Input() public map: HighlightMap;
   @Input() public excludeLinks: LinkLocation[];
   @Input() public autoHighlight: string;
 

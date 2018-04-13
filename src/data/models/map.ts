@@ -1,6 +1,6 @@
 import { MapHighlight } from './MapHighlight';
 
-export class MyMap {
+export class HighlightMap {
   public name: string;
   public description: string;
   public imageUrl: string;

@@ -3,7 +3,7 @@ import { WorldService } from '../../../data/services/world.service';
 import { WORLD_GENERAL_ROUTE } from '../../app.routes.model';
 import { World } from '../../../data/models/world';
 import { WorldEntry } from '../../../data/models/worldEntry';
-import { MyMap } from '../../../data/models/map';
+import { HighlightMap } from '../../../data/models/map';
 
 @Component({
   selector: 'lc-world',
@@ -12,7 +12,7 @@ import { MyMap } from '../../../data/models/map';
 })
 export class WorldPage {
 
-  public map: MyMap;
+  public map: HighlightMap;
   public entries: WorldEntry[];
   public path: string = WORLD_GENERAL_ROUTE;
 
