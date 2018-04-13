@@ -10,7 +10,7 @@ const BORDER_DISAPPEAR_ANIMATION = 'border 500ms ease-in, height 0ms 500ms, widt
 const BORDER_NO_ANIMATION = 'transform 500ms';
 
 @Component({
-  selector: 'map',
+  selector: 'lc-map',
   templateUrl: 'map.component.html',
   styleUrls: [ 'map.component.scss' ]
 })

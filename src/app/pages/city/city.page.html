@@ -7,7 +7,7 @@
       <lc-expandable-content>
         <div class="page-accordion-content">
           <div class="map-description" lcInsertLinks [exclude]="getExcludeLinks(map)" [innerHtml]="map.description"></div>
-          <map [map]="map" [excludeLinks]="getExcludeLinks(map)" [lcLinkable]="getLinksForMap(map)"></map>
+          <lc-map [map]="map" [excludeLinks]="getExcludeLinks(map)" [lcLinkable]="getLinksForMap(map)"></lc-map>
         </div>
       </lc-expandable-content>
     </lc-expandable>
