@@ -1,4 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
+import { DEFAULT_SCROLL_OPTIONS } from '../../../shared/scroll.model';
 
 @Component({
   selector: 'lc-expandable-content',
@@ -12,6 +13,10 @@ import { Component, ElementRef } from '@angular/core';
 export class ExpandableContentComponent {
 
   constructor(private elem: ElementRef) {
+  }
+
+  public scrollIntoView(): void {
+    this.elem.nativeElement.scrollIntoView(DEFAULT_SCROLL_OPTIONS);
   }
 
   /**

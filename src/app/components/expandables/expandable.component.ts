@@ -76,7 +76,7 @@ export class ExpandableComponent {
 
   public animationDone(event: AnimationEvent) {
     if (event.toState === open && this.scrollIntoViewOnExpand) {
-      this.header.scrollIntoView();
+      this.header ? this.header.scrollIntoView() : this.content.scrollIntoView();
     }
   }
 
