@@ -37,6 +37,7 @@ import { NpcsComponent } from './components/npcs/npcs.component';
 import { MetaPage } from './pages/meta/meta.page';
 import { MetaService } from '../data/services/meta.service';
 import { InsertLinksDirective } from './directive/insertLinks/insertLinks.directive';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -77,6 +78,7 @@ registerLocaleData(localeDE);
     NpcsComponent
   ],
   imports: [ // import Angular's modules
+    BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
     HttpClientModule,

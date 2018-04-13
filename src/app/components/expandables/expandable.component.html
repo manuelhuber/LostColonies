@@ -2,7 +2,8 @@
   <div (click)="clickHeader()">
     <ng-content select="lc-expandable-header"></ng-content>
   </div>
-  <div [ngStyle]="{'height': height}"
+  <div [@expandableContent]="state"
+       (@expandableContent.done)="animationDone($event)"
        class="content-wrapper">
     <ng-content select="lc-expandable-content"></ng-content>
   </div>
