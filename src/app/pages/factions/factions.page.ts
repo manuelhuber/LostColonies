@@ -15,15 +15,6 @@ export const ALL_GROUPS = 'Alle';
 })
 export class FactionsPage implements OnInit {
 
-  public set activeGroup(a: string) {
-    this._activeGroup = a;
-    this.updateFactions();
-  }
-
-  public get activeGroup(): string {
-    return this._activeGroup;
-  }
-
   // A list of all groups, including an ALL option
   public selectableGroups: string[];
   // Contains all factions - just a flattened version of "groups"
@@ -31,9 +22,8 @@ export class FactionsPage implements OnInit {
   // The current selected group
   public group: Faction[];
   public showSelect: boolean;
-
-  private groups: { [group: string]: Faction[] };
-  private _activeGroup: string;
+  private groups: { [ group: string ]: Faction[] };
+  private factionSorter: (a: Faction, b: Faction) => number = (a, b) => a.name.localeCompare(b.name);
 
   constructor(private factionService: FactionService, private activatedRoute: ActivatedRoute) {
     this.activeGroup = ALL_GROUPS;
@@ -47,6 +37,17 @@ export class FactionsPage implements OnInit {
       this.updateFactions();
     });
 
+  }
+
+  private _activeGroup: string;
+
+  public get activeGroup(): string {
+    return this._activeGroup;
+  }
+
+  public set activeGroup(a: string) {
+    this._activeGroup = a;
+    this.updateFactions();
   }
 
   public ngOnInit(): void {
@@ -68,8 +69,6 @@ export class FactionsPage implements OnInit {
   public excludeLinks(faction: Faction): LinkLocation[ ] {
     return [ {link: FACTION_ROUTE, linkable: faction.name} ];
   }
-
-  private factionSorter: (a: Faction, b: Faction) => number = (a, b) => a.name.localeCompare(b.name);
 
   private updateFactions(): void {
     if (!this.groups) {

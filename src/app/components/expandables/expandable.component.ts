@@ -1,4 +1,4 @@
-import { Component, ContentChild, ElementRef, EventEmitter, Input, Output } from '@angular/core';
+import { Component, ContentChild, EventEmitter, Input, Output } from '@angular/core';
 import { ExpandableContentComponent } from './content/expandable-content.component';
 import { ExpandableHeaderComponent } from './header/expandable-header.component';
 
@@ -40,6 +40,10 @@ export class ExpandableComponent {
   private timeout: any;
   private _visible = false;
 
+  get visible(): boolean {
+    return this._visible;
+  }
+
   /**
    * Makes the content of the entry (in)visible with a nice animation
    */
@@ -72,10 +76,6 @@ export class ExpandableComponent {
     }
     this.visibleChange.next(a);
     this.isVisible.next({visible: a, self: this});
-  }
-
-  get visible(): boolean {
-    return this._visible;
   }
 
   /**

@@ -16,14 +16,14 @@ export class AchievementsComponent {
   private _allAchievements: Achievement[];
   private _maxAmount = 5;
 
-  @Input()
-  public set achievements(a: Achievement[]) {
-    this._allAchievements = a;
+  @Input() set maxAmount(a: number) {
+    this._maxAmount = a;
     this.updateAchievementsToDisplay();
   }
 
-  @Input() set maxAmount(a: number) {
-    this._maxAmount = a;
+  @Input()
+  public set achievements(a: Achievement[]) {
+    this._allAchievements = a;
     this.updateAchievementsToDisplay();
   }
 
@@ -66,6 +66,6 @@ export class AchievementsComponent {
   private updateAchievementsToDisplay(): void {
     this.achievementsToDisplay =
       this._allAchievements.reduce((rows, key, index) =>
-      (index % this._maxAmount === 0 ? rows.push([ key ]) : rows[ rows.length - 1 ].push(key)) && rows, []);
+        (index % this._maxAmount === 0 ? rows.push([ key ]) : rows[ rows.length - 1 ].push(key)) && rows, []);
   }
 }

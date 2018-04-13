@@ -15,20 +15,20 @@ export class SessionsComponent implements OnInit {
 
   @Input() public gangName: string;
 
-  public toggleSession(): void {
-    this.sessionExpanded = !this.sessionExpanded;
-  }
-
-  public ngOnInit(): void {
-    this.activeSession = this.sessions.length - 1;
-  }
-
   get nextAvailable(): boolean {
     return this.activeSession < this.sessions.length - 1;
   }
 
   get previousAvailable(): boolean {
     return this.activeSession > 0;
+  }
+
+  public toggleSession(): void {
+    this.sessionExpanded = !this.sessionExpanded;
+  }
+
+  public ngOnInit(): void {
+    this.activeSession = this.sessions.length - 1;
   }
 
   public next(): void {

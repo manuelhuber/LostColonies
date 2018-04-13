@@ -9,7 +9,7 @@ export interface LinkEntry extends LinkLocation {
 export interface LinkLocation {
   link: string;
   linkable: string;
-  mapHighlight ?: string;
+  mapHighlight?: string;
 }
 
 @Directive({selector: '[insertLinks]'})
@@ -44,8 +44,8 @@ export class InsertLinksDirective implements AfterViewInit {
 
   private locationExcluded(loc: LinkLocation): boolean {
     return this.exclude && this.exclude.some((ex: LinkLocation) => {
-        return ex.link.toLowerCase() === loc.link.toLowerCase() && ex.linkable.toLowerCase() === loc.linkable.toLowerCase();
-      });
+      return ex.link.toLowerCase() === loc.link.toLowerCase() && ex.linkable.toLowerCase() === loc.linkable.toLowerCase();
+    });
   }
 
   /**

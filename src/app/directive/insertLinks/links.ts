@@ -1,6 +1,5 @@
 import { LinkEntry } from './insertLinks.directive';
-import { INTRO_ROUTE} from '../../app.routes.model';
-import { CITY_1_ROUTE, CREW_1_ROUTE, FACTION_ROUTE, WORLD_GENERAL_ROUTE } from '../../app.routes.model';
+import { CITY_1_ROUTE, CREW_1_ROUTE, FACTION_ROUTE, INTRO_ROUTE, WORLD_GENERAL_ROUTE } from '../../app.routes.model';
 
 export const LINKS: LinkEntry[] = [
   // ----------------------------------------------------------------------------------------------------------- CREW 1

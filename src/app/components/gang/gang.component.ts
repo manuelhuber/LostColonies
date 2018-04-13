@@ -8,6 +8,6 @@ import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive'
   styleUrls: [ 'gang.component.scss' ]
 })
 export class GangComponent {
-  @Input() public gang : Gang;
-  @Input() public excludeLinks : LinkLocation[];
+  @Input() public gang: Gang;
+  @Input() public excludeLinks: LinkLocation[];
 }

@@ -2,12 +2,16 @@ import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { ExpandableComponent } from '../expandables/expandable.component';
 import {
-  INTRO_ROUTE} from '../../app.routes.model';
-import {
   CITY_1_ROUTE,
-  CITY_1_TITLE, CREW_1_ROUTE, CREW_1_TITLE, CREW_2_ROUTE, CREW_2_TITLE,
+  CITY_1_TITLE,
+  CREW_1_ROUTE,
+  CREW_1_TITLE,
+  CREW_2_ROUTE,
+  CREW_2_TITLE,
   FACTION_ROUTE,
-  FACTION_TITLE, INTRO_TITLE,
+  FACTION_TITLE,
+  INTRO_ROUTE,
+  INTRO_TITLE,
   WORLD_GENERAL_ROUTE,
   WORLD_GENERAL_TITLE
 } from '../../app.routes.model';
