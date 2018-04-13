@@ -23,6 +23,8 @@ export class FactionsPage implements OnInit {
   public group: Faction[];
   public showSelect: boolean;
   private groups: { [ group: string ]: Faction[] };
+  private _activeGroup: string;
+
   private factionSorter: (a: Faction, b: Faction) => number = (a, b) => a.name.localeCompare(b.name);
 
   constructor(private factionService: FactionService, private activatedRoute: ActivatedRoute) {
@@ -39,7 +41,9 @@ export class FactionsPage implements OnInit {
 
   }
 
-  private _activeGroup: string;
+  public hide(faction: Faction): boolean {
+    return this.group.indexOf(faction) === -1;
+  }
 
   public get activeGroup(): string {
     return this._activeGroup;
