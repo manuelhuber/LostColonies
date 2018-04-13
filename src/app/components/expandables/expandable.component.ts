@@ -1,14 +1,30 @@
 import { Component, ContentChild, EventEmitter, Input, Output } from '@angular/core';
 import { ExpandableContentComponent } from './content/expandable-content.component';
 import { ExpandableHeaderComponent } from './header/expandable-header.component';
+import { animate, AnimationEvent, state, style, transition, trigger } from '@angular/animations';
 
 // MAGIC NUMBER WARNING: the delay should be as long or a bit longer than the animation duration!
-export const TIME_WHEN_ANIMATION_IS_OVER = 500;
+export const EXPENDABLE_ANIMATION_DURATION = 500;
+
+const open = 'open';
+const closed = 'closed';
 
 @Component({
   selector: 'lc-expandable',
   templateUrl: 'expandable.component.html',
-  styleUrls: [ 'expandable.component.scss' ]
+  styleUrls: [ 'expandable.component.scss' ],
+  animations: [
+    trigger('expandableContent', [
+      state(open, style({
+        height: '*'
+      })),
+      state(closed, style({
+        height: '0'
+      })),
+      transition('open <=> closed', animate(EXPENDABLE_ANIMATION_DURATION + 'ms ease-out'))
+    ])
+
+  ]
 })
 /**
  * The accordion entry. Needs exactly 1 header and 1 content component.
@@ -31,13 +47,13 @@ export class ExpandableComponent {
 
   // For easier use with the accordion. Kind of dirty code but convenient
   public isVisible: EventEmitter<{ visible: boolean, self: ExpandableComponent }> = new EventEmitter();
+  state = closed;
 
   /**
    * The value for the CSS height attribute
    */
   public height = '0';
 
-  private timeout: any;
   private _visible = false;
 
   get visible(): boolean {
@@ -53,29 +69,16 @@ export class ExpandableComponent {
       // No change => do nothing
       return;
     }
-    clearTimeout(this.timeout);
-    if (!this.content) {
-      return;
-    }
+    this.state = a ? open : closed;
     this._visible = a;
-    if (a) {
-      // Increase to the size of the content
-      this.height = this.content.height + 'px';
-      // Set auto to react to size changes of the content
-      this.timeout = setTimeout(() => {
-        this.height = 'auto';
-        if (this.scrollIntoViewOnExpand && this.header) {
-          this.header.scrollIntoView();
-        }
-      }, TIME_WHEN_ANIMATION_IS_OVER);
-    } else {
-      // Set the height from auto to the actual size (needed for animation)
-      this.height = this.content.height + 'px';
-      // Animate to size 0
-      this.timeout = setTimeout(() => this.height = '0', 50);
-    }
     this.visibleChange.next(a);
     this.isVisible.next({visible: a, self: this});
+  }
+
+  public animationDone(event: AnimationEvent) {
+    if (event.toState === open && this.scrollIntoViewOnExpand) {
+      this.header.scrollIntoView();
+    }
   }
 
   /**

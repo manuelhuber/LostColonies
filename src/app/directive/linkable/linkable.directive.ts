@@ -1,6 +1,6 @@
 import { AfterContentInit, AfterViewInit, Directive, ElementRef, Input, ViewContainerRef } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { ExpandableComponent, TIME_WHEN_ANIMATION_IS_OVER } from '../../components/expandables/expandable.component';
+import { ExpandableComponent, EXPENDABLE_ANIMATION_DURATION } from '../../components/expandables/expandable.component';
 import { MapComponent } from '../../components/map/map.component';
 import { DEFAULT_SCROLL_OPTIONS } from '../../shared/scroll.model';
 
@@ -40,7 +40,7 @@ export class LinkableDirective implements AfterContentInit, AfterViewInit {
       // Only scroll to expandable if there is no map
       if (expandable && !mapHighlight) {
         // Works perfectly for expandables, not for maps
-        setTimeout(() => this.el.nativeElement.scrollIntoView(DEFAULT_SCROLL_OPTIONS), TIME_WHEN_ANIMATION_IS_OVER);
+        setTimeout(() => this.el.nativeElement.scrollIntoView(DEFAULT_SCROLL_OPTIONS), EXPENDABLE_ANIMATION_DURATION);
       } else if (map) {
         // Scroll after viewInit
         this.scrollToMap = true;
@@ -56,7 +56,7 @@ export class LinkableDirective implements AfterContentInit, AfterViewInit {
    */
   public ngAfterViewInit(): void {
     if (this.scrollToMap) {
-      setTimeout(() => this.el.nativeElement.scrollIntoView(DEFAULT_SCROLL_OPTIONS), TIME_WHEN_ANIMATION_IS_OVER);
+      setTimeout(() => this.el.nativeElement.scrollIntoView(DEFAULT_SCROLL_OPTIONS), EXPENDABLE_ANIMATION_DURATION);
     }
   }
 

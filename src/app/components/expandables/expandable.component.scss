@@ -2,6 +2,5 @@ $height-animation-duration: 500ms;
 $animation-function: ease-out;
 
 .content-wrapper {
-  transition: height $height-animation-duration $animation-function;
   overflow: hidden;
 }
