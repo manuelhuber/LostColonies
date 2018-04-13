@@ -9,7 +9,7 @@ import { Title } from '@angular/platform-browser';
 @Component({
   selector: 'lc-app',
   encapsulation: ViewEncapsulation.None,
-  styleUrls: [ 'app.component.scss', '/pages/pages.scss' ],
+  styleUrls: [ 'app.component.scss', './pages/pages.scss' ],
   templateUrl: 'app.component.html'
 })
 export class AppComponent implements OnInit {
