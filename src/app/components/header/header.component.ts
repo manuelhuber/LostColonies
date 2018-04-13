@@ -17,7 +17,7 @@ import {
 } from '../../app.routes.model';
 
 @Component({
-  selector: 'header',
+  selector: 'lc-header',
   templateUrl: 'header.component.html',
   encapsulation: ViewEncapsulation.None,
   styleUrls: [ 'header.component.scss' ]

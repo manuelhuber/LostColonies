@@ -3,7 +3,7 @@ import { Gang } from '../../../data/models/gang';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 
 @Component({
-  selector: 'gang',
+  selector: 'lc-gang',
   templateUrl: 'gang.component.html',
   styleUrls: [ 'gang.component.scss' ]
 })
