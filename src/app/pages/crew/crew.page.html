@@ -12,12 +12,12 @@
           </div>
           <div class="page-accordion-content mod-separate" *ngIf="gang">
             <div class="headline">Episoden:</div>
-            <sessions [sessions]="gang.sessions" [gangName]="gang.name"
-                      [excludeLinks]="excludeGangLinks(gang)"></sessions>
+          <lc-sessions [sessions]="gang.sessions" [gangName]="gang.name"
+                      [excludeLinks]="excludeGangLinks(gang)"></lc-sessions>
           </div>
           <div class="page-accordion-content mod-separate" *ngIf="gang.npcs">
             <div class="headline">NPCs:</div>
-            <npcs [npcs]="gang.npcs" [excludeLinks]="excludeGangLinks(gang)"></npcs>
+            <lc-npcs [npcs]="gang.npcs" [excludeLinks]="excludeGangLinks(gang)"></lc-npcs>
           </div>
         </div>
       </lc-expandable-content>

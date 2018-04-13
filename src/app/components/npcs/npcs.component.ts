@@ -3,7 +3,7 @@ import { Npc } from '../../../data/models/npc';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 
 @Component({
-  selector: 'npcs',
+  selector: 'lc-npcs',
   templateUrl: 'npcs.component.html',
   styleUrls: [ 'npcs.component.scss' ]
 })

@@ -38,7 +38,7 @@
             </div>
             <div class="page-accordion-content mod-separate" *ngIf="faction.npcs">
               <div class="headline">NPCs:</div>
-              <npcs [npcs]="faction.npcs" [excludeLinks]="excludeLinks(faction)"></npcs>
+              <lc-npcs [npcs]="faction.npcs" [excludeLinks]="excludeLinks(faction)"></lc-npcs>
             </div>
           </div>
         </lc-expandable-content>

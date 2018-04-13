@@ -3,7 +3,7 @@ import { Session } from '../../../data/models/session';
 import { LinkLocation } from '../../directive/insertLinks/insertLinks.directive';
 
 @Component({
-  selector: 'sessions',
+  selector: 'lc-sessions',
   templateUrl: 'sessions.component.html',
   styleUrls: [ 'sessions.component.scss' ]
 })
