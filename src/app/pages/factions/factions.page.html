@@ -32,7 +32,7 @@
                 <img *ngIf="faction.imageUrl" [src]="faction.imageUrl" alt="" class="faction-image">
               </div>
               <div *ngIf="faction.description">
-                <div insertLinks [exclude]="excludeLinks(faction)"
+                <div lcInsertLinks [exclude]="excludeLinks(faction)"
                      [innerHtml]="faction.description"></div>
               </div>
             </div>

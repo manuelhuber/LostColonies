@@ -6,7 +6,7 @@
   <achievements *ngIf="character.achievements" [achievements]="character.achievements"></achievements>
   <div class="character-description"
        *ngIf="character.description"
-       insertLinks
+       lcInsertLinks
        [exclude]="excludeLinks"
        [innerHtml]="character.description"></div>
 </div>

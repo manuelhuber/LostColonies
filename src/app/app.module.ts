@@ -31,12 +31,12 @@ import { MapComponent } from './components/map/map.component';
 import { GangComponent } from './components/gang/gang.component';
 import { SessionsComponent } from './components/sessions/sessions.component';
 import { LinkableDirective } from './directive/linkable/linkable.directive';
-import { InsertLinksDirective } from './directive/insertLinks/insertLinks.directive';
 import { MyHammerConfig } from '../hammer.conf';
 import { NpcComponent } from './components/npcs/entry/npc.component';
 import { NpcsComponent } from './components/npcs/npcs.component';
 import { MetaPage } from './pages/meta/meta.page';
 import { MetaService } from '../data/services/meta.service';
+import { InsertLinksDirective } from './directive/insertLinks/insertLinks.directive';
 
 // Application wide providers
 const APP_PROVIDERS = [

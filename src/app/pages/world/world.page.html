@@ -18,7 +18,7 @@
         <div class="page-accordion-header">{{entry.title}}</div>
       </expandable-header>
       <expandable-content>
-        <div class="page-accordion-content" insertLinks [exclude]="[{link:path,linkable:entry.title}]">
+        <div class="page-accordion-content" lcInsertLinks [exclude]="[{link:path,linkable:entry.title}]">
           <div *ngIf="entry.subEntries">
             <div class="world-paragraph" *ngFor="let subEntry of entry.subEntries">
               <b>{{subEntry.title}}</b> {{subEntry.description}}

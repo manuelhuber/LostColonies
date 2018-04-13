@@ -12,7 +12,7 @@ export interface LinkLocation {
   mapHighlight?: string;
 }
 
-@Directive({selector: '[insertLinks]'})
+@Directive({selector: '[lcInsertLinks]'})
 export class InsertLinksDirective implements AfterViewInit {
 
   @Input() public exclude: LinkLocation[];

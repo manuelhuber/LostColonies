@@ -6,7 +6,7 @@
       </expandable-header>
       <expandable-content>
         <div class="page-accordion-content">
-          <div class="map-description" insertLinks [exclude]="getExcludeLinks(map)" [innerHtml]="map.description"></div>
+          <div class="map-description" lcInsertLinks [exclude]="getExcludeLinks(map)" [innerHtml]="map.description"></div>
           <map [map]="map" [excludeLinks]="getExcludeLinks(map)" [lcLinkable]="getLinksForMap(map)"></map>
         </div>
       </expandable-content>
